@@ -1,0 +1,1 @@
+See ../../README.md for how to build and test locally using a local web server to resolve your central discovery plugin and directory.xml file.
