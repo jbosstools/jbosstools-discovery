@@ -1,0 +1,281 @@
+<project default="basic.build" name="discovery site builder">
+	<!--
+	To test output, run maven in this folder:
+		$ mvn install -DPREFIX=jbosstools -DBUILD_ALIAS=Alpha1 -DBUILD_ID=2012-11-29_12-55-00 -DBUILD_NUMBER=6969 -DUPDATE_SITE=... -DEXTRAS_SITE=... -DCENTRAL_SITE=...
+		$ mvn install -DPREFIX=devstudio  -DBUILD_ALIAS=Alpha1 -DBUILD_ID=2012-11-29_12-55-00 -DBUILD_NUMBER=4200 -DUPDATE_SITE=... -DEXTRAS_SITE=... -DCENTRAL_SITE=...
+
+	-->
+	<!-- pass in these values from Maven -->
+	<property name="UPDATE_SITE" value=""/>
+	<property name="EXTRAS_SITE" value=""/>
+	<property name="CENTRAL_SITE" value=""/>
+
+	<!-- if ${WORKSPACE}/site folder exists, target that folder; else generate here. -->
+	<condition property="output.dir" value="${WORKSPACE}/results" else="${basedir}">
+		<available file="${WORKSPACE}/results" />
+	</condition>
+
+	<condition property="COMMON_TOOLS" value="/home/hudson/static_build_env/jbds/tools" else="${java.io.tmpdir}">
+		<available file="/home/hudson/static_build_env/jbds" type="dir" />
+	</condition>
+	<mkdir dir="${COMMON_TOOLS}" />
+
+	<tempfile property="tmpdir" destDir="${java.io.tmpdir}" prefix="aggregate-site-build"/>
+	<mkdir dir="${tmpdir}" />
+
+	<property name="project.build.directory" value="${output.dir}/target"/>
+  <property name="project.artifactId" value="org.jboss.tools.central.discovery"/>
+
+	<target name="init">
+		<echo level="verbose">
+This script requires Ant 1.8+ and JDK 1.6+.
+-------------------------------------------
+$ant.version = ${ant.version}
+$ant.home = ${ant.home}
+$ant.java.version = ${ant.java.version}
+$java.home = ${java.home}</echo>
+		<available file="${COMMON_TOOLS}/ant-contrib.jar" type="file" property="ant-contrib.jar.exists" />
+		<antcall target="get.ant-contrib" />
+		<taskdef resource="net/sf/antcontrib/antlib.xml">
+			<classpath>
+				<pathelement location="${COMMON_TOOLS}/ant-contrib.jar" />
+			</classpath>
+		</taskdef>
+	</target>
+
+	<target name="basic.build" description="discovery plugin build extra processing steps" depends="init,generate.directory.xml,generate.composite.site,adjust.plugin.xml,cleanup" />
+
+	<target name="get.ant-contrib" unless="ant-contrib.jar.exists">
+		<property name="ANTCONTRIB_MIRROR" value="http://sourceforge.net/projects/ant-contrib/files/ant-contrib/ant-contrib-1.0b2" />
+		<get usetimestamp="true" dest="${COMMON_TOOLS}/ant-contrib-1.0b2-bin.zip" src="${ANTCONTRIB_MIRROR}/ant-contrib-1.0b2-bin.zip" />
+		<touch file="${COMMON_TOOLS}/ant-contrib-1.0b2-bin.zip" />
+		<mkdir dir="${tmpdir}/ant-contrib-1.0b2-bin.zip_" />
+		<unzip src="${COMMON_TOOLS}/ant-contrib-1.0b2-bin.zip" dest="${tmpdir}/ant-contrib-1.0b2-bin.zip_" overwrite="true" />
+		<copy file="${tmpdir}/ant-contrib-1.0b2-bin.zip_/ant-contrib/lib/ant-contrib.jar" tofile="${COMMON_TOOLS}/ant-contrib.jar" failonerror="true" />
+		<delete dir="${tmpdir}/ant-contrib-1.0b2-bin.zip_" includeemptydirs="true" quiet="true" />
+	</target>
+
+	<target name="generate.composite.site">
+		<if>
+			<or>
+				<equals arg1="${UPDATE_SITE}" arg2="$${UPDATE_SITE}"/>
+				<equals arg1="${UPDATE_SITE}" arg2="NONE"/>
+			</or>
+			<then>
+				<var name="UPDATE_SITE" unset="true"/>
+				<var name="UPDATE_SITE" value=""/>
+				<echo>UPDATE_SITE is not set. To add this site to the composite, use -DUPDATE_SITE=http://update/site/to/use/</echo>
+			</then>
+		</if>
+		<if>
+			<or>
+				<equals arg1="${EXTRAS_SITE}" arg2="$${EXTRAS_SITE}"/>
+				<equals arg1="${EXTRAS_SITE}" arg2="NONE"/>
+			</or>
+			<then>
+				<var name="EXTRAS_SITE" unset="true"/>
+				<var name="EXTRAS_SITE" value=""/>
+				<echo>EXTRAS_SITE is not set. To add this site to the composite, use -DEXTRAS_SITE=http://extras/site/to/use/</echo>
+			</then>
+		</if>
+
+		<condition property="compositeName" 
+			value="JBoss Developer Studio Central - composite staging site" 
+			 else="JBoss Tools Central - composite staging site">
+    	<equals arg1="${PREFIX}" arg2="devstudio"/>
+  	</condition>
+  	<condition property="compositeURLs" 
+  		value="http://www.qa.jboss.com/binaries/RHDS/targetplatforms/jbdevstudiotarget/${TARGET_PLATFORM_VERSION}/REPO/,${UPDATE_SITE},${EXTRAS_SITE}"
+  		else="http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/${TARGET_PLATFORM_VERSION}/REPO/,${UPDATE_SITE},${EXTRAS_SITE}">
+    	<equals arg1="${PREFIX}" arg2="devstudio"/>
+  	</condition>
+
+		<script language="javascript">
+		<![CDATA[
+		  property = project.setProperty("now",Math.floor((new Date()).getTime()));
+		]]>
+		</script>
+
+		<mkdir dir="${project.build.directory}/discovery-site/"/>
+
+		<antcall target="generate.composite.xml.file">
+			<param name="compositeName" value="${compositeName}"/>
+			<param name="compositeURLs" value="${compositeURLs}"/>
+			<param name="compositeType" value="org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository"/>
+			<param name="compositeClass" value="compositeMetadataRepository"/>
+			<param name="compositeFile" value="${project.build.directory}/discovery-site/compositeContent.xml"/>
+		</antcall>
+		<antcall target="generate.composite.xml.file">
+			<param name="compositeName" value="${compositeName}"/>
+			<param name="compositeURLs" value="${compositeURLs}"/>
+			<param name="compositeType" value="org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository"/>
+			<param name="compositeClass" value="compositeArtifactRepository"/>
+			<param name="compositeFile" value="${project.build.directory}/discovery-site/compositeArtifacts.xml"/>
+		</antcall>
+	</target>
+
+	<target name="generate.composite.xml.file">
+		<!-- fileType is either org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository or org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository -->
+		<property name="compositeName" value="JBoss Tools Central - composite staging site"/>
+		<property name="compositeURLs" value="http://1,http://2,http://3"/>
+		<property name="compositeType" value="org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository"/>
+		<property name="compositeClass" value="compositeArtifactRepository"/>
+		<property name="compositeFile" value="${project.build.directory}/discovery-site/compositeArtifacts.xml"/>
+
+    <echo file="${compositeFile}">&lt;?xml version='1.0' encoding='UTF-8'?&gt;
+&lt;?${compositeClass} version='1.0.0'?&gt;
+&lt;repository name='${compositeName}' type='${compositeType}' version='1.0.0'&gt;
+  &lt;properties size='2'&gt;
+    &lt;property name='p2.timestamp' value='${now}'/&gt;
+    &lt;property name='p2.compressed' value='true'/&gt;
+  &lt;/properties&gt;
+</echo>
+		<var name="compositeURLCount" value="0"/>
+		<for list="${compositeURLs}" param="cURL">
+		  <sequential>
+		    <math result="compositeURLCount" operand1="${compositeURLCount}" operation="+" operand2="1" datatype="int" />
+		  </sequential>
+		</for>
+		<echo file="${compositeFile}" append="true">  &lt;children size='${compositeURLCount}'&gt;
+</echo>
+		<for list="${compositeURLs}" param="cURL">
+		  <sequential>
+		    <echo file="${compositeFile}" append="true">  	&lt;child location='@{cURL}'/&gt;
+</echo>
+		  </sequential>
+		</for>
+		<echo file="${compositeFile}" append="true">  &lt;/children&gt;
+&lt;/repository&gt;</echo>
+	</target>
+
+	<target name="generate.directory.xml">
+		<echo level="debug">project.build.directory = ${project.build.directory}</echo>
+		<!-- get filename matching org.jboss.tools.central.discovery_1.2.0.Alpha1-v20111013-0511-B1234.jar, then generate replacement directory.xml file -->
+		<path id="central.discovery.jar.id">
+			<fileset dir="${project.build.directory}">
+				<include name="*.central.discovery*.jar" />
+				<exclude name="*-sources.jar" />
+			</fileset>
+		</path>
+		<property name="central.discovery.path" refid="central.discovery.jar.id" />
+		<echo level="debug">central.discovery.path = ${central.discovery.path}</echo>
+		<basename property="central.discovery.jar" file="${central.discovery.path}" />
+		<if>
+			<not>
+				<equals arg1="${central.discovery.jar}" arg2="" trim="true" />
+			</not>
+			<then>
+				<!-- from 2011-09-21_01-11-04 to 20110921-0111 -->
+				<propertyregex override="true" property="VERSION_CLEAN" defaultvalue="${VERSION}" input="${VERSION}" regexp="([0-9]+.[0-9]+.[0-9]+)-SNAPSHOT" replace="\1"/>
+				<mkdir dir="${project.build.directory}/discovery-site/plugins"/>
+				<if>
+					<isset property="BUILD_ID"/>
+					<then>
+						<propertyregex override="true" property="BUILD_TS" defaultvalue="${BUILD_ID}" input="${BUILD_ID}" regexp="([0-9]+)-([0-9]+)-([0-9]+)_([0-9]+)-([0-9]+)-([0-9]+)" replace="v\1\2\3-\4\5" />
+
+						<propertyregex override="true" property="central.discovery.jar.renamed" defaultvalue="${central.discovery.jar}" input="${central.discovery.jar}" regexp="-[0-9.]+-SNAPSHOT" replace="_${VERSION_CLEAN}.${BUILD_ALIAS}-${BUILD_TS}-B${BUILD_NUMBER}"/>
+					</then>
+					<else>
+						<tstamp>
+    					<format property="BUILD_TS" pattern="yyyyMMdd-hhmm" timezone="GMT+0"/>
+  					</tstamp>
+						<propertyregex override="true" property="central.discovery.jar.renamed" defaultvalue="${central.discovery.jar}" input="${central.discovery.jar}" regexp="-[0-9.]+-SNAPSHOT" replace="_${VERSION_CLEAN}.${BUILD_ALIAS}-${BUILD_TS}"/>
+					</else>
+				</if>
+				<copy file="${central.discovery.path}" tofile="${project.build.directory}/discovery-site/plugins/${central.discovery.jar.renamed}"/>
+				<echo level="verbose">Generate ${project.build.directory}/discovery-site/${PREFIX}-directory.xml pointing at discovery jar: ${project.build.directory}/discovery-site/plugins/${central.discovery.jar.renamed}</echo>
+				<echo file="${project.build.directory}/discovery-site/${PREFIX}-directory.xml">&lt;?xml version='1.0' encoding='UTF-8'?>
+&lt;directory xmlns="http://www.eclipse.org/mylyn/discovery/directory/">
+&lt;entry url="plugins/${central.discovery.jar.renamed}" permitCategories="true"/>
+&lt;/directory>
+</echo>
+			</then>
+		</if>
+	</target>
+
+		<!-- for all lines in the plugin.xml file containing something like
+			siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/"
+			or
+			siteUrl="http://download.jboss.org/jbosstools/updates/development/kepler/central/core/"
+			update the file and point at 
+			siteUrl="${CENTRAL_SITE}" -->
+	<target name="adjust.plugin.xml">
+		<if>
+			<or>
+				<equals arg1="${CENTRAL_SITE}" arg2="$${CENTRAL_SITE}"/>
+				<equals arg1="${CENTRAL_SITE}" arg2="NONE"/>
+			</or>
+			<then>
+				<var name="CENTRAL_SITE" unset="true"/>
+				<var name="CENTRAL_SITE" value=""/>
+				<echo>
+============================================================================
+To replace URLs in discovery plugin's plugin.xml, use 
+
+  -DCENTRAL_SITE=http://localhost:8080/discovery/core/${project.artifactId}/target/discovery-site/
+
+Or, to use this local site w/o changing the plugin.xml code, run eclipse with:
+</echo>
+<if>
+  <isset property="BUILD_URL"/>
+  <then>
+    <echo>
+  -vmargs -Djboss.discovery.site.url=${BUILD_URL}/artifact/sources/discovery/core/${project.artifactId}/target/discovery-site/ \
+  -Djboss.discovery.directory.url=${BUILD_URL}/artifact/sources/discovery/core/${project.artifactId}/target/discovery-site/devstudio-directory.xml
+</echo>
+  </then>
+  <else>
+    <echo>
+  -vmargs -Djboss.discovery.site.url=http://localhost:8080/discovery/core/${project.artifactId}/target/discovery-site/ \
+  -Djboss.discovery.directory.url=http://localhost:8080/discovery/core/${project.artifactId}/target/discovery-site/devstudio-directory.xml
+</echo>
+  </else>
+</if>
+<echo>============================================================================
+</echo>
+			</then>
+			<else>
+				<echo level="verbose">Unpack ${project.build.directory}/discovery-site/plugins/${central.discovery.jar.renamed}</echo>
+				<unzip src="${project.build.directory}/discovery-site/plugins/${central.discovery.jar.renamed}" dest="${tmpdir}/unpacked.jar/"/>
+				<echo>
+============================================================================
+Update jboss.org/jboss.com siteUrl values in plugin.xml to point instead at: 
+
+  ${CENTRAL_SITE}
+
+To use this site, run Eclipse with:
+
+  -vmargs -Djboss.discovery.site.url=${CENTRAL_SITE} \
+  -Djboss.discovery.directory.url=${CENTRAL_SITE}/devstudio-directory.xml
+
+============================================================================
+</echo>
+				<loadfile property="plugin.xml.contents" srcFile="${tmpdir}/unpacked.jar/plugin.xml"/>
+        <!-- Option 1: simple replacement -->
+        <propertyregex global="true" override="true" property="plugin.xml.contents.cleaned" defaultvalue="${plugin.xml.contents}" input="${plugin.xml.contents}" 
+          regexp="siteUrl=&quot;(https://devstudio.jboss.com|http://download.jboss.org/jbosstools/).+&quot;" 
+          replace="siteUrl=&quot;${CENTRAL_SITE}&quot;"
+        />
+        <!-- Option 2: JBIDE-13335 complex replacement while retaining jboss.discovery.site.url 
+             This allows us to rebuild the plugins to have plugin.xml point at 7.0/ (or stable/) in the source code, 
+             but have Jenkins job to override source code value and generate binary jar pointing at 7.0-development/ (or development/)
+             Then when we're ready for GA we only need to update the job & respin to set back the correct stable / 7.0 site value
+
+             And, because of the jboss.discovery.site.url value, can still test a local or internal version of the site w/o it being pushed to public site
+        -->
+        <propertyregex global="true" override="true" property="plugin.xml.contents.cleaned" defaultvalue="${plugin.xml.contents}" input="${plugin.xml.contents}" 
+          regexp="siteUrl=&quot;\$\{jboss.discovery.site.url:(https://devstudio.jboss.com|http://download.jboss.org/jbosstools/).+\}&quot;" 
+          replace="siteUrl=&quot;$${jboss.discovery.site.url:${CENTRAL_SITE}}&quot;"
+        />
+				<echo file="${tmpdir}/unpacked.jar/plugin.xml">${plugin.xml.contents.cleaned}</echo>
+				<!-- <echo level="verbose">${plugin.xml.contents.cleaned}</echo> -->
+				<zip destfile="${project.build.directory}/discovery-site/plugins/${central.discovery.jar.renamed}" update="true" basedir="${tmpdir}/unpacked.jar" includes="plugin.xml" />
+			</else>
+		</if>
+	</target>
+
+	<target name="cleanup">
+		<delete dir="${tmpdir}" quiet="true" includeemptydirs="true" />
+	</target>
+
+</project>
