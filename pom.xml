@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion> 
+	<parent>
+		<groupId>org.jboss.tools</groupId>
+		<artifactId>parent</artifactId>
+		<version>4.1.0.Beta1-SNAPSHOT</version>
+		<relativePath>../jbosstools-build/parent/pom.xml</relativePath>
+	</parent>
+	<groupId>org.jboss.tools.central</groupId>
+	<artifactId>discovery</artifactId>
+	<version>4.1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>jbosstools/org.jboss.tools.central.discovery</module>
+		<module>jbdevstudio/com.jboss.jbds.central.discovery</module>
+	</modules>
+</project>
+<!--
+
+Build like this:
+
+mvn clean install -f jbosstools/org.jboss.tools.central.discovery/pom.xml \
+  -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/trunk/ \
+  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/updates/kepler/extras/
+
+or
+
+mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery/pom.xml \
+-DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_trunk/all/ \
+-DEXTRAS_SITE=https://devstudio.jboss.com/updates/7.0-staging/extras/
+
+For more examples and info, see README.md
+-->
