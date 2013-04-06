@@ -1,85 +1,94 @@
-To test a site built w/ Jenkins:
+# The JBoss Tools Discovery project
 
-0. Run a job, such as https://jenkins.mw.lab.eng.bos.redhat.com/hudson/view/DevStudio/view/DevStudio_Trunk/job/devstudio.discovery_trunk/
+## Summary
 
-1. Install Eclipse (eg., Eclipe 4.3 Kepler JEE bundle)
+The _JBoss Tools Discovery_ project provides a mechanism for building a plugin jar, directory.xml file, and a composite update site used by [JBoss Central](https://github.com/jbosstools/jbosstools-central).
 
-2. Launch Eclipse:
+## Install
 
-{code}
-  eclipse -vmargs -Djboss.discovery.directory.url=http://download.jboss.org/jbosstools/discovery/nightly/core/trunk/jbosstools-directory.xml
-{code}
+ To use a Discovery site, you need to first install JBoss Central, which is part of [JBoss Tools](http://jboss.org/tools). Central will then connect to a Discovery site via the default (or other) directory.xml file, which will link to the plugin jar, which will in turn list a catalogue of available updates, installable from a composite site.
 
-3. Install JBoss Community Central feature from   http://download.jboss.org/jbosstools/discovery/nightly/core/trunk/
+## Use
 
-4. Restart. Review Central's Software/Update tab. Choose connectors/feature groups to install.
+Both the URL for the directory.xml and the URL used within the plugin (to which the directory.xml refers) can be overridden via the commandline when launching Eclipse (or JBoss Developer Studio). Via commandline (or inside your eclipse.ini / jbdevstudio.ini file), you can specify these arguments:
 
---------------------------------
+  eclipse -vmargs \
+    -Djboss.discovery.directory.url=http://download.jboss.org/jbosstools/discovery/nightly/core/trunk/jbosstools-directory.xml
+    -Djboss.discovery.site.url=http://download.jboss.org/jbosstools/discovery/nightly/core/trunk/
 
+  or
 
-To build a site locally, you must pass in the following commandline arguments (target platform URL is calculated from parent pom's TARGET_PLATFORM_VERSION):
+  jbdevstudio -vmargs \
+    -Djboss.discovery.directory.url=https://devstudio.jboss.com/updates/7.0-development/devstudio-directory.xml
+    -Djboss.discovery.site.url=https://devstudio.jboss.com/updates/7.0-development/central/core/
 
-mvn clean install -f jbosstools/org.jboss.tools.central.discovery/pom.xml \
--DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/trunk/ \
--DEXTRAS_SITE=http://download.jboss.org/jbosstools/updates/kepler/extras/
+## Get the code
 
-or
+The easiest way to get started with the code is to [create your own fork](http://help.github.com/forking/), 
+and then clone your fork:
 
-mvn clean install -f jbosstools/org.jboss.tools.central.discovery/pom.xml \
--DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/4.1.kepler/ \
--DEXTRAS_SITE=http://download.jboss.org/jbosstools/updates/kepler/extras/4.30.1/
+    $ git clone git@github.com:<you>/jbosstools-discovery.git
+    $ cd jbosstools-discovery
+    $ git remote add upstream git://github.com/jbosstools/jbosstools-discovery.git
+	
+At any time, you can pull changes from the upstream and merge them onto your master:
 
-or
+    $ git checkout master               # switches to the 'master' branch
+    $ git pull upstream master          # fetches all 'upstream' changes and merges 'upstream/master' onto your 'master' branch
+    $ git push origin                   # pushes all the updates to your fork, which should be in-sync with 'upstream'
 
-mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery/pom.xml \
--DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_trunk/all/ \
--DEXTRAS_SITE=https://devstudio.jboss.com/updates/7.0-staging/extras/
+The general idea is to keep your 'master' branch in-sync with the
+'upstream/master'.
 
-or
+## Building JBoss Tools Discovery
 
-mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery/pom.xml \
--DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_70/all/ \
--DEXTRAS_SITE=https://devstudio.jboss.com/updates/7.0-development/extras/4.30.1/
+To build _JBoss Tools Discovery_ requires specific versions of Java and
+Maven. Also, there is some Maven setup. The [How to Build JBoss Tools with Maven 3](https://community.jboss.org/wiki/HowToBuildJBossToolsWithMaven3)
+document will guide you through that setup.
 
-You can also point at an existing Central site, if you're not trying to test your locally-built site, using one of these:
+This command will run the build:
 
--DCENTRAL_SITE=http://download.jboss.org/jbosstools/discovery/nightly/core/trunk/
--DCENTRAL_SITE=http://download.jboss.org/jbosstools/discovery/nightly/core/4.1.kepler/
--DCENTRAL_SITE=https://www.qa.jboss.com/binaries/RHDS/discovery/nightly/core/trunk/
--DCENTRAL_SITE=https://www.qa.jboss.com/binaries/RHDS/discovery/nightly/core/4.1.kepler/
+    $ mvn clean install
 
---------------------------------
+If you just want to check if things compiles/builds you can run:
 
+    $ mvn clean install -DskipTest=true
 
-To test a local site:
+But *do not* push changes without having the new and existing unit tests pass!
+ 
+## Contribute fixes and features
 
-0. Run a local web server, so you can access the directory.xml via an http:// URL. You have many options for this. Here's one:
+_JBoss Tools Discovery_ is open source, and we welcome anybody that wants to
+participate and contribute!
 
-  su
-  cd /tmp; wget -nc https://raw.github.com/elonen/nanohttpd/master/NanoHTTPD.java
-  # assuming sources checked out into /home/user/devstudio_trunk/
-  javac NanoHTTPD.java; java NanoHTTPD -d /home/user/devstudio_trunk/product/ -p 8080
+If you want to fix a bug or make any changes, please log an issue in
+the [JBoss Tools JIRA](https://issues.jboss.org/browse/JBDE)
+describing the bug or new feature and give it a component type of
+`build`. Then we highly recommend making the changes on a
+topic branch named with the JIRA issue number. For example, this
+command creates a branch for the JBIDE-1234 issue:
 
-1. Install Eclipse (eg., Eclipe 4.3 Kepler JEE bundle)
+	$ git checkout -b jbide-1234
 
-2. Launch Eclipse:
+After you're happy with your changes and a full build (with unit
+tests) runs successfully, commit your changes on your topic branch
+(with good comments). Then it's time to check for any recent changes
+that were made in the official repository:
 
-{code}
-  eclipse     -vmargs -Djboss.discovery.directory.url=http://localhost:8080/discovery/jbosstools/org.jboss.tools.central.discovery/target/discovery-site/jbosstools-directory.xml
-    or
-  jbdevstudio -vmargs -Djboss.discovery.directory.url=http://localhost:8080/discovery/jbdevstudio/com.jboss.jbds.central.discovery/target/discovery-site/devstudio-directory.xml
-{code}
+	$ git checkout master               # switches to the 'master' branch
+	$ git pull upstream master          # fetches all 'upstream' changes and merges 'upstream/master' onto your 'master' branch
+	$ git checkout jbide-1234           # switches to your topic branch
+	$ git rebase master                 # reapplies your changes on top of the latest in master
+	                                      (i.e., the latest from master will be the new base for your changes)
 
-If you did not pass in a CENTRAL_SITE value above to regenerate the plugin.xml w/ a new value, and want to override the value set in plugin.xml via commandline flag, do this:
+If the pull grabbed a lot of changes, you should rerun your build with
+tests enabled to make sure your changes are still good.
 
-{code}
-  eclipse     -vmargs -Djboss.discovery.directory.url=http://localhost:8080/discovery/jbosstools/org.jboss.tools.central.discovery/target/discovery-site/jbosstools-directory.xml -Djboss.discovery.site.url=http://localhost:8080/discovery/jbosstools/org.jboss.tools.central.discovery/target/discovery-site/
-    or
-  jbdevstudio -vmargs -Djboss.discovery.directory.url=http://localhost:8080/discovery/jbdevstudio/com.jboss.jbds.central.discovery/target/discovery-site/devstudio-directory.xml -Djboss.discovery.site.url=http://localhost:8080/discovery/jbdevstudio/com.jboss.jbds.central.discovery/target/discovery-site/
-{code}
+You can then push your topic branch and its changes into your public fork repository:
 
-3. Install JBoss Community Central feature from                http://localhost:8080/discovery/jbosstools/org.jboss.tools.central.discovery/target/discovery-site/
-    or
-   Install JBoss Developer Studio (Core Features) feature from http://localhost:8080/discovery/jbdevstudio/com.jboss.jbds.central.discovery/target/discovery-site/
+	$ git push origin jbide-1234         # pushes your topic branch into your public fork of JBoss Tools Discovery
 
-4. Restart. Review Central's Software/Update tab. Choose connectors/feature groups to install.
+And then [generate a pull-request](http://help.github.com/pull-requests/) where we can
+review the proposed changes, comment on them, discuss them with you,
+and if everything is good merge the changes right into the official
+repository.
