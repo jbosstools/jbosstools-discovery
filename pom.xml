@@ -30,5 +30,5 @@ mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery/pom.xml \
 -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_trunk/all/ \
 -DEXTRAS_SITE=https://devstudio.jboss.com/updates/7.0-staging/extras/
 
-For more examples and info, see README.md
+For more examples and info, see README.*
 -->
