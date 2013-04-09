@@ -1,14 +1,13 @@
 <project default="basic.build" name="discovery site builder">
 	<!--
 	To test output, run maven in this folder:
-		$ mvn install -DPREFIX=jbosstools -DBUILD_ALIAS=Alpha1 -DBUILD_ID=2012-11-29_12-55-00 -DBUILD_NUMBER=6969 -DUPDATE_SITE=... -DEXTRAS_SITE=... -DCENTRAL_SITE=...
-		$ mvn install -DPREFIX=devstudio  -DBUILD_ALIAS=Alpha1 -DBUILD_ID=2012-11-29_12-55-00 -DBUILD_NUMBER=4200 -DUPDATE_SITE=... -DEXTRAS_SITE=... -DCENTRAL_SITE=...
+		$ mvn install -DPREFIX=jbosstools -DBUILD_ALIAS=Alpha1 -DBUILD_ID=2012-11-29_12-55-00 -DBUILD_NUMBER=6969 -DUPDATE_SITE=... -DEXTRAS_SITE=...
+		$ mvn install -DPREFIX=devstudio  -DBUILD_ALIAS=Alpha1 -DBUILD_ID=2012-11-29_12-55-00 -DBUILD_NUMBER=4200 -DUPDATE_SITE=... -DEXTRAS_SITE=...
 
 	-->
 	<!-- pass in these values from Maven -->
 	<property name="UPDATE_SITE" value=""/>
 	<property name="EXTRAS_SITE" value=""/>
-	<property name="CENTRAL_SITE" value=""/>
 
 	<!-- if ${WORKSPACE}/site folder exists, target that folder; else generate here. -->
 	<condition property="output.dir" value="${WORKSPACE}/results" else="${basedir}">
@@ -43,7 +42,7 @@ $java.home = ${java.home}</echo>
 		</taskdef>
 	</target>
 
-	<target name="basic.build" description="discovery plugin build extra processing steps" depends="init,generate.directory.xml,generate.composite.site,adjust.plugin.xml,cleanup" />
+	<target name="basic.build" description="discovery plugin build extra processing steps" depends="init,generate.directory.xml,generate.composite.site,cleanup" />
 
 	<target name="get.ant-contrib" unless="ant-contrib.jar.exists">
 		<property name="ANTCONTRIB_MIRROR" value="http://sourceforge.net/projects/ant-contrib/files/ant-contrib/ant-contrib-1.0b2" />
@@ -190,87 +189,6 @@ $java.home = ${java.home}</echo>
 &lt;/directory>
 </echo>
 			</then>
-		</if>
-	</target>
-
-		<!-- for all lines in the plugin.xml file containing something like
-			siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/"
-			or
-			siteUrl="http://download.jboss.org/jbosstools/updates/development/kepler/central/core/"
-			update the file and point at 
-			siteUrl="${CENTRAL_SITE}" -->
-	<target name="adjust.plugin.xml">
-		<if>
-			<or>
-				<equals arg1="${CENTRAL_SITE}" arg2="$${CENTRAL_SITE}"/>
-				<equals arg1="${CENTRAL_SITE}" arg2="NONE"/>
-			</or>
-			<then>
-				<var name="CENTRAL_SITE" unset="true"/>
-				<var name="CENTRAL_SITE" value=""/>
-				<echo>
-============================================================================
-To replace URLs in discovery plugin's plugin.xml, use 
-
-  -DCENTRAL_SITE=http://localhost:8080/discovery/core/${project.artifactId}/target/discovery-site/
-
-Or, to use this local site w/o changing the plugin.xml code, run eclipse with:
-</echo>
-<if>
-  <isset property="BUILD_URL"/>
-  <then>
-    <echo>
-  -vmargs -Djboss.discovery.site.url=${BUILD_URL}/artifact/sources/discovery/core/${project.artifactId}/target/discovery-site/ \
-  -Djboss.discovery.directory.url=${BUILD_URL}/artifact/sources/discovery/core/${project.artifactId}/target/discovery-site/devstudio-directory.xml
-</echo>
-  </then>
-  <else>
-    <echo>
-  -vmargs -Djboss.discovery.site.url=http://localhost:8080/discovery/core/${project.artifactId}/target/discovery-site/ \
-  -Djboss.discovery.directory.url=http://localhost:8080/discovery/core/${project.artifactId}/target/discovery-site/devstudio-directory.xml
-</echo>
-  </else>
-</if>
-<echo>============================================================================
-</echo>
-			</then>
-			<else>
-				<echo level="verbose">Unpack ${project.build.directory}/discovery-site/plugins/${central.discovery.jar.renamed}</echo>
-				<unzip src="${project.build.directory}/discovery-site/plugins/${central.discovery.jar.renamed}" dest="${tmpdir}/unpacked.jar/"/>
-				<echo>
-============================================================================
-Update jboss.org/jboss.com siteUrl values in plugin.xml to point instead at: 
-
-  ${CENTRAL_SITE}
-
-To use this site, run Eclipse with:
-
-  -vmargs -Djboss.discovery.site.url=${CENTRAL_SITE} \
-  -Djboss.discovery.directory.url=${CENTRAL_SITE}/devstudio-directory.xml
-
-============================================================================
-</echo>
-				<loadfile property="plugin.xml.contents" srcFile="${tmpdir}/unpacked.jar/plugin.xml"/>
-        <!-- Option 1: simple replacement -->
-        <propertyregex global="true" override="true" property="plugin.xml.contents.cleaned" defaultvalue="${plugin.xml.contents}" input="${plugin.xml.contents}" 
-          regexp="siteUrl=&quot;(https://devstudio.jboss.com|http://download.jboss.org/jbosstools/).+&quot;" 
-          replace="siteUrl=&quot;${CENTRAL_SITE}&quot;"
-        />
-        <!-- Option 2: JBIDE-13335 complex replacement while retaining jboss.discovery.site.url 
-             This allows us to rebuild the plugins to have plugin.xml point at 7.0/ (or stable/) in the source code, 
-             but have Jenkins job to override source code value and generate binary jar pointing at 7.0-development/ (or development/)
-             Then when we're ready for GA we only need to update the job & respin to set back the correct stable / 7.0 site value
-
-             And, because of the jboss.discovery.site.url value, can still test a local or internal version of the site w/o it being pushed to public site
-        -->
-        <propertyregex global="true" override="true" property="plugin.xml.contents.cleaned" defaultvalue="${plugin.xml.contents}" input="${plugin.xml.contents}" 
-          regexp="siteUrl=&quot;\$\{jboss.discovery.site.url:(https://devstudio.jboss.com|http://download.jboss.org/jbosstools/).+\}&quot;" 
-          replace="siteUrl=&quot;$${jboss.discovery.site.url:${CENTRAL_SITE}}&quot;"
-        />
-				<echo file="${tmpdir}/unpacked.jar/plugin.xml">${plugin.xml.contents.cleaned}</echo>
-				<!-- <echo level="verbose">${plugin.xml.contents.cleaned}</echo> -->
-				<zip destfile="${project.build.directory}/discovery-site/plugins/${central.discovery.jar.renamed}" update="true" basedir="${tmpdir}/unpacked.jar" includes="plugin.xml" />
-			</else>
 		</if>
 	</target>
 

@@ -12,15 +12,15 @@ The _JBoss Tools Discovery_ project provides a mechanism for building a plugin j
 
 Both the URL for the directory.xml and the URL used within the plugin (to which the directory.xml refers) can be overridden via the commandline when launching Eclipse (or JBoss Developer Studio). Via commandline (or inside your eclipse.ini / jbdevstudio.ini file), you can specify these arguments:
 
-  eclipse -vmargs \
-    -Djboss.discovery.directory.url=http://download.jboss.org/jbosstools/discovery/nightly/core/trunk/jbosstools-directory.xml
-    -Djboss.discovery.site.url=http://download.jboss.org/jbosstools/discovery/nightly/core/trunk/
+    eclipse -vmargs \
+      -Djboss.discovery.directory.url=http://download.jboss.org/jbosstools/discovery/nightly/core/trunk/jbosstools-directory.xml
+      -Djboss.discovery.site.url=http://download.jboss.org/jbosstools/discovery/nightly/core/trunk/
 
   or
 
-  jbdevstudio -vmargs \
-    -Djboss.discovery.directory.url=https://devstudio.jboss.com/updates/7.0-development/devstudio-directory.xml
-    -Djboss.discovery.site.url=https://devstudio.jboss.com/updates/7.0-development/central/core/
+    jbdevstudio -vmargs \
+      -Djboss.discovery.directory.url=https://devstudio.jboss.com/updates/7.0-development/devstudio-directory.xml
+      -Djboss.discovery.site.url=https://devstudio.jboss.com/updates/7.0-development/central/core/
 
 ## Get the code
 

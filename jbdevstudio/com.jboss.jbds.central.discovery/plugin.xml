@@ -39,7 +39,7 @@ Tested by Red Hat.</description>
             license="Free, EPL, Other"
             name="JST Server"
             provider="Eclipse.org"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <!-- <iu id="org.eclipse.jst.server_adapters.ext.feature"/> -->
             <iu id="org.eclipse.jst.server_adapters.feature"/>
             <iu id="org.eclipse.jst.server_core.feature"/>
@@ -87,7 +87,7 @@ Tested by Red Hat.</description>
             license="Free, EPL, Other"
             name="Google Web Toolkit Designer"
             provider="Google, Inc."
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="com.google.gdt.eclipse.designer.editor.feature"/>
             <iu id="com.google.gdt.eclipse.designer.gpe.feature"/>
             <iu id="com.google.gdt.eclipse.designer.hosted.feature"/>
@@ -113,7 +113,7 @@ Tested by Red Hat.</description>
             license="Free, EPL, Other"
             name="Google Plugin + Web Toolkit"
             provider="Google, Inc."
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="com.google.gwt.eclipse.sdkbundle.feature"/>
             <iu id="com.google.gdt.eclipse.suite.e42.feature"/>
          <icon
@@ -133,7 +133,7 @@ Tested by Red Hat.</description>
             license="Free, EPL, Other"
             name="Spring IDE"
             provider="Spring IDE Developers"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="org.springframework.ide.eclipse.aop.feature"/>
             <iu id="org.springframework.ide.eclipse.autowire.feature"/>
             <iu id="org.springframework.ide.eclipse.feature"/>
@@ -172,7 +172,7 @@ Tested by Red Hat.</description>
             license="Free, EPL, Other"
             name="Atlassian Connector"
             provider="Atlassian"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="com.atlassian.connector.eclipse"/>
          <icon
                image32="images/atlassian_32.png">
@@ -192,7 +192,7 @@ Tested by Red Hat.</description>
             license="Free, EPL"
             name="Eclipse EGit"
             provider="eclipse.org"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
        <iu id="org.eclipse.jgit"/>
        <iu id="org.eclipse.egit"/>
          <icon
@@ -212,7 +212,7 @@ Tested by Red Hat.</description>
             license="Free, EPL"
             name="Eclipse EGit: Mylyn Support"
             provider="eclipse.org"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="org.eclipse.jgit"/>
             <iu id="org.eclipse.egit"/>
             <iu id="org.eclipse.egit.mylyn"/>
@@ -244,7 +244,7 @@ Tested by Red Hat.</description>
             license="Free, Subclipse License"
             name="Subclipse + SVNKit"
             provider="tigris.org"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="org.tigris.subversion.subclipse"/>
             <iu id="org.tigris.subversion.clientadapter.svnkit.feature"/>
             <iu id="com.collabnet.subversion.merge.feature"/>
@@ -270,7 +270,7 @@ Tested by Red Hat.</description>
             license="Free, Subclipse License"
             name="Subclipse + SVNKit: Mylyn Support"
             provider="tigris.org"
-	    siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+	    siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="org.tigris.subversion.subclipse"/>
             <iu id="org.tigris.subversion.clientadapter.svnkit.feature"/>
             <iu id="org.tigris.subversion.subclipse.mylyn"/>
@@ -319,7 +319,7 @@ Tested by Red Hat.</description>
             license="Free, LGPL"
             name="Eclipse Checkstyle"
             provider="eclipse-cs Project"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="net.sf.eclipsecs"/>
             <iu id="com.github.sevntu.checkstyle.checks.feature"/>
          <icon
@@ -339,7 +339,7 @@ Tested by Red Hat.</description>
             license="Free, LGPL"
             name="FindBugs"
             provider="FindBugs Project"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
 	    <!-- https://issues.jboss.org/browse/JBDS-2284 -->
 	    <iu id="edu.umd.cs.findbugs.plugin.eclipse"/>
          <icon
@@ -361,7 +361,7 @@ Tested by Red Hat.</description>
             license="Free, EPL"
             name="Mylyn Issue Tracker Connectors"
             provider="JBoss by Red Hat"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
          <iu id="org.jboss.tools.common.mylyn.feature"/>
          <iu id="com.atlassian.connector.eclipse.jira"/>
          <iu id="com.atlassian.connector.eclipse.monitor"/>
@@ -391,7 +391,7 @@ Tested by Red Hat.</description>
             license="Free, PMD License"
             name="PMD"
             provider="PMD Developers"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
 	    <!-- https://issues.jboss.org/browse/JBIDE-12562 -->
        	    <iu id="net.sourceforge.pmd.eclipse"/>
          <icon
@@ -411,7 +411,7 @@ Tested by Red Hat.</description>
             license="Free, ASL"
             name="TestNG"
             provider="Cedric Beust"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="org.testng.eclipse"/>
          <icon
                image32="images/testng_32.gif">
@@ -466,7 +466,7 @@ Tested by Red Hat.</description>
             license="Free, EPL"
             name="JBoss Maven Integration"
             provider="JBoss by Red Hat"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="org.jboss.tools.maven.feature"/>
          <icon
                image32="images/jbosstools_icon32.png">
@@ -485,7 +485,7 @@ Tested by Red Hat.</description>
             license="Free, EPL"
             name="JBoss Maven CDI Configurator"
             provider="JBoss by Red Hat"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="org.jboss.tools.maven.cdi.feature"/>
          <icon
                image32="images/jbosstools_icon32.png">
@@ -504,7 +504,7 @@ Tested by Red Hat.</description>
             license="Free, EPL"
             name="JBoss Maven GWT Configurator"
             provider="JBoss by Red Hat"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="org.jboss.tools.maven.gwt.feature"/>
             <iu id="com.google.gdt.eclipse.suite.e42.feature"/>
          <icon
@@ -524,7 +524,7 @@ Tested by Red Hat.</description>
             license="Free, EPL"
             name="JBoss Maven Hibernate Configurator"
             provider="JBoss by Red Hat"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="org.jboss.tools.maven.hibernate.feature"/>
          <icon
                image32="images/jbosstools_icon32.png">
@@ -543,7 +543,7 @@ Tested by Red Hat.</description>
             license="Free, EPL"
             name="JBoss Maven JAX-RS Configurator"
             provider="JBoss by Red Hat"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="org.eclipse.m2e.wtp.jaxrs.feature"/>
          <icon
                image32="images/m2e_32.gif">
@@ -562,7 +562,7 @@ Tested by Red Hat.</description>
             license="Free, EPL"
             name="JBoss Maven JSF Configurator"
             provider="JBoss by Red Hat"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="org.eclipse.m2e.wtp.jsf.feature"/>
          <icon
                image32="images/m2e_32.gif">
@@ -581,7 +581,7 @@ Tested by Red Hat.</description>
             license="Free, EPL"
             name="JBoss Tools Maven Packaging Configurator"
             provider="JBoss by Red Hat"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="org.jboss.tools.maven.jbosspackaging.feature"/>
             <iu id="org.eclipse.m2e.feature"/>
             <iu id="org.eclipse.m2e.wtp.feature"/>
@@ -603,7 +603,7 @@ Tested by Red Hat.</description>
             license="Free, EPL"
             name="JBoss Maven Portlet Configurator"
             provider="JBoss by Red Hat"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="org.jboss.tools.maven.portlet.feature"/>
          <icon
                image32="images/jbosstools_icon32.png">
@@ -622,7 +622,7 @@ Tested by Red Hat.</description>
             license="Free, EPL"
             name="JBoss Maven Seam Configurator"
             provider="JBoss by Red Hat"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="org.jboss.tools.maven.seam.feature"/>
          <icon
                image32="images/jbosstools_icon32.png">
@@ -641,7 +641,7 @@ Tested by Red Hat.</description>
             license="Free, EPL"
             name="JBoss Maven JPA Configurator"
             provider="JBoss by Red Hat"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="org.eclipse.m2e.wtp.jpa.feature"/>
          <icon
                image32="images/m2e_32.gif">
@@ -660,7 +660,7 @@ Tested by Red Hat.</description>
             license="Free, EPL"
             name="Maven Profile Management UI"
             provider="JBoss by Red Hat"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="org.jboss.tools.maven.profiles.feature"/>
          <icon
                image32="images/jbosstools_icon32.png">
@@ -680,7 +680,7 @@ Tested by Red Hat.</description>
             license="Free, EPL"
             name="Maven Integration for Eclipse (m2e)"
             provider="eclipse.org"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="org.eclipse.m2e.feature"/>
          <icon
                image32="images/m2e_32.gif">
@@ -699,7 +699,7 @@ Tested by Red Hat.</description>
             license="Free, EPL"
             name="Maven Integration for Eclipse JDT APT (m2e-apt)"
             provider="JBoss by Red Hat"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="org.jboss.tools.maven.apt.feature"/>
          <icon
                image32="images/m2e_32.gif">
@@ -718,7 +718,7 @@ Tested by Red Hat.</description>
             license="Free, EPL"
             name="Maven Integration for Web Tools (m2e-wtp)"
             provider="eclipse.org"
-            siteUrl="https://devstudio.jboss.com/updates/7.0-development/central/core/">
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="org.eclipse.m2e.wtp.feature"/>
          <icon
                image32="images/m2e_32.gif">
