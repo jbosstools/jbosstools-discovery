@@ -30,7 +30,7 @@ To test a local site:
 0. Run a local web server, so you can access the directory.xml via an http:// URL. You have many options for this. Here's one:
 
   su
-  cd /tmp; wget -nc https://raw.github.com/elonen/nanohttpd/master/NanoHTTPD.java
+  cd /tmp; wget -nc https://raw.github.com/elonen/nanohttpd-original/master/NanoHTTPD.java
   # assuming sources checked out into /home/user/jbosstools-discovery/
   javac NanoHTTPD.java; java NanoHTTPD -d /home/user/jbosstools-discovery/ -p 8080
 
