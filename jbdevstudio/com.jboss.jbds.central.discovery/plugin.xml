@@ -27,6 +27,7 @@ Tested by Red Hat.</description>
             relevance="80">
          <group id="org.jboss.tools.central.discovery.a.web.core" /> 
          <group id="org.jboss.tools.central.discovery.a.web.extras" />
+         <group id="org.jboss.tools.central.discovery.a.web.extras2" />
       </connectorCategory>
 
       <connectorDescriptor
@@ -146,6 +147,28 @@ Tested by Red Hat.</description>
          </icon>
          <overview
                url="http://www.springsource.com/developer">
+         </overview>
+      </connectorDescriptor>
+
+      <!-- JBIDE-14122: VJET -->
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.extras2"
+            description="Eclipse VJET JavaScript IDE, Java to Javascript Code Generation, Java Based Dom Kit"
+            id="org.eclipse.vjet.feature"
+            kind="task"
+            license="Free, EPL, Other"
+            name="Eclipse VJET"
+            provider="Eclipse.org"
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
+            <iu id="org.eclipse.vjet.js.ide.feature.group"/>
+            <iu id="org.eclipse.vjet.codegen.feature.group"/>
+            <iu id="org.eclipse.vjet.vsf.domkit.feature.group"/>
+         <icon
+               image32="images/vjet_32.png">
+         </icon>
+         <overview
+               url="http://www.eclipse.org/vjet">
          </overview>
       </connectorDescriptor>
 
