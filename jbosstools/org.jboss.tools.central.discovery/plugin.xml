@@ -33,6 +33,26 @@ Tested by Red Hat.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
+            description="Provides Tooling for Red Hat's OpenShift. Sign into your OpenShift account, create and deploy applications to the Cloud."
+            id="org.jboss.tools.openshift.feature"
+            kind="task"
+            license="EPL (Free)"
+            name="JBoss OpenShift Tools"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/core/}">
+            <iu id="org.jboss.tools.openshift.express.feature"/>
+            <iu id="org.jboss.tools.openshift.egit.integration.feature"/>
+         <icon
+               image32="images/openshift-32.png">
+         </icon>
+         <overview
+               url="http://www.jboss.org/tools">
+         </overview>
+      </connectorDescriptor>
+      
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
             description="JST Server Core, UI, Adapters, User Doc"
             id="org.eclipse.jst.server_core.feature"
             kind="task"
