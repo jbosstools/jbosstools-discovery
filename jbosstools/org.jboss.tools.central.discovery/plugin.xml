@@ -53,6 +53,63 @@ Tested by Red Hat.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
+            description="Tooling for Arquillian. Provides easy enablement of Arquillian, wizard for creating tests and run them with Arquillian."
+            id="org.jboss.tools.arquillian"
+            kind="task"
+            license="EPL (Free)"
+            name="JBoss Arquillian Tools (Experimental)"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/core/}">
+            <iu id="org.jboss.tools.arquillian.feature"/>
+         <icon
+               image32="images/arquillian_32.png">
+         </icon>
+         <overview
+               url="http://www.jboss.org/tools">
+         </overview>
+      </connectorDescriptor>
+
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
+            description="Tooling for Apache Cordova. Lets you create mobile hybrid aplications targeting multiple mobile platforms such as Android and iOS."
+            id="org.jboss.tools.aerogear.hybrid"
+            kind="task"
+            license="EPL (Free)"
+            name="JBoss Mobile Hybrid Application Development Tools (Experimental)"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/core/}">
+            <iu id="org.jboss.tools.aerogear.hybrid.feature"/>
+         <icon>
+	     image32="images/jbosstools_icon32.png"
+	 </icon>
+         <overview
+               url="http://www.jboss.org/tools">
+         </overview>
+      </connectorDescriptor>
+
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
+            description="Tooling for LiveReload. Lets you see changes in your browser when you save your html,css and javascript - no refresh required."
+            id="org.jboss.tools.livereload"
+            kind="task"
+            license="EPL (Free)"
+            name="JBoss Tools LiveReload"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/core/}">
+            <iu id="org.jboss.tools.livereload.feature"/>
+         <icon>
+	     image32="images/jbosstools_icon32.png"
+	 </icon>
+         <overview
+               url="http://www.jboss.org/tools">
+         </overview>
+      </connectorDescriptor>
+
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
             description="JST Server Core, UI, Adapters, User Doc"
             id="org.eclipse.jst.server_core.feature"
             kind="task"
