@@ -45,7 +45,9 @@ Tested by Red Hat.</description>
          <icon image32="images/arquillian_32.png"/>
          <overview url="http://www.jboss.org/tools"/>
       </connectorDescriptor>
+      -->
 
+      <!-- only in JBT
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"

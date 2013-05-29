@@ -29,6 +29,7 @@ Tested by Red Hat.</description>
          <group id="org.jboss.tools.central.discovery.a.web.extras" />
          <group id="org.jboss.tools.central.discovery.a.web.extras2" />
       </connectorCategory>
+      
       <!-- only in JBT -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
@@ -45,6 +46,7 @@ Tested by Red Hat.</description>
          <overview url="http://www.jboss.org/tools"/>
       </connectorDescriptor>
 
+      <!-- only in JBT -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
