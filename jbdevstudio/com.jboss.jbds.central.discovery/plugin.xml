@@ -30,6 +30,77 @@ Tested by Red Hat.</description>
          <group id="org.jboss.tools.central.discovery.a.web.extras2" />
       </connectorCategory>
 
+      <!-- only in JBT
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
+            description="Create and run tests with Arquillian"
+            id="org.jboss.tools.arquillian"
+            kind="task"
+            license="EPL (Free)"
+            name="JBoss Arquillian Tools (Experimental)"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
+            <iu id="org.jboss.tools.arquillian.feature"/>
+         <icon image32="images/arquillian_32.png"/>
+         <overview url="http://www.jboss.org/tools"/>
+      </connectorDescriptor>
+
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
+            description="Create hybrid mobile aplications with Apache Cordova for Android + iOS"
+            id="org.jboss.tools.aerogear.hybrid"
+            kind="task"
+            license="EPL (Free)"
+            name="JBoss Mobile Hybrid App Tools (Experimental)"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
+            <iu id="org.jboss.tools.aerogear.hybrid.feature"/>
+            <iu id="org.jboss.tools.vpe.cordovasim.feature"/>
+            <iu id="org.jboss.tools.vpe.browsersim.feature"/>
+         <icon image32="images/cordova_32.png"/>
+         <overview url="http://www.jboss.org/tools"/>
+      </connectorDescriptor>
+      -->
+
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
+            certificationId="com.jboss.jbds.discovery.certification.supported"
+            description="Provides Tooling for Red Hat's OpenShift. Sign into your OpenShift account, create and deploy applications to the Cloud."
+            id="org.jboss.tools.openshift.feature"
+            kind="task"
+            license="EPL (Free)"
+            name="JBoss OpenShift Tools"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
+            <iu id="org.jboss.tools.openshift.express.feature"/>
+            <iu id="org.jboss.tools.openshift.egit.integration.feature"/>
+         <icon
+               image32="images/openshift-32.png">
+         </icon>
+         <overview
+               url="http://www.jboss.org/tools">
+         </overview>
+      </connectorDescriptor>
+      
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
+            certificationId="com.jboss.jbds.discovery.certification.supported"
+            description="Save html, css + javascript and see changes immediately in your browser"
+            id="org.jboss.tools.livereload"
+            kind="task"
+            license="EPL (Free)"
+            name="JBoss Tools LiveReload"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
+            <iu id="org.jboss.tools.livereload.feature"/>
+         <icon image32="images/jbosstools_icon32.png"/>
+         <overview url="http://www.jboss.org/tools"/>
+      </connectorDescriptor>
+
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
@@ -750,7 +821,7 @@ Tested by Red Hat.</description>
                url="http://www.eclipse.org/m2e-wtp/">
          </overview>
       </connectorDescriptor>
-	</extension>
+    </extension>
 	
     <extension point="org.jboss.tools.central.proxyWizard">
       <proxyWizard 
@@ -817,5 +888,5 @@ Tested by Red Hat.</description>
           wizardId="org.eclipse.m2e.core.wizards.Maven2ProjectWizard"
           requiredComponentIds="org.eclipse.m2e.feature">
       </proxyWizard>
-    </extension>		
+    </extension>	
 </plugin>

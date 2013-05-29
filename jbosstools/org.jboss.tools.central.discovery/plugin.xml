@@ -29,6 +29,38 @@ Tested by Red Hat.</description>
          <group id="org.jboss.tools.central.discovery.a.web.extras" />
          <group id="org.jboss.tools.central.discovery.a.web.extras2" />
       </connectorCategory>
+      <!-- only in JBT -->
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
+            description="Create and run tests with Arquillian"
+            id="org.jboss.tools.arquillian"
+            kind="task"
+            license="EPL (Free)"
+            name="JBoss Arquillian Tools (Experimental)"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/core/}">
+            <iu id="org.jboss.tools.arquillian.feature"/>
+         <icon image32="images/arquillian_32.png"/>
+         <overview url="http://www.jboss.org/tools"/>
+      </connectorDescriptor>
+
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
+            description="Create hybrid mobile aplications with Apache Cordova for Android + iOS"
+            id="org.jboss.tools.aerogear.hybrid"
+            kind="task"
+            license="EPL (Free)"
+            name="JBoss Mobile Hybrid App Tools (Experimental)"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/core/}">
+            <iu id="org.jboss.tools.aerogear.hybrid.feature"/>
+            <iu id="org.jboss.tools.vpe.cordovasim.feature"/>
+            <iu id="org.jboss.tools.vpe.browsersim.feature"/>
+         <icon image32="images/cordova_32.png"/>
+         <overview url="http://www.jboss.org/tools"/>
+      </connectorDescriptor>
 
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
@@ -50,6 +82,21 @@ Tested by Red Hat.</description>
          </overview>
       </connectorDescriptor>
       
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
+            description="Save html, css + javascript and see changes immediately in your browser"
+            id="org.jboss.tools.livereload"
+            kind="task"
+            license="EPL (Free)"
+            name="JBoss Tools LiveReload"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/core/}">
+            <iu id="org.jboss.tools.livereload.feature"/>
+         <icon image32="images/jbosstools_icon32.png"/>
+         <overview url="http://www.jboss.org/tools"/>
+      </connectorDescriptor>
+
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
@@ -742,8 +789,7 @@ Tested by Red Hat.</description>
                url="http://www.eclipse.org/m2e-wtp/">
          </overview>
       </connectorDescriptor>
-
-	</extension>
+    </extension>
 	
     <extension point="org.jboss.tools.central.proxyWizard">
       <proxyWizard 
@@ -801,7 +847,7 @@ Tested by Red Hat.</description>
           iconPath="images/wizards/spring_wiz.gif"
           wizardId="org.jboss.tools.central.wizards.NewSpringMvcProjectWizard">
       </proxyWizard>
-      <proxyWizard 
+      <proxyWizard
           id="maven.wizard" 
           description="%maven.wizard.description"
           label="Maven Project"

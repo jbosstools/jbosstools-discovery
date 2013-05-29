@@ -8,7 +8,7 @@ or
 
 mvn clean install -f jbosstools/org.jboss.tools.central.discovery/pom.xml \
 -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/4.1.kepler/ \
--DEXTRAS_SITE=http://download.jboss.org/jbosstools/updates/kepler/extras/4.30.2/
+-DEXTRAS_SITE=http://download.jboss.org/jbosstools/updates/kepler/extras/4.30.4/
 
 or
 
@@ -20,7 +20,7 @@ or
 
 mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery/pom.xml \
 -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_70/all/ \
--DEXTRAS_SITE=https://devstudio.jboss.com/updates/7.0-staging/extras/4.30.2/
+-DEXTRAS_SITE=https://devstudio.jboss.com/updates/7.0-staging/extras/4.30.4/
 
 --------------------------------
 
