@@ -13,13 +13,13 @@ mvn clean install -f jbosstools/org.jboss.tools.central.discovery/pom.xml \
 or
 
 mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery/pom.xml \
--DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_trunk/all/ \
+-DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_master/all/repo/ \
 -DEXTRAS_SITE=https://devstudio.jboss.com/updates/7.0-staging/extras/
 
 or
 
 mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery/pom.xml \
--DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_70/all/ \
+-DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_70/all/repo/ \
 -DEXTRAS_SITE=https://devstudio.jboss.com/updates/7.0-staging/extras/4.30.4/
 
 --------------------------------
