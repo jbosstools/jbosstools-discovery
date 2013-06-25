@@ -17,10 +17,10 @@ Tested by Red Hat.</description>
       </certification>
       <certification id="com.jboss.jbds.discovery.certification.external" name="External" url="https://devstudio.jboss.com">
          <description>
-Tested by Red Hat. However, as these plugins are maintained by an external vendor and 
-hosted on externally-controlled sites, it is possible that content may change at any 
-time and without warning. We will make a best effort attempt to monitor these vendors and 
-execute appropriate tests as soon as possible, reporting issues to the vendors as required.</description>
+Tested by Red Hat. However, as these plugins are hosted by third party providers, it 
+is possible that content may change at any time and without prior notice. We will 
+make an attempt to monitor these third party sites and execute appropriate tests 
+as soon as reasonable, reporting issues to these providers as required.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
       
