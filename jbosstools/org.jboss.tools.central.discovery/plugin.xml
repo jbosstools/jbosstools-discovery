@@ -15,6 +15,14 @@ Supported by Red Hat.</description>
 Tested by Red Hat.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
+      <certification id="com.jboss.jbds.discovery.certification.external" name="External" url="https://devstudio.jboss.com">
+         <description>
+Tested by Red Hat. However, as these plugins are hosted by third party providers, it 
+is possible that content may change at any time and without prior notice. We will 
+make an attempt to monitor these third party sites and execute appropriate tests 
+as soon as reasonable, reporting issues to these providers as required.</description>
+         <icon image48="images/redhat_48.png"></icon>
+      </certification>
       
       <!-- use connectorCategory relevance value to sort from largest (80) to smallest (20) -->
 
