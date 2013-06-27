@@ -64,11 +64,18 @@ To test a site built w/ Jenkins:
 
 {code}
   eclipse -vmargs \
-          -Djboss.discovery.directory.url=http://download.jboss.org/jbosstools/discovery/nightly/core/trunk/jbosstools-directory.xml
+          -Djboss.discovery.directory.url=http://download.jboss.org/jbosstools/discovery/nightly/core/trunk/jbosstools-directory.xml \
           -Djboss.discovery.site.url=http://download.jboss.org/jbosstools/discovery/nightly/core/trunk/
 {code}
 
 3. Install JBoss Community Central feature from   http://download.jboss.org/jbosstools/discovery/nightly/core/trunk/
 
-4. Restart. Review Central's Software/Update tab. Choose connectors/feature groups to install.
+4. Restart. Review Central > Software/Update tab. Choose connectors/feature groups to install.
 
+5. Or, launch JBDS like this:
+
+{code}
+./jbdevstudio -vmargs \
+          -Djboss.discovery.directory.url=http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/core/trunk/devstudio-directory.xml \
+          -Djboss.discovery.site.url=http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/core/trunk/
+{code}
