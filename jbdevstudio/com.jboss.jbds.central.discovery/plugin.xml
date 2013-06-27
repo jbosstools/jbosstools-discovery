@@ -24,6 +24,15 @@ these third party sites and execute appropriate tests as soon as
 reasonable, reporting issues to these providers as required.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
+      <certification id="com.jboss.jbds.discovery.certification.experimental" name="Experimental" url="https://devstudio.jboss.com">
+         <description>
+Tested by Red Hat. However, as these are experimental plugins, 
+it is possible that their content may change at any time and 
+without prior notice. We will make an attempt to monitor these
+third party sites and execute appropriate tests as soon as 
+reasonable, reporting issues to these providers as required.</description>
+         <icon image48="images/redhat_48.png"></icon>
+      </certification>
       
       <!-- use connectorCategory relevance value to sort from largest (80) to smallest (20) -->
 
@@ -237,11 +246,12 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.extras2"
-            description="Eclipse VJET includes a JavaScript IDE, Java to Javascript Code Generation + Java Based DOM Kit"
+            certificationId="com.jboss.jbds.discovery.certification.experimental"
+            description="Eclipse VJET (Experimental) includes a JavaScript IDE, Java to Javascript Code Generation + Java Based DOM Kit"
             id="org.eclipse.vjet.feature"
             kind="task"
             license="EPL, Other (Free)"
-            name="Eclipse VJET"
+            name="Eclipse VJET (Experimental)"
             provider="eclipse.org"
             siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="org.eclipse.vjet.js.ide.feature.group"/>
