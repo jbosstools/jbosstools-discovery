@@ -229,11 +229,16 @@ reasonable, reporting issues to these providers as required.</description>
             siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="org.springframework.ide.eclipse.aop.feature"/>
             <iu id="org.springframework.ide.eclipse.autowire.feature"/>
+            <iu id="org.springframework.ide.eclipse.batch.feature"/>
+            <iu id="org.springframework.ide.eclipse.data.feature"/>
             <iu id="org.springframework.ide.eclipse.feature"/>
             <iu id="org.springframework.ide.eclipse.integration.feature"/>
+            <iu id="org.springframework.ide.eclipse.maven.feature"/>
+            <iu id="org.springframework.ide.eclipse.mylyn.feature"/>
             <iu id="org.springframework.ide.eclipse.osgi.feature"/>
-            <iu id="org.springframework.ide.eclipse.webflow.feature"/>
             <iu id="org.springframework.ide.eclipse.security.feature"/>
+            <iu id="org.springframework.ide.eclipse.webflow.feature"/>
+            <iu id="org.springsource.ide.eclipse.commons"/>
          <icon
                image32="images/springide_32.png">
          </icon>
