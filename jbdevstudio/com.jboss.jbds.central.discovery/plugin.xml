@@ -5,17 +5,17 @@
          point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
 
       <!-- JBDS-2379, JBDS-2278, JBDS-2361, JBIDE-10333 -->
-      <certification id="com.jboss.jbds.discovery.certification.supported" name="Supported" url="https://devstudio.jboss.com">
+      <certification id="com.jboss.jbds.discovery.certification.supported" name="Supported" url="https://devstudio.jboss.com/updates/7.0-development/central/">
          <description>
 Supported by Red Hat.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
-      <certification id="com.jboss.jbds.discovery.certification.tested" name="Tested" url="https://devstudio.jboss.com">
+      <certification id="com.jboss.jbds.discovery.certification.tested" name="Tested" url="https://devstudio.jboss.com/updates/7.0-development/central/">
          <description>
 Tested by Red Hat.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
-      <certification id="com.jboss.jbds.discovery.certification.external" name="External" url="https://devstudio.jboss.com">
+      <certification id="com.jboss.jbds.discovery.certification.external" name="External" url="https://devstudio.jboss.com/updates/7.0-development/central/">
          <description>
 Tested by Red Hat. However, as these plugins are hosted by third
 party providers, it is possible that content may change at any 
@@ -24,7 +24,7 @@ these third party sites and execute appropriate tests as soon as
 reasonable, reporting issues to these providers as required.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
-      <certification id="com.jboss.jbds.discovery.certification.experimental" name="Experimental" url="https://devstudio.jboss.com">
+      <certification id="com.jboss.jbds.discovery.certification.experimental" name="Experimental" url="https://devstudio.jboss.com/updates/7.0-development/central/">
          <description>
 Tested by Red Hat. However, as these are experimental plugins, 
 it is possible that their content may change at any time and 
