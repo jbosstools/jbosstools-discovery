@@ -10,6 +10,11 @@
 	<artifactId>discovery</artifactId>
 	<version>4.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
+
+	<properties>
+		<tycho.scmUrl>scm:git:https://github.com/jbosstools/jbosstools-discovery.git</tycho.scmUrl>
+	</properties>
+
 	<modules>
 		<module>jbosstools/org.jboss.tools.central.discovery</module>
 		<module>jbdevstudio/com.jboss.jbds.central.discovery</module>
