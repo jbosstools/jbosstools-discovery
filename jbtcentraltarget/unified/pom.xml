@@ -30,8 +30,8 @@
 						<configuration>
 							<sourceTargetArtifact>
 								<groupId>${project.groupId}</groupId>
-								<artifactId>jbtcentraltarget-multiple</artifactId>
-								<classifier>jbtcentraltarget-multiple</classifier>
+								<artifactId>jbtcentral-multiple</artifactId>
+								<classifier>jbtcentral-multiple</classifier>
 								<version>${project.version}</version>
 							</sourceTargetArtifact>
 							<targetRepositoryUrl>${targetRepositoryUrl}</targetRepositoryUrl>
