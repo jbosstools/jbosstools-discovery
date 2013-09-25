@@ -64,7 +64,7 @@ reasonable, reporting issues to these providers as required.</description>
          <overview url="http://www.jboss.org/tools"/>
       </connectorDescriptor>
 
-      <!-- only in JBT -->
+      <!-- JBDS-2733 Add to JBDS 7.1.0 (already in JBT 4.1.0-4.1.1) -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
