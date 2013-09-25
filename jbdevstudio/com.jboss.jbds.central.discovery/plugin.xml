@@ -36,13 +36,70 @@ reasonable, reporting issues to these providers as required.</description>
       
       <!-- use connectorCategory relevance value to sort from largest (80) to smallest (20) -->
 
-      <!-- a. Web and Mobile Development -->
+      <!-- a. Mobile Development -->
 
       <connectorCategory
-            description="Plugins for web and mobile development"
-            id="org.jboss.tools.central.discovery.a.web"
-            name="Web and Mobile Development"
+            description="Plugins to support HTML5 Mobile Hybrid application development"
+            id="org.jboss.tools.central.discovery.a.mobile"
+            name="Mobile Development"
             relevance="80">
+         <group id="org.jboss.tools.central.discovery.a.mobile.core" /> 
+         <group id="org.jboss.tools.central.discovery.a.mobile.extras" /> 
+         <group id="org.jboss.tools.central.discovery.a.mobile.extras2" /> 
+      </connectorCategory>
+
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.mobile"
+            groupId="org.jboss.tools.central.discovery.a.mobile.extras"
+            certificationId="com.jboss.jbds.discovery.certification.external"
+            description="Android Development Tools, DDMS, Hierarchy Viewer, OpenGL Tracer, Traceview"
+            id="com.android.ide.eclipse.adt"
+            kind="task"
+            license="EPL, Other (Free)"
+            name="Android Development Tools"
+            provider="Google, Inc."
+            siteUrl="https://dl-ssl.google.com/android/eclipse/">
+            <!-- https://issues.jboss.org/browse/JBIDE-12498, JBIDE-13167 -->
+            <iu id="com.android.ide.eclipse.adt"/>
+            <iu id="com.android.ide.eclipse.ddms"/>
+            <iu id="com.android.ide.eclipse.hierarchyviewer"/>
+            <iu id="com.android.ide.eclipse.gldebugger"/>
+            <iu id="com.android.ide.eclipse.traceview"/>
+            <!-- DO NOT INCLUDE com.android.ide.eclipse.ndk feature because it requires CDT -->
+         <icon
+               image32="images/android_32.png">
+         </icon>
+         <overview
+               url="http://developer.android.com/tools/sdk/eclipse-adt.html">
+         </overview>
+      </connectorDescriptor>
+
+      <!-- JBDS-2733 Add to JBDS 7.1.0 (already in JBT 4.1.0-4.1.1) -->
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.mobile"
+            groupId="org.jboss.tools.central.discovery.a.mobile.extras2"
+            certificationId="com.jboss.jbds.discovery.certification.experimental"
+            description="Create hybrid mobile aplications with Apache Cordova for Android + iOS"
+            id="org.jboss.tools.aerogear.hybrid"
+            kind="task"
+            license="EPL (Free)"
+            name="JBoss Mobile Hybrid App Tools (Experimental)"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
+            <iu id="org.jboss.tools.aerogear.hybrid.feature"/>
+            <iu id="org.jboss.tools.vpe.cordovasim.feature"/>
+            <iu id="org.jboss.tools.vpe.browsersim.feature"/>
+         <icon image32="images/cordova_32.png"/>
+         <overview url="http://www.jboss.org/tools"/>
+      </connectorDescriptor>
+
+      <!-- a. Web Development -->
+
+      <connectorCategory
+            description="Additional plugins to support web development"
+            id="org.jboss.tools.central.discovery.a.web"
+            name="Web Development"
+            relevance="70">
          <group id="org.jboss.tools.central.discovery.a.web.core" /> 
          <group id="org.jboss.tools.central.discovery.a.web.extras" />
          <group id="org.jboss.tools.central.discovery.a.web.extras2" />
@@ -61,25 +118,6 @@ reasonable, reporting issues to these providers as required.</description>
             siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="org.jboss.tools.arquillian.feature"/>
          <icon image32="images/arquillian_32.png"/>
-         <overview url="http://www.jboss.org/tools"/>
-      </connectorDescriptor>
-      -->
-
-      <!-- only in JBT
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
-            description="Create hybrid mobile aplications with Apache Cordova for Android + iOS"
-            id="org.jboss.tools.aerogear.hybrid"
-            kind="task"
-            license="EPL (Free)"
-            name="JBoss Mobile Hybrid App Tools (Experimental)"
-            provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
-            <iu id="org.jboss.tools.aerogear.hybrid.feature"/>
-            <iu id="org.jboss.tools.vpe.cordovasim.feature"/>
-            <iu id="org.jboss.tools.vpe.browsersim.feature"/>
-         <icon image32="images/cordova_32.png"/>
          <overview url="http://www.jboss.org/tools"/>
       </connectorDescriptor>
       -->
@@ -145,31 +183,6 @@ reasonable, reporting issues to these providers as required.</description>
          </overview>
       </connectorDescriptor>
 
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
-            groupId="org.jboss.tools.central.discovery.a.web.extras"
-            certificationId="com.jboss.jbds.discovery.certification.external"
-            description="Android Development Tools, DDMS, Hierarchy Viewer, OpenGL Tracer, Traceview"
-            id="com.android.ide.eclipse.adt"
-            kind="task"
-            license="EPL, Other (Free)"
-            name="Android Development Tools"
-            provider="Google, Inc."
-            siteUrl="https://dl-ssl.google.com/android/eclipse/">
-            <!-- https://issues.jboss.org/browse/JBIDE-12498, JBIDE-13167 -->
-            <iu id="com.android.ide.eclipse.adt"/>
-            <iu id="com.android.ide.eclipse.ddms"/>
-            <iu id="com.android.ide.eclipse.hierarchyviewer"/>
-            <iu id="com.android.ide.eclipse.gldebugger"/>
-            <iu id="com.android.ide.eclipse.traceview"/>
-            <!-- DO NOT INCLUDE com.android.ide.eclipse.ndk feature because it requires CDT -->
-         <icon
-               image32="images/android_32.png">
-         </icon>
-         <overview
-               url="http://developer.android.com/tools/sdk/eclipse-adt.html">
-         </overview>
-      </connectorDescriptor>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.extras"
