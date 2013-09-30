@@ -72,6 +72,7 @@
       <unit id="org.springframework.ide.eclipse.security.feature.feature.group" version="3.3.0.201307091516-RELEASE"/>
       <unit id="org.springframework.ide.eclipse.webflow.feature.feature.group" version="3.3.0.201307091516-RELEASE"/>
       <unit id="org.springsource.ide.eclipse.commons.feature.group" version="3.3.0.201307040632-RELEASE"/>
+      <unit id="org.aspectj.runtime" version="1.7.3.20130613144500-a"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
