@@ -39,7 +39,7 @@ reasonable, reporting issues to these providers as required.</description>
       <!-- a. Mobile Development -->
 
       <connectorCategory
-            description="Plugins to support HTML5 Mobile Hybrid application development"
+            description="Plugins to support HTML5 Hybrid Mobile application development"
             id="org.jboss.tools.central.discovery.a.mobile"
             name="Mobile Development"
             relevance="80">
@@ -79,11 +79,11 @@ reasonable, reporting issues to these providers as required.</description>
             categoryId="org.jboss.tools.central.discovery.a.mobile"
             groupId="org.jboss.tools.central.discovery.a.mobile.extras2"
             certificationId="com.jboss.jbds.discovery.certification.experimental"
-            description="Create hybrid mobile aplications with Apache Cordova for Android + iOS"
+            description="Create and test hybrid mobile aplications with Apache Cordova for Android + iOS"
             id="org.jboss.tools.aerogear.hybrid"
             kind="task"
             license="EPL (Free)"
-            name="JBoss Mobile Hybrid App Tools (Experimental)"
+            name="JBoss Hybrid Mobile Tools + CordovaSim (Experimental)"
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="org.jboss.tools.aerogear.hybrid.feature"/>
