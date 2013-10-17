@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.jboss.tools</groupId>
 		<artifactId>parent</artifactId>
-		<version>4.1.1.Alpha2-SNAPSHOT</version>
+		<version>4.1.1.Beta1-SNAPSHOT</version>
 	</parent>
 	<groupId>org.jboss.tools.central</groupId>
 	<artifactId>discovery</artifactId>
@@ -26,13 +26,13 @@ Build like this:
 
 mvn clean install -f jbosstools/org.jboss.tools.central.discovery/pom.xml \
   -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/trunk/ \
-  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/updates/kepler/extras/
+  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/kepler/
 
 or
 
 mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery/pom.xml \
 -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_trunk/all/ \
--DEXTRAS_SITE=https://devstudio.jboss.com/updates/7.0-staging/extras/
+-DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/kepler/
 
 For more examples and info, see README.*
 -->
