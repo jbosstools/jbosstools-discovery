@@ -15,5 +15,5 @@
 </project>
 <!--
 mvn clean install -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_trunk/all/ \
--DEXTRAS_SITE=https://devstudio.jboss.com/updates/7.0-staging/extras/
+-DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/kepler/
 -->
