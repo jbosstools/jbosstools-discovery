@@ -401,7 +401,7 @@ reasonable, reporting issues to these providers as required.</description>
        <connectorCategory
             description="Plugins for testing + code quality"
             id="org.jboss.tools.central.discovery.c.testing"
-            name="Testing"
+            name="Utilities"
             relevance="40">
 	<group id="org.jboss.tools.central.discovery.c.testing.local" />
  	<group id="org.jboss.tools.central.discovery.c.testing.remote" />
