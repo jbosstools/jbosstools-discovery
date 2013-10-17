@@ -464,6 +464,27 @@ reasonable, reporting issues to these providers as required.</description>
          </overview>
       </connectorDescriptor>
  
+      <!-- JBDS-2752 -->
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.c.testing"
+            groupId="org.jboss.tools.central.discovery.c.testing.local"
+            certificationId="com.jboss.jbds.discovery.certification.tested"
+            description="Mylyn support for Hudson + Jenkins servers"
+            id="org.eclipse.mylyn.hudson"
+            kind="task"
+            license="EPL (Free)"
+            name="Hudson + Jenkins: Mylyn Support"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
+         <iu id="org.eclipse.mylyn.hudson.feature.group"/>
+         <icon
+               image32="images/mylyn_32.png">
+         </icon>
+         <overview
+               url="http://eclipse.org/mylyn/">
+         </overview>
+      </connectorDescriptor>
+
       <!-- JBIDE-13670, JBIDE-13682, JBIDE-13712, JBIDE-13724 remove everything that depends on Atlassian feature -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.c.testing"
