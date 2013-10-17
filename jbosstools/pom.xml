@@ -15,5 +15,5 @@
 </project>
 <!--
 mvn clean install -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/trunk/ \
-  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/updates/kepler/extras/
+  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/kepler/
 -->
