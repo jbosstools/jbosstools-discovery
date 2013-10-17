@@ -94,10 +94,10 @@ reasonable, reporting issues to these providers as required.</description>
       <!-- a. Web Development -->
 
       <connectorCategory
-            description="Plugins for web and mobile development"
+            description="Additional plugins to support web development"
             id="org.jboss.tools.central.discovery.a.web"
-            name="Web and Mobile Development"
-            relevance="80">
+            name="Web Development"
+            relevance="70">
          <group id="org.jboss.tools.central.discovery.a.web.core" /> 
          <group id="org.jboss.tools.central.discovery.a.web.extras" />
          <group id="org.jboss.tools.central.discovery.a.web.extras2" />
@@ -448,6 +448,26 @@ reasonable, reporting issues to these providers as required.</description>
          </overview>
       </connectorDescriptor>
  
+      <!-- JBDS-2752 -->
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.c.testing"
+            groupId="org.jboss.tools.central.discovery.c.testing.local"
+            description="Mylyn support for Hudson + Jenkins servers"
+            id="org.eclipse.mylyn.hudson"
+            kind="task"
+            license="EPL (Free)"
+            name="Hudson + Jenkins: Mylyn Support"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/core/}">
+         <iu id="org.eclipse.mylyn.hudson.feature.group"/>
+         <icon
+               image32="images/mylyn_32.png">
+         </icon>
+         <overview
+               url="http://eclipse.org/mylyn/">
+         </overview>
+      </connectorDescriptor>
+
       <!-- JBIDE-13670, JBIDE-13682, JBIDE-13712, JBIDE-13724 remove everything that depends on Atlassian feature -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.c.testing"
