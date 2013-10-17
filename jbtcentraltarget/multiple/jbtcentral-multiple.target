@@ -17,6 +17,8 @@
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/201309200900-SR1/"/> 
       <unit id="org.eclipse.mylyn.hudson.feature.group" version="1.1.1.v20130917-0100"/>
+      <unit id="org.eclipse.mylyn.builds.feature.group" version="1.1.1.v20130917-0100"/>
+      <unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.1.1.v20130917-0100"/>
     </location>
 
     <!-- new to JBT 4.1.0 / JBDS 7 -->
