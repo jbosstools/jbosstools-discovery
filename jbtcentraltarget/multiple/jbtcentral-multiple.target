@@ -23,14 +23,14 @@
 
     <!-- new to JBT 4.1.0 / JBDS 7 -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/atlassian/3.2.1.v20130402/"/> 
-      <unit id="com.atlassian.connector.commons.feature.group" version="3.2.1.v20130402"/>
-      <unit id="com.atlassian.connector.eclipse.bamboo.feature.group" version="3.2.1.v20130402"/>
-      <unit id="com.atlassian.connector.eclipse.commons.feature.group" version="3.2.1.v20130402"/>
-      <unit id="com.atlassian.connector.eclipse.directclickthrough.feature.group" version="3.2.1.v20130402"/>
-      <unit id="com.atlassian.connector.eclipse.jira.feature.group" version="3.2.1.v20130402"/>
-      <unit id="com.atlassian.connector.eclipse.monitor.feature.group" version="3.2.1.v20130402"/>
-      <unit id="com.atlassian.connector.eclipse.feature.group" version="3.2.1.v20130402"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/atlassian/3.2.2.v20130909/"/> 
+      <unit id="com.atlassian.connector.commons.feature.group" version="3.2.2.v20130909"/>
+      <unit id="com.atlassian.connector.eclipse.bamboo.feature.group" version="3.2.2.v20130909"/>
+      <unit id="com.atlassian.connector.eclipse.commons.feature.group" version="3.2.2.v20130909"/>
+      <unit id="com.atlassian.connector.eclipse.directclickthrough.feature.group" version="3.2.2.v20130909"/>
+      <unit id="com.atlassian.connector.eclipse.jira.feature.group" version="3.2.2.v20130909"/>
+      <unit id="com.atlassian.connector.eclipse.monitor.feature.group" version="3.2.2.v20130909"/>
+      <unit id="com.atlassian.connector.eclipse.feature.group" version="3.2.2.v20130909"/>
     </location>
     <!-- Atlassian (com.atlassian.connector.*) dependencies -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
@@ -62,8 +62,8 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/pmd/4.0.0.v20130510-1000/"/>
-      <unit id="net.sourceforge.pmd.eclipse.feature.group" version="4.0.0.v20130510-1000"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/pmd/4.0.1.v20130811-0001/"/>
+      <unit id="net.sourceforge.pmd.eclipse.feature.group" version="4.0.1.v20130811-0001"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
