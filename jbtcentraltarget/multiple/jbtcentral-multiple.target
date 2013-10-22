@@ -98,8 +98,8 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/testng/6.8.1.20130330_0839/"/>
-      <unit id="org.testng.eclipse.feature.group" version="6.8.1.20130330_0839"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/testng/6.8.6.20130914_0724/"/>
+      <unit id="org.testng.eclipse.feature.group" version="6.8.6.20130914_0724"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
