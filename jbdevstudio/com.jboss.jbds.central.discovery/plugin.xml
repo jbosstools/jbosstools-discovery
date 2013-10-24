@@ -561,7 +561,7 @@ reasonable, reporting issues to these providers as required.</description>
                image32="images/jrebel_32.png">
          </icon>
          <overview
-               url="http://zeroturnaround.com/jrebel/current/">
+               url="http://update.zeroturnaround.com/update-site-jboss/">
          </overview>
       </connectorDescriptor>
       
