@@ -48,6 +48,13 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/eclipsecs/5.6.1.201306282206/"/>
+      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.8.0"/>
+      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.8.0"/>
+      <unit id="net.sf.eclipsecs.feature.group" version="5.6.1.201306282206"/>
+    </location>
+
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/gwt/3.2.3.v201304260926-rel-r42/"/>
       <unit id="com.google.gdt.eclipse.designer.editor.feature.feature.group" version="3.1.2.r42x201303061530"/>
       <unit id="com.google.gdt.eclipse.designer.gpe.feature.feature.group" version="3.1.2.r42x201303061641"/>
@@ -146,12 +153,6 @@
     </location>
 
     <!-- unchanged since JBT 4.0.0 / JBDS 6 -->
-    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/eclipsecs/5.6.0.201209221626/"/>
-      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.5.3"/>
-      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.8.0"/>
-      <unit id="net.sf.eclipsecs.feature.group" version="5.6.0.201209221626"/>
-    </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/findbugs/2.0.2.20121210/"/>
       <unit id="edu.umd.cs.findbugs.plugin.eclipse.feature.group" version="2.0.2.20121210"/>

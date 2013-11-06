@@ -407,7 +407,7 @@ reasonable, reporting issues to these providers as required.</description>
  	<group id="org.jboss.tools.central.discovery.c.testing.remote" />
       </connectorCategory>
       
-      <!-- JBIDE-14799 remove CheckStyle plugin until there's a version that works correctly w/ Kepler 
+      <!-- add CheckStyle plugin back into Central (JBIDE-14799, JBIDE-15128, JBIDE-15129) -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.c.testing"
             groupId="org.jboss.tools.central.discovery.c.testing.local"
@@ -427,7 +427,7 @@ reasonable, reporting issues to these providers as required.</description>
                url="http://eclipse-cs.sourceforge.net/">
          </overview>
       </connectorDescriptor>
-      -->
+
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.c.testing"
             groupId="org.jboss.tools.central.discovery.c.testing.local"
