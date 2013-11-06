@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
-<target includeMode="feature" name="jbtcentraltarget-4.31.0.Alpha1-SNAPSHOT">
+<target includeMode="feature" name="jbtcentraltarget-4.31.0.CR1-SNAPSHOT">
   <!-- Pro tip: paste content from generated Apache directory index, then match
         \[ ] (.+)_(.+).jar.+
     replace with 
@@ -45,6 +45,13 @@
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20120526062928/"/>
       <unit id="javax.activation" version="1.1.0.v201108011116"/>
+    </location>
+
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/eclipsecs/5.6.1.201306282206/"/>
+      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.8.0"/>
+      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.8.0"/>
+      <unit id="net.sf.eclipsecs.feature.group" version="5.6.1.201306282206"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
@@ -141,12 +148,6 @@
     </location>
 
     <!-- unchanged since JBT 4.0.0 / JBDS 6 -->
-    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/eclipsecs/5.6.0.201209221626/"/>
-      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.5.3"/>
-      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.8.0"/>
-      <unit id="net.sf.eclipsecs.feature.group" version="5.6.0.201209221626"/>
-    </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/findbugs/2.0.2.20121210/"/>
       <unit id="edu.umd.cs.findbugs.plugin.eclipse.feature.group" version="2.0.2.20121210"/>

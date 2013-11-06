@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jboss.tools.targetplatforms</groupId>
 	<artifactId>jbtcentral</artifactId>
-	<version>4.31.0.Alpha1-SNAPSHOT</version>
+	<version>4.31.0.CR1-SNAPSHOT</version>
 	<name>JBoss Central Extras Target Platforms</name>
 	<packaging>pom</packaging>
 
