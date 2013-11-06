@@ -128,22 +128,22 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/vjet/0.10.0.201307160408/"/>
-      <unit id="org.eclipse.vjet.js.ide.feature.group" version="0.10.0.201307160408"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/vjet/0.10.0.201309201624/"/>
+      <unit id="org.eclipse.vjet.js.ide.feature.group" version="0.10.0.201309201624"/>
         <unit id="org.eclipse.equinox.server.jetty.feature.group" version="1.1.0.v20130429-1600"/>
-        <unit id="org.eclipse.vjet.core.feature.group" version="0.10.0.201307160408"/>
-        <unit id="org.eclipse.vjet.eclipse.feature.group" version="0.10.0.201307160408"/>
-        <unit id="org.eclipse.vjet.extmod.dltk.core.feature.group" version="0.10.0.201307160408"/>
-        <unit id="org.eclipse.vjet.extmod.jsdt.feature.group" version="0.10.0.201307160408"/>
-        <unit id="org.eclipse.vjet.extmod.rhino.feature.group" version="0.10.0.201307160408"/>
-        <unit id="org.eclipse.vjet.rt.feature.group" version="0.10.0.201307160408"/>
-        <unit id="org.eclipse.vjet.web.feature.group" version="0.10.0.201307160408"/>
+        <unit id="org.eclipse.vjet.core.feature.group" version="0.10.0.201309201624"/>
+        <unit id="org.eclipse.vjet.eclipse.feature.group" version="0.10.0.201309201624"/>
+        <unit id="org.eclipse.vjet.extmod.dltk.core.feature.group" version="0.10.0.201309201624"/>
+        <unit id="org.eclipse.vjet.extmod.jsdt.feature.group" version="0.10.0.201309201624"/>
+        <unit id="org.eclipse.vjet.extmod.rhino.feature.group" version="0.10.0.201309201624"/>
+        <unit id="org.eclipse.vjet.rt.feature.group" version="0.10.0.201309201624"/>
+        <unit id="org.eclipse.vjet.web.feature.group" version="0.10.0.201309201624"/>
         <unit id="org.w3c.dom.events" version="3.0.0.draft20060413_v201105210656"/>
 
-      <unit id="org.eclipse.vjet.codegen.feature.group" version="0.10.0.201307160408"/>
-        <unit id="org.eclipse.vjet.resource.feature.group" version="0.10.0.201307160408"/>
+      <unit id="org.eclipse.vjet.codegen.feature.group" version="0.10.0.201309201624"/>
+        <unit id="org.eclipse.vjet.resource.feature.group" version="0.10.0.201309201624"/>
 
-      <unit id="org.eclipse.vjet.vsf.domkit.feature.group" version="0.10.0.201307160408"/>
+      <unit id="org.eclipse.vjet.vsf.domkit.feature.group" version="0.10.0.201309201624"/>
         <unit id="org.junit4" version="4.8.1.v20120523-1257"/>
     </location>
 
