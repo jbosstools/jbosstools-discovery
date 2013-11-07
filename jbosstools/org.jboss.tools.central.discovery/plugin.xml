@@ -17,7 +17,7 @@ Tested by Red Hat.</description>
       </certification>
       <certification id="com.jboss.jbds.discovery.certification.external" name="External" url="https://devstudio.jboss.com/updates/7.0-development/central/">
          <description>
-Tested by Red Hat. However, as these plugins are hosted by third
+Tested by Red Hat. However, as these plug-ins are hosted by third
 party providers, it is possible that content may change at any 
 time and without prior notice. We will make an attempt to monitor 
 these third party sites and execute appropriate tests as soon as 
@@ -26,7 +26,7 @@ reasonable, reporting issues to these providers as required.</description>
       </certification>
       <certification id="com.jboss.jbds.discovery.certification.experimental" name="Experimental" url="https://devstudio.jboss.com/updates/7.0-development/central/">
          <description>
-Tested by Red Hat. However, as these are experimental plugins, 
+Tested by Red Hat. However, as these are experimental plug-ins, 
 it is possible that their content may change at any time and 
 without prior notice. We will make an attempt to monitor these
 third party sites and execute appropriate tests as soon as 
@@ -39,7 +39,7 @@ reasonable, reporting issues to these providers as required.</description>
       <!-- a. Mobile Development -->
 
       <connectorCategory
-            description="Plugins to support HTML5 Hybrid Mobile application development"
+            description="Plug-ins to support HTML5 Hybrid Mobile application development"
             id="org.jboss.tools.central.discovery.a.mobile"
             name="Mobile Development"
             relevance="80">
@@ -94,7 +94,7 @@ reasonable, reporting issues to these providers as required.</description>
       <!-- a. Web Development -->
 
       <connectorCategory
-            description="Additional plugins to support web development"
+            description="Additional plug-ins to support web development"
             id="org.jboss.tools.central.discovery.a.web"
             name="Web Development"
             relevance="70">
@@ -180,11 +180,11 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.extras"
-            description="Google Plugin (GPE) + Web Toolkit (GWT) Designer + WindowBuilder"
+            description="Google Plug-in (GPE) + Web Toolkit (GWT) Designer + WindowBuilder"
             id="com.google.gpe.gwt"
             kind="task"
             license="EPL, Other (Free)"
-            name="Google Plugin + GWT Designer + WindowBuilder"
+            name="Google Plug-in + GWT Designer + WindowBuilder"
             provider="Google, Inc."
             siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/core/}">
             <iu id="com.google.gwt.eclipse.sdkbundle.feature"/>
@@ -257,7 +257,7 @@ reasonable, reporting issues to these providers as required.</description>
       <!-- b. SCM -->
 
       <connectorCategory
-            description="Plugins for source control systems"
+            description="Plug-ins for source control systems"
             id="org.jboss.tools.central.discovery.b.scm"
             name="Source Control Management"
             relevance="60">
@@ -399,7 +399,7 @@ reasonable, reporting issues to these providers as required.</description>
        <!-- c. Testing -->
 
        <connectorCategory
-            description="Plugins for testing + code quality"
+            description="Plug-ins for testing + code quality"
             id="org.jboss.tools.central.discovery.c.testing"
             name="Utilities"
             relevance="40">
@@ -561,7 +561,7 @@ reasonable, reporting issues to these providers as required.</description>
       <!-- d. Maven -->
 
       <connectorCategory
-            description="Plugins for working with Maven"
+            description="Plug-ins for working with Maven"
             id="org.jboss.tools.central.discovery.d.maven"
             name="Maven"
             relevance="20">
