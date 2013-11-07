@@ -79,6 +79,11 @@
       <unit id="org.eclipse.zest.feature.group" version="1.5.1.201308190730"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/ajdt/2.2.3.e43x-RELEASE-20130627-0800/"/> 
+      <unit id="org.eclipse.ajdt.feature.group" version="2.2.3.e43x-RELEASE-20130627-0800"/>
+      <unit id="org.aspectj.feature.group" version="1.7.3.20130613144500-a"/>
+    </location>
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.4.0.201310051539-RELEASE/"/>
       <!-- Features to include in Central connector -->
       <unit id="org.springframework.ide.eclipse.ajdt.feature.feature.group" version="3.4.0.201310051539-RELEASE"/>
