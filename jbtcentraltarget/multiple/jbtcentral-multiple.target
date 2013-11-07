@@ -81,6 +81,7 @@
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.4.0.201310051539-RELEASE/"/>
       <!-- Features to include in Central connector -->
+      <unit id="org.springframework.ide.eclipse.ajdt.feature.feature.group" version="3.4.0.201310051539-RELEASE"/>
       <unit id="org.springframework.ide.eclipse.aop.feature.feature.group" version="3.4.0.201310051539-RELEASE"/>
       <unit id="org.springframework.ide.eclipse.autowire.feature.feature.group" version="3.4.0.201310051539-RELEASE"/>
       <unit id="org.springframework.ide.eclipse.batch.feature.feature.group" version="3.4.0.201310051539-RELEASE"/>

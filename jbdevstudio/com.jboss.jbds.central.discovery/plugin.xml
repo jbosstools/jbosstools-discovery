@@ -220,6 +220,7 @@ reasonable, reporting issues to these providers as required.</description>
             name="Spring IDE"
             provider="Spring IDE Developers"
             siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
+            <iu id="org.springframework.ide.eclipse.ajdt.feature"/>
             <iu id="org.springframework.ide.eclipse.aop.feature"/>
             <iu id="org.springframework.ide.eclipse.autowire.feature"/>
             <iu id="org.springframework.ide.eclipse.batch.feature"/>
