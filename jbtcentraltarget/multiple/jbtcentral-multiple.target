@@ -76,12 +76,17 @@
     <!-- required for SpringIDE 3.4 -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/201309200900-SR1/"/> 
+      <unit id="org.apache.batik.util" version="1.6.0.v201011041432"/>
+      <unit id="org.apache.batik.util.gui" version="1.6.0.v201011041432"/>
+      <unit id="org.eclipse.equinox.http.registry" version="1.1.300.v20130402-1529"/>
       <unit id="org.eclipse.zest.feature.group" version="1.5.1.201308190730"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/ajdt/2.2.3.e43x-RELEASE-20130627-0800/"/> 
-      <unit id="org.eclipse.ajdt.feature.group" version="2.2.3.e43x-RELEASE-20130627-0800"/>
       <unit id="org.aspectj.feature.group" version="1.7.3.20130613144500-a"/>
+      <unit id="org.eclipse.ajdt.feature.group" version="2.2.3.e43x-RELEASE-20130627-0800"/>
+      <unit id="org.eclipse.contribution.weaving.feature.group" version="2.2.3.e43x-RELEASE-20130627-0800"/>
+      <unit id="org.eclipse.contribution.xref.feature.group" version="2.2.3.e43x-RELEASE-20130627-0800"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.4.0.201310051539-RELEASE/"/>
