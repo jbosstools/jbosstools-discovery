@@ -109,6 +109,7 @@
       <unit id="org.aspectj.runtime" version="1.8.0.20130801095600"/>
       <unit id="org.codehaus.jackson.core" version="1.6.0.v20101005-0925"/>
       <unit id="org.codehaus.jackson.mapper" version="1.6.0.v20101005-0925"/>
+      <unit id="org.eclipse.contribution.visualiser" version="2.2.4.e43x-20130830-1500"/>
       <unit id="org.json" version="1.0.0.v201011060100"/>
 
       <!-- Optional bundles included to avoid console warnings after installation -->
