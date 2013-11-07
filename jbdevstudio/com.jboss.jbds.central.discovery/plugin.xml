@@ -79,7 +79,7 @@ reasonable, reporting issues to these providers as required.</description>
             categoryId="org.jboss.tools.central.discovery.a.mobile"
             groupId="org.jboss.tools.central.discovery.a.mobile.extras2"
             certificationId="com.jboss.jbds.discovery.certification.experimental"
-            description="Create and test hybrid mobile aplications with Apache Cordova for Android + iOS"
+            description="Create and test hybrid mobile applications with Apache Cordova for Android + iOS"
             id="org.jboss.tools.aerogear.hybrid"
             kind="task"
             license="EPL (Free)"
