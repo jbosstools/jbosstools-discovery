@@ -829,6 +829,24 @@ reasonable, reporting issues to these providers as required.</description>
                url="http://www.eclipse.org/m2e-wtp/">
          </overview>
       </connectorDescriptor>
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.d.maven"
+            groupId="org.jboss.tools.central.discovery.d.maven.upstream"
+            description="m2e-wro4j is an m2e connector for wro4j-maven-plugin that helps you optimize your web resources on-the-fly, in Eclipse."
+            id="m2e.wro4j.feature"
+            kind="task"
+            license="EPL (Free)"
+            name="Maven Integration for WRO4J (m2e-wro4j)"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/core/}">
+            <iu id="org.jboss.tools.m2e.wro4j.feature"/>
+         <icon
+               image32="images/m2e_32.gif">
+         </icon>
+         <overview
+               url="https://github.com/jbosstools/m2e-wro4j">
+         </overview>
+      </connectorDescriptor>
     </extension>
 	
     <extension point="org.jboss.tools.central.proxyWizard">
