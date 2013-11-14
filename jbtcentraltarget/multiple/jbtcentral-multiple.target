@@ -20,6 +20,11 @@
       <unit id="org.eclipse.mylyn.builds.feature.group" version="1.1.1.v20130917-0100"/>
       <unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.1.1.v20130917-0100"/>
     </location>
+    <!-- JBDS-2577 this is also in the JBT & JBDS TP but we might be able to remove it from there in favour of including it ONLY here -->
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/1.0.2-2013-11-12_19-36-08-H20/"/>
+      <unit id="org.jboss.tools.m2e.wro4j.feature.feature.group" version="1.0.2.201311130036"/>
+    </location>
 
     <!-- new to JBT 4.1.0 / JBDS 7 -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
@@ -55,17 +60,17 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/gwt/3.2.3.v201304260926-rel-r42/"/>
-      <unit id="com.google.gdt.eclipse.designer.editor.feature.feature.group" version="3.1.2.r42x201303061530"/>
-      <unit id="com.google.gdt.eclipse.designer.gpe.feature.feature.group" version="3.1.2.r42x201303061641"/>
-      <unit id="com.google.gdt.eclipse.designer.hosted.feature.feature.group" version="3.1.2.r42x201303061525"/>
-      <unit id="com.google.gdt.eclipse.suite.e42.feature.feature.group" version="3.2.3.v201304260926-rel-r42"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/gwt/3.4.2.v201310081834-rel-r43/"/>
+      <unit id="com.google.gdt.eclipse.designer.editor.feature.feature.group" version="3.1.2.r43x201307151447"/>
+      <unit id="com.google.gdt.eclipse.designer.gpe.feature.feature.group" version="3.1.2.r43x201307151506"/>
+      <unit id="com.google.gdt.eclipse.designer.hosted.feature.feature.group" version="3.1.2.r43x201307151442"/>
+      <unit id="com.google.gdt.eclipse.suite.e43.feature.feature.group" version="3.4.2.v201310081834-rel-r43"/>
       <unit id="com.google.gwt.eclipse.sdkbundle.feature.feature.group" version="2.5.1"/>
-      <unit id="org.eclipse.wb.core.feature.feature.group" version="1.5.2.r42x201303061457"/>
-      <unit id="org.eclipse.wb.core.java.feature.feature.group" version="1.5.2.r42x201303061505"/>
-      <unit id="org.eclipse.wb.core.ui.feature.feature.group" version="1.5.2.r42x201303061516"/>
-      <unit id="org.eclipse.wb.core.xml.feature.feature.group" version="1.5.2.r42x201303061518"/>
-      <unit id="org.eclipse.wb.css.feature.feature.group" version="1.5.2.r42x201303061510"/>
+      <unit id="org.eclipse.wb.core.feature.feature.group" version="1.6.0.r43x201305211944"/>
+      <unit id="org.eclipse.wb.core.java.feature.feature.group" version="1.6.0.r43x201306031644"/>
+      <unit id="org.eclipse.wb.core.ui.feature.feature.group" version="1.6.0.r43x201306031651"/>
+      <unit id="org.eclipse.wb.core.xml.feature.feature.group" version="1.6.0.r43x201306031653"/>
+      <unit id="org.eclipse.wb.css.feature.feature.group" version="1.6.0.r43x201306031647"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
