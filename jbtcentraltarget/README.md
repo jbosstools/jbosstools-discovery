@@ -34,11 +34,12 @@ When moving from one version of the target to another, the steps are:
 2. Regenerate the IU versions, using <a href="https://github.com/jbosstools/jbosstools-maven-plugins/wiki">org.jboss.tools.tycho-plugins:target-platform-utils</a>, and validate results
 
 <pre>
+
+    # Merge changes in new target file to actual target file, updating versions as required. Then resolve the new 'multiple' target platform and verify it is self-contained by building it
+
     BASEDIR=`pwd`
-    # Merge changes in new target file to actual target file
-    pushd multiple && mvn -U org.jboss.tools.tycho-plugins:target-platform-utils:0.16.0-SNAPSHOT:fix-versions -DtargetFile=jbtcentral-multiple.target && rm -f jbtcentral-multiple.target jbtcentral-multiple.target_update_hints.txt && mv -f jbtcentral-multiple.target_fixedVersion.target jbtcentral-multiple.target && popd
-    # Resolve the new 'multiple' target platform and verify it is self-contained by building it
-    mvn -U install -DtargetRepositoryUrl=file://${BASEDIR}/multiple/target/jbtcentral-multiple.target.repo/
+    pushd multiple && mvn -U org.jboss.tools.tycho-plugins:target-platform-utils:0.16.0-SNAPSHOT:fix-versions -DtargetFile=jbtcentral-multiple.target && rm -f jbtcentral-multiple.target jbtcentral-multiple.target_update_hints.txt && mv -f jbtcentral-multiple.target_fixedVersion.target jbtcentral-multiple.target && popd && mvn -U install -DtargetRepositoryUrl=file://${BASEDIR}/multiple/target/jbtcentral-multiple.target.repo/
+
 </pre>
 
 <ol><li value="4"> Check in updated target files & push to the branch.</li></ol>
