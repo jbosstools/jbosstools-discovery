@@ -195,7 +195,7 @@ reasonable, reporting issues to these providers as required.</description>
             provider="Google, Inc."
             siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="com.google.gwt.eclipse.sdkbundle.feature"/>
-            <iu id="com.google.gdt.eclipse.suite.e42.feature"/>
+            <iu id="com.google.gdt.eclipse.suite.e43.feature"/>
             <iu id="com.google.gdt.eclipse.designer.editor.feature"/>
             <iu id="com.google.gdt.eclipse.designer.gpe.feature"/>
             <iu id="com.google.gdt.eclipse.designer.hosted.feature"/>
@@ -643,7 +643,7 @@ reasonable, reporting issues to these providers as required.</description>
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/core/}">
             <iu id="org.jboss.tools.maven.gwt.feature"/>
-            <iu id="com.google.gdt.eclipse.suite.e42.feature"/>
+            <iu id="com.google.gdt.eclipse.suite.e43.feature"/>
          <icon
                image32="images/jbosstools_icon32.png">
          </icon>
