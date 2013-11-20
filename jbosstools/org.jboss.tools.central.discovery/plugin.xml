@@ -24,6 +24,13 @@ these third party sites and execute appropriate tests as soon as
 reasonable, reporting issues to these providers as required.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
+      <certification id="com.jboss.jbds.discovery.certification.technologypreview" name="Technology Preview" url="https://devstudio.jboss.com/updates/7.0-development/central/">
+         <description>
+Tested by Red Hat, often with known issues. Technology previews
+may one day evolve to be considered Tested or Supported, but 
+this is not guaranteed.</description>
+         <icon image48="images/redhat_48.png"></icon>
+      </certification>
       <certification id="com.jboss.jbds.discovery.certification.experimental" name="Experimental" url="https://devstudio.jboss.com/updates/7.0-development/central/">
          <description>
 Tested by Red Hat. However, as these are experimental plug-ins, 
@@ -81,7 +88,7 @@ reasonable, reporting issues to these providers as required.</description>
             id="org.jboss.tools.aerogear.hybrid"
             kind="task"
             license="EPL (Free)"
-            name="JBoss Hybrid Mobile Tools + CordovaSim (Experimental)"
+            name="JBoss Hybrid Mobile Tools + CordovaSim"
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/core/}">
             <iu id="org.jboss.tools.aerogear.hybrid.feature"/>
@@ -111,7 +118,7 @@ reasonable, reporting issues to these providers as required.</description>
             id="org.jboss.tools.arquillian"
             kind="task"
             license="EPL (Free)"
-            name="JBoss Arquillian Tools (Experimental)"
+            name="JBoss Arquillian Tools"
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/core/}">
             <iu id="org.jboss.tools.arquillian.feature"/>
@@ -241,7 +248,7 @@ reasonable, reporting issues to these providers as required.</description>
             id="org.eclipse.vjet.feature"
             kind="task"
             license="EPL, Other (Free)"
-            name="Eclipse VJET (Experimental)"
+            name="Eclipse VJET"
             provider="eclipse.org"
             siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/core/}">
             <iu id="org.eclipse.vjet.js.ide.feature.group"/>
