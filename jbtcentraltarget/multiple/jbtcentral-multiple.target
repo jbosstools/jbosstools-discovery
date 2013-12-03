@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
-<target includeMode="feature" name="jbtcentraltarget-4.31.0.Final-SNAPSHOT">
+<target includeMode="feature" name="jbtcentraltarget-4.31.0.Final">
   <!-- Pro tip: paste content from generated Apache directory index, then match
         \[ ] (.+)_(.+).jar.+
     replace with 
