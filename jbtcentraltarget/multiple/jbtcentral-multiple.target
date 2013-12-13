@@ -20,11 +20,17 @@
       <unit id="org.eclipse.mylyn.builds.feature.group" version="1.1.1.v20130917-0100"/>
       <unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.1.1.v20130917-0100"/>
     </location>
-    <!-- JBDS-2577 this is also in the JBT & JBDS TP but we might be able to remove it from there in favour of including it ONLY here -->
+    
+    <!-- m2e extensions (that are not already in core TP) -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/1.0.2-2013-11-12_19-36-08-H20/"/>
       <unit id="org.jboss.tools.m2e.wro4j.feature.feature.group" version="1.0.2.201311130036"/>
     </location>
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/1.1.0-2013-11-29_03-18-37-H27/"/>
+      <unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.1.0.201311290819"/>
+    </location>
+
 
     <!-- new to JBT 4.1.0 / JBDS 7 -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
