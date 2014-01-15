@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.jboss.tools.targetplatforms</groupId>
 		<artifactId>jbtcentral</artifactId>
-		<version>4.40.0.Alpha1-SNAPSHOT</version>
+		<version>4.40.0.Alpha2-SNAPSHOT</version>
 	</parent>
 	<artifactId>jbtcentral-multiple</artifactId>
 	<name>JBoss Central Extras Multiple (Composite) Target Platform</name>
