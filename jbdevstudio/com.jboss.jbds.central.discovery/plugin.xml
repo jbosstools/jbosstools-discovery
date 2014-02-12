@@ -653,7 +653,7 @@ reasonable, reporting issues to these providers as required.</description>
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/8.0-development/central/core/}">
             <iu id="org.jboss.tools.maven.gwt.feature"/>
-            <iu id="com.google.gdt.eclipse.suite.e43.feature"/>
+            <!-- JBIDE-16543 does not install on Luna M5 <iu id="com.google.gdt.eclipse.suite.e43.feature"/> -->
          <icon
                image32="images/jbosstools_icon32.png">
          </icon>
