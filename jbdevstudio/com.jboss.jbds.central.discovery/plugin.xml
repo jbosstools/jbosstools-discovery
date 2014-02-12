@@ -191,19 +191,20 @@ reasonable, reporting issues to these providers as required.</description>
          </overview>
       </connectorDescriptor>
 
+      <!-- JBIDE-16543 remove 'Google Plug-in (GPE) + ' from desc and name fields below -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.extras"
             certificationId="com.jboss.jbds.discovery.certification.tested"
-            description="Google Plug-in (GPE) + Web Toolkit (GWT) Designer + WindowBuilder"
+            description="Google Web Toolkit (GWT) Designer + WindowBuilder"
             id="com.google.gpe.gwt"
             kind="task"
             license="EPL, Other (Free)"
-            name="Google Plug-in + GWT Designer + WindowBuilder"
+            name="GWT Designer + WindowBuilder"
             provider="Google, Inc."
             siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/8.0-development/central/core/}">
             <iu id="com.google.gwt.eclipse.sdkbundle.feature"/>
-            <iu id="com.google.gdt.eclipse.suite.e43.feature"/>
+            <!-- JBIDE-16543 does not install on Luna M5 <iu id="com.google.gdt.eclipse.suite.e43.feature"/> -->
             <iu id="com.google.gdt.eclipse.designer.editor.feature"/>
             <iu id="com.google.gdt.eclipse.designer.gpe.feature"/>
             <iu id="com.google.gdt.eclipse.designer.hosted.feature"/>
@@ -217,6 +218,7 @@ reasonable, reporting issues to these providers as required.</description>
                url="https://developers.google.com/web-toolkit/tools/gwtdesigner/quick_start">
          </overview>
       </connectorDescriptor>
+
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.extras"
