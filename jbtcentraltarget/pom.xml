@@ -9,8 +9,8 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<tychoVersion>0.19.0</tychoVersion>
-		<tychoExtrasVersion>0.19.0</tychoExtrasVersion>
+		<tychoVersion>0.20.0</tychoVersion>
+		<tychoExtrasVersion>0.20.0</tychoExtrasVersion>
 	</properties>
 
 	<build>
