@@ -840,6 +840,25 @@ reasonable, reporting issues to these providers as required.</description>
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.upstream"
             certificationId="com.jboss.jbds.discovery.certification.supported"
+            description="Maven Integration for EGit (m2e-egit)"
+            id="m2e.egit.feature"
+            kind="task"
+            license="EPL (Free)"
+            name="Maven Integration for EGit (m2e-egit)"
+            provider="eclipse.org"
+            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/8.0-development/central/core/}">
+            <iu id="org.sonatype.m2e.egit.feature"/>
+         <icon
+               image32="images/m2e_32.gif">
+         </icon>
+         <overview
+               url="http://wiki.eclipse.org/M2E/Extension_Development#org.sonatype.m2e.egit_and_org.sonatype.m2e.egit.tests">
+         </overview>
+      </connectorDescriptor>
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.d.maven"
+            groupId="org.jboss.tools.central.discovery.d.maven.upstream"
+            certificationId="com.jboss.jbds.discovery.certification.supported"
             description="Maven Integration for Web Tools (m2e-wtp)"
             id="org.maven.ide.eclipse.wtp.feature"
             kind="task"
