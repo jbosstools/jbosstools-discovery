@@ -191,8 +191,7 @@ reasonable, reporting issues to these providers as required.</description>
          </overview>
       </connectorDescriptor>
 
-      <!-- JBIDE-16543 remove 'Google Plug-in (GPE) + ' from desc and name fields below -->
-      <connectorDescriptor
+      <!-- JBIDE-16543 com.google.gdt.eclipse.suite.e43.feature does not install on Luna M5; remove 'Google Plug-in (GPE) + ' from desc and name fields below; then remove connector entirely, as per @fbricon <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.extras"
             certificationId="com.jboss.jbds.discovery.certification.tested"
@@ -204,7 +203,6 @@ reasonable, reporting issues to these providers as required.</description>
             provider="Google, Inc."
             siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/8.0-development/central/core/}">
             <iu id="com.google.gwt.eclipse.sdkbundle.feature"/>
-            <!-- JBIDE-16543 does not install on Luna M5 <iu id="com.google.gdt.eclipse.suite.e43.feature"/> -->
             <iu id="com.google.gdt.eclipse.designer.editor.feature"/>
             <iu id="com.google.gdt.eclipse.designer.gpe.feature"/>
             <iu id="com.google.gdt.eclipse.designer.hosted.feature"/>
@@ -217,7 +215,7 @@ reasonable, reporting issues to these providers as required.</description>
          <overview
                url="https://developers.google.com/web-toolkit/tools/gwtdesigner/quick_start">
          </overview>
-      </connectorDescriptor>
+      </connectorDescriptor> -->
 
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
@@ -641,7 +639,7 @@ reasonable, reporting issues to these providers as required.</description>
                url="http://www.jboss.org/tools">
          </overview>
       </connectorDescriptor>
-      <connectorDescriptor
+      <!-- JBIDE-16543 com.google.gdt.eclipse.suite.e43.feature does not install on Luna M5; remove connector entirely, as per @fbricon <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.configurators"
             certificationId="com.jboss.jbds.discovery.certification.supported"
@@ -653,14 +651,13 @@ reasonable, reporting issues to these providers as required.</description>
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/8.0-development/central/core/}">
             <iu id="org.jboss.tools.maven.gwt.feature"/>
-            <iu id="com.google.gdt.eclipse.suite.e43.feature"/>
          <icon
                image32="images/jbosstools_icon32.png">
          </icon>
          <overview
                url="http://www.jboss.org/tools">
          </overview>
-      </connectorDescriptor>
+      </connectorDescriptor> -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.configurators"
