@@ -79,10 +79,10 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/eclipsecs/5.7.0.201402131929/"/>
-      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.10.0"/>
-      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.10.0"/>
-      <unit id="net.sf.eclipsecs.feature.group" version="5.7.0.201402131929"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/eclipsecs/5.6.1.201306282206/"/>
+      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.8.0"/>
+      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.8.0"/>
+      <unit id="net.sf.eclipsecs.feature.group" version="5.6.1.201306282206"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
@@ -100,8 +100,8 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/pmd/4.0.2.v20131031-1124/"/>
-      <unit id="net.sourceforge.pmd.eclipse.feature.group" version="4.0.2.v20131031-1124"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/pmd/4.0.1.v20130811-0001/"/>
+      <unit id="net.sourceforge.pmd.eclipse.feature.group" version="4.0.1.v20130811-0001"/>
     </location>
 
     <!-- required for SpringIDE 3.4 -->
@@ -158,47 +158,47 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/subclipse/1.10.4_1.8.4.r10218_v20140302_1242/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/subclipse/1.10.3_1.8.0.r10086_v20131126_1344/"/>
       <unit id="com.collabnet.subversion.merge.feature.feature.group" version="4.0.2"/>
       <unit id="net.java.dev.jna.feature.group" version="3.5.2"/>
       <unit id="org.tigris.subversion.clientadapter.feature.feature.group" version="1.10.1"/>
-      <unit id="org.tigris.subversion.clientadapter.javahl.feature.feature.group" version="1.8.8"/>
-      <unit id="org.tigris.subversion.clientadapter.svnkit.feature.feature.group" version="1.8.3"/>
+      <unit id="org.tigris.subversion.clientadapter.javahl.feature.feature.group" version="1.8.4"/>
+      <unit id="org.tigris.subversion.clientadapter.svnkit.feature.feature.group" version="1.8.0.1"/>
       <unit id="org.tigris.subversion.subclipse.graph.feature.feature.group" version="1.1.1"/>
       <unit id="org.tigris.subversion.subclipse.mylyn.feature.group" version="3.0.0"/>
-      <unit id="org.tigris.subversion.subclipse.feature.group" version="1.10.4"/>
-      <unit id="org.tmatesoft.svnkit.feature.group" version="1.8.4.r10218_v20140302_1242"/>
+      <unit id="org.tigris.subversion.subclipse.feature.group" version="1.10.3"/>
+      <unit id="org.tmatesoft.svnkit.feature.group" version="1.8.0.r10086_v20131126_1344"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/testng/6.8.6.20141201_2240/"/>
-      <unit id="org.testng.eclipse.feature.group" version="6.8.6.20141201_2240"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/testng/6.8.6.20130914_0724/"/>
+      <unit id="org.testng.eclipse.feature.group" version="6.8.6.20130914_0724"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/vjet/0.10.0.201402070708/"/>
-      <unit id="org.eclipse.vjet.js.ide.feature.group" version="0.10.0.201402070708"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/vjet/0.10.0.201309201624/"/>
+      <unit id="org.eclipse.vjet.js.ide.feature.group" version="0.10.0.201309201624"/>
         <unit id="org.eclipse.equinox.server.jetty.feature.group" version="1.1.0.v20130429-1600"/>
-        <unit id="org.eclipse.vjet.core.feature.group" version="0.10.0.201402070708"/>
-        <unit id="org.eclipse.vjet.eclipse.feature.group" version="0.10.0.201402070708"/>
-        <unit id="org.eclipse.vjet.extmod.dltk.core.feature.group" version="0.10.0.201402070708"/>
-        <unit id="org.eclipse.vjet.extmod.jsdt.feature.group" version="0.10.0.201402070708"/>
-        <unit id="org.eclipse.vjet.extmod.rhino.feature.group" version="0.10.0.201402070708"/>
-        <unit id="org.eclipse.vjet.rt.feature.group" version="0.10.0.201402070708"/>
-        <unit id="org.eclipse.vjet.web.feature.group" version="0.10.0.201402070708"/>
+        <unit id="org.eclipse.vjet.core.feature.group" version="0.10.0.201309201624"/>
+        <unit id="org.eclipse.vjet.eclipse.feature.group" version="0.10.0.201309201624"/>
+        <unit id="org.eclipse.vjet.extmod.dltk.core.feature.group" version="0.10.0.201309201624"/>
+        <unit id="org.eclipse.vjet.extmod.jsdt.feature.group" version="0.10.0.201309201624"/>
+        <unit id="org.eclipse.vjet.extmod.rhino.feature.group" version="0.10.0.201309201624"/>
+        <unit id="org.eclipse.vjet.rt.feature.group" version="0.10.0.201309201624"/>
+        <unit id="org.eclipse.vjet.web.feature.group" version="0.10.0.201309201624"/>
         <unit id="org.w3c.dom.events" version="3.0.0.draft20060413_v201105210656"/>
 
-      <unit id="org.eclipse.vjet.codegen.feature.group" version="0.10.0.201402070708"/>
-        <unit id="org.eclipse.vjet.resource.feature.group" version="0.10.0.201402070708"/>
+      <unit id="org.eclipse.vjet.codegen.feature.group" version="0.10.0.201309201624"/>
+        <unit id="org.eclipse.vjet.resource.feature.group" version="0.10.0.201309201624"/>
 
-      <unit id="org.eclipse.vjet.vsf.domkit.feature.group" version="0.10.0.201402070708"/>
+      <unit id="org.eclipse.vjet.vsf.domkit.feature.group" version="0.10.0.201309201624"/>
         <unit id="org.junit4" version="4.8.1.v20120523-1257"/>
     </location>
 
     <!-- unchanged since JBT 4.0.0 / JBDS 6 -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/findbugs/2.0.3.20131122-15027/"/>
-      <unit id="edu.umd.cs.findbugs.plugin.eclipse.feature.group" version="2.0.3.20131122-15027"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/findbugs/2.0.2.20121210/"/>
+      <unit id="edu.umd.cs.findbugs.plugin.eclipse.feature.group" version="2.0.2.20121210"/>
     </location>
 
   </locations>
