@@ -60,6 +60,11 @@
       <unit id="com.atlassian.connector.eclipse.monitor.feature.group" version="3.2.2.v20130909"/>
       <unit id="com.atlassian.connector.eclipse.feature.group" version="3.2.2.v20130909"/>
     </location>
+    <!-- needed by Atlassian 3.2.2.v20130909; not yet in Luna (see https://bugs.eclipse.org/bugs/show_bug.cgi?id=430816) -->
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/mylyn/3.11.0-v20140314-2044/"/>
+      <unit id="org.eclipse.mylyn.commons.soap_feature.feature.group" version="3.11.0.v20131219-1119"/>
+    </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/static/requirements/orbit/R20130827064939/"/> 
