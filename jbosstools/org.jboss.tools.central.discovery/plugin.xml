@@ -251,9 +251,9 @@ reasonable, reporting issues to these providers as required.</description>
             name="Eclipse VJET"
             provider="eclipse.org"
             siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
-            <iu id="org.eclipse.vjet.js.ide.feature.group"/>
-            <iu id="org.eclipse.vjet.codegen.feature.group"/>
-            <iu id="org.eclipse.vjet.vsf.domkit.feature.group"/>
+            <iu id="org.eclipse.vjet.js.ide"/>
+            <iu id="org.eclipse.vjet.codegen"/>
+            <iu id="org.eclipse.vjet.vsf.domkit"/>
          <icon
                image32="images/vjet_32.png">
          </icon>
@@ -467,7 +467,7 @@ reasonable, reporting issues to these providers as required.</description>
             name="Hudson + Jenkins: Mylyn Support"
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
-         <iu id="org.eclipse.mylyn.hudson.feature.group"/>
+         <iu id="org.eclipse.mylyn.hudson"/>
          <icon
                image32="images/mylyn_32.png">
          </icon>
