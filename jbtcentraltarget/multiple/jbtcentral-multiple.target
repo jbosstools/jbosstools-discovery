@@ -36,8 +36,8 @@
     
     <!-- m2e extensions (that are not already in core TP) -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/1.0.2-2013-11-12_19-36-08-H20/"/>
-      <unit id="org.jboss.tools.m2e.wro4j.feature.feature.group" version="1.0.2.201311130036"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/1.1.0-2014-03-24_15-15-15-H24/"/>
+      <unit id="org.jboss.tools.m2e.wro4j.feature.feature.group" version="1.1.0.201403241922"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/1.1.0-2013-11-29_03-18-37-H27/"/>
