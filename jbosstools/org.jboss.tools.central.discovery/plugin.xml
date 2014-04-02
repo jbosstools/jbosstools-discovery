@@ -654,12 +654,12 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.configurators"
-            description="JBoss Maven JAX-RS Configurator"
+            description="Maven JAX-RS Configurator"
             id="org.jboss.tools.maven.jaxrs.feature"
             kind="task"
             license="EPL (Free)"
-            name="JBoss Maven JAX-RS Configurator"
-            provider="JBoss by Red Hat"
+            name="Maven JAX-RS Configurator"
+            provider="eclipse.org"
             siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
             <iu id="org.eclipse.m2e.wtp.jaxrs.feature"/>
          <icon
@@ -672,12 +672,12 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.configurators"
-            description="JBoss Maven JSF Configurator"
+            description="Maven JSF Configurator"
             id="org.jboss.tools.maven.jsf.feature"
             kind="task"
             license="EPL (Free)"
-            name="JBoss Maven JSF Configurator"
-            provider="JBoss by Red Hat"
+            name="Maven JSF Configurator"
+            provider="eclipse.org"
             siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
             <iu id="org.eclipse.m2e.wtp.jsf.feature"/>
          <icon
@@ -747,12 +747,12 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.configurators"
-            description="JBoss Maven JPA Configurator"
+            description="Maven JPA Configurator"
             id="org.jboss.tools.maven.jpa.feature"
             kind="task"
             license="EPL (Free)"
-            name="JBoss Maven JPA Configurator"
-            provider="JBoss by Red Hat"
+            name="Maven JPA Configurator"
+            provider="eclipse.org"
             siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
             <iu id="org.eclipse.m2e.wtp.jpa.feature"/>
          <icon
