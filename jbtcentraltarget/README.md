@@ -41,8 +41,8 @@ When moving from one version of the target to another, the steps are:
 
     # set path to where you have the latest compatible Eclipse bundle stored locally
     ECLIPSEZIP=${HOME}/tmp/Eclipse_Bundles/eclipse-jee-luna-M6-linux-gtk-x86_64.tar.gz
-    # set URL for JBT / JBT Target so that all Central deps can be resolved
-    UPSTREAM_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/master/
+    # set URL(s) for JBT / JBT Target so that all Central deps can be resolved; for more than one, separate w/ commas
+    UPSTREAM_SITE=file://$HOME/tru/jbosstools-target-platforms/jbosstools/multiple/target/jbosstools-multiple.target.repo/
 
     # Step 1: Merge changes in new target file to actual target file
     pushd multiple && mvn -U org.jboss.tools.tycho-plugins:target-platform-utils:0.19.0-SNAPSHOT:fix-versions -DtargetFile=jbtcentral-multiple.target && rm -f jbtcentral-multiple.target jbtcentral-multiple.target_update_hints.txt && mv -f jbtcentral-multiple.target_fixedVersion.target jbtcentral-multiple.target && popd 
@@ -58,9 +58,9 @@ When moving from one version of the target to another, the steps are:
       echo "Unpack ${ECLIPSEZIP} into ${INSTALLDIR} ..." && tar xzf ${ECLIPSEZIP}
       echo "Fetch install script to ${INSTALLSCRIPT} ..." && wget -q --no-check-certificate -N https://raw.githubusercontent.com/jbosstools/jbosstools-build-ci/master/util/installFromTarget.sh -O ${INSTALLSCRIPT} && chmod +x ${INSTALLSCRIPT} 
       echo "Install..." && ${INSTALLSCRIPT} -ECLIPSE ${INSTALLDIR}/eclipse -INSTALL_PLAN ${UPSTREAM_SITE},file://${BASEDIR}/multiple/target/jbtcentral-multiple.target.repo/ \
-      | tee /tmp/log.txt; cat /tmp/log.txt | egrep -i "could not be found|FAILED|Missing|Only one of the following|being installed|Cannot satisfy dependency"
+      | tee /tmp/log.txt; cat /tmp/log.txt | egrep -i -A2 "could not be found|FAILED|Missing|Only one of the following|being installed|Cannot satisfy dependency"
     popd
 
 </pre>
 
-<ol><li value="4"> Check in updated target files & push to the branch.</li></ol>
+<ol><li value="3"> Check in updated target files & push to the branch.</li></ol>
