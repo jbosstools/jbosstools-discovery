@@ -67,7 +67,7 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/static/requirements/orbit/R20130827064939/"/> 
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20130517111416/"/> 
       <!-- Atlassian (com.atlassian.connector.*) dependencies -->
       <unit id="javax.xml.soap" version="1.3.0.v201105210645"/>
       <unit id="javax.activation" version="1.1.0.v201211130549"/> 
@@ -101,25 +101,11 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/gwt/3.4.2.v201310081834-rel-r43/"/>
-      <unit id="com.google.gdt.eclipse.designer.editor.feature.feature.group" version="3.1.2.r43x201307151447"/>
-      <unit id="com.google.gdt.eclipse.designer.gpe.feature.feature.group" version="3.1.2.r43x201307151506"/>
-      <unit id="com.google.gdt.eclipse.designer.hosted.feature.feature.group" version="3.1.2.r43x201307151442"/>
-      <unit id="com.google.gdt.eclipse.suite.e43.feature.feature.group" version="3.4.2.v201310081834-rel-r43"/>
-      <unit id="com.google.gwt.eclipse.sdkbundle.feature.feature.group" version="2.5.1"/>
-      <unit id="org.eclipse.wb.core.feature.feature.group" version="1.6.0.r43x201305211944"/>
-      <unit id="org.eclipse.wb.core.java.feature.feature.group" version="1.6.0.r43x201306031644"/>
-      <unit id="org.eclipse.wb.core.ui.feature.feature.group" version="1.6.0.r43x201306031651"/>
-      <unit id="org.eclipse.wb.core.xml.feature.feature.group" version="1.6.0.r43x201306031653"/>
-      <unit id="org.eclipse.wb.css.feature.feature.group" version="1.6.0.r43x201306031647"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/pmd/4.0.2.v20131031-1124/"/>
+      <unit id="net.sourceforge.pmd.eclipse.feature.group" version="4.0.2.v20131031-1124"/>
     </location>
 
-    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/pmd/4.0.1.v20130811-0001/"/>
-      <unit id="net.sourceforge.pmd.eclipse.feature.group" version="4.0.1.v20130811-0001"/>
-    </location>
-
-    <!-- required for SpringIDE 3.4 -->
+    <!-- required for SpringIDE 3.5 -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201403140900-M6/"/>
       <unit id="org.apache.batik.util" version="1.6.0.v201011041432"/>
@@ -135,54 +121,54 @@
       <unit id="org.eclipse.contribution.xref.feature.group" version="2.2.4.e44x-20140205-0900"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.5.0.201403071017-CI-B693/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.5.0.201404011509-RELEASE/"/>
       <!-- Features to include in Central connector -->
-      <unit id="org.springframework.ide.eclipse.ajdt.feature.feature.group" version="3.5.0.201403071017-CI-B693"/>
-      <unit id="org.springframework.ide.eclipse.aop.feature.feature.group" version="3.5.0.201403071017-CI-B693"/>
-      <unit id="org.springframework.ide.eclipse.autowire.feature.feature.group" version="3.5.0.201403071017-CI-B693"/>
-      <unit id="org.springframework.ide.eclipse.batch.feature.feature.group" version="3.5.0.201403071017-CI-B693"/>
-      <unit id="org.springframework.ide.eclipse.data.feature.feature.group" version="3.5.0.201403071017-CI-B693"/>
-      <unit id="org.springframework.ide.eclipse.feature.feature.group" version="3.5.0.201403071017-CI-B693"/>
-      <unit id="org.springframework.ide.eclipse.integration.feature.feature.group" version="3.5.0.201403071017-CI-B693"/>
-      <unit id="org.springframework.ide.eclipse.maven.feature.feature.group" version="3.5.0.201403071017-CI-B693"/>
-      <unit id="org.springframework.ide.eclipse.mylyn.feature.feature.group" version="3.5.0.201403071017-CI-B693"/>
-      <unit id="org.springframework.ide.eclipse.osgi.feature.feature.group" version="3.5.0.201403071017-CI-B693"/>
-      <unit id="org.springframework.ide.eclipse.security.feature.feature.group" version="3.5.0.201403071017-CI-B693"/>
-      <unit id="org.springframework.ide.eclipse.webflow.feature.feature.group" version="3.5.0.201403071017-CI-B693"/>
-      <unit id="org.springsource.ide.eclipse.commons.feature.group" version="3.5.0.201403110852-CI-B10"/>
+      <unit id="org.springframework.ide.eclipse.ajdt.feature.feature.group" version="3.5.0.201404011509-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.aop.feature.feature.group" version="3.5.0.201404011509-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.autowire.feature.feature.group" version="3.5.0.201404011509-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.batch.feature.feature.group" version="3.5.0.201404011509-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.data.feature.feature.group" version="3.5.0.201404011509-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.feature.feature.group" version="3.5.0.201404011509-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.integration.feature.feature.group" version="3.5.0.201404011509-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.maven.feature.feature.group" version="3.5.0.201404011509-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.mylyn.feature.feature.group" version="3.5.0.201404011509-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.osgi.feature.feature.group" version="3.5.0.201404011509-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.security.feature.feature.group" version="3.5.0.201404011509-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.webflow.feature.feature.group" version="3.5.0.201404011509-RELEASE"/>
+      <unit id="org.springsource.ide.eclipse.commons.feature.group" version="3.5.0.201404011422-RELEASE"/>
 
       <!-- Plugins to include to avoid console warnings after installation -->
-      <unit id="org.springframework.ide.eclipse.config.ui" version="3.5.0.201403071017-CI-B693"/>
-      <unit id="org.springframework.ide.eclipse.maven" version="3.5.0.201403071017-CI-B693"/>
-      <unit id="org.springframework.ide.eclipse.wizard" version="3.5.0.201403071017-CI-B693"/>
+      <unit id="org.springframework.ide.eclipse.config.ui" version="3.5.0.201404011509-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.maven" version="3.5.0.201404011509-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.wizard" version="3.5.0.201404011509-RELEASE"/>
 
       <!-- Required 3rd party plugins (on SpringIDE or Orbit site) not properly referenced by features -->
       <unit id="javax.jms" version="1.1.0.v201205091237"/>
       <unit id="org.aopalliance" version="1.0.0.v201105210816"/>
-      <unit id="org.apache.commons.codec" version="1.6.0.v201305230611"/>
-      <unit id="org.apache.httpcomponents.httpclient" version="4.2.6.v201311072007"/>
-      <unit id="org.apache.httpcomponents.httpcore" version="4.2.5.v201311072007"/>
-      <unit id="org.aspectj.runtime" version="1.8.0.20131018120000"/>
+      <unit id="org.apache.commons.codec" version="1.4.0.v201209201156"/>
+      <unit id="org.apache.httpcomponents.httpclient" version="4.1.3.v201209201135"/>
+      <unit id="org.apache.httpcomponents.httpcore" version="4.1.4.v201203221030"/>
+      <unit id="org.aspectj.runtime" version="1.8.0.20140320104000"/>
       <unit id="org.codehaus.jackson.core" version="1.6.0.v20101005-0925"/>
       <unit id="org.codehaus.jackson.mapper" version="1.6.0.v20101005-0925"/>
-      <unit id="org.eclipse.contribution.visualiser" version="2.2.4.e44x-20140205-0900"/>
+      <unit id="org.eclipse.contribution.visualiser" version="2.2.4.e43x-20140320-1000"/>
       <unit id="org.json" version="1.0.0.v201011060100"/>
 
       <!-- Optional bundles included to avoid console warnings after installation -->
-      <unit id="org.springsource.ide.eclipse.dashboard.ui" version="3.5.0.201403110852-CI-B10"/>
+      <unit id="org.springsource.ide.eclipse.dashboard.ui" version="3.5.0.201404011422-RELEASE"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/subclipse/1.10.3_1.8.0.r10086_v20131126_1344/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/subclipse/1.10.4_1.8.4.r10218_v20140302_1242/"/>
       <unit id="com.collabnet.subversion.merge.feature.feature.group" version="4.0.2"/>
       <unit id="net.java.dev.jna.feature.group" version="3.5.2"/>
       <unit id="org.tigris.subversion.clientadapter.feature.feature.group" version="1.10.1"/>
-      <unit id="org.tigris.subversion.clientadapter.javahl.feature.feature.group" version="1.8.4"/>
-      <unit id="org.tigris.subversion.clientadapter.svnkit.feature.feature.group" version="1.8.0.1"/>
+      <unit id="org.tigris.subversion.clientadapter.javahl.feature.feature.group" version="1.8.8"/>
+      <unit id="org.tigris.subversion.clientadapter.svnkit.feature.feature.group" version="1.8.3"/>
       <unit id="org.tigris.subversion.subclipse.graph.feature.feature.group" version="1.1.1"/>
       <unit id="org.tigris.subversion.subclipse.mylyn.feature.group" version="3.0.0"/>
-      <unit id="org.tigris.subversion.subclipse.feature.group" version="1.10.3"/>
-      <unit id="org.tmatesoft.svnkit.feature.group" version="1.8.0.r10086_v20131126_1344"/>
+      <unit id="org.tigris.subversion.subclipse.feature.group" version="1.10.4"/>
+      <unit id="org.tmatesoft.svnkit.feature.group" version="1.8.4.r10218_v20140302_1242"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
@@ -190,30 +176,31 @@
       <unit id="org.testng.eclipse.feature.group" version="6.8.6.20130914_0724"/>
     </location>
 
+    <!-- required for VJET 0.10.0 -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/vjet/0.10.0.201309201624/"/>
-      <unit id="org.eclipse.vjet.js.ide.feature.group" version="0.10.0.201309201624"/>
-        <unit id="org.eclipse.equinox.server.jetty.feature.group" version="1.1.0.v20130429-1600"/>
-        <unit id="org.eclipse.vjet.core.feature.group" version="0.10.0.201309201624"/>
-        <unit id="org.eclipse.vjet.eclipse.feature.group" version="0.10.0.201309201624"/>
-        <unit id="org.eclipse.vjet.extmod.dltk.core.feature.group" version="0.10.0.201309201624"/>
-        <unit id="org.eclipse.vjet.extmod.jsdt.feature.group" version="0.10.0.201309201624"/>
-        <unit id="org.eclipse.vjet.extmod.rhino.feature.group" version="0.10.0.201309201624"/>
-        <unit id="org.eclipse.vjet.rt.feature.group" version="0.10.0.201309201624"/>
-        <unit id="org.eclipse.vjet.web.feature.group" version="0.10.0.201309201624"/>
-        <unit id="org.w3c.dom.events" version="3.0.0.draft20060413_v201105210656"/>
-
-      <unit id="org.eclipse.vjet.codegen.feature.group" version="0.10.0.201309201624"/>
-        <unit id="org.eclipse.vjet.resource.feature.group" version="0.10.0.201309201624"/>
-
-      <unit id="org.eclipse.vjet.vsf.domkit.feature.group" version="0.10.0.201309201624"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201403140900-M6/"/>
+      <!-- already included in JBT TP <unit id="org.eclipse.equinox.server.jetty.feature.group" version="0.0.0"/> -->
+      <unit id="org.w3c.dom.events" version="3.0.0.draft20060413_v201105210656"/>
+    </location>
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/vjet/0.10.0.201403201656/"/>
+      <unit id="org.eclipse.vjet.core.feature.group" version="0.10.0.201403201656"/>
+      <unit id="org.eclipse.vjet.eclipse.feature.group" version="0.10.0.201403201656"/>
+      <unit id="org.eclipse.vjet.extmod.dltk.core.feature.group" version="0.10.0.201403201656"/>
+      <unit id="org.eclipse.vjet.extmod.jsdt.feature.group" version="0.10.0.201403201656"/>
+      <unit id="org.eclipse.vjet.extmod.rhino.feature.group" version="0.10.0.201403201656"/>
+      <unit id="org.eclipse.vjet.rt.feature.group" version="0.10.0.201403201656"/>
+      <unit id="org.eclipse.vjet.web.feature.group" version="0.10.0.201403201656"/>
+      <unit id="org.eclipse.vjet.codegen.feature.group" version="0.10.0.201403201656"/>
+        <unit id="org.eclipse.vjet.resource.feature.group" version="0.10.0.201403201656"/>
+      <unit id="org.eclipse.vjet.vsf.domkit.feature.group" version="0.10.0.201403201656"/>
         <unit id="org.junit4" version="4.8.1.v20120523-1257"/>
     </location>
 
     <!-- unchanged since JBT 4.0.0 / JBDS 6 -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/findbugs/2.0.2.20121210/"/>
-      <unit id="edu.umd.cs.findbugs.plugin.eclipse.feature.group" version="2.0.2.20121210"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/findbugs/2.0.3.20131122-15027/"/>
+      <unit id="edu.umd.cs.findbugs.plugin.eclipse.feature.group" version="2.0.3.20131122-15027"/>
     </location>
 
   </locations>

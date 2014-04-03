@@ -35,10 +35,31 @@ When moving from one version of the target to another, the steps are:
 
 <pre>
 
-    # Merge changes in new target file to actual target file, updating versions as required. Then resolve the new 'multiple' target platform and verify it is self-contained by building it
-
+    # point BASEDIR to where you have these sources checked out
+    BASEDIR=$HOME/jbosstools-discovery/jbtcentraltarget; # or, just do this:
     BASEDIR=`pwd`
-    pushd multiple && mvn -U org.jboss.tools.tycho-plugins:target-platform-utils:0.19.0-SNAPSHOT:fix-versions -DtargetFile=jbtcentral-multiple.target && rm -f jbtcentral-multiple.target jbtcentral-multiple.target_update_hints.txt && mv -f jbtcentral-multiple.target_fixedVersion.target jbtcentral-multiple.target && popd && mvn -U install -DtargetRepositoryUrl=file://${BASEDIR}/multiple/target/jbtcentral-multiple.target.repo/
+
+    # set path to where you have the latest compatible Eclipse bundle stored locally
+    ECLIPSEZIP=${HOME}/tmp/Eclipse_Bundles/eclipse-jee-luna-M6-linux-gtk-x86_64.tar.gz
+    # set URL for JBT / JBT Target so that all Central deps can be resolved
+    UPSTREAM_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/master/
+
+    # Step 1: Merge changes in new target file to actual target file
+    pushd multiple && mvn -U org.jboss.tools.tycho-plugins:target-platform-utils:0.19.0-SNAPSHOT:fix-versions -DtargetFile=jbtcentral-multiple.target && rm -f jbtcentral-multiple.target jbtcentral-multiple.target_update_hints.txt && mv -f jbtcentral-multiple.target_fixedVersion.target jbtcentral-multiple.target && popd 
+
+    # Step 2: Resolve the new 'multiple' target platform and verify it is self-contained by building the 'unified' target platform too
+    # TODO: if you removed IUs, be sure to do a `mvn clean install`, rather than just a `mvn install`; process will be much longer but will guarantee metadata is correct 
+    mvn install -DtargetRepositoryUrl=file://${BASEDIR}/multiple/target/jbtcentral-multiple.target.repo/
+    # Step 3: Install the new target platform into a clean Eclipse JEE bundle to verify if everything can be installed
+    INSTALLDIR=/tmp/jbtcentraltarget-install-test
+    INSTALLSCRIPT=/tmp/installFromTarget.sh
+    rm -fr ${INSTALLDIR} && mkdir -p ${INSTALLDIR}
+    pushd ${INSTALLDIR}
+      echo "Unpack ${ECLIPSEZIP} into ${INSTALLDIR} ..." && tar xzf ${ECLIPSEZIP}
+      echo "Fetch install script to ${INSTALLSCRIPT} ..." && wget -q --no-check-certificate -N https://raw.githubusercontent.com/jbosstools/jbosstools-build-ci/master/util/installFromTarget.sh -O ${INSTALLSCRIPT} && chmod +x ${INSTALLSCRIPT} 
+      echo "Install..." && ${INSTALLSCRIPT} -ECLIPSE ${INSTALLDIR}/eclipse -INSTALL_PLAN ${UPSTREAM_SITE},file://${BASEDIR}/multiple/target/jbtcentral-multiple.target.repo/ \
+      | tee /tmp/log.txt; cat /tmp/log.txt | egrep -i "could not be found|FAILED|Missing|Only one of the following|being installed|Cannot satisfy dependency"
+    popd
 
 </pre>
 
