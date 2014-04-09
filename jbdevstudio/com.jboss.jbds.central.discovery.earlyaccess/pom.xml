@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion> 
+  <parent>
+    <groupId>org.jboss.tools.central.discovery</groupId>
+    <artifactId>jbdevstudio</artifactId>
+    <version>4.2.0-SNAPSHOT</version>
+  </parent>
+  <groupId>com.jboss.jbds.product.plugins</groupId>
+  <artifactId>com.jboss.jbds.central.discovery.earlyaccess</artifactId> 
+  <version>8.0.0-SNAPSHOT</version>
+  <packaging>eclipse-plugin</packaging>
+<build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <version>1.7</version>
+        <executions>
+          <execution>
+            <id>install</id>
+            <phase>install</phase>
+            <configuration>
+              <quiet>true</quiet>
+              <target>
+                <!-- called AFTER generating update site + zip to add in extra content -->
+                <!--
+                To test output, run maven in this folder:
+                  $ mvn install -DPREFIX=devstudio  -DBUILD_ALIAS=Alpha2 -DBUILD_ID=2012-11-29_12-55-00 -DBUILD_NUMBER=4200 -DUPDATE_SITE=... -DEXTRAS_SITE=...
+                  $ mvn install -DPREFIX=devstudio  -DBUILD_ALIAS=Alpha2 -DBUILD_ID=2012-11-29_12-55-00 -DBUILD_NUMBER=4200 -DUPDATE_SITE=... -DEXTRAS_SITE=...
+                -->
+                <ant antfile="build.xml" target="basic.build" dir="../../">
+                  <property name="output.dir" value="${basedir}" />
+                  <property name="project.artifactId" value="${project.artifactId}"/>
+                  <property name="PREFIX" value="devstudio"/>
+                  <property name="VERSION" value="${project.version}" />
+                  <property name="BUILD_ALIAS" value="${BUILD_ALIAS}" />
+                  <property name="TARGET_PLATFORM_VERSION" value="${TARGET_PLATFORM_VERSION}"/>
+                  
+                  <!-- pass in from Jenkins:
+                  <property name="UPDATE_SITE" value="http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_trunk/all/"/>
+
+                  <property name="UPDATE_SITE" value="http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_71/all/"/>
+                  <property name="UPDATE_SITE" value="http://www.qa.jboss.com/binaries/RHDS/updates/development/7.1.0.Beta1.core/"/>
+
+                  <property name="UPDATE_SITE" value="http://download.jboss.org/jbosstools/builds/staging/_composite_/core/trunk/"/>
+                  <property name="UPDATE_SITE" value="http://download.jboss.org/jbosstools/updates/nightly/core/trunk/"/>
+
+                  <property name="UPDATE_SITE" value="http://download.jboss.org/jbosstools/builds/staging/_composite_/core/4.1.kepler/"/>
+                  <property name="UPDATE_SITE" value="http://download.jboss.org/jbosstools/updates/nightly/core/4.1.kepler/"/>
+                  <property name="UPDATE_SITE" value="http://download.jboss.org/jbosstools/updates/JBossTools-4.1.1.Beta1.core/"/>
+                  -->
+                  <property name="UPDATE_SITE" value="${UPDATE_SITE}"/>
+
+                  <!-- pass in from Jenkins:
+                  <property name="EXTRAS_SITE" value="http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/kepler/>
+                  -->
+                  <property name="EXTRAS_SITE" value="${EXTRAS_SITE}"/>
+                </ant>
+              </target>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+        </executions>
+        <dependencies>
+          <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+            <version>1.4.1</version>
+          </dependency>
+          <dependency>
+            <groupId>org.apache.ant</groupId>
+            <artifactId>ant</artifactId>
+            <version>1.7.1</version>
+          </dependency>
+          <dependency>
+            <groupId>org.apache.ant</groupId>
+            <artifactId>ant-nodeps</artifactId>
+            <version>1.7.1</version>
+          </dependency>
+          <dependency>
+            <groupId>org.apache.ant</groupId>
+            <artifactId>ant-trax</artifactId>
+            <version>1.7.1</version>
+          </dependency>
+          <dependency>
+            <groupId>org.apache.ant</groupId>
+            <artifactId>ant-commons-net</artifactId>
+            <version>1.7.1</version>
+          </dependency>
+          <dependency>
+            <groupId>org.apache.ant</groupId>
+            <artifactId>ant-apache-regexp</artifactId>
+            <version>1.7.1</version>
+          </dependency>
+          <dependency>
+            <groupId>ant-contrib</groupId>
+            <artifactId>ant-contrib</artifactId>
+            <version>1.0b3</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+    </plugins>
+  </build>
+</project>

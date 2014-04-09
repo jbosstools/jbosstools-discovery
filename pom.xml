@@ -17,7 +17,9 @@
 
 	<modules>
 		<module>jbosstools/org.jboss.tools.central.discovery</module>
+		<module>jbosstools/org.jboss.tools.central.discovery.earlyaccess</module>
 		<module>jbdevstudio/com.jboss.jbds.central.discovery</module>
+		<module>jbdevstudio/com.jboss.jbds.central.discovery.earlyaccess</module>
 	</modules>
 </project>
 <!--

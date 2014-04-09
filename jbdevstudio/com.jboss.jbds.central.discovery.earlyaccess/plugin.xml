@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+	<extension
+         point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
+
+      <certification id="com.jboss.jbds.discovery.certification.earlyaccess" name="Early Access" url="https://devstudio.jboss.com/updates/8.0-development/central/">
+         <description>
+Early Access are previews of features that are not yet supported by Red Hat, but which are aimed to be supported in a near future.
+	</description>
+         <icon image48="images/redhat_48.png"></icon>
+      </certification>
+      
+      <!-- a. Web Development -->
+
+      <connectorCategory
+            description="Additional plug-ins to support web development"
+            id="org.jboss.tools.central.discovery.a.web"
+            name="Web Development"
+            relevance="70">
+         <group id="org.jboss.tools.central.discovery.a.web.core" /> 
+         <group id="org.jboss.tools.central.discovery.a.web.extras" />
+         <group id="org.jboss.tools.central.discovery.a.web.extras2" />
+      </connectorCategory>
+
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
+            certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
+            description="Create and run tests with Arquillian"
+            id="org.jboss.tools.arquillian"
+            kind="task"
+            license="EPL (Free)"
+            name="JBoss Arquillian Tools"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.earlyaccess.site.url:https://devstudio.jboss.com/updates/8.0-development/central/earlyaccess/}">
+            <iu id="org.jboss.tools.arquillian.feature"/>
+         <icon image32="images/arquillian_32.png"/>
+         <overview url="http://www.jboss.org/tools"/>
+      </connectorDescriptor>
+
+      <!-- JBIDE-14122: VJET -->
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.extras2"
+            certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
+            description="Eclipse VJET (Experimental) includes a JavaScript IDE, Java to Javascript Code Generation + Java Based DOM Kit"
+            id="org.eclipse.vjet.feature"
+            kind="task"
+            license="EPL, Other (Free)"
+            name="Eclipse VJET"
+            provider="eclipse.org"
+            siteUrl="${jboss.discovery.earlyaccess.site.url:https://devstudio.jboss.com/updates/8.0-development/central/earlyaccess/}">
+            <iu id="org.eclipse.vjet.js.ide"/>
+            <iu id="org.eclipse.vjet.codegen"/>
+            <iu id="org.eclipse.vjet.vsf.domkit"/>
+         <icon
+               image32="images/vjet_32.png">
+         </icon>
+         <overview
+               url="http://www.eclipse.org/vjet">
+         </overview>
+      </connectorDescriptor>
+
+    </extension>	
+</plugin>
