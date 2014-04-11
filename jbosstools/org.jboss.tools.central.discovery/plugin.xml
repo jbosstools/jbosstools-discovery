@@ -43,6 +43,41 @@ reasonable, reporting issues to these providers as required.</description>
       
       <!-- use connectorCategory relevance value to sort from largest (80) to smallest (20) -->
 
+      <!-- Java 8 -->
+
+      <connectorCategory
+            description="Java 8"
+            id="org.jboss.tools.central.discovery.a.a.patches"
+            name="Java 8"
+            relevance="90">
+         <group id="org.jboss.tools.central.discovery.a.a.patches" /> 
+      </connectorCategory>
+
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.a.patches"
+            groupId="org.jboss.tools.central.discovery.a.a.patches"
+            description="Java 8 support java, web, plugin and maven development"
+            id="org.jboss.tools.java8"
+            kind="task"
+            license="EPL, Other (Free)"
+            name="Java 8 support"
+            provider="eclipse.org"
+            siteUrl="http://download.jboss.org/jbosstools/updates/requirements/kepler/java8/">
+         <iu id="org.eclipse.jdt.a2.java8patch"/>
+         <iu id="org.eclipse.jdt.java8patch"/>
+         <iu id="org.eclipse.jst.common.fproj.enablement.jdt.feature.patch"/>
+         <iu id="org.eclipse.m2e.feature"/>
+         <iu id="org.eclipse.m2e.logback.feature"/>
+         <iu id="org.eclipse.m2e.sdk.feature"/>
+         <iu id="org.eclipse.pde.java8patch"/>
+         <icon
+               image32="images/java_32.png">
+         </icon>
+         <overview
+               url=" http://www.eclipse.org/downloads/java8/">
+         </overview>
+      </connectorDescriptor>
+
       <!-- a. Mobile Development -->
 
       <connectorCategory
