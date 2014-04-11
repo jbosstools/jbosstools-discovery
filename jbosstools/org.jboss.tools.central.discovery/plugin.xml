@@ -46,9 +46,9 @@ reasonable, reporting issues to these providers as required.</description>
       <!-- Patches -->
 
       <connectorCategory
-            description="Patches"
+            description="Java 8"
             id="org.jboss.tools.central.discovery.a.a.patches"
-            name="Patches"
+            name="Java 8"
             relevance="90">
          <group id="org.jboss.tools.central.discovery.a.a.patches" /> 
       </connectorCategory>
@@ -56,13 +56,13 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.a.patches"
             groupId="org.jboss.tools.central.discovery.a.a.patches"
-            description="Java 8 support for PDE, JDT, WTP JST, and Maven (m2e)"
+            description="Java 8 support java, web, plugin and maven development"
             id="org.jboss.tools.java8"
             kind="task"
             license="EPL, Other (Free)"
             name="Java 8 support"
             provider="eclipse.org"
-            siteUrl="http://download.jboss.org/jbosstools/updates/requirements/kepler/20140403_Eclipse-4.3.2-P20140317-1600_WTP-3.5.2-20140329045715_m2e-1.4.1.20140328-1905/">
+            siteUrl="http://download.jboss.org/jbosstools/updates/requirements/kepler/java8/">
          <iu id="org.eclipse.jdt.a2.java8patch"/>
          <iu id="org.eclipse.jdt.java8patch"/>
          <iu id="org.eclipse.jst.common.fproj.enablement.jdt.feature.patch"/>
@@ -74,7 +74,7 @@ reasonable, reporting issues to these providers as required.</description>
                image32="images/java_32.png">
          </icon>
          <overview
-               url="http://www.oracle.com/technetwork/java/javase/downloads/index.html">
+               url=" http://www.eclipse.org/downloads/java8/">
          </overview>
       </connectorDescriptor>
 
