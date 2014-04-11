@@ -74,7 +74,7 @@ reasonable, reporting issues to these providers as required.</description>
                image32="images/java_32.png">
          </icon>
          <overview
-               url="http://developer.android.com/tools/sdk/eclipse-adt.html">
+               url="http://www.oracle.com/technetwork/java/javase/downloads/index.html">
          </overview>
       </connectorDescriptor>
 
