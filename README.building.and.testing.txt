@@ -57,7 +57,7 @@ or
     -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_71/all/repo/ \
     -DEXTRAS_SITE=http://localhost:8080/jbtcentraltarget/multiple/target/jbtcentral-multiple.target.repo/
 
-3. Install Eclipse (eg., 4.3.1 Kepler SR1 JEE bundle)
+3. Install Eclipse (eg., 4.3.2 Kepler SR2 JEE bundle)
 
 4. Launch Eclipse:
 
@@ -81,7 +81,7 @@ or
 
 To test a site built w/ Jenkins:
 
-1. Install Eclipse (eg., 4.3.1 Kepler SR1 JEE bundle)
+1. Install Eclipse (eg., 4.3.2 Kepler SR2 JEE bundle)
 
 2. Launch Eclipse:
 
