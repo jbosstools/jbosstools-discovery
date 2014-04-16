@@ -56,7 +56,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.a.patches"
             groupId="org.jboss.tools.central.discovery.a.a.patches"
-            description="Java 8 support java, web, plugin and maven development"
+            description="Java 8 support for java, web, plugin and maven development"
             id="org.jboss.tools.java8"
             kind="task"
             license="EPL, Other (Free)"
