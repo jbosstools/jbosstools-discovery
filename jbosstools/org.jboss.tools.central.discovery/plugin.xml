@@ -62,7 +62,7 @@ reasonable, reporting issues to these providers as required.</description>
             license="EPL, Other (Free)"
             name="Java 8 support"
             provider="eclipse.org"
-            siteUrl="http://download.jboss.org/jbosstools/updates/requirements/kepler/java8/">
+            siteUrl="http://download.jboss.org/jbosstools/updates/stable/kepler/central/java8/">
          <iu id="org.eclipse.jdt.a2.java8patch"/>
          <iu id="org.eclipse.jdt.java8patch"/>
          <iu id="org.eclipse.jst.common.fproj.enablement.jdt.feature.patch"/>
