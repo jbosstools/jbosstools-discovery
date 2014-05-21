@@ -36,10 +36,6 @@
     
     <!-- m2e extensions (that are not already in core TP) -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/1.1.0-2014-03-24_15-15-15-H24/"/>
-      <unit id="org.jboss.tools.m2e.wro4j.feature.feature.group" version="1.1.0.201403241922"/>
-    </location>
-    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/1.1.0-2013-11-29_03-18-37-H27/"/>
       <unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.1.0.201311290819"/>
     </location>
@@ -47,6 +43,15 @@
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse-egit/0.14.0.201404242142/"/>
       <unit id="org.sonatype.m2e.egit.feature.feature.group" version="0.14.0.201404242142"/>
+    </location>
+    <!-- JBIDE-16757 move m2e.jdt to Central (was in JBDS TP) -->
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-jdt-compiler/"/>
+      <unit id="org.jboss.tools.m2e.jdt.feature.feature.group" version="1.0.1.201209200903"/>
+    </location>
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/1.1.0-2014-03-24_15-15-15-H24/"/>
+      <unit id="org.jboss.tools.m2e.wro4j.feature.feature.group" version="1.1.0.201403241922"/>
     </location>
 
     <!-- new to JBT 4.1.0 / JBDS 7 -->
