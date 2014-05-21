@@ -40,7 +40,7 @@ When moving from one version of the target to another, the steps are:
     BASEDIR=`pwd`
 
     # set path to where you have the latest compatible Eclipse bundle stored locally
-    ECLIPSEZIP=${HOME}/tmp/Eclipse_Bundles/eclipse-jee-luna-M6-linux-gtk-x86_64.tar.gz
+    ECLIPSEZIP=${HOME}/tmp/Eclipse_Bundles/eclipse-jee-luna-M7-linux-gtk-x86_64.tar.gz
     # set URL(s) for JBT / JBT Target so that all Central deps can be resolved; for more than one, separate w/ commas
     UPSTREAM_SITE=file://$HOME/tru/jbosstools-target-platforms/jbosstools/multiple/target/jbosstools-multiple.target.repo/
 
