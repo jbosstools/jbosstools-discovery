@@ -97,7 +97,7 @@ reasonable, reporting issues to these providers as required.</description>
             <iu id="org.jboss.tools.vpe.cordovasim.feature"/>
             <iu id="org.jboss.tools.vpe.browsersim.feature"/>
          <icon image32="images/cordova_32.png"/>
-         <overview url="http://www.jboss.org/tools"/>
+         <overview url="http://tools.jboss.org/"/>
       </connectorDescriptor>
 
       <!-- a. Web Development -->
@@ -126,7 +126,7 @@ reasonable, reporting issues to these providers as required.</description>
             siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/8.0-development/central/core/}">
             <iu id="org.jboss.tools.arquillian.feature"/>
          <icon image32="images/arquillian_32.png"/>
-         <overview url="http://www.jboss.org/tools"/>
+         <overview url="http://tools.jboss.org/"/>
       </connectorDescriptor>
       -->
 
@@ -147,7 +147,7 @@ reasonable, reporting issues to these providers as required.</description>
                image32="images/openshift-32.png">
          </icon>
          <overview
-               url="http://www.jboss.org/tools">
+               url="http://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
       
@@ -164,7 +164,7 @@ reasonable, reporting issues to these providers as required.</description>
             siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/8.0-development/central/core/}">
             <iu id="org.jboss.tools.livereload.feature"/>
          <icon image32="images/jbosstools_icon32.png"/>
-         <overview url="http://www.jboss.org/tools"/>
+         <overview url="http://tools.jboss.org/"/>
       </connectorDescriptor>
 
       <connectorDescriptor
@@ -529,7 +529,7 @@ reasonable, reporting issues to these providers as required.</description>
                image32="images/jbds_icon32.png">
          </icon>
          <overview
-               url="http://www.jboss.org/tools">
+               url="http://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
       <connectorDescriptor
@@ -624,7 +624,7 @@ reasonable, reporting issues to these providers as required.</description>
                image32="images/jbosstools_icon32.png">
          </icon>
          <overview
-               url="http://www.jboss.org/tools">
+               url="http://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
       <connectorDescriptor
@@ -643,7 +643,7 @@ reasonable, reporting issues to these providers as required.</description>
                image32="images/jbosstools_icon32.png">
          </icon>
          <overview
-               url="http://www.jboss.org/tools">
+               url="http://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
       <!-- JBIDE-16543 com.google.gdt.eclipse.suite.e43.feature does not install on Luna M5; remove connector entirely, as per @fbricon <connectorDescriptor
@@ -662,7 +662,7 @@ reasonable, reporting issues to these providers as required.</description>
                image32="images/jbosstools_icon32.png">
          </icon>
          <overview
-               url="http://www.jboss.org/tools">
+               url="http://tools.jboss.org/">
          </overview>
       </connectorDescriptor> -->
       <connectorDescriptor
@@ -681,7 +681,7 @@ reasonable, reporting issues to these providers as required.</description>
                image32="images/jbosstools_icon32.png">
          </icon>
          <overview
-               url="http://www.jboss.org/tools">
+               url="http://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
       <connectorDescriptor
@@ -700,7 +700,7 @@ reasonable, reporting issues to these providers as required.</description>
                image32="images/m2e_32.gif">
          </icon>
          <overview
-               url="http://www.jboss.org/tools">
+               url="http://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
       <connectorDescriptor
@@ -719,7 +719,7 @@ reasonable, reporting issues to these providers as required.</description>
                image32="images/m2e_32.gif">
          </icon>
          <overview
-               url="http://www.jboss.org/tools">
+               url="http://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
       <connectorDescriptor
@@ -738,7 +738,7 @@ reasonable, reporting issues to these providers as required.</description>
                image32="images/jbosstools_icon32.png">
          </icon>
          <overview
-               url="http://www.jboss.org/tools">
+               url="http://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
       <connectorDescriptor
@@ -760,7 +760,7 @@ reasonable, reporting issues to these providers as required.</description>
                image32="images/jbosstools_icon32.png">
          </icon>
          <overview
-               url="http://www.jboss.org/tools">
+               url="http://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
       <connectorDescriptor
@@ -779,7 +779,7 @@ reasonable, reporting issues to these providers as required.</description>
                image32="images/jbosstools_icon32.png">
          </icon>
          <overview
-               url="http://www.jboss.org/tools">
+               url="http://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
       <connectorDescriptor
@@ -798,7 +798,7 @@ reasonable, reporting issues to these providers as required.</description>
                image32="images/jbosstools_icon32.png">
          </icon>
          <overview
-               url="http://www.jboss.org/tools">
+               url="http://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
       <connectorDescriptor
@@ -817,7 +817,7 @@ reasonable, reporting issues to these providers as required.</description>
                image32="images/m2e_32.gif">
          </icon>
          <overview
-               url="http://www.jboss.org/tools">
+               url="http://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
       
