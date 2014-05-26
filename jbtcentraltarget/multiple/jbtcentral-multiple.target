@@ -34,10 +34,11 @@
       <unit id="org.eclipse.mylyn.versions.feature.group" version="1.4.0.v20140402-0752"/>
     </location>
     
+    <!-- TODO: make sure these versions match up across JBT/JBDS/Central target platforms (JBIDE-17429) -->
     <!-- m2e extensions (that are not already in core TP) -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/1.1.0-2013-11-29_03-18-37-H27/"/>
-      <unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.1.0.201311290819"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/1.1.0-2014-05-21_05-04-36-H34/"/>
+      <unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.1.0.201405210909"/>
     </location>
     <!-- 20140313: new, JBDS-2943 m2eclipse-egit -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
