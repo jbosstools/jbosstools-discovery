@@ -4,21 +4,25 @@ To build, you require specific versions of Java and Maven. Also, there is some M
 The [How to Build JBoss Tools with Maven 3](https://community.jboss.org/wiki/HowToBuildJBossToolsWithMaven3)
 document will guide you through that setup.
 
-This command will run the build:
+This command will run the build, but will NOT download the contents of the target platform to disk:
 
     $ mvn clean verify
 
+If you want to download the contents of the target platform to disk, do this:
+
+    $ mvn clean verify -Pmultiple2repo
+
 If you want to run the build and fetch source bundles at the same time as other bundles are being resolved, do this:
 
-    $ mvn clean verify -Dmirror-target-to-repo.includeSources=true
+    $ mvn clean verify -Pmultiple2repo -Dmirror-target-to-repo.includeSources=true
 
 If you want to run the build and not fail if there's a problem w/ validation, do this:
 
-    $ mvn clean verify -Dvalidate-target-platform.failOnError=false
+    $ mvn clean verify -Pmultiple2repo -Dvalidate-target-platform.failOnError=false
 
 If you just want to check if things compiles/builds you can run:
 
-    $ mvn clean verify -DskipTest=true
+    $ mvn clean verify -Pmultiple2repo -DskipTest=true
 
 But *do not* push changes without having the new and existing unit tests pass!
  
@@ -35,32 +39,66 @@ When moving from one version of the target to another, the steps are:
 
 <pre>
 
+    # keep these in sync + up to date:
+    # https://github.com/jbosstools/jbosstools-discovery/tree/master/jbtcentraltarget#updating-versions-of-ius-in-target-files
+    # https://github.com/jbosstools/jbosstools-target-platforms/tree/master/#updating-versions-of-ius-in-target-files
+    # https://github.com/jbosstools/jbosstools-target-platforms/tree/4.40.x/#updating-versions-of-ius-in-target-files
+
     # point BASEDIR to where you have these sources checked out
     BASEDIR=$HOME/jbosstools-discovery/jbtcentraltarget; # or, just do this:
     BASEDIR=`pwd`
 
     # set path to where you have the latest compatible Eclipse bundle stored locally
     ECLIPSEZIP=${HOME}/tmp/Eclipse_Bundles/eclipse-jee-luna-M7-linux-gtk-x86_64.tar.gz
+
     # set URL(s) for JBT / JBT Target so that all Central deps can be resolved; for more than one, separate w/ commas
     UPSTREAM_SITE=file://$HOME/tru/jbosstools-target-platforms/jbosstools/multiple/target/jbosstools-multiple.target.repo/
 
-    # Step 1: Merge changes in new target file to actual target file
-    pushd multiple && mvn -U org.jboss.tools.tycho-plugins:target-platform-utils:0.19.0-SNAPSHOT:fix-versions -DtargetFile=jbtcentral-multiple.target && rm -f jbtcentral-multiple.target jbtcentral-multiple.target_update_hints.txt && mv -f jbtcentral-multiple.target_fixedVersion.target jbtcentral-multiple.target && popd 
+    # set path to where you have the latest p2diff executable installed
+    P2DIFF=${HOME}/tmp/p2diff/p2diff
 
-    # Step 2: Resolve the new 'multiple' target platform and verify it is self-contained by building the 'unified' target platform too
-    # TODO: if you removed IUs, be sure to do a `mvn clean install`, rather than just a `mvn install`; process will be much longer but will guarantee metadata is correct 
-    mvn install -DtargetRepositoryUrl=file://${BASEDIR}/multiple/target/jbtcentral-multiple.target.repo/
-    # Step 3: Install the new target platform into a clean Eclipse JEE bundle to verify if everything can be installed
-    INSTALLDIR=/tmp/jbtcentraltarget-install-test
-    INSTALLSCRIPT=/tmp/installFromTarget.sh
-    rm -fr ${INSTALLDIR} && mkdir -p ${INSTALLDIR}
-    pushd ${INSTALLDIR}
-      echo "Unpack ${ECLIPSEZIP} into ${INSTALLDIR} ..." && tar xzf ${ECLIPSEZIP}
-      echo "Fetch install script to ${INSTALLSCRIPT} ..." && wget -q --no-check-certificate -N https://raw.githubusercontent.com/jbosstools/jbosstools-build-ci/master/util/installFromTarget.sh -O ${INSTALLSCRIPT} && chmod +x ${INSTALLSCRIPT} 
-      echo "Install..." && ${INSTALLSCRIPT} -ECLIPSE ${INSTALLDIR}/eclipse -INSTALL_PLAN ${UPSTREAM_SITE},file://${BASEDIR}/multiple/target/jbtcentral-multiple.target.repo/ \
-      | tee /tmp/log.txt; cat /tmp/log.txt | egrep -i -A2 "could not be found|FAILED|Missing|Only one of the following|being installed|Cannot satisfy dependency"
-    popd
+    NOW=`date +%F_%H-%M`
+
+    for PROJECT in jbtcentral; do
+      if [[ -d ${BASEDIR}/${PROJECT} ]]; then WORKSPACE=${BASEDIR}/${PROJECT}; else WORKSPACE=${BASEDIR}; fi
+
+      # Step 0: move the existing target platform folder to a new path, so that it can be p2diff'd against the one you're about to build
+      # TODO: remember to clean these out
+      if [[ -d ${WORKSPACE}/multiple/target/${PROJECT}-multiple.target.repo/ ]]; then
+        mv ${WORKSPACE}/multiple/target/${PROJECT}-multiple.target.repo/ /tmp/${PROJECT}-multiple.target.repo_${NOW}
+      fi
+
+      # Step 1: Merge changes in new target file to actual target file
+      pushd ${WORKSPACE}/multiple && mvn -U org.jboss.tools.tycho-plugins:target-platform-utils:0.19.0-SNAPSHOT:fix-versions -DtargetFile=${PROJECT}-multiple.target && rm -f ${PROJECT}-multiple.target ${PROJECT}-multiple.target_update_hints.txt && mv -f ${PROJECT}-multiple.target_fixedVersion.target ${PROJECT}-multiple.target && popd
+    
+      # Step 2: Resolve the new 'multiple' target platform and verify it is self-contained by building the 'unified' target platform too
+      # TODO: if you removed IUs, be sure to do a `mvn clean install`, rather than just a `mvn install`; process will be much longer but will guarantee metadata is correct 
+      pushd ${WORKSPACE} && mvn install -Pmultiple2repo -DtargetRepositoryUrl=file://${WORKSPACE}/multiple/target/${PROJECT}-multiple.target.repo/ -Dmirror-target-to-repo.includeSources=true && popd
+    
+      # Step 3: Install the new target platform into a clean Eclipse JEE bundle to verify if everything can be installed
+      INSTALLDIR=/tmp/${PROJECT}target-install-test
+      INSTALLSCRIPT=/tmp/installFromTarget.sh
+      rm -fr ${INSTALLDIR} && mkdir -p ${INSTALLDIR}
+      pushd ${INSTALLDIR}
+        echo "Unpack ${ECLIPSEZIP} into ${INSTALLDIR} ..." && tar xzf ${ECLIPSEZIP}
+        echo "Fetch install script to ${INSTALLSCRIPT} ..." && wget -q --no-check-certificate -N https://raw.githubusercontent.com/jbosstools/jbosstools-build-ci/master/util/installFromTarget.sh -O ${INSTALLSCRIPT} && chmod +x ${INSTALLSCRIPT} 
+        echo "Install..."
+        if [[ ${UPSTREAM_SITE} ]]; then
+          ${INSTALLSCRIPT} -ECLIPSE ${INSTALLDIR}/eclipse -INSTALL_PLAN ${UPSTREAM_SITE},file://${WORKSPACE}/multiple/target/${PROJECT}-multiple.target.repo/ | tee ${INSTALLSCRIPT}_log_${PROJECT}_${NOW}.txt; 
+        else
+          ${INSTALLSCRIPT} -ECLIPSE ${INSTALLDIR}/eclipse -INSTALL_PLAN file://${WORKSPACE}/multiple/target/${PROJECT}-multiple.target.repo/ | tee ${INSTALLSCRIPT}_log_${PROJECT}_${NOW}.txt; 
+        fi
+        cat ${INSTALLSCRIPT}_log_${PROJECT}_${NOW}.txt | egrep -i -A2 "IllegalArgumentException|Could not resolve|error|Unresolved requirement|could not be found|FAILED|Missing|Only one of the following|being installed|Cannot satisfy dependency"; if [[ "$?" == "0" ]]; then break; fi
+      popd
+
+      # Step 4: produce p2diff report
+      ${P2DIFF} /tmp/${PROJECT}-multiple.target.repo_${NOW} file://${WORKSPACE}/multiple/target/${PROJECT}-multiple.target.repo/ | tee /tmp/p2diff_log_${PROJECT}_${NOW}.txt
+
+    done
 
 </pre>
 
-<ol><li value="3"> Check in updated target files & push to the branch.</li></ol>
+<ol>
+  <li value="4"> Follow the <a href="https://github.com/jbosstools/jbosstools-devdoc/blob/master/building/target_platforms/target_platforms_updates.adoc">release guidelines</a> for how to announce target platform changes.</li>
+  <li>Check in updated target files &amp; push to the branch.</li>
+</ol>
