@@ -1,26 +1,31 @@
-To build a site locally, you must pass in the following commandline arguments (target platform URL is calculated from parent pom's TARGET_PLATFORM_VERSION):
+To build a site locally, you must pass in the following commandline arguments 
+(target platform URL is calculated from parent pom's TARGET_PLATFORM_VERSION):
+
+  (In this example, build against master branch update site.)
 
   mvn clean install -f jbosstools/org.jboss.tools.central.discovery/pom.xml \
-    -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/trunk/ \
-    -DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/kepler/
-
-or
-
-  mvn clean install -f jbosstools/org.jboss.tools.central.discovery/pom.xml \
-    -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/4.1.kepler/ \
-    -DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/kepler/
+    -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/master/ \
+    -DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/luna/
 
 or
 
   mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery/pom.xml \
     -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_master/all/repo/ \
-    -DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/kepler/
+    -DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/luna/
+
+Repeat for Early Access sites:
+
+  (In this example, build against stable branch update site.)
+
+  mvn clean install -f jbosstools/org.jboss.tools.central.discovery.earlyaccess/pom.xml \
+    -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/4.2.luna/ \
+    -DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtearlyaccesstarget/luna/
 
 or
 
-  mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery/pom.xml \
-    -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_71/all/repo/ \
-    -DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/kepler/
+  mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery.earlyaccess/pom.xml \
+    -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_8.0.luna/all/repo/ \
+    -DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtearlyaccesstarget/luna/
 
 --------------------------------
 
@@ -48,27 +53,42 @@ To test a local site:
 2. Build Discovery plugin + site:
 
   mvn clean install -f jbosstools/org.jboss.tools.central.discovery/pom.xml \
-    -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/4.1.kepler/ \
+    -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/4.2.luna/ \
     -DEXTRAS_SITE=http://localhost:8080/jbtcentraltarget/multiple/target/jbtcentral-multiple.target.repo/
 
 or
 
   mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery/pom.xml \
-    -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_71/all/repo/ \
+    -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_8.0.luna/all/repo/ \
     -DEXTRAS_SITE=http://localhost:8080/jbtcentraltarget/multiple/target/jbtcentral-multiple.target.repo/
 
-3. Install Eclipse (eg., 4.3.1 Kepler SR1 JEE bundle)
+Repeat for Early Access plugin + site:
+
+  mvn clean install -f jbosstools/org.jboss.tools.central.discovery.earlyaccess/pom.xml \
+    -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/4.2.luna/ \
+    -DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtearlyaccesstarget/luna/
+
+or
+  mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery.earlyaccess/pom.xml \
+    -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_8.0.luna/all/repo/ \
+    -DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtearlyaccesstarget/luna/
+
+  (TODO: when we have an actual JBT EA target platform, update this example)
+
+3. Install Eclipse (eg., 4.4 Luna JEE bundle)
 
 4. Launch Eclipse:
 
 {code}
   eclipse -vmargs \
-          -Djboss.discovery.directory.url=http://localhost:8080/jbosstools/org.jboss.tools.central.discovery/target/discovery-site/jbosstools-directory.xml \
-          -Djboss.discovery.site.url=http://localhost:8080/jbosstools/org.jboss.tools.central.discovery/target/discovery-site/
+          -Djboss.discovery.directory.url=http://localhost:8080/jbosstools/org.jboss.tools.central.discovery.earlyaccess/target/discovery-site/jbosstools-directory.xml \
+          -Djboss.discovery.site.url=http://localhost:8080/jbosstools/org.jboss.tools.central.discovery/target/discovery-site/ \
+          -Djboss.discovery.earlyaccess.site.url=http://localhost:8080/jbosstools/org.jboss.tools.central.discovery.earlyaccess/target/discovery-site/
     or
   jbdevstudio -vmargs \
-          -Djboss.discovery.directory.url=http://localhost:8080/jbdevstudio/com.jboss.jbds.central.discovery/target/discovery-site/devstudio-directory.xml \
-          -Djboss.discovery.site.url=http://localhost:8080/jbdevstudio/com.jboss.jbds.central.discovery/target/discovery-site/
+          -Djboss.discovery.directory.url=http://localhost:8080/jbdevstudio/com.jboss.jbds.central.discovery.earlyaccess/target/discovery-site/devstudio-directory.xml \
+          -Djboss.discovery.site.url=http://localhost:8080/jbdevstudio/com.jboss.jbds.central.discovery/target/discovery-site/ \
+          -Djboss.discovery.earlyaccess.site.url=http://localhost:8080/jbdevstudio/com.jboss.jbds.central.discovery.earlyaccess/target/discovery-site/
 {code}
 
 5. Install JBoss Community Central feature from                http://localhost:8080/jbosstools/org.jboss.tools.central.discovery/target/discovery-site/
@@ -81,17 +101,17 @@ or
 
 To test a site built w/ Jenkins:
 
-1. Install Eclipse (eg., 4.3.1 Kepler SR1 JEE bundle)
+1. Install Eclipse (eg., 4.4 Luna JEE bundle)
 
 2. Launch Eclipse:
 
 {code}
   eclipse -vmargs \
-          -Djboss.discovery.directory.url=http://download.jboss.org/jbosstools/discovery/nightly/core/trunk/jbosstools-directory.xml \
-          -Djboss.discovery.site.url=http://download.jboss.org/jbosstools/discovery/nightly/core/trunk/
+          -Djboss.discovery.directory.url=http://download.jboss.org/jbosstools/discovery/nightly/core/master/jbosstools-directory.xml \
+          -Djboss.discovery.site.url=http://download.jboss.org/jbosstools/discovery/nightly/core/master/
 {code}
 
-3. Install JBoss Community Central feature from   http://download.jboss.org/jbosstools/discovery/nightly/core/trunk/
+3. Install JBoss Community Central feature from   http://download.jboss.org/jbosstools/discovery/nightly/core/master/
 
 4. Restart. Review Central > Software/Update tab. Choose connectors/feature groups to install.
 
@@ -99,6 +119,6 @@ To test a site built w/ Jenkins:
 
 {code}
 ./jbdevstudio -vmargs \
-          -Djboss.discovery.directory.url=http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/core/trunk/devstudio-directory.xml \
-          -Djboss.discovery.site.url=http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/core/trunk/
+          -Djboss.discovery.directory.url=http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/core/master/devstudio-directory.xml \
+          -Djboss.discovery.site.url=http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/core/master/
 {code}

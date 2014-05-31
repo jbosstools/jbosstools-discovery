@@ -7,7 +7,7 @@
     <version>4.2.0-SNAPSHOT</version>
   </parent>
   <groupId>com.jboss.jbds.product.plugins</groupId>
-  <artifactId>com.jboss.jbds.central.discovery</artifactId> 
+  <artifactId>com.jboss.jbds.central.discovery.earlyaccess</artifactId> 
   <version>8.0.0-SNAPSHOT</version>
   <packaging>eclipse-plugin</packaging>
 <build>
@@ -53,7 +53,7 @@
                   <property name="UPDATE_SITE" value="${UPDATE_SITE}"/>
 
                   <!-- pass in from Jenkins:
-                  <property name="EXTRAS_SITE" value="http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/luna/>
+                  <property name="EXTRAS_SITE" value="http://download.jboss.org/jbosstools/targetplatforms/jbtearlyaccesstarget/luna/>
                   -->
                   <property name="EXTRAS_SITE" value="${EXTRAS_SITE}"/>
                 </ant>

@@ -147,6 +147,8 @@ $java.home = ${java.home}</echo>
 &lt;/repository&gt;</echo>
 	</target>
 
+	<!-- TODO: if generating for earlyaccess site, copy core plugin jar into EA site too -->
+
 	<target name="generate.directory.xml">
 		<echo level="debug">project.build.directory = ${project.build.directory}</echo>
 		<!-- get filename matching org.jboss.tools.central.discovery_1.2.0.Alpha1-v20111013-0511-B1234.jar, then generate replacement directory.xml file -->

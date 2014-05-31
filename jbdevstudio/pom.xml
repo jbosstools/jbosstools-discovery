@@ -11,6 +11,7 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>com.jboss.jbds.central.discovery</module>
+		<module>com.jboss.jbds.central.discovery.earlyaccess</module>
 	</modules>
 </project>
 <!--

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+	<extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
+      <certification id="com.jboss.jbds.discovery.certification.earlyaccess" name="Early Access" url="http://tools.jboss.org/">
+         <description>
+Tested by Red Hat. However, as these are experimental plug-ins, 
+it is possible that their content may change at any time and 
+without prior notice. Red Hat provides early access to this 
+content so that it can be evaluated + monitored, in order to 
+execute appropriate tests + report issues to plug-in providers
+as required. May evolve into Technology Preview content, 
+but this is not guaranteed.</description>
+         <icon image48="images/jbosstools_48.png"></icon>
+      </certification>
+
+      <!-- a. Web Development -->
+
+      <connectorCategory
+            description="Additional plug-ins to support web development"
+            id="org.jboss.tools.central.discovery.a.web"
+            name="Web Development"
+            relevance="70">
+         <group id="org.jboss.tools.central.discovery.a.web.core" /> 
+         <group id="org.jboss.tools.central.discovery.a.web.extras" />
+         <group id="org.jboss.tools.central.discovery.a.web.extras2" />
+      </connectorCategory>
+
+      <!-- JBIDE-17278: new AngularJS connector -->
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
+            certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
+            description="AngularJS for Eclipse WTP includes JS + HTML editors, plus a MVC tree view"
+            id="angularjs-eclipse-feature"
+            kind="task"
+            license="EPL (Free)"
+            name="AngularJS for Web Tools"
+            provider="Angelo ZERR"
+            siteUrl="${jboss.discovery.earlyaccess.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/earlyaccess/}">
+            <iu id="angularjs-eclipse-feature"/>
+            <iu id="tern-feature"/>
+            <iu id="tern-jsdt-feature"/>
+            <iu id="tern-server-nodejs-feature"/>
+            <iu id="tern.eclipse.ide.tools.feature"/>
+         <icon
+               image32="images/angularjs_icon32.png">
+         </icon>
+         <overview
+               url="https://marketplace.eclipse.org/content/angularjs-eclipse">
+         </overview>
+      </connectorDescriptor>
+
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
+            certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
+            description="Create and run tests with Arquillian"
+            id="org.jboss.tools.arquillian"
+            kind="task"
+            license="EPL (Free)"
+            name="JBoss Arquillian Tools"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.earlyaccess.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/earlyaccess/}">
+            <iu id="org.jboss.tools.arquillian.feature"/>
+         <icon image32="images/arquillian_32.png"/>
+         <overview url="http://www.jboss.org/tools"/>
+      </connectorDescriptor>
+
+      <!-- JBIDE-14122: VJET -->
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.extras2"
+            certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
+            description="Eclipse VJET (Experimental) includes a JavaScript IDE, Java to Javascript Code Generation + Java Based DOM Kit"
+            id="org.eclipse.vjet.feature"
+            kind="task"
+            license="EPL, Other (Free)"
+            name="Eclipse VJET"
+            provider="eclipse.org"
+            siteUrl="${jboss.discovery.earlyaccess.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/earlyaccess/}">
+            <iu id="org.eclipse.vjet.core"/>
+            <iu id="org.eclipse.vjet.eclipse"/>
+            <iu id="org.eclipse.vjet.extmod.dltk.core"/>
+            <iu id="org.eclipse.vjet.extmod.jsdt"/>
+            <iu id="org.eclipse.vjet.extmod.rhino"/>
+            <iu id="org.eclipse.vjet.rt"/>
+            <iu id="org.eclipse.vjet.web"/>
+            <iu id="org.eclipse.vjet.codegen"/>
+            <iu id="org.eclipse.vjet.vsf.domkit"/>
+            <iu id="org.eclipse.equinox.server.jetty"/>
+         <icon
+               image32="images/vjet_32.png">
+         </icon>
+         <overview
+               url="http://www.eclipse.org/vjet">
+         </overview>
+      </connectorDescriptor>
+
+    </extension>	
+</plugin>
