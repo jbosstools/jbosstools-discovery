@@ -44,7 +44,7 @@ but this is not guaranteed.</description>
             <iu id="tern-server-nodejs-feature"/>
             <iu id="tern.eclipse.ide.tools.feature"/>
          <icon
-               image32="images/angularjs_icon32.png">
+               image32="images/angularjs_32.png">
          </icon>
          <overview
                url="https://marketplace.eclipse.org/content/angularjs-eclipse">
