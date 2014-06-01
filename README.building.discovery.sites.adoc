@@ -1,0 +1,185 @@
+## Build a local site
+
+You must pass in the following commandline arguments (target platform URL is calculated from parent pom's TARGET_PLATFORM_VERSION):
+
+[NOTE]
+====
+In this example, build against master branch update site.
+====
+
+[source,bash]
+----
+mvn clean install -f jbosstools/org.jboss.tools.central.discovery/pom.xml \
+  -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/master/ \
+  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/luna/
+----
+
+or
+
+[source,bash]
+----
+mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery/pom.xml \
+  -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_master/all/repo/ \
+  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/luna/
+----
+
+Repeat for Early Access sites:
+
+[NOTE]
+====
+In this example, build against stable branch update site.
+====
+
+[source,bash]
+----
+mvn clean install -f jbosstools/org.jboss.tools.central.discovery.earlyaccess/pom.xml \
+  -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/4.2.luna/ \
+  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtearlyaccesstarget/luna/
+----
+
+or
+
+[source,bash]
+----
+mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery.earlyaccess/pom.xml \
+  -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_8.0.luna/all/repo/ \
+  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtearlyaccesstarget/luna/
+----
+
+## Test a local site
+
+0. Run a local web server, so you can access the directory.xml via an http:// URL. You have many options for this - recommended is https://raw.github.com/elonen/nanohttpd-original/master/NanoHTTPD.java[NanoHTTPD].
+
+  su
+  cd /tmp; wget -nc c https://raw.github.com/elonen/nanohttpd-original/master/NanoHTTPD.java
+  # assuming sources checked out into /home/user/jbosstools-discovery/
+  javac NanoHTTPD.java; java NanoHTTPD -d /home/user/jbosstools-discovery/ -p 8080
+
+
+1. Build target platforms for Central - Core and Early Access. If you want to do more validation, see link:README.building.target-platforms.adoc[]
+
+[source,bash]
+----
+for d in jbtcentral jbtearlyaccess; do
+  pushd ${d}target
+    BASEDIR=`pwd`
+    # Merge changes in new target file to actual target file
+    pushd multiple && mvn -U org.jboss.tools.tycho-plugins:target-platform-utils:0.16.0-SNAPSHOT:fix-versions -DtargetFile=${d}-multiple.target && rm -f ${d}-multiple.target ${d}-multiple.target_update_hints.txt && mv -f ${d}-multiple.target_fixedVersion.target ${d}-multiple.target && popd
+    # Resolve the new 'multiple' target platform and verify it is self-contained by building it
+    mvn -U install -DtargetRepositoryUrl=file://${BASEDIR}/multiple/target/${d}-multiple.target.repo/
+  popd
+done
+----
+
+2. Build Discovery plugin + site:
+
+[source,bash]
+----
+  mvn clean install -f jbosstools/org.jboss.tools.central.discovery/pom.xml \
+    -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/4.2.luna/ \
+    -DEXTRAS_SITE=http://localhost:8080/jbtcentraltarget/multiple/target/jbtcentral-multiple.target.repo/
+----
+
+or
+
+[source,bash]
+----
+  mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery/pom.xml \
+    -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_8.0.luna/all/repo/ \
+    -DEXTRAS_SITE=http://localhost:8080/jbtcentraltarget/multiple/target/jbtcentral-multiple.target.repo/
+----
+
+Repeat for Early Access plugin + site:
+
+[source,bash]
+----
+  mvn clean install -f jbosstools/org.jboss.tools.central.discovery.earlyaccess/pom.xml \
+    -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/4.2.luna/ \
+    -DEXTRAS_SITE=http://localhost:8080/jbtearlyaccesstarget/multiple/target/jbtearlyaccess-multiple.target.repo/
+----
+
+or
+
+[source,bash]
+----
+  mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery.earlyaccess/pom.xml \
+    -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_8.0.luna/all/repo/ \
+    -DEXTRAS_SITE=http://localhost:8080/jbtearlyaccesstarget/multiple/target/jbtearlyaccess-multiple.target.repo/
+----
+
+3. Install Eclipse (eg., 4.4 Luna JEE bundle)
+
+4. Launch Eclipse (or JBDS):
+
+[source,bash]
+----
+eclipse -vmargs \
+        -Djboss.discovery.directory.url=http://localhost:8080/jbosstools/org.jboss.tools.central.discovery.earlyaccess/target/discovery-site/jbosstools-directory.xml \
+        -Djboss.discovery.site.url=http://localhost:8080/jbosstools/org.jboss.tools.central.discovery/target/discovery-site/ \
+        -Djboss.discovery.earlyaccess.site.url=http://localhost:8080/jbosstools/org.jboss.tools.central.discovery.earlyaccess/target/discovery-site/
+----
+
+or
+
+[source,bash]
+----
+jbdevstudio -vmargs \
+        -Djboss.discovery.directory.url=http://localhost:8080/jbdevstudio/com.jboss.jbds.central.discovery.earlyaccess/target/discovery-site/devstudio-directory.xml \
+        -Djboss.discovery.site.url=http://localhost:8080/jbdevstudio/com.jboss.jbds.central.discovery/target/discovery-site/ \
+        -Djboss.discovery.earlyaccess.site.url=http://localhost:8080/jbdevstudio/com.jboss.jbds.central.discovery.earlyaccess/target/discovery-site/
+----
+
+5. Install Central:
+
+* Install JBoss Community Central feature from 
+** http://localhost:8080/jbosstools/org.jboss.tools.central.discovery/target/discovery-site/
+*** or
+* Install JBoss Developer Studio (Core Features) feature from 
+** http://localhost:8080/jbdevstudio/com.jboss.jbds.central.discovery/target/discovery-site/
+
+6. Restart. Review Central's Software/Update tab. For Early Access connectors, scroll to the bottom of the list of connectors and enable the Early Access checkbox. Choose connectors/feature groups to install.
+
+
+
+## Test a site built w/ Jenkins
+
+1. Install Eclipse (eg., 4.4 Luna JEE bundle)
+
+2. Launch Eclipse:
+
+[source,bash]
+----
+eclipse -vmargs \
+        -Djboss.discovery.directory.url=http://download.jboss.org/jbosstools/discovery/nightly/core/master/jbosstools-directory.xml \
+        -Djboss.discovery.site.url=http://download.jboss.org/jbosstools/discovery/nightly/core/master/
+----
+
+3. Install JBoss Community Central feature from   http://download.jboss.org/jbosstools/discovery/nightly/core/master/
+
+4. Restart. Review Central > Software/Update tab. For Early Access connectors, scroll to the bottom of the list of connectors and enable the Early Access checkbox. Choose connectors/feature groups to install.
+
+5. Or, launch JBDS like this:
+
+[source,bash]
+----
+./jbdevstudio -vmargs \
+          -Djboss.discovery.directory.url=http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/core/master/devstudio-directory.xml \
+          -Djboss.discovery.site.url=http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/core/master/
+----
+
+Instead of the latest trunk build, you can also point Eclipse / JBDS at more stable Central sites:
+
+* The forthcoming (current) milestone release URLs for JBT/JBDS are:
+
+** http://download.jboss.org/jbosstools/discovery/development/kepler/jbosstools-directory.xml
+** https://devstudio.jboss.com/updates/8.0-development/devstudio-directory.xml
+
+* The stable branch (upcoming milestone) URL are:
+
+** http://download.jboss.org/jbosstools/discovery/nightly/core/4.2.luna/
+** http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/core/4.2.luna/
+
+* The unstable trunk URLs are:
+
+**  http://download.jboss.org/jbosstools/discovery/nightly/core/trunk/
+**  http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/core/trunk/

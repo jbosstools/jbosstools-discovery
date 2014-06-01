@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
+<target includeMode="feature" name="jbtearlyaccesstarget-4.40.0.Beta3-SNAPSHOT">
+  <!-- Pro tip: paste content from generated Apache directory index, then match
+        \[ ] (.+)_(.+).jar.+
+    replace with 
+      <unit id="\1.feature.group" version="\2"/>
+  -->
+  <locations>
+    <!--
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/foo/1.0.0/"/>
+      <unit id="foo.feature.group" version="0.0.0"/>
+    </location>
+    -->
+
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/angularjs/0.2.0.201405210817/"/>
+      <unit id="angularjs-eclipse-feature.feature.group" version="0.2.0.201405210817" />
+    </location>
+    <!-- required by AngularJS -->
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tern/0.2.0.201405210810-SNAPSHOT/"/>
+      <unit id="minimal-json" version="0.9.1" />
+      <unit id="tern-feature.feature.group" version="0.2.0.201405210810" />
+      <unit id="tern-jsdt-feature.feature.group" version="0.2.0.201405210810" />
+      <unit id="tern-server-nodejs-feature.feature.group" version="0.2.0.201405210810" />
+      <unit id="tern.eclipse.linux.gtk.x86_64.feature.feature.group" version="0.2.0.201405210810"/>
+      <unit id="tern.eclipse.macosx.cocoa.x86_64.feature.feature.group" version="0.2.0.201405210810"/>
+      <unit id="tern.eclipse.win32.win32.x86.feature.feature.group" version="0.2.0.201405210810"/>
+      <unit id="tern.eclipse.ide.tools.feature.feature.group" version="0.2.0.201405210810"/>
+    </location>
+
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201405090900-M7/"/>
+      <!-- required by Arquillian -->
+      <unit id="org.eclipse.sapphire.feature.group" version="8.0.0.201404241341"/>
+      <unit id="org.eclipse.sapphire.java.feature.group" version="8.0.0.201404241341"/>
+      <unit id="org.eclipse.sapphire.java.jdt.feature.group" version="8.0.0.201404241341"/>
+      <unit id="org.eclipse.sapphire.modeling.xml.feature.group" version="8.0.0.201404241341"/>
+      <unit id="org.eclipse.sapphire.osgi.feature.group" version="8.0.0.201404241341"/>
+      <unit id="org.eclipse.sapphire.platform.feature.group" version="8.0.0.201404241341"/>
+      <unit id="org.eclipse.sapphire.ui.feature.group" version="8.0.0.201404241341"/>
+      <unit id="org.eclipse.sapphire.ui.swt.gef.feature.group" version="8.0.0.201404241341"/>
+      <unit id="org.eclipse.sapphire.ui.swt.xml.editor.feature.group" version="8.0.0.201404241341"/>
+      <unit id="org.objectweb.asm" version="5.0.1.v201404251740"/>
+    </location>
+    <!-- TODO: this should be on a released milestone site, not the staging site -->
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/builds/staging/jbosstools-arquillian_4.2.luna/all/repo/"/>
+      <unit id="org.jboss.tools.arquillian.feature" version="1.1.1.Beta2-v20140523-1355-B37"/>
+    </location>
+
+    <!-- required for VJET -->
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201405090900-M7/"/>
+      <!-- already included in JBT TP <unit id="org.eclipse.equinox.server.jetty.feature.group" version="0.0.0"/> -->
+      <unit id="org.w3c.dom.events" version="3.0.0.draft20060413_v201105210656"/>
+    </location>
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/vjet/0.10.0.201403201656/"/>
+      <unit id="org.eclipse.vjet.core.feature.group" version="0.10.0.201403201656"/>
+      <unit id="org.eclipse.vjet.eclipse.feature.group" version="0.10.0.201403201656"/>
+      <unit id="org.eclipse.vjet.extmod.dltk.core.feature.group" version="0.10.0.201403201656"/>
+      <unit id="org.eclipse.vjet.extmod.jsdt.feature.group" version="0.10.0.201403201656"/>
+      <unit id="org.eclipse.vjet.extmod.rhino.feature.group" version="0.10.0.201403201656"/>
+      <unit id="org.eclipse.vjet.rt.feature.group" version="0.10.0.201403201656"/>
+      <unit id="org.eclipse.vjet.web.feature.group" version="0.10.0.201403201656"/>
+      <unit id="org.eclipse.vjet.codegen.feature.group" version="0.10.0.201403201656"/>
+        <unit id="org.eclipse.vjet.resource.feature.group" version="0.10.0.201403201656"/>
+      <unit id="org.eclipse.vjet.vsf.domkit.feature.group" version="0.10.0.201403201656"/>
+        <unit id="org.junit4" version="4.8.1.v20120523-1257"/>
+    </location>
+
+  </locations>
+  <targetJRE path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+</target>

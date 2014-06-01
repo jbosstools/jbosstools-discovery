@@ -1,0 +1,53 @@
+# The JBoss Tools Central Discovery project
+
+## Summary
+
+The _JBoss Tools Central Discovery_ project provides a mechanism for building a plugin jar, directory.xml file, and a composite update site used by https://github.com/jbosstools/jbosstools-central[JBoss Central].
+
+## Install
+
+To use a Discovery site, you need to first install JBoss Central, which is part of http://jboss.org/tools[JBoss Tools]. Central will then connect to a Discovery site via the default (or other) directory.xml file, which will link to the plugin jar, which will in turn list a catalogue of available updates, installable from a composite site.
+
+## Use
+
+Both the URL for the directory.xml and the URL used within the plugin (to which the directory.xml refers) can be overridden via the commandline when launching Eclipse (or JBoss Developer Studio). Via commandline (or inside your eclipse.ini / jbdevstudio.ini file), you can specify these arguments:
+
+[source,bash]
+----
+eclipse -vmargs \
+  -Djboss.discovery.directory.url=http://download.jboss.org/jbosstools/discovery/nightly/core/master/jbosstools-directory.xml
+  -Djboss.discovery.site.url=http://download.jboss.org/jbosstools/discovery/nightly/core/master/
+  -Djboss.discovery.earlyaccess.site.url=http://download.jboss.org/jbosstools/discovery/nightly/earlyaccess/master/
+----
+
+or
+
+[source,bash]
+----
+jbdevstudio -vmargs \
+  -Djboss.discovery.directory.url=https://devstudio.jboss.com/updates/8.0-staging/devstudio-directory.xml
+  -Djboss.discovery.site.url=https://devstudio.jboss.com/updates/8.0-staging/central/core/
+  -Djboss.discovery.earlyaccess.site.url=https://devstudio.jboss.com/updates/8.0-staging/central/earlyaccess/
+----
+
+## Building Target Platforms
+
+See link:README.building.target-platforms.adoc[]
+
+
+## Building JBoss Tools Discovery Sites
+
+To build _JBoss Tools Discovery_ requires specific versions of Java and
+Maven. Also, there is some Maven setup. The https://community.jboss.org/wiki/HowToBuildJBossToolsWithMaven3[How to Build JBoss Tools with Maven 3]
+document will guide you through that setup.
+
+See link:README.building.discovery.sites.adoc[]
+
+
+## Get the code
+
+Need help cloning this repo? See link:README.contributing.adoc[Get the code].
+
+## Want to contribute? 
+
+See link:README.contributing.adoc[Contributing].

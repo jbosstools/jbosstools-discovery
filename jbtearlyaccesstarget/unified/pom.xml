@@ -4,16 +4,16 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.jboss.tools.targetplatforms</groupId>
-		<artifactId>jbtcentral</artifactId>
+		<artifactId>jbtearlyaccess</artifactId>
 		<version>4.40.0.Beta3-SNAPSHOT</version>
 	</parent>
-	<artifactId>jbtcentral-unified</artifactId>
-	<name>JBoss Central Core Unified (Aggregate) Target Platform</name>
+	<artifactId>jbtearlyaccess-unified</artifactId>
+	<name>JBoss Central Early Access Unified (Aggregate) Target Platform</name>
 	<packaging>pom</packaging>
 	<properties>
 		<!-- set this to false to allow validation to proceed but NOT fail the build -->
 		<validate-target-platform.failOnError>true</validate-target-platform.failOnError>
-		<targetRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/${project.version}/REPO/</targetRepositoryUrl>
+		<targetRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbtearlyaccesstarget/${project.version}/REPO/</targetRepositoryUrl>
 	</properties>
 	<build>
 		<plugins>
@@ -30,8 +30,8 @@
 						<configuration>
 							<sourceTargetArtifact>
 								<groupId>${project.groupId}</groupId>
-								<artifactId>jbtcentral-multiple</artifactId>
-								<classifier>jbtcentral-multiple</classifier>
+								<artifactId>jbtearlyaccess-multiple</artifactId>
+								<classifier>jbtearlyaccess-multiple</classifier>
 								<version>${project.version}</version>
 							</sourceTargetArtifact>
 							<targetRepositoryUrl>${targetRepositoryUrl}</targetRepositoryUrl>
