@@ -64,7 +64,9 @@ P2DIFF=${HOME}/tmp/p2diff/p2diff
 NOW=`date +%F_%H-%M`
 
 for PROJECT in jbtcentral jbtearlyaccess; do
+
   if [[ -d ${BASEDIR}/${PROJECT} ]]; then WORKSPACE=${BASEDIR}/${PROJECT}; else WORKSPACE=${BASEDIR}; fi
+  if [[ -d ${BASEDIR}/${PROJECT}target ]]; then WORKSPACE=${BASEDIR}/${PROJECT}target; else WORKSPACE=${BASEDIR}; fi
 
   # Step 0: move the existing target platform folder to a new path, so that it can be p2diff'd against the one you're about to build
   # TODO: remember to clean these out
@@ -97,5 +99,8 @@ for PROJECT in jbtcentral jbtearlyaccess; do
 
   # Step 4: produce p2diff report
   ${P2DIFF} /tmp/${PROJECT}-multiple.target.repo_${NOW} file://${WORKSPACE}/multiple/target/${PROJECT}-multiple.target.repo/ | tee /tmp/p2diff_log_${PROJECT}_${NOW}.txt
+
 done
+
+
 ----
