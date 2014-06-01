@@ -180,27 +180,6 @@
       <unit id="org.testng.eclipse.feature.group" version="6.8.6.20130914_0724"/>
     </location>
 
-    <!-- required for VJET 0.10.0 -->
-    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201405090900-M7/"/>
-      <!-- already included in JBT TP <unit id="org.eclipse.equinox.server.jetty.feature.group" version="0.0.0"/> -->
-      <unit id="org.w3c.dom.events" version="3.0.0.draft20060413_v201105210656"/>
-    </location>
-    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/vjet/0.10.0.201403201656/"/>
-      <unit id="org.eclipse.vjet.core.feature.group" version="0.10.0.201403201656"/>
-      <unit id="org.eclipse.vjet.eclipse.feature.group" version="0.10.0.201403201656"/>
-      <unit id="org.eclipse.vjet.extmod.dltk.core.feature.group" version="0.10.0.201403201656"/>
-      <unit id="org.eclipse.vjet.extmod.jsdt.feature.group" version="0.10.0.201403201656"/>
-      <unit id="org.eclipse.vjet.extmod.rhino.feature.group" version="0.10.0.201403201656"/>
-      <unit id="org.eclipse.vjet.rt.feature.group" version="0.10.0.201403201656"/>
-      <unit id="org.eclipse.vjet.web.feature.group" version="0.10.0.201403201656"/>
-      <unit id="org.eclipse.vjet.codegen.feature.group" version="0.10.0.201403201656"/>
-        <unit id="org.eclipse.vjet.resource.feature.group" version="0.10.0.201403201656"/>
-      <unit id="org.eclipse.vjet.vsf.domkit.feature.group" version="0.10.0.201403201656"/>
-        <unit id="org.junit4" version="4.8.1.v20120523-1257"/>
-    </location>
-
     <!-- unchanged since JBT 4.0.0 / JBDS 6 -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/findbugs/2.0.3.20131122-15027/"/>
