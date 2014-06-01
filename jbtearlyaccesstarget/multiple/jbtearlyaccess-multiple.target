@@ -47,7 +47,7 @@
     <!-- TODO: this should be on a released milestone site, not the staging site -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/builds/staging/jbosstools-arquillian_4.2.luna/all/repo/"/>
-      <unit id="org.jboss.tools.arquillian.feature" version="1.1.1.Beta2-v20140523-1355-B37"/>
+      <unit id="org.jboss.tools.arquillian.feature.feature.group" version="1.1.1.Beta2-v20140523-1355-B37"/>
     </location>
 
     <!-- required for VJET -->
