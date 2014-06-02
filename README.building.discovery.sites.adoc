@@ -137,8 +137,7 @@ jbdevstudio -vmargs \
 * Install JBoss Developer Studio (Core Features) feature from 
 ** http://localhost:8080/jbdevstudio/com.jboss.jbds.central.discovery/target/discovery-site/
 
-6. Restart. Review Central's Software/Update tab. For Early Access connectors, scroll to the bottom of the list of connectors and enable the Early Access checkbox. Choose connectors/feature groups to install.
-
+6. Restart. Review Central's Software/Update tab. For Early Access connectors, scroll to the bottom of the list of connectors and enable the Early Access Features checkbox. Choose connectors/feature groups to install.
 
 
 ## Test a site built w/ Jenkins
@@ -150,26 +149,28 @@ jbdevstudio -vmargs \
 [source,bash]
 ----
 eclipse -vmargs \
-        -Djboss.discovery.directory.url=http://download.jboss.org/jbosstools/discovery/nightly/core/master/jbosstools-directory.xml \
-        -Djboss.discovery.site.url=http://download.jboss.org/jbosstools/discovery/nightly/core/master/
+  -Djboss.discovery.directory.url=http://download.jboss.org/jbosstools/discovery/nightly/earlyaccess/master/jbosstools-directory.xml \
+  -Djboss.discovery.site.url=http://download.jboss.org/jbosstools/discovery/nightly/core/master/ \
+  -Djboss.discovery.earlyaccess.site.url=http://download.jboss.org/jbosstools/discovery/nightly/earlyaccess/master/
 ----
 
 3. Install JBoss Community Central feature from   http://download.jboss.org/jbosstools/discovery/nightly/core/master/
 
-4. Restart. Review Central > Software/Update tab. For Early Access connectors, scroll to the bottom of the list of connectors and enable the Early Access checkbox. Choose connectors/feature groups to install.
+4. Restart. Review Central > Software/Update tab. For Early Access connectors, scroll to the bottom of the list of connectors and enable the Early Access Features checkbox. Choose connectors/feature groups to install.
 
 5. Or, launch JBDS like this:
 
 [source,bash]
 ----
 ./jbdevstudio -vmargs \
-          -Djboss.discovery.directory.url=http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/core/master/devstudio-directory.xml \
-          -Djboss.discovery.site.url=http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/core/master/
+  -Djboss.discovery.directory.url=http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/earlyaccess/master/devstudio-directory.xml \
+  -Djboss.discovery.site.url=http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/core/master/ \
+  -Djboss.discovery.earlyaccess.site.url=http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/earlyaccess/master/
 ----
 
-Instead of the latest trunk build, you can also point Eclipse / JBDS at more stable Central sites:
+Instead of the latest master build, you can also point Eclipse / JBDS at more stable Central sites:
 
-* The forthcoming (current) milestone release URLs for JBT/JBDS are:
+* The current released milestone URLs for JBT/JBDS are:
 
 ** http://download.jboss.org/jbosstools/discovery/development/kepler/jbosstools-directory.xml
 ** https://devstudio.jboss.com/updates/8.0-development/devstudio-directory.xml
@@ -177,9 +178,15 @@ Instead of the latest trunk build, you can also point Eclipse / JBDS at more sta
 * The stable branch (upcoming milestone) URL are:
 
 ** http://download.jboss.org/jbosstools/discovery/nightly/core/4.2.luna/
+** http://download.jboss.org/jbosstools/discovery/nightly/earlyaccess/4.2.luna/
+
 ** http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/core/4.2.luna/
+** http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/earlyaccess/4.2.luna/
 
-* The unstable trunk URLs are:
+* The unstable master URLs are:
 
-**  http://download.jboss.org/jbosstools/discovery/nightly/core/trunk/
-**  http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/core/trunk/
+**  http://download.jboss.org/jbosstools/discovery/nightly/core/master/
+**  http://download.jboss.org/jbosstools/discovery/nightly/earlyaccess/master/
+
+**  http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/core/master/
+**  http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/earlyaccess/master/
