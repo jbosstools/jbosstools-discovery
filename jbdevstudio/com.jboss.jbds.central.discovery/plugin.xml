@@ -40,17 +40,6 @@ third party sites and execute appropriate tests as soon as
 reasonable, reporting issues to these providers as required.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
-      <certification id="com.jboss.jbds.discovery.certification.earlyaccess" name="Early Access" url="http://tools.jboss.org/">
-         <description>
-Tested by Red Hat. However, as these are experimental plug-ins, 
-it is possible that their content may change at any time and 
-without prior notice. Red Hat provides early access to this 
-content so that it can be evaluated + monitored, in order to 
-execute appropriate tests + report issues to plug-in providers
-as required. May evolve into Technology Preview content, 
-but this is not guaranteed.</description>
-         <icon image48="images/redhat_48.png"></icon>
-      </certification>
       
       <!-- use connectorCategory relevance value to sort from largest (80) to smallest (20) -->
 
