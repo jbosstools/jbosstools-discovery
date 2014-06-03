@@ -1,5 +1,9 @@
 ## Build a local site
 
+To build _JBoss Tools Discovery_ requires specific versions of Java and
+Maven. Also, there is some Maven setup. The https://community.jboss.org/wiki/HowToBuildJBossToolsWithMaven3[How to Build JBoss Tools with Maven 3]
+document will guide you through that setup.
+
 You must pass in the following commandline arguments (target platform URL is calculated from parent pom's TARGET_PLATFORM_VERSION):
 
 [NOTE]
