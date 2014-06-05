@@ -2,7 +2,7 @@
 <?eclipse version="3.4"?>
 <plugin>
 	<extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
-      <certification id="com.jboss.jbds.discovery.certification.earlyaccess" name="Early Access" url="http://tools.jboss.org/">
+      <certification id="org.jboss.tools.discovery.certification.earlyaccess" name="Early Access" url="http://download.jboss.org/jbosstools/updates/stable/luna/central/">
          <description>
 Tested by Red Hat. However, as these are experimental plug-ins, 
 it is possible that their content may change at any time and 
@@ -20,7 +20,7 @@ but this is not guaranteed.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
+            certificationId="org.jboss.tools.discovery.certification.earlyaccess"
             description="AngularJS for Eclipse WTP includes JS + HTML editors, plus a MVC tree view"
             id="angularjs-eclipse-feature"
             kind="task"
@@ -44,7 +44,7 @@ but this is not guaranteed.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
+            certificationId="org.jboss.tools.discovery.certification.earlyaccess"
             description="Create and run tests with Arquillian"
             id="org.jboss.tools.arquillian"
             kind="task"
@@ -61,7 +61,7 @@ but this is not guaranteed.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.extras2"
-            certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
+            certificationId="org.jboss.tools.discovery.certification.earlyaccess"
             description="Eclipse VJET (Experimental) includes a JavaScript IDE, Java to Javascript Code Generation + Java Based DOM Kit"
             id="org.eclipse.vjet.feature"
             kind="task"
