@@ -4,54 +4,6 @@
 	<extension
          point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
 
-      <!-- JBDS-2379, JBDS-2278, JBDS-2361, JBIDE-10333 -->
-      <certification id="com.jboss.jbds.discovery.certification.supported" name="Supported" url="https://devstudio.jboss.com/updates/8.0-development/central/">
-         <description>
-Supported by Red Hat.</description>
-         <icon image48="images/jbosstools_48.png"></icon>
-      </certification>
-      <certification id="com.jboss.jbds.discovery.certification.tested" name="Tested" url="https://devstudio.jboss.com/updates/8.0-development/central/">
-         <description>
-Tested by Red Hat.</description>
-         <icon image48="images/jbosstools_48.png"></icon>
-      </certification>
-      <certification id="com.jboss.jbds.discovery.certification.external" name="External" url="https://devstudio.jboss.com/updates/8.0-development/central/">
-         <description>
-Tested by Red Hat. However, as these plug-ins are hosted by third
-party providers, it is possible that content may change at any 
-time and without prior notice. We will make an attempt to monitor 
-these third party sites and execute appropriate tests as soon as 
-reasonable, reporting issues to these providers as required.</description>
-         <icon image48="images/jbosstools_48.png"></icon>
-      </certification>
-      <certification id="com.jboss.jbds.discovery.certification.technologypreview" name="Technology Preview" url="https://devstudio.jboss.com/updates/8.0-development/central/">
-         <description>
-Tested by Red Hat, often with known issues. Technology previews
-may one day evolve to be considered Tested or Supported, but 
-this is not guaranteed.</description>
-         <icon image48="images/jbosstools_48.png"></icon>
-      </certification>
-      <certification id="com.jboss.jbds.discovery.certification.experimental" name="Experimental" url="https://devstudio.jboss.com/updates/8.0-development/central/">
-         <description>
-Tested by Red Hat. However, as these are experimental plug-ins, 
-it is possible that their content may change at any time and 
-without prior notice. We will make an attempt to monitor these
-third party sites and execute appropriate tests as soon as 
-reasonable, reporting issues to these providers as required.</description>
-         <icon image48="images/jbosstools_48.png"></icon>
-      </certification>
-      <certification id="com.jboss.jbds.discovery.certification.earlyaccess" name="Early Access" url="http://tools.jboss.org/">
-         <description>
-Tested by Red Hat. However, as these are experimental plug-ins, 
-it is possible that their content may change at any time and 
-without prior notice. Red Hat provides early access to this 
-content so that it can be evaluated + monitored, in order to 
-execute appropriate tests + report issues to plug-in providers
-as required. May evolve into Technology Preview content, 
-but this is not guaranteed.</description>
-         <icon image48="images/jbosstools_48.png"></icon>
-      </certification>
-      
       <!-- use connectorCategory relevance value to sort from largest (80) to smallest (20) -->
 
       <!-- a. Mobile Development -->
