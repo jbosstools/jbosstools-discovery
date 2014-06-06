@@ -24,8 +24,7 @@
           <!-- Merge:
                1. jbosstools-multiple.target (JBoss Tools TP)
                2. jbtcentral.target (JBT Central)
-               3. jbt-depdencies.target (JBT features)
-               4. jbtearlyaccess.target (JBT Early Access)
+               3. jbtearlyaccess.target (JBT Early Access)
                =  jbtearlyaccess-multiple.target
           -->
           <execution>
@@ -45,7 +44,6 @@
               </sourceTargetArtifacts>
               <sourceTargetFiles>
                 <item>${basedir}/../../jbtcentraltarget/multiple/jbtcentral.target</item>
-                <item>${basedir}/jbt-dependencies.target</item>
                 <item>${basedir}/jbtearlyaccess.target</item>
               </sourceTargetFiles>
               <outputFile>${project.build.directory}/${project.artifactId}.target</outputFile>
