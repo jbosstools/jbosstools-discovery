@@ -35,6 +35,10 @@ jbdevstudio -vmargs \
 
 See https://github.com/jbosstools/jbosstools-devdoc/blob/master/building/target_platforms/target_platforms_updates.adoc#build-target-platforms-locally[Build target platform(s) locally]
 
+To verify local changes to a target platform, see:
+
+https://github.com/jbosstools/jbosstools-build-ci/blob/master/util/verifyTarget.sh
+
 
 === Update versions of IUs in the .target files
 
