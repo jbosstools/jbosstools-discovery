@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?>
+<!--  JBoss Tools core requirements, including Arquillian + dependencies -->
+<target name="jbt-dependencies" sequenceNumber="7">
+  <locations>
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <unit id="org.jboss.tools.arquillian.feature.feature.group" version="1.1.1.Beta2-v20140523-1355-B37"/>
+
+      <unit id="org.jboss.ide.eclipse.as.feature.feature.group" version="3.0.0.Beta2-v20140528-1139-B52"/>
+      <unit id="org.jboss.tools.common.core.feature.feature.group" version="3.6.0.Beta2-v20140530-0516-B33"/>
+      <unit id="org.jboss.tools.common.feature.feature.group" version="3.6.0.Beta2-v20140530-0516-B33"/>
+      <unit id="org.jboss.tools.common.jdt.feature.feature.group" version="3.6.0.Beta2-v20140530-0516-B33"/>
+      <unit id="org.jboss.tools.foundation.feature.feature.group" version="1.1.0.Beta2-v20140530-0516-B33"/>
+      <unit id="org.jboss.tools.jmx.feature.feature.group" version="1.6.0.Beta2-v20140528-1139-B52"/>
+      <unit id="org.jboss.tools.usage.feature.feature.group" version="2.0.0.Beta2-v20140530-0516-B33"/>
+      <unit id="org.jboss.tools.runtime.core.feature.feature.group" version="3.0.0.Beta2-v20140530-0516-B33"/>
+      <unit id="org.jboss.ide.eclipse.archives.feature.feature.group" version="3.5.0.Beta2-v20140528-1139-B52"/>
+      <unit id="org.jboss.tools.stacks.core.feature.feature.group" version="1.1.0.Beta2-v20140530-0516-B33"/>
+      <unit id="org.jboss.tools.common.ui.feature.feature.group" version="3.6.0.Beta2-v20140530-0516-B33"/>
+      <unit id="org.jboss.tools.common.mylyn.feature.feature.group" version="3.6.0.Beta2-v20140530-0516-B33"/>
+      <unit id="org.jboss.tools.common.text.ext.feature.feature.group" version="3.6.0.Beta2-v20140530-0516-B33"/>
+      <unit id="org.jboss.tools.common.verification.feature.feature.group" version="3.6.0.Beta2-v20140530-0516-B33"/>
+
+      <!-- 
+      <unit id="org.hibernate.eclipse.feature.feature.group" version="3.8.0.Beta2-v20140523-2331-B35"/>
+      <unit id="org.jboss.ide.eclipse.freemarker.feature.feature.group" version="1.3.100.Final-v20130717-0627-B14"/>
+      <unit id="org.jboss.tools.cdi.deltaspike.feature.feature.group" version="1.6.0.Beta2-v20140523-2306-B31"/>
+      <unit id="org.jboss.tools.cdi.feature.feature.group" version="1.6.0.Beta2-v20140523-2306-B31"/>
+      <unit id="org.jboss.tools.cdi.seam.feature.feature.group" version="1.6.0.Beta2-v20140523-2306-B31"/>
+      <unit id="org.jboss.tools.central.feature.feature.group" version="1.3.0.Beta2-v20140531-0000-B56"/>
+      <unit id="org.jboss.tools.community.central.feature.feature.group" version="1.3.0.Beta2-v20140531-0000-B56"/>
+      <unit id="org.jboss.tools.community.project.examples.feature.feature.group" version="1.6.0.Beta2-v20140531-0000-B56"/>
+      <unit id="org.jboss.tools.forge.feature.feature.group" version="1.3.0.Beta2-v20140523-1507-B33"/>
+      <unit id="org.jboss.tools.forge.ext.feature.feature.group" version="1.3.0.Beta2-v20140523-1507-B33"/>
+      <unit id="org.jboss.tools.foundation.security.linux.feature.feature.group" version="1.1.0.Beta2-v20140530-0516-B33"/>
+      <unit id="org.jboss.tools.jsf.feature.feature.group" version="3.6.0.Beta2-v20140523-2306-B31"/>
+      <unit id="org.jboss.tools.jst.feature.feature.group" version="3.6.0.Beta2-v20140530-2323-B40"/>
+      <unit id="org.jboss.tools.livereload.feature.feature.group" version="1.2.0.Beta2-v20140523-1245-B45"/>
+      <unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.1.0.201405210909"/>
+      <unit id="org.jboss.tools.maven.cdi.feature.feature.group" version="1.6.0.Beta2-v20140531-0000-B56"/>
+      <unit id="org.jboss.tools.maven.feature.feature.group" version="1.6.0.Beta2-v20140531-0000-B56"/>
+      <unit id="org.jboss.tools.maven.hibernate.feature.feature.group" version="1.6.0.Beta2-v20140531-0000-B56"/>
+      <unit id="org.jboss.tools.maven.jbosspackaging.feature.feature.group" version="1.6.0.Beta2-v20140531-0000-B56"/>
+      <unit id="org.jboss.tools.maven.jdt.feature.feature.group" version="1.6.0.Beta2-v20140531-0000-B56"/>
+      <unit id="org.jboss.tools.maven.portlet.feature.feature.group" version="1.6.0.Beta2-v20140531-0000-B56"/>
+      <unit id="org.jboss.tools.maven.project.examples.feature.feature.group" version="1.6.0.Beta2-v20140531-0000-B56"/>
+      <unit id="org.jboss.tools.maven.seam.feature.feature.group" version="1.6.0.Beta2-v20140531-0000-B56"/>
+      <unit id="org.jboss.tools.maven.sourcelookup.feature.feature.group" version="1.6.0.Beta2-v20140531-0000-B56"/>
+      <unit id="org.jboss.tools.openshift.egit.integration.feature.feature.group" version="2.6.0.Beta2-v20140528-1154-B28"/>
+      <unit id="org.jboss.tools.openshift.express.feature.feature.group" version="2.6.0.Beta2-v20140528-1154-B28"/>
+      <unit id="org.jboss.tools.portlet.feature.feature.group" version="1.6.0.Beta2-v20140523-1220-B12"/>
+      <unit id="org.jboss.tools.project.examples.feature.feature.group" version="1.6.0.Beta2-v20140531-0000-B56"/>
+      <unit id="org.jboss.tools.richfaces.feature.feature.group" version="3.6.0.Beta2-v20140523-2306-B31"/>
+      <unit id="org.jboss.tools.runtime.seam.detector.feature.feature.group" version="3.6.0.Beta2-v20140523-2306-B31"/>
+      <unit id="org.jboss.tools.seam.feature.feature.group" version="3.6.0.Beta2-v20140523-2306-B31"/>
+      <unit id="org.jboss.tools.vpe.browsersim.feature.feature.group" version="3.5.100.Beta2-v20140529-0649-B4"/>
+      <unit id="org.jboss.tools.vpe.feature.feature.group" version="3.5.100.Beta2-v20140523-1125-B35"/>
+      <unit id="org.jboss.tools.ws.feature.feature.group" version="1.7.0.Beta2-v20140529-0203-B40"/>
+      <unit id="org.jboss.tools.ws.jaxrs.feature.feature.group" version="1.7.0.Beta2-v20140529-0203-B40"/>
+      <unit id="org.jboss.tools.ws.jaxrs.feature.feature.group" version="1.7.0.Beta2-v20140529-0203-B40"/>
+      <unit id="org.jboss.tools.wtp.runtimes.tomcat.feature.feature.group" version="1.1.0.Beta2-v20140528-1139-B52"/>
+      <unit id="org.mozilla.xpcom" version="1.9.2.16"/>
+      -->
+      <repository location="http://download.jboss.org/jbosstools/updates/staging/jbosstools-4.2.0.Beta2a-updatesite-core/"/>
+   </location>
+
+  </locations>
+</target>
