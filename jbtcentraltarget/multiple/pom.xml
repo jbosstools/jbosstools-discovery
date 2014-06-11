@@ -42,9 +42,9 @@
                 </item>
               </sourceTargetArtifacts>
               <sourceTargetFiles>
-                <item>${basedir}/jbtcentral.target</item>
+                <item>${basedir}/jbtcentral-multiple.target</item>
               </sourceTargetFiles>
-              <outputFile>${project.build.directory}/${project.artifactId}.target</outputFile>
+              <outputFile>${project.build.directory}/${project.artifactId}-full.target</outputFile>
             </configuration>
           </execution>
         </executions>
@@ -61,7 +61,7 @@
             </goals>
             <configuration>
               <targetFiles>
-                <param>${project.build.directory}/${project.artifactId}.target</param>
+                <param>${project.build.directory}/${project.artifactId}-full.target</param>
               </targetFiles>
               <failOnError>${validate-target-platform.failOnError}</failOnError>
             </configuration>
@@ -83,7 +83,7 @@
               <artifacts>
                 <!-- add more artifacts if want more target platforms -->
                 <artifact>
-                  <file>${project.build.directory}/${project.artifactId}.target</file>
+                  <file>${project.artifactId}.target</file>
                   <type>target</type>
                   <classifier>${project.artifactId}</classifier>
                 </artifact>
@@ -94,35 +94,5 @@
       </plugin>
     </plugins>
   </build>
-
-  <profiles>
-    <profile>
-      <id>multiple2repo</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <!-- Workaround for https://bugs.eclipse.org/bugs/show_bug.cgi?id=389052  -->
-            <groupId>org.jboss.tools.tycho-plugins</groupId>
-            <artifactId>target-platform-utils</artifactId>
-            <version>${targetPlatformUtilsVersion}</version>
-            <executions>
-              <execution>
-                <phase>package</phase>
-                <goals>
-                  <goal>mirror-target-to-repo</goal>
-                </goals>
-                <configuration>
-                  <sourceTargetFile>${project.build.directory}/${project.artifactId}.target</sourceTargetFile>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
 
 </project>
