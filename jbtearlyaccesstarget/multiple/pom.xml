@@ -44,7 +44,7 @@
               </sourceTargetArtifacts>
               <sourceTargetFiles>
                 <item>${basedir}/../../jbtcentraltarget/multiple/jbtcentral-multiple.target</item>
-                <item>${basedir}/jbtearlyaccess.target</item>
+                <item>${basedir}/${project.artifactId}.target</item>
               </sourceTargetFiles>
               <outputFile>${project.build.directory}/${project.artifactId}-full.target</outputFile>
             </configuration>
@@ -96,5 +96,35 @@
       </plugin>
     </plugins>
   </build>
+
+  <profiles>
+    <profile>
+      <id>multiple2repo</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <!-- Workaround for https://bugs.eclipse.org/bugs/show_bug.cgi?id=389052  -->
+            <groupId>org.jboss.tools.tycho-plugins</groupId>
+            <artifactId>target-platform-utils</artifactId>
+            <version>${targetPlatformUtilsVersion}</version>
+            <executions>
+              <execution>
+                <phase>package</phase>
+                <goals>
+                  <goal>mirror-target-to-repo</goal>
+                </goals>
+                <configuration>
+                  <sourceTargetFile>${project.artifactId}.target</sourceTargetFile>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 
 </project>
