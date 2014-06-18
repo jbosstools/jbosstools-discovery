@@ -617,24 +617,6 @@
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.configurators"
-            description="Maven JDT Compiler Configurator (maven-compiler-plugin)"
-            id="m2e.jdt"
-            kind="task"
-            license="EPL (Free)"
-            name="Maven JDT Compiler Configurator"
-            provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
-            <iu id="org.jboss.tools.m2e.jdt.feature"/>
-         <icon
-               image32="images/jbosstools_icon32.png">
-         </icon>
-         <overview
-               url="http://tools.jboss.org/">
-         </overview>
-      </connectorDescriptor>
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.d.maven"
-            groupId="org.jboss.tools.central.discovery.d.maven.configurators"
             description="JBoss Tools Maven Packaging Configurator"
             id="org.jboss.tools.maven.jbosspackaging.feature"
             kind="task"

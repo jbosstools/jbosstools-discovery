@@ -680,25 +680,6 @@ reasonable, reporting issues to these providers as required.</description>
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.configurators"
             certificationId="com.jboss.jbds.discovery.certification.supported"
-            description="Maven JDT Compiler Configurator (maven-compiler-plugin)"
-            id="m2e.jdt"
-            kind="task"
-            license="EPL (Free)"
-            name="Maven JDT Compiler Configurator"
-            provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/8.0-development/central/core/}">
-            <iu id="org.jboss.tools.m2e.jdt.feature"/>
-         <icon
-               image32="images/jbosstools_icon32.png">
-         </icon>
-         <overview
-               url="http://tools.jboss.org/">
-         </overview>
-      </connectorDescriptor>
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.d.maven"
-            groupId="org.jboss.tools.central.discovery.d.maven.configurators"
-            certificationId="com.jboss.jbds.discovery.certification.supported"
             description="JBoss Tools Maven Packaging Configurator"
             id="org.jboss.tools.maven.jbosspackaging.feature"
             kind="task"
