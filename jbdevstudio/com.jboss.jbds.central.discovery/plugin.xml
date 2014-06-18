@@ -96,6 +96,8 @@ reasonable, reporting issues to these providers as required.</description>
             <iu id="org.jboss.tools.aerogear.hybrid.feature"/>
             <iu id="org.jboss.tools.vpe.cordovasim.feature"/>
             <iu id="org.jboss.tools.vpe.browsersim.feature"/>
+            <iu id="org.jboss.tools.vpe.feature" />
+            <iu id="org.jboss.tools.livereload.feature" />
          <icon image32="images/cordova_32.png"/>
          <overview url="http://tools.jboss.org/"/>
       </connectorDescriptor>
@@ -111,24 +113,6 @@ reasonable, reporting issues to these providers as required.</description>
          <group id="org.jboss.tools.central.discovery.a.web.extras" />
          <group id="org.jboss.tools.central.discovery.a.web.extras2" />
       </connectorCategory>
-
-      <!-- only in JBT
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
-            certificationId="com.jboss.jbds.discovery.certification.experimental"
-            description="Create and run tests with Arquillian"
-            id="org.jboss.tools.arquillian"
-            kind="task"
-            license="EPL (Free)"
-            name="JBoss Arquillian Tools"
-            provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/8.0-development/central/core/}">
-            <iu id="org.jboss.tools.arquillian.feature"/>
-         <icon image32="images/arquillian_32.png"/>
-         <overview url="http://tools.jboss.org/"/>
-      </connectorDescriptor>
-      -->
 
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
@@ -150,7 +134,7 @@ reasonable, reporting issues to these providers as required.</description>
                url="http://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
-      
+
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
@@ -246,36 +230,6 @@ reasonable, reporting issues to these providers as required.</description>
          </icon>
          <overview
                url="http://www.springsource.com/developer">
-         </overview>
-      </connectorDescriptor>
-
-      <!-- JBIDE-14122: VJET -->
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
-            groupId="org.jboss.tools.central.discovery.a.web.extras2"
-            certificationId="com.jboss.jbds.discovery.certification.experimental"
-            description="Eclipse VJET (Experimental) includes a JavaScript IDE, Java to Javascript Code Generation + Java Based DOM Kit"
-            id="org.eclipse.vjet.feature"
-            kind="task"
-            license="EPL, Other (Free)"
-            name="Eclipse VJET"
-            provider="eclipse.org"
-            siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/8.0-development/central/core/}">
-            <iu id="org.eclipse.vjet.core"/>
-            <iu id="org.eclipse.vjet.eclipse"/>
-            <iu id="org.eclipse.vjet.extmod.dltk.core"/>
-            <iu id="org.eclipse.vjet.extmod.jsdt"/>
-            <iu id="org.eclipse.vjet.extmod.rhino"/>
-            <iu id="org.eclipse.vjet.rt"/>
-            <iu id="org.eclipse.vjet.web"/>
-            <iu id="org.eclipse.vjet.codegen"/>
-            <iu id="org.eclipse.vjet.vsf.domkit"/>
-            <iu id="org.eclipse.equinox.server.jetty"/>
-         <icon
-               image32="images/vjet_32.png">
-         </icon>
-         <overview
-               url="http://www.eclipse.org/vjet">
          </overview>
       </connectorDescriptor>
 
@@ -607,7 +561,7 @@ reasonable, reporting issues to these providers as required.</description>
          <group id="org.jboss.tools.central.discovery.d.maven.configurators" /> 
          <group id="org.jboss.tools.central.discovery.d.maven.upstream" />
       </connectorCategory>
-      
+
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.core"

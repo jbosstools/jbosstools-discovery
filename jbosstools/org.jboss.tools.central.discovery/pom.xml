@@ -38,22 +38,22 @@
                   <property name="TARGET_PLATFORM_VERSION" value="${TARGET_PLATFORM_VERSION}"/>
                   
                   <!-- pass in from Jenkins:
-                  <property name="UPDATE_SITE" value="http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_trunk/all/"/>
+                  <property name="UPDATE_SITE" value="http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_master/all/"/>
 
-                  <property name="UPDATE_SITE" value="http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_71/all/"/>
-                  <property name="UPDATE_SITE" value="http://www.qa.jboss.com/binaries/RHDS/updates/development/7.1.0.Beta1.core/"/>
+                  <property name="UPDATE_SITE" value="http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_8.0.luna/all/"/>
+                  <property name="UPDATE_SITE" value="http://www.qa.jboss.com/binaries/RHDS/updates/development/8.0.0.Beta2-updatesite-core/"/>
 
-                  <property name="UPDATE_SITE" value="http://download.jboss.org/jbosstools/builds/staging/_composite_/core/trunk/"/>
-                  <property name="UPDATE_SITE" value="http://download.jboss.org/jbosstools/updates/nightly/core/trunk/"/>
+                  <property name="UPDATE_SITE" value="http://download.jboss.org/jbosstools/builds/staging/_composite_/core/master/"/>
+                  <property name="UPDATE_SITE" value="http://download.jboss.org/jbosstools/updates/nightly/core/master/"/>
 
-                  <property name="UPDATE_SITE" value="http://download.jboss.org/jbosstools/builds/staging/_composite_/core/4.1.kepler/"/>
-                  <property name="UPDATE_SITE" value="http://download.jboss.org/jbosstools/updates/nightly/core/4.1.kepler/"/>
-                  <property name="UPDATE_SITE" value="http://download.jboss.org/jbosstools/updates/JBossTools-4.1.1.Beta1.core/"/>
+                  <property name="UPDATE_SITE" value="http://download.jboss.org/jbosstools/builds/staging/_composite_/core/4.2.luna/"/>
+                  <property name="UPDATE_SITE" value="http://download.jboss.org/jbosstools/updates/nightly/core/4.2.luna/"/>
+                  <property name="UPDATE_SITE" value="http://download.jboss.org/jbosstools/updates/staging/jbosstools-4.2.0.Beta2-updatesite-core/"/>
                   -->
                   <property name="UPDATE_SITE" value="${UPDATE_SITE}"/>
 
                   <!-- pass in from Jenkins:
-                  <property name="EXTRAS_SITE" value="http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/kepler/>
+                  <property name="EXTRAS_SITE" value="http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/luna/>
                   -->
                   <property name="EXTRAS_SITE" value="${EXTRAS_SITE}"/>
                 </ant>

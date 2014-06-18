@@ -147,49 +147,69 @@ $java.home = ${java.home}</echo>
 &lt;/repository&gt;</echo>
 	</target>
 
-	<target name="generate.directory.xml">
-		<echo level="debug">project.build.directory = ${project.build.directory}</echo>
-		<!-- get filename matching org.jboss.tools.central.discovery_1.2.0.Alpha1-v20111013-0511-B1234.jar, then generate replacement directory.xml file -->
-		<path id="central.discovery.jar.id">
-			<fileset dir="${project.build.directory}">
-				<include name="*.central.discovery*.jar" />
-				<exclude name="*-sources.jar" />
-			</fileset>
-		</path>
-		<property name="central.discovery.path" refid="central.discovery.jar.id" />
-		<echo level="debug">central.discovery.path = ${central.discovery.path}</echo>
-		<basename property="central.discovery.jar" file="${central.discovery.path}" />
-		<if>
-			<not>
-				<equals arg1="${central.discovery.jar}" arg2="" trim="true" />
-			</not>
-			<then>
-				<!-- from 2011-09-21_01-11-04 to 20110921-0111 -->
-				<propertyregex override="true" property="VERSION_CLEAN" defaultvalue="${VERSION}" input="${VERSION}" regexp="([0-9]+.[0-9]+.[0-9]+)-SNAPSHOT" replace="\1"/>
-				<mkdir dir="${project.build.directory}/discovery-site/plugins"/>
-				<if>
-					<isset property="BUILD_ID"/>
-					<then>
-						<propertyregex override="true" property="BUILD_TS" defaultvalue="${BUILD_ID}" input="${BUILD_ID}" regexp="([0-9]+)-([0-9]+)-([0-9]+)_([0-9]+)-([0-9]+)-([0-9]+)" replace="v\1\2\3-\4\5" />
+	<!-- TODO: if generating for earlyaccess site, copy core plugin jar into EA site too -->
 
-						<propertyregex override="true" property="central.discovery.jar.renamed" defaultvalue="${central.discovery.jar}" input="${central.discovery.jar}" regexp="-[0-9.]+-SNAPSHOT" replace="_${VERSION_CLEAN}.${BUILD_ALIAS}-${BUILD_TS}-B${BUILD_NUMBER}"/>
+	<target name="generate.directory.xml">
+		<echo level="verbose">project.build.directory = ${project.build.directory}</echo>
+		<!-- get filename matching org.jboss.tools.central.discovery_1.2.0.Alpha1-v20111013-0511-B1234.jar, then generate replacement directory.xml file -->
+		<var name="central.discovery.jars.renamed" value=""/>
+		<for param="central.discovery.jar.file">
+			<path>
+				<fileset dir="${project.build.directory}/../../">
+					<include name="*central.discovery*/target/*.central.discovery*.jar" />
+					<exclude name="*central.discovery*/target/*-sources.jar" />
+				</fileset>
+			</path>
+			<sequential>
+				<var name="central.discovery.path" value="@{central.discovery.jar.file}" />
+				<echo level="verbose">central.discovery.path = ${central.discovery.path}</echo>
+				<var name="central.discovery.jar" unset="true"/>
+				<basename property="central.discovery.jar" file="${central.discovery.path}" />
+				<if>
+					<not>
+						<equals arg1="${central.discovery.jar}" arg2="" trim="true" />
+					</not>
+					<then>
+						<!-- from 2011-09-21_01-11-04 to 20110921-0111 -->
+						<propertyregex override="true" property="VERSION_CLEAN" defaultvalue="${VERSION}" input="${VERSION}" regexp="([0-9]+.[0-9]+.[0-9]+)-SNAPSHOT" replace="\1"/>
+						<mkdir dir="${project.build.directory}/discovery-site/plugins"/>
+						<if>
+							<isset property="BUILD_ID"/>
+							<then>
+								<propertyregex override="true" property="BUILD_TS" defaultvalue="${BUILD_ID}" input="${BUILD_ID}" regexp="([0-9]+)-([0-9]+)-([0-9]+)_([0-9]+)-([0-9]+)-([0-9]+)" replace="v\1\2\3-\4\5" />
+
+								<propertyregex override="true" property="central.discovery.jar.renamed" defaultvalue="${central.discovery.jar}" input="${central.discovery.jar}" regexp="-[0-9.]+-SNAPSHOT" replace="_${VERSION_CLEAN}.${BUILD_ALIAS}-${BUILD_TS}-B${BUILD_NUMBER}"/>
+							</then>
+							<else>
+								<tstamp>
+		    					<format property="BUILD_TS" pattern="yyyyMMdd-hhmm" timezone="GMT+0"/>
+		  					</tstamp>
+								<propertyregex override="true" property="central.discovery.jar.renamed" defaultvalue="${central.discovery.jar}" input="${central.discovery.jar}" regexp="-[0-9.]+-SNAPSHOT" replace="_${VERSION_CLEAN}.${BUILD_ALIAS}-${BUILD_TS}"/>
+							</else>
+						</if>
+						<copy file="${central.discovery.path}" tofile="${project.build.directory}/discovery-site/plugins/${central.discovery.jar.renamed}"/>
+						<echo level="verbose">Collect discovery jar: ${project.build.directory}/discovery-site/plugins/${central.discovery.jar.renamed}</echo>
+						<var name="central.discovery.jars.renamed" value="${central.discovery.jars.renamed} ${central.discovery.jar.renamed}"/>
 					</then>
-					<else>
-						<tstamp>
-    					<format property="BUILD_TS" pattern="yyyyMMdd-hhmm" timezone="GMT+0"/>
-  					</tstamp>
-						<propertyregex override="true" property="central.discovery.jar.renamed" defaultvalue="${central.discovery.jar}" input="${central.discovery.jar}" regexp="-[0-9.]+-SNAPSHOT" replace="_${VERSION_CLEAN}.${BUILD_ALIAS}-${BUILD_TS}"/>
-					</else>
 				</if>
-				<copy file="${central.discovery.path}" tofile="${project.build.directory}/discovery-site/plugins/${central.discovery.jar.renamed}"/>
-				<echo level="verbose">Generate ${project.build.directory}/discovery-site/${PREFIX}-directory.xml pointing at discovery jar: ${project.build.directory}/discovery-site/plugins/${central.discovery.jar.renamed}</echo>
-				<echo file="${project.build.directory}/discovery-site/${PREFIX}-directory.xml">&lt;?xml version='1.0' encoding='UTF-8'?>
+			</sequential>
+		</for>
+		<echo level="verbose">Generate ${project.build.directory}/discovery-site/${PREFIX}-directory.xml pointing at discovery jar(s)</echo>
+		<!-- header -->
+		<echo file="${project.build.directory}/discovery-site/${PREFIX}-directory.xml">&lt;?xml version='1.0' encoding='UTF-8'?>
 &lt;directory xmlns="http://www.eclipse.org/mylyn/discovery/directory/">
-&lt;entry url="plugins/${central.discovery.jar.renamed}" permitCategories="true"/>
-&lt;/directory>
 </echo>
-			</then>
-		</if>
+		<!-- plugin(s) -->
+		<for list="${central.discovery.jars.renamed}" delimiter=" " param="central.discovery.jar.renamed">
+			<sequential>
+				<echo level="verbose">Add discovery jar to directory.xml: @{central.discovery.jar.renamed}</echo>
+				<echo append="true" file="${project.build.directory}/discovery-site/${PREFIX}-directory.xml">&lt;entry url="plugins/@{central.discovery.jar.renamed}" permitCategories="true"/>
+</echo>
+		</sequential>
+		</for>
+		<!-- footer -->
+		<echo append="true" file="${project.build.directory}/discovery-site/${PREFIX}-directory.xml">&lt;/directory>
+</echo>
 	</target>
 
 	<target name="cleanup">

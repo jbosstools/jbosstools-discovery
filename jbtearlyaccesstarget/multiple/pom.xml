@@ -4,11 +4,11 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.jboss.tools.targetplatforms</groupId>
-    <artifactId>jbtcentral</artifactId>
+    <artifactId>jbtearlyaccess</artifactId>
     <version>4.40.0.Beta3-SNAPSHOT</version>
   </parent>
-  <artifactId>jbtcentral-multiple</artifactId>
-  <name>JBoss Central Core Multiple (Composite) Target Platform</name>
+  <artifactId>jbtearlyaccess-multiple</artifactId>
+  <name>JBoss Central Early Access Multiple (Composite) Target Platform</name>
   <packaging>pom</packaging>
   <properties>
     <!-- set this to false to allow validation to proceed but NOT fail the build -->
@@ -22,12 +22,13 @@
         <version>${targetPlatformUtilsVersion}</version>
         <executions>
           <!-- Merge:
-               1. jbosstools-multiple.target (JBoss Tools)
+               1. jbosstools-multiple.target (JBoss Tools TP)
                2. jbtcentral.target (JBT Central)
-               =  jbtcentral-multiple.target
+               3. jbtearlyaccess.target (JBT Early Access)
+               =  jbtearlyaccess-multiple.target
           -->
           <execution>
-            <id>merge-jbtcentral</id>
+            <id>merge-jbtearlyaccess</id>
             <phase>generate-resources</phase>
             <goals>
               <goal>merge-targets</goal>
@@ -42,7 +43,8 @@
                 </item>
               </sourceTargetArtifacts>
               <sourceTargetFiles>
-                <item>${basedir}/jbtcentral-multiple.target</item>
+                <item>${basedir}/../../jbtcentraltarget/multiple/jbtcentral-multiple.target</item>
+                <item>${basedir}/${project.artifactId}.target</item>
               </sourceTargetFiles>
               <outputFile>${project.build.directory}/${project.artifactId}-full.target</outputFile>
             </configuration>

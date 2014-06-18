@@ -4,15 +4,16 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.jboss.tools.targetplatforms</groupId>
-    <artifactId>jbtcentral</artifactId>
+    <artifactId>jbtearlyaccess</artifactId>
     <version>4.40.0.Beta3-SNAPSHOT</version>
   </parent>
-  <artifactId>jbtcentral-multiple</artifactId>
-  <name>JBoss Central Core Multiple (Composite) Target Platform</name>
+  <artifactId>jbtearlyaccess-unified</artifactId>
+  <name>JBoss Central Early Access Unified (Aggregate) Target Platform</name>
   <packaging>pom</packaging>
   <properties>
     <!-- set this to false to allow validation to proceed but NOT fail the build -->
     <validate-target-platform.failOnError>true</validate-target-platform.failOnError>
+    <targetRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbtearlyaccesstarget/${project.version}/REPO/</targetRepositoryUrl>
   </properties>
   <build>
     <plugins>
@@ -21,30 +22,20 @@
         <artifactId>target-platform-utils</artifactId>
         <version>${targetPlatformUtilsVersion}</version>
         <executions>
-          <!-- Merge:
-               1. jbosstools-multiple.target (JBoss Tools)
-               2. jbtcentral.target (JBT Central)
-               =  jbtcentral-multiple.target
-          -->
           <execution>
-            <id>merge-jbtcentral</id>
+            <id>create-target</id>
             <phase>generate-resources</phase>
             <goals>
-              <goal>merge-targets</goal>
+              <goal>flatten-target</goal>
             </goals>
             <configuration>
-              <sourceTargetArtifacts>
-                <item>
-                  <groupId>org.jboss.tools.targetplatforms</groupId>
-                  <artifactId>jbosstools-multiple</artifactId>
-                  <version>${JBTCoreTPVersion}</version>
-                  <classifier>jbosstools-multiple</classifier>
-                </item>
-              </sourceTargetArtifacts>
-              <sourceTargetFiles>
-                <item>${basedir}/jbtcentral-multiple.target</item>
-              </sourceTargetFiles>
-              <outputFile>${project.build.directory}/${project.artifactId}-full.target</outputFile>
+              <sourceTargetArtifact>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>jbtearlyaccess-multiple</artifactId>
+                <classifier>jbtearlyaccess-multiple</classifier>
+                <version>${project.version}</version>
+              </sourceTargetArtifact>
+              <targetRepositoryUrl>${targetRepositoryUrl}</targetRepositoryUrl>
             </configuration>
           </execution>
         </executions>
@@ -61,7 +52,7 @@
             </goals>
             <configuration>
               <targetFiles>
-                <param>${project.build.directory}/${project.artifactId}-full.target</param>
+                <param>${project.build.directory}/${project.artifactId}.target</param>
               </targetFiles>
               <failOnError>${validate-target-platform.failOnError}</failOnError>
             </configuration>
@@ -81,9 +72,8 @@
             </goals>
             <configuration>
               <artifacts>
-                <!-- add more artifacts if want more target platforms -->
                 <artifact>
-                  <file>${project.artifactId}.target</file>
+                  <file>${project.build.directory}/${project.artifactId}.target</file>
                   <type>target</type>
                   <classifier>${project.artifactId}</classifier>
                 </artifact>
@@ -94,35 +84,4 @@
       </plugin>
     </plugins>
   </build>
-
-  <profiles>
-    <profile>
-      <id>multiple2repo</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <!-- Workaround for https://bugs.eclipse.org/bugs/show_bug.cgi?id=389052  -->
-            <groupId>org.jboss.tools.tycho-plugins</groupId>
-            <artifactId>target-platform-utils</artifactId>
-            <version>${targetPlatformUtilsVersion}</version>
-            <executions>
-              <execution>
-                <phase>package</phase>
-                <goals>
-                  <goal>mirror-target-to-repo</goal>
-                </goals>
-                <configuration>
-                  <sourceTargetFile>${project.artifactId}.target</sourceTargetFile>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
-
 </project>
