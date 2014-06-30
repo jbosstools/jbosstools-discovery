@@ -67,11 +67,11 @@ reasonable, reporting issues to these providers as required.</description>
             provider="Google, Inc."
             siteUrl="https://dl-ssl.google.com/android/eclipse/">
             <!-- https://issues.jboss.org/browse/JBIDE-12498, JBIDE-13167 -->
-            <iu id="com.android.ide.eclipse.adt"/>
-            <iu id="com.android.ide.eclipse.ddms"/>
-            <iu id="com.android.ide.eclipse.hierarchyviewer"/>
-            <iu id="com.android.ide.eclipse.gldebugger"/>
-            <iu id="com.android.ide.eclipse.traceview"/>
+            <iu id="com.android.ide.eclipse.adt.feature"/>
+            <iu id="com.android.ide.eclipse.ddms.feature"/>
+            <iu id="com.android.ide.eclipse.hierarchyviewer.feature"/>
+            <iu id="com.android.ide.eclipse.gldebugger.feature"/>
+            <iu id="com.android.ide.eclipse.traceview.feature"/>
             <!-- DO NOT INCLUDE com.android.ide.eclipse.ndk feature because it requires CDT -->
          <icon
                image32="images/android_32.png">
