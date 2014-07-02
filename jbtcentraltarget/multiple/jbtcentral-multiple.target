@@ -41,8 +41,8 @@
       <unit id="org.sonatype.m2e.egit.feature.feature.group" version="0.14.0.201406241643"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/1.1.0-2014-03-24_15-15-15-H24/"/>
-      <unit id="org.jboss.tools.m2e.wro4j.feature.feature.group" version="1.1.0.201403241922"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/1.1.0-2014-06-25_06-16-31-H26/"/>
+      <unit id="org.jboss.tools.m2e.wro4j.feature.feature.group" version="1.1.0.201406251020"/>
     </location>
 
     <!-- new to JBT 4.1.0 / JBDS 7 -->
