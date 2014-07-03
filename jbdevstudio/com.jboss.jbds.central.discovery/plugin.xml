@@ -85,7 +85,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.mobile"
             groupId="org.jboss.tools.central.discovery.a.mobile.extras2"
-            certificationId="com.jboss.jbds.discovery.certification.technologypreview"
+            certificationId="com.jboss.jbds.discovery.certification.supported"
             description="Create and test hybrid mobile applications with Apache Cordova for Android + iOS"
             id="org.jboss.tools.aerogear.hybrid"
             kind="task"
