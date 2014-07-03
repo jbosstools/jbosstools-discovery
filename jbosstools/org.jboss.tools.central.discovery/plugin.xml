@@ -224,25 +224,6 @@
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.b.scm"
             groupId="org.jboss.tools.central.discovery.b.scm.git"
-            description="Eclipse Team Provider for the Git version control system"
-            id="org.eclipse.egit"
-            kind="task"
-            license="EPL (Free)"
-            name="Eclipse EGit"
-            provider="eclipse.org"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
-       <iu id="org.eclipse.jgit"/>
-       <iu id="org.eclipse.egit"/>
-         <icon
-               image32="images/egit_32.png">
-         </icon>
-         <overview
-               url="http://www.eclipse.org/egit/">
-         </overview>
-      </connectorDescriptor>
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.b.scm"
-            groupId="org.jboss.tools.central.discovery.b.scm.git"
             description="Mylyn support for Eclipse EGit and GitHub"
             id="org.eclipse.egit.mylyn"
             kind="task"
