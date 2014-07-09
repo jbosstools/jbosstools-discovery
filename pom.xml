@@ -20,10 +20,8 @@
 
   <!-- this pom will only build the discovery plugins, not the target platforms. See README.adoc for building target platforms -->
   <modules>
-    <module>jbosstools/org.jboss.tools.central.discovery</module>
-    <module>jbosstools/org.jboss.tools.central.discovery.earlyaccess</module>
-    <module>jbdevstudio/com.jboss.jbds.central.discovery</module>
-    <module>jbdevstudio/com.jboss.jbds.central.discovery.earlyaccess</module>
+    <module>jbosstools</module>
+    <module>jbdevstudio</module>
   </modules>
 
 </project>
