@@ -32,11 +32,8 @@ but this is not guaranteed.</description>
             <iu id="tern-feature"/>
             <iu id="tern-jsdt-feature"/>
             <iu id="tern-server-nodejs-feature"/>
-            <!-- JBIDE-17633 do not include rhino <iu id="tern-server-rhino-feature"/> -->
             <iu id="tern.eclipse.ide.tools.feature"/>
-            <iu id="tern.eclipse.linux.gtk.x86_64.feature"/>
-            <iu id="tern.eclipse.macosx.cocoa.x86_64.feature"/>
-            <iu id="tern.eclipse.win32.win32.x86.feature"/>
+            <iu id="tern.eclipse.ide.server.nodejs.embed"/>
          <icon
                image32="images/angularjs_32.png">
          </icon>
