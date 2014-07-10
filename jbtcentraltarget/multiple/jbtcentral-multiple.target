@@ -183,8 +183,8 @@
 
     <!-- unchanged since JBT 4.0.0 / JBDS 6 -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/findbugs/2.0.3.20131122-15027/"/>
-      <unit id="edu.umd.cs.findbugs.plugin.eclipse.feature.group" version="2.0.3.20131122-15027"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/findbugs/3.0.0.20140706-2cfb468/"/>
+      <unit id="edu.umd.cs.findbugs.plugin.eclipse.feature.group" version="3.0.0.20140706-2cfb468"/>
     </location>
 
   </locations>
