@@ -12,6 +12,7 @@
 	<modules>
 		<module>com.jboss.jbds.central.discovery</module>
 		<module>com.jboss.jbds.central.discovery.earlyaccess</module>
+		<module>discovery-site</module>
 	</modules>
 </project>
 <!--
