@@ -116,7 +116,6 @@
       <unit id="org.eclipse.equinox.http.registry" version="1.1.300.v20130402-1529"/>
       <unit id="org.eclipse.zest.feature.group" version="1.5.100.201405261516"/>
       <unit id="org.eclipse.mylyn.java.ui" version="3.12.0.v20140328-2338"/>
-
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/ajdt/2.2.4.e44x-20140516-1000/"/> 
