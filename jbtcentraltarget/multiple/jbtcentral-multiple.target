@@ -116,6 +116,7 @@
       <unit id="org.eclipse.equinox.http.registry" version="1.1.300.v20130402-1529"/>
       <unit id="org.eclipse.zest.feature.group" version="1.5.100.201405261516"/>
       <unit id="org.eclipse.mylyn.java.ui" version="3.12.0.v20140328-2338"/>
+
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/ajdt/2.2.4.e44x-20140516-1000/"/> 
@@ -153,9 +154,11 @@
       <unit id="org.apache.httpcomponents.httpclient" version="4.2.6.v201311072007"/>
       <unit id="org.apache.httpcomponents.httpcore" version="4.2.5.v201311072007"/>
       <unit id="org.aspectj.runtime" version="1.8.1.20140624165800"/>
+      <unit id="org.aspectj.weaver" version="1.8.1.20140624165800"/>
       <unit id="org.codehaus.jackson.core" version="1.6.0.v20101005-0925"/>
       <unit id="org.codehaus.jackson.mapper" version="1.6.0.v20101005-0925"/>
       <!-- <unit id="org.eclipse.contribution.visualiser" version="2.2.4.e43x-20140320-1000"/> -->
+      <unit id="org.eclipse.equinox.weaving.hook" version="1.1.0.v20140529-1734"/>
       <unit id="org.json" version="1.0.0.v201011060100"/>
 
       <!-- Optional bundles included to avoid console warnings after installation -->
