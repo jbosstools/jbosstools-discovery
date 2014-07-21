@@ -15,10 +15,11 @@
     <!-- TODO: update this with each milestone release -->
     <!-- JBDS-3079 JBoss Tools core requirements, needed in Central for JBDS because not part of JBDS TP -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.2.0.Beta2-updatesite-core/"/>
-      <unit id="org.jboss.tools.vpe.cordovasim.feature.feature.group" version="3.5.100.Beta2-v20140530-0534-B36"/>
-      <unit id="org.jboss.tools.maven.jbosspackaging.feature.feature.group" version="1.6.0.Beta2-v20140613-0044-B68"/>
-      <unit id="org.jboss.tools.common.mylyn.feature.feature.group" version="3.6.0.Beta2-v20140612-0000-B39"/>
+      <!-- <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.2.0.Beta3-updatesite-core/"/> -->
+      <repository location="http://download.jboss.org/jbosstools/updates/staging/jbosstools-4.2.0.Beta3b-updatesite-core/"/>
+      <unit id="org.jboss.tools.vpe.cordovasim.feature.feature.group" version="3.5.100.Beta3-v20140717-1903-B49"/>
+      <unit id="org.jboss.tools.maven.jbosspackaging.feature.feature.group" version="1.6.0.Beta3-v20140718-1719-B77"/>
+      <unit id="org.jboss.tools.common.mylyn.feature.feature.group" version="3.6.0.Beta3-v20140718-0436-B48"/>
     </location>
 
     <!-- mylyn + mylyn accessories (which are not in the JBT or JBDS target platform) -->
