@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.jboss.tools.targetplatforms</groupId>
     <artifactId>jbtcentral</artifactId>
-    <version>4.40.0.Beta4-SNAPSHOT</version>
+    <version>4.40.0.Beta4b-SNAPSHOT</version>
   </parent>
   <artifactId>jbtcentral-unified</artifactId>
   <name>JBoss Central Core Unified (Aggregate) Target Platform</name>
