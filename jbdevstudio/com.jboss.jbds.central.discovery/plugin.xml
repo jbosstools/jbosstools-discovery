@@ -93,7 +93,7 @@ reasonable, reporting issues to these providers as required.</description>
             name="JBoss Hybrid Mobile Tools + CordovaSim"
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/8.0-development/central/core/}">
-            <iu id="org.jboss.tools.aerogear.hybrid.feature"/>
+            <iu id="org.jboss.tools.aerogear.thym.feature"/>
             <iu id="org.jboss.tools.vpe.cordovasim.feature"/>
             <iu id="org.jboss.tools.vpe.browsersim.feature"/>
             <iu id="org.jboss.tools.vpe.feature" />
