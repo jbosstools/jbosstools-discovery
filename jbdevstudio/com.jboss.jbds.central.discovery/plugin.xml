@@ -888,7 +888,7 @@ reasonable, reporting issues to these providers as required.</description>
           priority="6"
           iconPath="images/wizards/newcordovaprj_wiz.png"
           requiredComponentIds="org.jboss.tools.aerogear.hybrid"
-          wizardId="org.eclipse.thym.ui.wizard.project.NewHybridProjectWizard">
+          wizardId="org.eclipse.thym.ui.NewHybridProjectWizard">
       </proxyWizard>
       <proxyWizard
           id="maven.wizard" 
