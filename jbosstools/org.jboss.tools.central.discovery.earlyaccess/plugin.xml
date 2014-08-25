@@ -26,7 +26,7 @@ but this is not guaranteed.</description>
             kind="task"
             license="EPL (Free)"
             name="AngularJS for Web Tools"
-            provider="Angelo ZERR"
+            provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.earlyaccess.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/earlyaccess/}">
             <iu id="angularjs-eclipse-feature"/>
             <iu id="tern-feature"/>
@@ -34,6 +34,8 @@ but this is not guaranteed.</description>
             <iu id="tern-server-nodejs-feature"/>
             <iu id="tern.eclipse.ide.tools.feature"/>
             <iu id="tern.eclipse.ide.server.nodejs.embed"/>
+            <iu id="org.jboss.tools.jst.jsdt.feature" />
+            <iu id="org.jboss.tools.jst.angularjs.feature" />
          <icon
                image32="images/angularjs_32.png">
          </icon>
