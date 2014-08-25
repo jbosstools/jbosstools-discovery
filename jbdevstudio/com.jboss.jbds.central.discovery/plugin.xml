@@ -57,6 +57,26 @@ reasonable, reporting issues to these providers as required.</description>
 
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.mobile"
+            groupId="org.jboss.tools.central.discovery.a.mobile.extras2"
+            certificationId="com.jboss.jbds.discovery.certification.supported"
+            description="AngularJS Tooling support for Ionic framework"
+            id="angularjs-eclipse-feature"
+            kind="task"
+            license="EPL (Free)"
+            name="AngularJS for Web Tools"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.earlyaccess.site.url:https://devstudio.jboss.com/updates/8.0-development/central/earlyaccess/}">
+            <iu id="org.jboss.tools.jst.angularjs.feature"/>
+         <icon
+               image32="images/angularjs_32.png">
+         </icon>
+         <overview
+               url="http://tools.jboss.org/">
+         </overview>
+      </connectorDescriptor>
+
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.mobile"
             groupId="org.jboss.tools.central.discovery.a.mobile.extras"
             certificationId="com.jboss.jbds.discovery.certification.external"
             description="Android Development Tools, DDMS, Hierarchy Viewer, OpenGL Tracer, Traceview"
@@ -98,6 +118,7 @@ reasonable, reporting issues to these providers as required.</description>
             <iu id="org.jboss.tools.vpe.browsersim.feature"/>
             <iu id="org.jboss.tools.vpe.feature" />
             <iu id="org.jboss.tools.livereload.feature" />
+            <iu id="org.jboss.tools.jst.angularjs.feature" />
          <icon image32="images/cordova_32.png"/>
          <overview url="http://tools.jboss.org/"/>
       </connectorDescriptor>
