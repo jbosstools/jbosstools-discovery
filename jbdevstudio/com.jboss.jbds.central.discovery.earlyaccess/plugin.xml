@@ -2,7 +2,7 @@
 <?eclipse version="3.4"?>
 <plugin>
 	<extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
-      <certification id="com.jboss.jbds.discovery.certification.earlyaccess" name="Early Access" url="https://devstudio.jboss.com/updates/8.0/central/">
+      <certification id="com.jboss.jbds.discovery.certification.earlyaccess" name="Early Access" url="https://devstudio.redhat.com/updates/8.0/central/">
          <description>
 Tested by Red Hat. However, as these are experimental plug-ins, 
 it is possible that their content may change at any time and 
@@ -27,7 +27,7 @@ but this is not guaranteed.</description>
             license="EPL (Free)"
             name="AngularJS for Web Tools"
             provider="Angelo ZERR"
-            siteUrl="${jboss.discovery.earlyaccess.site.url:https://devstudio.jboss.com/updates/8.0-development/central/earlyaccess/}">
+            siteUrl="${jboss.discovery.earlyaccess.site.url:https://devstudio.redhat.com/updates/8.0-development/central/earlyaccess/}">
             <iu id="angularjs-eclipse-feature"/>
             <iu id="tern-feature"/>
             <iu id="tern-jsdt-feature"/>
@@ -52,7 +52,7 @@ but this is not guaranteed.</description>
             license="EPL (Free)"
             name="JBoss Arquillian Tools"
             provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.earlyaccess.site.url:https://devstudio.jboss.com/updates/8.0-development/central/earlyaccess/}">
+            siteUrl="${jboss.discovery.earlyaccess.site.url:https://devstudio.redhat.com/updates/8.0-development/central/earlyaccess/}">
             <iu id="org.jboss.tools.arquillian.feature"/>
          <icon image32="images/arquillian_32.png"/>
          <overview url="http://www.jboss.org/tools"/>
@@ -69,7 +69,7 @@ but this is not guaranteed.</description>
             license="EPL, Other (Free)"
             name="Eclipse VJET"
             provider="eclipse.org"
-            siteUrl="${jboss.discovery.earlyaccess.site.url:https://devstudio.jboss.com/updates/8.0-development/central/earlyaccess/}">
+            siteUrl="${jboss.discovery.earlyaccess.site.url:https://devstudio.redhat.com/updates/8.0-development/central/earlyaccess/}">
             <iu id="org.eclipse.vjet.core"/>
             <iu id="org.eclipse.vjet.eclipse"/>
             <iu id="org.eclipse.vjet.extmod.dltk.core"/>

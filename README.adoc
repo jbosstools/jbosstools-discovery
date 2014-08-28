@@ -25,9 +25,9 @@ or
 [source,bash]
 ----
 jbdevstudio -vmargs \
-  -Djboss.discovery.directory.url=https://devstudio.jboss.com/updates/8.0-staging/devstudio-directory.xml
-  -Djboss.discovery.site.url=https://devstudio.jboss.com/updates/8.0-staging/central/core/
-  -Djboss.discovery.earlyaccess.site.url=https://devstudio.jboss.com/updates/8.0-staging/central/earlyaccess/
+  -Djboss.discovery.directory.url=https://devstudio.redhat.com/updates/8.0-staging/devstudio-directory.xml
+  -Djboss.discovery.site.url=https://devstudio.redhat.com/updates/8.0-staging/central/core/
+  -Djboss.discovery.earlyaccess.site.url=https://devstudio.redhat.com/updates/8.0-staging/central/earlyaccess/
 ----
 
 

@@ -179,7 +179,7 @@ Instead of the latest master build, you can also point Eclipse / JBDS at more st
 * The current released milestone URLs for JBT/JBDS are:
 
 ** http://download.jboss.org/jbosstools/discovery/development/kepler/jbosstools-directory.xml
-** https://devstudio.jboss.com/updates/8.0-development/devstudio-directory.xml
+** https://devstudio.redhat.com/updates/8.0-development/devstudio-directory.xml
 
 * The stable branch (upcoming milestone) URL are:
 
