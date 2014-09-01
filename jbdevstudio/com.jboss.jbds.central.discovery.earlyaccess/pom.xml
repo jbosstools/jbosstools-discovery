@@ -115,6 +115,8 @@
             <phase>generate-resources</phase>
             <configuration>
               <targetDefinitionFile>${project.basedir}/../../jbtearlyaccesstarget/multiple/jbtearlyaccess-multiple.target</targetDefinitionFile>
+              <targetListingFile>devstudio-earlyaccess.properties</targetListingFile>
+              <initialListingFile>http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/core/${jbosstools-site-stream}/devstudio-earlyaccess.properties</initialListingFile>
             </configuration>
           </execution>
         </executions>
