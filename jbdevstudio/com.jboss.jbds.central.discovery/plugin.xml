@@ -873,6 +873,7 @@ reasonable, reporting issues to these providers as required.</description>
           wizardId="org.jboss.tools.central.wizards.NewJavaeeWarProjectWizard"
           >
       </proxyWizard>
+      <!--
       <proxyWizard 
           id="richfaces.wizard" 
           description="%richfaces.wizard.description"
@@ -882,7 +883,6 @@ reasonable, reporting issues to these providers as required.</description>
           wizardId="org.jboss.tools.central.wizards.NewRichfacesProjectWizard"
           >
       </proxyWizard>
-      <!--
       <proxyWizard 
           id="gwt.wizard" 
           description="%gwt.wizard.description"
