@@ -20,6 +20,7 @@
       <unit id="org.jboss.tools.vpe.cordovasim.feature.feature.group" version="3.5.100.CR1-v20140829-2054-B52"/>
       <unit id="org.jboss.tools.maven.jbosspackaging.feature.feature.group" version="1.6.0.CR1-v20140830-0613-B81"/>
       <unit id="org.jboss.tools.common.mylyn.feature.feature.group" version="3.6.0.CR1-v20140829-2038-B51"/>
+      <unit id="org.jboss.tools.jst.angularjs.feature.feature.group" version="3.6.0.CR1-v20140829-1809-B59"/>
     </location>
 
     <!-- mylyn + mylyn accessories (which are not in the JBT or JBDS target platform) -->
