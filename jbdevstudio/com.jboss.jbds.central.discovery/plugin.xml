@@ -175,6 +175,25 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
+            certificationId="com.jboss.jbds.discovery.certification.supported"
+            description="JBoss Forge Tools provides easy access and integration with JBoss Forge within Eclipse."
+            id="forge-tools-feature"
+            kind="task"
+            license="EPL (Free)"
+            name="JBoss Forge Tools"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.site.url:https://devstudio.redhat.com/updates/8.0-development/central/core/}">
+            <iu id="org.jboss.tools.forge.feature"/>
+            <iu id="org.jboss.tools.forge.ext.feature"/>
+            <iu id="org.jboss.tools.forge.m2e.feature"/>
+         <icon image32="images/jbossforge_icon_32px.png"/>
+         <overview url="http://tools.jboss.org/features/forge.html"/>
+      </connectorDescriptor>
+ 
+
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
             certificationId="com.jboss.jbds.discovery.certification.tested"
             description="JST Server Core, UI, Adapters, User Doc"
             id="org.eclipse.jst.server_core.feature"
@@ -873,26 +892,17 @@ reasonable, reporting issues to these providers as required.</description>
           wizardId="org.jboss.tools.central.wizards.NewJavaeeWarProjectWizard"
           >
       </proxyWizard>
-      <!--
       <proxyWizard 
-          id="richfaces.wizard" 
-          description="%richfaces.wizard.description"
-          label="Richfaces Project"
+          id="forge.wizard" 
+          description="%forge.wizard.description"
+          label="AngularJS with Forge Project"
           priority="4"
-          iconPath="images/wizards/rf_logo.png"
-          wizardId="org.jboss.tools.central.wizards.NewRichfacesProjectWizard"
+          iconPath="images/wizards/jbossforge_icon_16px.png"
+          wizardId="org.jboss.tools.central.wizards.NewForgeProjectWizard"
+          requiredPluginIds="org.jboss.tools.forge.ui.wizards"
+          requiredComponentIds="forge-tools-feature"
           >
       </proxyWizard>
-      <proxyWizard 
-          id="gwt.wizard" 
-          description="%gwt.wizard.description"
-          label="GWT Project"
-          priority="7"
-          iconPath="images/wizards/new-gdt-project.png"
-          wizardId="org.jboss.tools.central.wizards.NewGwtProjectWizard"
-          >
-      </proxyWizard>
-      -->
       <proxyWizard 
           id="openshift.wizard" 
           description="%openshift.wizard.description"
