@@ -21,6 +21,9 @@
       <unit id="org.jboss.tools.maven.jbosspackaging.feature.feature.group" version="1.6.0.CR1-v20140830-0613-B81"/>
       <unit id="org.jboss.tools.common.mylyn.feature.feature.group" version="3.6.0.CR1-v20140829-2038-B51"/>
       <unit id="org.jboss.tools.jst.angularjs.feature.feature.group" version="3.6.0.CR1-v20140829-1809-B59"/>
+      <unit id="org.jboss.tools.forge.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.forge.ext.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.forge.m2e.feature.feature.group" version="0.0.0"/>
     </location>
 
     <!-- mylyn + mylyn accessories (which are not in the JBT or JBDS target platform) -->
