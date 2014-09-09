@@ -19,8 +19,8 @@
       </connectorCategory>
 
       <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.mobile"
-            groupId="org.jboss.tools.central.discovery.a.mobile.extras2"
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
             description="AngularJS Tooling support for Ionic framework"
             id="angularjs-eclipse-feature"
             kind="task"
