@@ -37,8 +37,8 @@
       <unit id="org.jboss.tools.common.mylyn.feature.feature.group" version="3.6.0.CR1-v20140829-2038-B51"/>
       <unit id="org.jboss.tools.common.text.ext.feature.feature.group" version="3.6.0.CR1-v20140829-2038-B51"/>
       <unit id="org.jboss.tools.common.verification.feature.feature.group" version="3.6.0.CR1-v20140829-2038-B51"/>
-      <unit id="org.jboss.tools.jst.jsdt.feature.feature.group" version="3.6.0.CR1-v20140904-0921-B61"/>
-      <unit id="org.jboss.tools.jst.angularjs.feature.feature.group" version="3.6.0.CR1-v20140904-0921-B61"/>
+      <unit id="org.jboss.tools.jst.jsdt.feature.feature.group" version="3.6.0.CR1-v20140911-2133-B68"/>
+      <unit id="org.jboss.tools.jst.angularjs.feature.feature.group" version="3.6.0.CR1-v20140911-2133-B68"/>
     </location>
 
     <!-- required by Arquillian; included in JBT TP but not JBDS TP -->
