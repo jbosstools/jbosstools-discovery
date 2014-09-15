@@ -16,14 +16,14 @@
     <!-- JBDS-3079 JBoss Tools core requirements, needed in Central for JBDS because not part of JBDS TP -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <!-- TODO: replace with /static/releases/ instead of /updates/staging/luna/ when the above site is released -->
-      <repository location="http://download.jboss.org/jbosstools/updates/staging/luna/jbosstools-4.2.0.CR1a-updatesite-core/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/staging/luna/jbosstools-4.2.0.CR1b-updatesite-core/"/>
       <unit id="org.jboss.tools.vpe.cordovasim.feature.feature.group" version="3.6.0.CR1-v20140905-2056-B55"/>
-      <unit id="org.jboss.tools.maven.jbosspackaging.feature.feature.group" version="1.6.0.CR1-v20140906-0258-B88"/>
+      <unit id="org.jboss.tools.maven.jbosspackaging.feature.feature.group" version="1.6.0.CR1-v20140912-1902-B92"/>
       <unit id="org.jboss.tools.common.mylyn.feature.feature.group" version="3.6.0.CR1-v20140829-2038-B51"/>
-      <unit id="org.jboss.tools.jst.angularjs.feature.feature.group" version="3.6.0.CR1-v20140904-0921-B61"/>
-      <unit id="org.jboss.tools.forge.feature.feature.group" version="1.3.0.CR1-v20140905-2247-B55"/>
-      <unit id="org.jboss.tools.forge.ext.feature.feature.group" version="1.3.0.CR1-v20140905-2247-B55"/>
-      <unit id="org.jboss.tools.forge.m2e.feature.feature.group" version="1.1.0.CR1-v20140905-2247-B55"/>
+      <unit id="org.jboss.tools.jst.angularjs.feature.feature.group" version="3.6.0.CR1-v20140911-2133-B68"/>
+      <unit id="org.jboss.tools.forge.feature.feature.group" version="1.3.0.CR1-v20140912-2255-B61"/>
+      <unit id="org.jboss.tools.forge.ext.feature.feature.group" version="1.3.0.CR1-v20140912-2255-B61"/>
+      <unit id="org.jboss.tools.forge.m2e.feature.feature.group" version="1.1.0.CR1-v20140912-2255-B61"/>
     </location>
 
     <!-- mylyn + mylyn accessories (which are not in the JBT or JBDS target platform) -->
