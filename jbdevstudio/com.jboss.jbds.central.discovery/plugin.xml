@@ -184,7 +184,6 @@ reasonable, reporting issues to these providers as required.</description>
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url:https://devstudio.redhat.com/updates/8.0-development/central/core/}">
             <iu id="org.jboss.tools.forge.feature"/>
-            <iu id="org.jboss.tools.forge.ext.feature"/>
             <iu id="org.jboss.tools.forge.m2e.feature"/>
          <icon image32="images/jbossforge_icon_32px.png"/>
          <overview url="http://tools.jboss.org/features/forge.html"/>
@@ -899,7 +898,7 @@ reasonable, reporting issues to these providers as required.</description>
           priority="4"
           iconPath="images/wizards/jbossforge_icon_16px.png"
           wizardId="org.jboss.tools.central.wizards.NewForgeProjectWizard"
-          requiredPluginIds="org.jboss.tools.forge.ui.wizards"
+          requiredPluginIds="org.jboss.tools.forge.ui"
           requiredComponentIds="forge-tools-feature"
           >
       </proxyWizard>
