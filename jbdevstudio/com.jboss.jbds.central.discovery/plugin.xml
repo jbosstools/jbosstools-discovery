@@ -116,7 +116,6 @@ reasonable, reporting issues to these providers as required.</description>
             <iu id="org.jboss.tools.aerogear.thym.feature"/>
             <iu id="org.jboss.tools.vpe.cordovasim.feature"/>
             <iu id="org.jboss.tools.vpe.browsersim.feature"/>
-            <iu id="org.jboss.tools.vpe.feature" />
             <iu id="org.jboss.tools.livereload.feature" />
             <iu id="org.jboss.tools.jst.angularjs.feature" />
          <icon image32="images/cordova_32.png"/>
