@@ -15,8 +15,10 @@
     <!-- TODO: update this with each milestone release -->
     <!-- JBDS-3079 JBoss Tools core requirements, needed in Central for JBDS because not part of JBDS TP -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <!-- TODO: replace with /static/releases/ instead of /updates/staging/luna/ when the above site is released -->
-      <repository location="http://download.jboss.org/jbosstools/updates/staging/luna/jbosstools-4.2.0.CR1b-updatesite-core/"/>
+      <!-- TODO: this alternates between
+	* /static/releases/ when content is realease
+	* /updates/staging/luna/ when content is not released yet -->
+      <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.2.0.CR1-updatesite-core/"/>
       <unit id="org.jboss.tools.vpe.cordovasim.feature.feature.group" version="3.6.0.CR1-v20140905-2056-B55"/>
       <unit id="org.jboss.tools.maven.jbosspackaging.feature.feature.group" version="1.6.0.CR1-v20140912-1902-B92"/>
       <unit id="org.jboss.tools.common.mylyn.feature.feature.group" version="3.6.0.CR1-v20140829-2038-B51"/>
