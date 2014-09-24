@@ -45,16 +45,16 @@
 
     <!-- required by Arquillian; included in JBT TP but not JBDS TP -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201406120900-RC4/"/>
-      <unit id="org.eclipse.sapphire.feature.group" version="8.0.0.201406111147"/>
-      <unit id="org.eclipse.sapphire.java.feature.group" version="8.0.0.201406111147"/>
-      <unit id="org.eclipse.sapphire.java.jdt.feature.group" version="8.0.0.201406111147"/>
-      <unit id="org.eclipse.sapphire.modeling.xml.feature.group" version="8.0.0.201406111147"/>
-      <unit id="org.eclipse.sapphire.osgi.feature.group" version="8.0.0.201406111147"/>
-      <unit id="org.eclipse.sapphire.platform.feature.group" version="8.0.0.201406111147"/>
-      <unit id="org.eclipse.sapphire.ui.feature.group" version="8.0.0.201406111147"/>
-      <unit id="org.eclipse.sapphire.ui.swt.gef.feature.group" version="8.0.0.201406111147"/>
-      <unit id="org.eclipse.sapphire.ui.swt.xml.editor.feature.group" version="8.0.0.201406111147"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201409180900-SR1/"/>
+      <unit id="org.eclipse.sapphire.feature.group" version="8.0.1.201409121731"/>
+      <unit id="org.eclipse.sapphire.java.feature.group" version="8.0.1.201409121731"/>
+      <unit id="org.eclipse.sapphire.java.jdt.feature.group" version="8.0.1.201409121731"/>
+      <unit id="org.eclipse.sapphire.modeling.xml.feature.group" version="8.0.1.201409121731"/>
+      <unit id="org.eclipse.sapphire.osgi.feature.group" version="8.0.1.201409121731"/>
+      <unit id="org.eclipse.sapphire.platform.feature.group" version="8.0.1.201409121731"/>
+      <unit id="org.eclipse.sapphire.ui.feature.group" version="8.0.1.201409121731"/>
+      <unit id="org.eclipse.sapphire.ui.swt.gef.feature.group" version="8.0.1.201409121731"/>
+      <unit id="org.eclipse.sapphire.ui.swt.xml.editor.feature.group" version="8.0.1.201409121731"/>
       <unit id="org.objectweb.asm" version="5.0.1.v201404251740"/>
     </location>
 
@@ -74,7 +74,7 @@
     </location>
     <!-- required for VJET; already included in JBT TP but not JBDS TP -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201406120900-RC4/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201409180900-SR1/"/>
       <unit id="org.eclipse.equinox.server.jetty.feature.group" version="1.1.100.v20140416-1649"/>
       <unit id="org.w3c.dom.events" version="3.0.0.draft20060413_v201105210656"/>
     </location>
