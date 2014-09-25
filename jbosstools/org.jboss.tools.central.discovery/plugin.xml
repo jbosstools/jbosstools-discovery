@@ -27,7 +27,7 @@
             license="EPL (Free)"
             name="AngularJS for Web Tools"
             provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.earlyaccess.site.url:https://devstudio.jboss.com/updates/8.0-development/central/earlyaccess/}">
+            siteUrl="${jboss.discovery.earlyaccess.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
             <iu id="org.jboss.tools.jst.angularjs.feature"/>
          <icon
                image32="images/angularjs_32.png">
