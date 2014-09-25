@@ -40,7 +40,6 @@
 
 	<modules>
 		<module>multiple</module>
-		<module>unified</module>
 	</modules>
 
 	<distributionManagement>
