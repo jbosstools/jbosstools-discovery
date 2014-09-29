@@ -60,7 +60,8 @@ but this is not guaranteed.</description>
          <overview url="http://www.jboss.org/tools"/>
       </connectorDescriptor>
 
-      <!-- JBIDE-14122: VJET -->
+      <!-- JBIDE-14122: VJET added -->
+      <!-- JBIDE-18449: VJET removed
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.extras2"
@@ -88,7 +89,7 @@ but this is not guaranteed.</description>
          <overview
                url="http://www.eclipse.org/vjet">
          </overview>
-      </connectorDescriptor>
+      </connectorDescriptor> -->
 
     </extension>	
 </plugin>
