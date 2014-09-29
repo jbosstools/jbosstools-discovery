@@ -40,14 +40,14 @@
                   <!-- pass in from Jenkins:
                   <property name="UPDATE_SITE" value="http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_master/all/"/>
 
-                  <property name="UPDATE_SITE" value="http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_8.0.luna/all/"/>
+                  <property name="UPDATE_SITE" value="http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_9.0.mars/all/"/>
                   <property name="UPDATE_SITE" value="http://www.qa.jboss.com/binaries/RHDS/updates/development/8.0.0.Beta2-updatesite-core/"/>
 
                   <property name="UPDATE_SITE" value="http://download.jboss.org/jbosstools/builds/staging/_composite_/core/master/"/>
                   <property name="UPDATE_SITE" value="http://download.jboss.org/jbosstools/updates/nightly/core/master/"/>
 
-                  <property name="UPDATE_SITE" value="http://download.jboss.org/jbosstools/builds/staging/_composite_/core/4.2.luna/"/>
-                  <property name="UPDATE_SITE" value="http://download.jboss.org/jbosstools/updates/nightly/core/4.2.luna/"/>
+                  <property name="UPDATE_SITE" value="http://download.jboss.org/jbosstools/builds/staging/_composite_/core/4.3.mars/"/>
+                  <property name="UPDATE_SITE" value="http://download.jboss.org/jbosstools/updates/nightly/core/4.3.mars/"/>
                   <property name="UPDATE_SITE" value="http://download.jboss.org/jbosstools/updates/staging/jbosstools-4.2.0.Beta2-updatesite-core/"/>
                   -->
                   <property name="UPDATE_SITE" value="${UPDATE_SITE}"/>

@@ -37,7 +37,7 @@ In this example, build against stable branch update site.
 [source,bash]
 ----
 mvn clean install -f jbosstools/org.jboss.tools.central.discovery.earlyaccess/pom.xml \
-  -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/4.2.luna/ \
+  -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/4.3.mars/ \
   -DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/luna/,http://download.jboss.org/jbosstools/targetplatforms/jbtearlyaccesstarget/luna/
 ----
 
@@ -46,7 +46,7 @@ or
 [source,bash]
 ----
 mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery.earlyaccess/pom.xml \
-  -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_8.0.luna/all/repo/ \
+  -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_9.0.mars/all/repo/ \
   -DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/luna/,http://download.jboss.org/jbosstools/targetplatforms/jbtearlyaccesstarget/luna/
 ----
 
@@ -82,7 +82,7 @@ done
 [source,bash]
 ----
 mvn clean install -f jbosstools/org.jboss.tools.central.discovery/pom.xml \
-  -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/4.2.luna/ \
+  -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/4.3.mars/ \
   -DEXTRAS_SITE=http://localhost:8080/jbtcentraltarget/multiple/target/jbtcentral-multiple.target.repo/
 ----
 
@@ -91,7 +91,7 @@ or
 [source,bash]
 ----
 mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery/pom.xml \
-  -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_8.0.luna/all/repo/ \
+  -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_9.0.mars/all/repo/ \
   -DEXTRAS_SITE=http://localhost:8080/jbtcentraltarget/multiple/target/jbtcentral-multiple.target.repo/
 ----
 
@@ -100,7 +100,7 @@ Repeat for Early Access plugin + site (using 2 EXTRAS_SITE URLs so the resulting
 [source,bash]
 ----
 mvn clean install -f jbosstools/org.jboss.tools.central.discovery.earlyaccess/pom.xml \
-  -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/4.2.luna/ \
+  -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/4.3.mars/ \
   -DEXTRAS_SITE=http://localhost:8080/jbtcentraltarget/multiple/target/jbtcentral-multiple.target.repo/,http://localhost:8080/jbtearlyaccesstarget/multiple/target/jbtearlyaccess-multiple.target.repo/
 ----
 
@@ -109,7 +109,7 @@ or
 [source,bash]
 ----
 mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery.earlyaccess/pom.xml \
-  -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_8.0.luna/all/repo/ \
+  -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_9.0.mars/all/repo/ \
   -DEXTRAS_SITE=http://localhost:8080/jbtcentraltarget/multiple/target/jbtcentral-multiple.target.repo/,http://localhost:8080/jbtearlyaccesstarget/multiple/target/jbtearlyaccess-multiple.target.repo/
 ----
 
@@ -179,15 +179,15 @@ Instead of the latest master build, you can also point Eclipse / JBDS at more st
 * The current released milestone URLs for JBT/JBDS are:
 
 ** http://download.jboss.org/jbosstools/discovery/development/kepler/jbosstools-directory.xml
-** https://devstudio.redhat.com/updates/8.0-development/devstudio-directory.xml
+** https://devstudio.redhat.com/updates/9.0-development/devstudio-directory.xml
 
 * The stable branch (upcoming milestone) URL are:
 
-** http://download.jboss.org/jbosstools/discovery/nightly/core/4.2.luna/
-** http://download.jboss.org/jbosstools/discovery/nightly/earlyaccess/4.2.luna/
+** http://download.jboss.org/jbosstools/discovery/nightly/core/4.3.mars/
+** http://download.jboss.org/jbosstools/discovery/nightly/earlyaccess/4.3.mars/
 
-** http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/core/4.2.luna/
-** http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/earlyaccess/4.2.luna/
+** http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/core/4.3.mars/
+** http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/earlyaccess/4.3.mars/
 
 * The unstable master URLs are:
 
