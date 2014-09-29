@@ -102,25 +102,6 @@
           </dependency>
         </dependencies>
       </plugin>
-      <plugin>
-        <groupId>org.jboss.tools.tycho-plugins</groupId>
-        <artifactId>discovery-utils</artifactId>
-        <version>0.21.1-SNAPSHOT</version>
-        <executions>
-          <execution>
-            <id>generate-earlyaccess-listing</id>
-            <goals>
-              <goal>update-listing</goal>
-            </goals>
-            <phase>generate-resources</phase>
-            <configuration>
-              <targetDefinitionFile>${project.basedir}/../../jbtearlyaccesstarget/multiple/jbtearlyaccess-multiple.target</targetDefinitionFile>
-              <targetListingFile>jbosstools-earlyaccess.properties</targetListingFile>
-              <initialListingFile>http://download.jboss.org/jbosstools/discovery/nightly/core/${jbosstools-site-stream}/jbosstools-earlyaccess.properties</initialListingFile>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
     </plugins>
   </build>
 </project>
