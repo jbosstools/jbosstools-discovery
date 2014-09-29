@@ -60,7 +60,8 @@ but this is not guaranteed.</description>
          <overview url="http://www.jboss.org/tools"/>
       </connectorDescriptor>
 
-      <!-- JBIDE-14122: VJET -->
+      <!-- JBIDE-14122: VJET added -->
+      <!-- JBIDE-18449: VJET removed
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.extras2"
@@ -71,7 +72,7 @@ but this is not guaranteed.</description>
             license="EPL, Other (Free)"
             name="Eclipse VJET"
             provider="eclipse.org"
-            siteUrl="${jboss.discovery.earlyaccess.site.url:https://devstudio.redhat.com/updates/8.0-development/central/earlyaccess/}">
+            siteUrl="${jboss.discovery.earlyaccess.site.url:https://devstudio.redhat.com/updates/9.0-development/central/earlyaccess/}">
             <iu id="org.eclipse.vjet.core"/>
             <iu id="org.eclipse.vjet.eclipse"/>
             <iu id="org.eclipse.vjet.extmod.dltk.core"/>
@@ -88,7 +89,7 @@ but this is not guaranteed.</description>
          <overview
                url="http://www.eclipse.org/vjet">
          </overview>
-      </connectorDescriptor>
+      </connectorDescriptor> -->
 
     </extension>	
 </plugin>
