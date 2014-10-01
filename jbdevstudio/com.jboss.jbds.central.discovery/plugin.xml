@@ -65,7 +65,7 @@ reasonable, reporting issues to these providers as required.</description>
             license="EPL (Free)"
             name="AngularJS for Web Tools"
             provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.earlyaccess.site.url:https://devstudio.jboss.com/updates/9.0-development/central/earlyaccess/}">
+            siteUrl="${jboss.discovery.earlyaccess.site.url:https://devstudio.jboss.com/updates/9.0-development/}">
             <iu id="org.jboss.tools.jst.angularjs.feature"/>
          <icon
                image32="images/angularjs_32.png">
