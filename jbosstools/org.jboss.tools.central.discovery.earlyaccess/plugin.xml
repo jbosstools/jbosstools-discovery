@@ -27,7 +27,7 @@ but this is not guaranteed.</description>
             license="EPL (Free)"
             name="AngularJS for Web Tools"
             provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.earlyaccess.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/earlyaccess/}">
+            siteUrl="${jboss.discovery.earlyaccess.site.url:http://download.jboss.org/jbosstools/earlyaccess/development/luna/}">
             <iu id="angularjs-eclipse-feature"/>
             <iu id="tern-feature"/>
             <iu id="tern-jsdt-feature"/>
@@ -54,7 +54,7 @@ but this is not guaranteed.</description>
             license="EPL (Free)"
             name="JBoss Arquillian Tools"
             provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.earlyaccess.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/earlyaccess/}">
+            siteUrl="${jboss.discovery.earlyaccess.site.url:http://download.jboss.org/jbosstools/earlyaccess/development/luna/}">
             <iu id="org.jboss.tools.arquillian.feature"/>
          <icon image32="images/arquillian_32.png"/>
          <overview url="http://www.jboss.org/tools"/>
