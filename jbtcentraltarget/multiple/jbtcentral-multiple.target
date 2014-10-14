@@ -110,8 +110,8 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/pmd/4.0.3.v20140427-0831/"/>
-      <unit id="net.sourceforge.pmd.eclipse.feature.group" version="4.0.3.v20140427-0831"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/pmd/4.0.4.v20140909-1748/"/>
+      <unit id="net.sourceforge.pmd.eclipse.feature.group" version="4.0.4.v20140909-1748"/>
     </location>
 
     <!-- required for SpringIDE 3.6 -->
