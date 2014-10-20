@@ -18,7 +18,7 @@
       <!-- TODO: this alternates between
 	* /static/releases/ when content is released
 	* /updates/staging/luna/ when content is not released yet -->
-      <repository location="http://download.jboss.org/jbosstools/updates/staging/luna/jbosstools-4.2.0.CR2b-updatesite-core/"/>
+      <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.2.0.Final-updatesite-core/"/>
       <unit id="org.jboss.tools.vpe.cordovasim.feature.feature.group" version="3.6.0.Final-v20141016-1911-B67"/>
       <unit id="org.jboss.tools.maven.jbosspackaging.feature.feature.group" version="1.6.0.Final-v20141016-1914-B105"/>
       <unit id="org.jboss.tools.common.mylyn.feature.feature.group" version="3.6.0.Final-v20141016-2021-B66"/>

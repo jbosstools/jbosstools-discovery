@@ -23,7 +23,7 @@
       <!-- TODO: this alternates between
 	* /static/releases/ when content is released
 	* /updates/staging/luna/ when content is not released yet -->
-      <repository location="http://download.jboss.org/jbosstools/updates/staging/luna/jbosstools-4.2.0.CR2b-updatesite-core/"/>
+      <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.2.0.Final-updatesite-core/"/>
       <unit id="org.jboss.tools.arquillian.feature.feature.group" version="1.1.2.Final-v20141016-1530-B77"/>
       <unit id="org.jboss.ide.eclipse.as.feature.feature.group" version="3.0.0.Final-v20141016-1911-B95"/>
       <unit id="org.jboss.tools.common.core.feature.feature.group" version="3.6.0.Final-v20141016-2021-B66"/>
