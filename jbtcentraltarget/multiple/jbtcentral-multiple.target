@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><?pde version="3.6"?><target includeMode="feature" name="jbtcentral-4.41.1.Alpha1-SNAPSHOT">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><?pde version="3.6"?><target includeMode="feature" name="jbtcentral-4.41.1.CR1-SNAPSHOT">
   <!-- Pro tip: paste content from generated Apache directory index, then match
         \[ ] (.+)_(.+).jar.+
     replace with 
@@ -18,14 +18,14 @@
       <!-- TODO: this alternates between
 	* /static/releases/ when content is released
 	* /updates/staging/luna/ when content is not released yet -->
-      <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.2.0.Final-updatesite-core/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/staging/luna/jbosstools-4.2.1.CR1-updatesite-core/"/>
       <unit id="org.jboss.tools.vpe.cordovasim.feature.feature.group" version="3.6.0.Final-v20141016-1911-B67"/>
-      <unit id="org.jboss.tools.maven.jbosspackaging.feature.feature.group" version="1.6.0.Final-v20141016-1914-B105"/>
-      <unit id="org.jboss.tools.common.mylyn.feature.feature.group" version="3.6.0.Final-v20141016-2021-B66"/>
-      <unit id="org.jboss.tools.jst.angularjs.feature.feature.group" version="3.6.0.Final-v20141016-0045-B76"/>
-      <unit id="org.jboss.tools.forge.feature.feature.group" version="1.3.0.Final-v20141016-1910-B69"/>
-      <unit id="org.jboss.tools.forge.ext.feature.feature.group" version="1.3.0.Final-v20141016-1910-B69"/>
-      <unit id="org.jboss.tools.forge.m2e.feature.feature.group" version="1.1.0.Final-v20141016-1910-B69"/>
+      <unit id="org.jboss.tools.maven.jbosspackaging.feature.feature.group" version="1.6.0.Final-v20141121-2233-B108"/>
+      <unit id="org.jboss.tools.common.mylyn.feature.feature.group" version="3.6.1.Final-v20141122-0537-B78"/>
+      <unit id="org.jboss.tools.jst.angularjs.feature.feature.group" version="3.6.1.Final-v20141122-0356-B86"/>
+      <unit id="org.jboss.tools.forge.feature.feature.group" version="1.3.1.Final-v20141121-1546-B72"/>
+      <unit id="org.jboss.tools.forge.ext.feature.feature.group" version="1.3.1.Final-v20141121-1546-B72"/>
+      <unit id="org.jboss.tools.forge.m2e.feature.feature.group" version="1.1.1.Final-v20141121-1546-B72"/>
     </location>
 
     <!-- mylyn + mylyn accessories (which are not in the JBT or JBDS target platform) -->
