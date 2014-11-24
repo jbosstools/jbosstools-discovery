@@ -33,7 +33,7 @@
       <unit id="org.jboss.tools.jmx.feature.feature.group" version="1.6.1.Final-v20141120-2242-B96"/>
       <unit id="org.jboss.tools.usage.feature.feature.group" version="2.0.1.Final-v20141122-0537-B78"/>
       <unit id="org.jboss.tools.runtime.core.feature.feature.group" version="3.0.1.Final-v20141122-0537-B78"/>
-      <unit id="org.jboss.ide.eclipse.archives.feature.feature.group" version="3.5.0.Alpha1-v20141119-1725"/>
+      <unit id="org.jboss.ide.eclipse.archives.feature.feature.group" version="3.5.1.Final-v20141120-2242-B96"/>
       <unit id="org.jboss.tools.stacks.core.feature.feature.group" version="1.1.1.Final-v20141122-0537-B78"/>
       <unit id="org.jboss.tools.common.ui.feature.feature.group" version="3.6.1.Final-v20141122-0537-B78"/>
       <unit id="org.jboss.tools.common.mylyn.feature.feature.group" version="3.6.1.Final-v20141122-0537-B78"/>
