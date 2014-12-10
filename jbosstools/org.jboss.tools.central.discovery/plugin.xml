@@ -183,7 +183,7 @@
             <iu id="org.jboss.tools.runtime.seam.detector.feature"/>
             <iu id="org.jboss.tools.seam.feature"/>
             <iu id="org.jboss.tools.maven.seam.feature"/>
-         <icon image32="images/jbosstools_icon32.png"/>
+         <icon image32="images/seam_32.png"/>
          <overview url="http://tools.jboss.org/"/>
       </connectorDescriptor>
 
