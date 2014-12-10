@@ -145,7 +145,6 @@
          <icon image32="images/jbossforge_icon_32px.png"/>
          <overview url="http://tools.jboss.org/features/forge.html"/>
       </connectorDescriptor>
-      
 
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
@@ -168,6 +167,24 @@
          <overview
                url="http://eclipse.org/webtools/">
          </overview>
+      </connectorDescriptor>
+
+      <!-- JBIDE 18922 add Seam connector -->
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
+            description="Tool support for Seam"
+            id="org.jboss.tools.seam.connector"
+            kind="task"
+            license="EPL, Other (Free)"
+            name="JBoss Seam Tools"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            <iu id="org.jboss.tools.runtime.seam.detector.feature"/>
+            <iu id="org.jboss.tools.seam.feature"/>
+            <iu id="org.jboss.tools.maven.seam.feature"/>
+         <icon image32="images/jbosstools_icon32.png"/>
+         <overview url="http://tools.jboss.org/"/>
       </connectorDescriptor>
 
       <connectorDescriptor
