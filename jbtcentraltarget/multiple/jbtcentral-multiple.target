@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><?pde version="3.6"?><target includeMode="feature" name="jbtcentral-4.41.1.Final-SNAPSHOT">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><?pde version="3.6"?><target includeMode="feature" name="jbtcentral-4.41.2.CR1-SNAPSHOT">
   <!-- Pro tip: paste content from generated Apache directory index, then match
         \[ ] (.+)_(.+).jar.+
     replace with 
@@ -18,7 +18,7 @@
       <!-- TODO: this alternates between
 	* /static/releases/ when content is released
 	* /updates/staging/luna/ when content is not released yet -->
-      <repository location="http://download.jboss.org/jbosstools/updates/staging/luna/jbosstools-4.2.1.Final-updatesite-core/"/>
+      <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.2.1.Final-updatesite-core/"/>
       <unit id="org.jboss.tools.vpe.cordovasim.feature.feature.group" version="3.6.1.Final-v20141209-0333-B71"/>
       <unit id="org.jboss.tools.maven.jbosspackaging.feature.feature.group" version="1.6.0.Final-v20141209-0359-B110"/>
       <unit id="org.jboss.tools.common.mylyn.feature.feature.group" version="3.6.1.Final-v20141209-0333-B84"/>
