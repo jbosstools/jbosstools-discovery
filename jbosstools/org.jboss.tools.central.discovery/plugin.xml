@@ -13,9 +13,9 @@
             id="org.jboss.tools.central.discovery.a.mobile"
             name="Mobile Development"
             relevance="80">
-         <group id="org.jboss.tools.central.discovery.a.mobile.core" /> 
-         <group id="org.jboss.tools.central.discovery.a.mobile.extras" /> 
-         <group id="org.jboss.tools.central.discovery.a.mobile.extras2" /> 
+         <group id="org.jboss.tools.central.discovery.a.mobile.core" />
+         <group id="org.jboss.tools.central.discovery.a.mobile.extras" />
+         <group id="org.jboss.tools.central.discovery.a.mobile.extras2" />
       </connectorCategory>
 
       <connectorDescriptor
@@ -90,7 +90,7 @@
             id="org.jboss.tools.central.discovery.a.web"
             name="Web Development"
             relevance="70">
-         <group id="org.jboss.tools.central.discovery.a.web.core" /> 
+         <group id="org.jboss.tools.central.discovery.a.web.core" />
          <group id="org.jboss.tools.central.discovery.a.web.extras" />
          <group id="org.jboss.tools.central.discovery.a.web.extras2" />
       </connectorCategory>
@@ -183,6 +183,7 @@
             <iu id="org.jboss.tools.runtime.seam.detector.feature"/>
             <iu id="org.jboss.tools.seam.feature"/>
             <iu id="org.jboss.tools.maven.seam.feature"/>
+            <iu id="org.jboss.tools.project.examples.seam.feature"/>
          <icon image32="images/seam_32.png"/>
          <overview url="http://tools.jboss.org/"/>
       </connectorDescriptor>
@@ -226,7 +227,7 @@
             name="Source Control Management"
             relevance="60">
          		<group id="org.jboss.tools.central.discovery.b.scm.atlassian" />
- 			<group id="org.jboss.tools.central.discovery.b.scm.git" /> 
+ 			<group id="org.jboss.tools.central.discovery.b.scm.git" />
  			<group id="org.jboss.tools.central.discovery.b.scm.svn" />
       </connectorCategory>
 
@@ -351,7 +352,7 @@
 	<group id="org.jboss.tools.central.discovery.c.testing.local" />
  	<group id="org.jboss.tools.central.discovery.c.testing.remote" />
       </connectorCategory>
-      
+
       <!-- add CheckStyle plugin back into Central (JBIDE-14799, JBIDE-15128, JBIDE-15129) -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.c.testing"
@@ -392,7 +393,7 @@
                url="http://findbugs.sourceforge.net/">
          </overview>
       </connectorDescriptor>
- 
+
       <!-- JBDS-2752 -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.c.testing"
@@ -502,7 +503,7 @@
                url="http://zeroturnaround.com/software/jrebel/">
          </overview>
       </connectorDescriptor>
-      
+
       <!-- d. Maven -->
 
       <connectorCategory
@@ -511,8 +512,8 @@
             name="Maven"
             relevance="20">
             <!-- use groups to reorder items in a category; otherwise default to alpha order -->
-         <group id="org.jboss.tools.central.discovery.d.maven.core" /> 
-         <group id="org.jboss.tools.central.discovery.d.maven.configurators" /> 
+         <group id="org.jboss.tools.central.discovery.d.maven.core" />
+         <group id="org.jboss.tools.central.discovery.d.maven.configurators" />
          <group id="org.jboss.tools.central.discovery.d.maven.upstream" />
       </connectorCategory>
 
@@ -681,7 +682,7 @@
                url="http://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
-      
+
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.upstream"
@@ -773,10 +774,10 @@
          </overview>
       </connectorDescriptor>
     </extension>
-	
+
     <extension point="org.jboss.tools.central.proxyWizard">
-      <proxyWizard 
-          id="html5.wizard" 
+      <proxyWizard
+          id="html5.wizard"
           description="%html5.wizard.description"
           label="HTML5 Project"
           priority="1"
@@ -784,8 +785,8 @@
           wizardId="org.jboss.tools.central.wizards.NewHtml5ProjectWizard"
           >
       </proxyWizard>
-      <proxyWizard 
-          id="javaee.wizard" 
+      <proxyWizard
+          id="javaee.wizard"
           description="%javaeeweb.wizard.description"
           label="Java EE Web Project"
           priority="5"
@@ -793,8 +794,8 @@
           wizardId="org.jboss.tools.central.wizards.NewJavaeeWarProjectWizard"
           >
       </proxyWizard>
-      <proxyWizard 
-          id="forge.wizard" 
+      <proxyWizard
+          id="forge.wizard"
           description="%forge.wizard.description"
           label="AngularJS Forge"
           priority="4"
@@ -804,8 +805,8 @@
           requiredComponentIds="forge-tools-feature"
           >
       </proxyWizard>
-      <proxyWizard 
-          id="openshift.wizard" 
+      <proxyWizard
+          id="openshift.wizard"
           description="%openshift.wizard.description"
           label="OpenShift Application"
           priority="2"
@@ -813,8 +814,8 @@
           wizardId="org.jboss.ide.eclipse.as.openshift.express.ui.wizard.createNewApplicationWizard"
           requiredComponentIds="org.jboss.tools.openshift.feature">
       </proxyWizard>
-      <proxyWizard 
-          id="hybrid.mobile.wizard" 
+      <proxyWizard
+          id="hybrid.mobile.wizard"
           description="%hybrid.mobile.wizard.description"
           label="Hybrid Mobile Project"
           priority="6"
@@ -823,7 +824,7 @@
           wizardId="org.eclipse.thym.ui.NewHybridProjectWizard">
       </proxyWizard>
       <proxyWizard
-          id="maven.wizard" 
+          id="maven.wizard"
           description="%maven.wizard.description"
           label="Maven Project"
           priority="5"
@@ -831,5 +832,5 @@
           wizardId="org.eclipse.m2e.core.wizards.Maven2ProjectWizard"
           requiredComponentIds="org.eclipse.m2e.feature">
       </proxyWizard>
-    </extension>	
+    </extension>
 </plugin>

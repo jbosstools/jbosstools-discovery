@@ -18,29 +18,29 @@ Tested by Red Hat.</description>
       <certification id="com.jboss.jbds.discovery.certification.external" name="External" url="https://devstudio.redhat.com/updates/9.0-development/central/">
          <description>
 Tested by Red Hat. However, as these plug-ins are hosted by third
-party providers, it is possible that content may change at any 
-time and without prior notice. We will make an attempt to monitor 
-these third party sites and execute appropriate tests as soon as 
+party providers, it is possible that content may change at any
+time and without prior notice. We will make an attempt to monitor
+these third party sites and execute appropriate tests as soon as
 reasonable, reporting issues to these providers as required.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
       <certification id="com.jboss.jbds.discovery.certification.technologypreview" name="Technology Preview" url="https://devstudio.redhat.com/updates/9.0-development/central/">
          <description>
 Tested by Red Hat, often with known issues. Technology previews
-may one day evolve to be considered Tested or Supported, but 
+may one day evolve to be considered Tested or Supported, but
 this is not guaranteed.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
       <certification id="com.jboss.jbds.discovery.certification.experimental" name="Experimental" url="https://devstudio.redhat.com/updates/9.0-development/central/">
          <description>
-Tested by Red Hat. However, as these are experimental plug-ins, 
-it is possible that their content may change at any time and 
+Tested by Red Hat. However, as these are experimental plug-ins,
+it is possible that their content may change at any time and
 without prior notice. We will make an attempt to monitor these
-third party sites and execute appropriate tests as soon as 
+third party sites and execute appropriate tests as soon as
 reasonable, reporting issues to these providers as required.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
-      
+
       <!-- use connectorCategory relevance value to sort from largest (80) to smallest (20) -->
 
       <!-- a. Mobile Development -->
@@ -50,9 +50,9 @@ reasonable, reporting issues to these providers as required.</description>
             id="org.jboss.tools.central.discovery.a.mobile"
             name="Mobile Development"
             relevance="80">
-         <group id="org.jboss.tools.central.discovery.a.mobile.core" /> 
-         <group id="org.jboss.tools.central.discovery.a.mobile.extras" /> 
-         <group id="org.jboss.tools.central.discovery.a.mobile.extras2" /> 
+         <group id="org.jboss.tools.central.discovery.a.mobile.core" />
+         <group id="org.jboss.tools.central.discovery.a.mobile.extras" />
+         <group id="org.jboss.tools.central.discovery.a.mobile.extras2" />
       </connectorCategory>
 
       <connectorDescriptor
@@ -129,7 +129,7 @@ reasonable, reporting issues to these providers as required.</description>
             id="org.jboss.tools.central.discovery.a.web"
             name="Web Development"
             relevance="70">
-         <group id="org.jboss.tools.central.discovery.a.web.core" /> 
+         <group id="org.jboss.tools.central.discovery.a.web.core" />
          <group id="org.jboss.tools.central.discovery.a.web.extras" />
          <group id="org.jboss.tools.central.discovery.a.web.extras2" />
       </connectorCategory>
@@ -187,7 +187,7 @@ reasonable, reporting issues to these providers as required.</description>
          <icon image32="images/jbossforge_icon_32px.png"/>
          <overview url="http://tools.jboss.org/features/forge.html"/>
       </connectorDescriptor>
- 
+
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
@@ -227,6 +227,7 @@ reasonable, reporting issues to these providers as required.</description>
             <iu id="org.jboss.tools.runtime.seam.detector.feature"/>
             <iu id="org.jboss.tools.seam.feature"/>
             <iu id="org.jboss.tools.maven.seam.feature"/>
+            <iu id="org.jboss.tools.project.examples.seam.feature"/>
          <icon image32="images/seam_32.png"/>
          <overview url="http://tools.jboss.org/"/>
       </connectorDescriptor>
@@ -271,7 +272,7 @@ reasonable, reporting issues to these providers as required.</description>
             name="Source Control Management"
             relevance="60">
          		<group id="org.jboss.tools.central.discovery.b.scm.atlassian" />
- 			<group id="org.jboss.tools.central.discovery.b.scm.git" /> 
+ 			<group id="org.jboss.tools.central.discovery.b.scm.git" />
  			<group id="org.jboss.tools.central.discovery.b.scm.svn" />
       </connectorCategory>
 
@@ -400,7 +401,7 @@ reasonable, reporting issues to these providers as required.</description>
 	<group id="org.jboss.tools.central.discovery.c.testing.local" />
  	<group id="org.jboss.tools.central.discovery.c.testing.remote" />
       </connectorCategory>
-      
+
       <!-- add CheckStyle plugin back into Central (JBIDE-14799, JBIDE-15128, JBIDE-15129) -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.c.testing"
@@ -443,7 +444,7 @@ reasonable, reporting issues to these providers as required.</description>
                url="http://findbugs.sourceforge.net/">
          </overview>
       </connectorDescriptor>
- 
+
       <!-- JBDS-2752 -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.c.testing"
@@ -558,7 +559,7 @@ reasonable, reporting issues to these providers as required.</description>
                url="http://zeroturnaround.com/software/jrebel/">
          </overview>
       </connectorDescriptor>
-      
+
       <!-- d. Maven -->
 
       <connectorCategory
@@ -567,8 +568,8 @@ reasonable, reporting issues to these providers as required.</description>
             name="Maven"
             relevance="20">
             <!-- use groups to reorder items in a category; otherwise default to alpha order -->
-         <group id="org.jboss.tools.central.discovery.d.maven.core" /> 
-         <group id="org.jboss.tools.central.discovery.d.maven.configurators" /> 
+         <group id="org.jboss.tools.central.discovery.d.maven.core" />
+         <group id="org.jboss.tools.central.discovery.d.maven.configurators" />
          <group id="org.jboss.tools.central.discovery.d.maven.upstream" />
       </connectorCategory>
 
@@ -746,7 +747,7 @@ reasonable, reporting issues to these providers as required.</description>
                url="http://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
-      
+
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.upstream"
@@ -843,10 +844,10 @@ reasonable, reporting issues to these providers as required.</description>
          </overview>
       </connectorDescriptor>
     </extension>
-	
+
     <extension point="org.jboss.tools.central.proxyWizard">
-      <proxyWizard 
-          id="html5.wizard" 
+      <proxyWizard
+          id="html5.wizard"
           description="%html5.wizard.description"
           label="HTML5 Project"
           priority="1"
@@ -854,8 +855,8 @@ reasonable, reporting issues to these providers as required.</description>
           wizardId="org.jboss.tools.central.wizards.NewHtml5ProjectWizard"
           >
       </proxyWizard>
-      <proxyWizard 
-          id="javaee.wizard" 
+      <proxyWizard
+          id="javaee.wizard"
           description="%javaeeweb.wizard.description"
           label="Java EE Web Project"
           priority="5"
@@ -863,8 +864,8 @@ reasonable, reporting issues to these providers as required.</description>
           wizardId="org.jboss.tools.central.wizards.NewJavaeeWarProjectWizard"
           >
       </proxyWizard>
-      <proxyWizard 
-          id="forge.wizard" 
+      <proxyWizard
+          id="forge.wizard"
           description="%forge.wizard.description"
           label="AngularJS Forge"
           priority="4"
@@ -874,8 +875,8 @@ reasonable, reporting issues to these providers as required.</description>
           requiredComponentIds="forge-tools-feature"
           >
       </proxyWizard>
-      <proxyWizard 
-          id="openshift.wizard" 
+      <proxyWizard
+          id="openshift.wizard"
           description="%openshift.wizard.description"
           label="OpenShift Application"
           priority="2"
@@ -883,8 +884,8 @@ reasonable, reporting issues to these providers as required.</description>
           wizardId="org.jboss.ide.eclipse.as.openshift.express.ui.wizard.createNewApplicationWizard"
           requiredComponentIds="org.jboss.tools.openshift.feature">
       </proxyWizard>
-      <proxyWizard 
-          id="hybrid.mobile.wizard" 
+      <proxyWizard
+          id="hybrid.mobile.wizard"
           description="%hybrid.mobile.wizard.description"
           label="Hybrid Mobile Project"
           priority="6"
@@ -893,7 +894,7 @@ reasonable, reporting issues to these providers as required.</description>
           wizardId="org.eclipse.thym.ui.NewHybridProjectWizard">
       </proxyWizard>
       <proxyWizard
-          id="maven.wizard" 
+          id="maven.wizard"
           description="%maven.wizard.description"
           label="Maven Project"
           priority="5"
@@ -901,5 +902,5 @@ reasonable, reporting issues to these providers as required.</description>
           wizardId="org.eclipse.m2e.core.wizards.Maven2ProjectWizard"
           requiredComponentIds="org.eclipse.m2e.feature">
       </proxyWizard>
-    </extension>	
+    </extension>
 </plugin>
