@@ -44,52 +44,7 @@ but this is not guaranteed.</description>
          </overview>
       </connectorDescriptor>
 
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
-            certificationId="org.jboss.tools.discovery.certification.earlyaccess"
-            description="Create and run tests with Arquillian"
-            id="org.jboss.tools.arquillian"
-            kind="task"
-            license="EPL (Free)"
-            name="JBoss Arquillian Tools"
-            provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.earlyaccess.site.url:http://download.jboss.org/jbosstools/earlyaccess/development/luna/}">
-            <iu id="org.jboss.tools.arquillian.feature"/>
-         <icon image32="images/arquillian_32.png"/>
-         <overview url="http://www.jboss.org/tools"/>
-      </connectorDescriptor>
-
-      <!-- JBIDE-14122: VJET added -->
-      <!-- JBIDE-18449: VJET removed
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
-            groupId="org.jboss.tools.central.discovery.a.web.extras2"
-            certificationId="org.jboss.tools.discovery.certification.earlyaccess"
-            description="Eclipse VJET (Experimental) includes a JavaScript IDE, Java to Javascript Code Generation + Java Based DOM Kit"
-            id="org.eclipse.vjet.feature"
-            kind="task"
-            license="EPL, Other (Free)"
-            name="Eclipse VJET"
-            provider="eclipse.org"
-            siteUrl="${jboss.discovery.earlyaccess.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/earlyaccess/}">
-            <iu id="org.eclipse.vjet.core"/>
-            <iu id="org.eclipse.vjet.eclipse"/>
-            <iu id="org.eclipse.vjet.extmod.dltk.core"/>
-            <iu id="org.eclipse.vjet.extmod.jsdt"/>
-            <iu id="org.eclipse.vjet.extmod.rhino"/>
-            <iu id="org.eclipse.vjet.rt"/>
-            <iu id="org.eclipse.vjet.web"/>
-            <iu id="org.eclipse.vjet.codegen"/>
-            <iu id="org.eclipse.vjet.vsf.domkit"/>
-            <iu id="org.eclipse.equinox.server.jetty"/>
-         <icon
-               image32="images/vjet_32.png">
-         </icon>
-         <overview
-               url="http://www.eclipse.org/vjet">
-         </overview>
-      </connectorDescriptor> -->
-
-    </extension>	
+      <!-- JBIDE-19038: Arquillian is not EA in JBT, only in JBDS, so move connector to ../org.jboss.tools.central.discovery/plugin.xml and remove certificationId=earlyaccess
+      -->
+    </extension>
 </plugin>
