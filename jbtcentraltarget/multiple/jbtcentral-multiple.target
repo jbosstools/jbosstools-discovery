@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><?pde version="3.6"?><target includeMode="feature" name="jbtcentral-4.41.2.CR1-SNAPSHOT">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><?pde version="3.6"?><target includeMode="feature" name="jbtcentral-4.41.3.CR1-SNAPSHOT">
   <!-- Pro tip: paste content from generated Apache directory index, then match
         \[ ] (.+)_(.+).jar.+
     replace with 
