@@ -13,9 +13,9 @@
             id="org.jboss.tools.central.discovery.a.mobile"
             name="Mobile Development"
             relevance="80">
-         <group id="org.jboss.tools.central.discovery.a.mobile.core" /> 
-         <group id="org.jboss.tools.central.discovery.a.mobile.extras" /> 
-         <group id="org.jboss.tools.central.discovery.a.mobile.extras2" /> 
+         <group id="org.jboss.tools.central.discovery.a.mobile.core" />
+         <group id="org.jboss.tools.central.discovery.a.mobile.extras" />
+         <group id="org.jboss.tools.central.discovery.a.mobile.extras2" />
       </connectorCategory>
 
       <connectorDescriptor
@@ -27,7 +27,7 @@
             license="EPL (Free)"
             name="AngularJS for Web Tools"
             provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.jst.angularjs.feature"/>
          <icon
                image32="images/angularjs_32.png">
@@ -72,7 +72,7 @@
             license="EPL (Free)"
             name="JBoss Hybrid Mobile Tools + CordovaSim"
             provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.aerogear.thym.feature"/>
             <iu id="org.jboss.tools.vpe.cordovasim.feature"/>
             <iu id="org.jboss.tools.vpe.browsersim.feature"/>
@@ -90,26 +90,10 @@
             id="org.jboss.tools.central.discovery.a.web"
             name="Web Development"
             relevance="70">
-         <group id="org.jboss.tools.central.discovery.a.web.core" /> 
+         <group id="org.jboss.tools.central.discovery.a.web.core" />
          <group id="org.jboss.tools.central.discovery.a.web.extras" />
          <group id="org.jboss.tools.central.discovery.a.web.extras2" />
       </connectorCategory>
-
-      <!-- JBIDE-19038: Arquillian is not EA in JBT, only in JBDS -->
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
-            description="Create and run tests with Arquillian"
-            id="org.jboss.tools.arquillian"
-            kind="task"
-            license="EPL (Free)"
-            name="JBoss Arquillian Tools"
-            provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.earlyaccess.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
-            <iu id="org.jboss.tools.arquillian.feature"/>
-         <icon image32="images/arquillian_32.png"/>
-         <overview url="http://www.jboss.org/tools"/>
-      </connectorDescriptor> 
 
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
@@ -120,7 +104,7 @@
             license="EPL (Free)"
             name="JBoss OpenShift Tools"
             provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.openshift.express.feature"/>
             <iu id="org.jboss.tools.openshift.egit.integration.feature"/>
          <icon
@@ -140,7 +124,7 @@
             license="EPL (Free)"
             name="JBoss Tools LiveReload"
             provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.livereload.feature"/>
          <icon image32="images/jbosstools_icon32.png"/>
          <overview url="http://tools.jboss.org/"/>
@@ -155,13 +139,12 @@
             license="EPL (Free)"
             name="JBoss Forge Tools"
             provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.forge.feature"/>
             <iu id="org.jboss.tools.forge.m2e.feature"/>
          <icon image32="images/jbossforge_icon_32px.png"/>
          <overview url="http://tools.jboss.org/features/forge.html"/>
       </connectorDescriptor>
-      
 
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
@@ -172,7 +155,7 @@
             license="EPL, Other (Free)"
             name="JST Server"
             provider="eclipse.org"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <!-- <iu id="org.eclipse.jst.server_adapters.ext.feature"/> -->
             <iu id="org.eclipse.jst.server_adapters.feature"/>
             <iu id="org.eclipse.jst.server_core.feature"/>
@@ -186,31 +169,6 @@
          </overview>
       </connectorDescriptor>
 
-      <!-- JBIDE-16543 com.google.gdt.eclipse.suite.e43.feature does not install on Luna M5; remove 'Google Plug-in (GPE) + ' from desc and name fields below; then remove connector entirely, as per @fbricon <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
-            groupId="org.jboss.tools.central.discovery.a.web.extras"
-            description="Google Web Toolkit (GWT) Designer + WindowBuilder"
-            id="com.google.gpe.gwt"
-            kind="task"
-            license="EPL, Other (Free)"
-            name="GWT Designer + WindowBuilder"
-            provider="Google, Inc."
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
-            <iu id="com.google.gwt.eclipse.sdkbundle.feature"/>
-            <iu id="com.google.gdt.eclipse.designer.editor.feature"/>
-            <iu id="com.google.gdt.eclipse.designer.gpe.feature"/>
-            <iu id="com.google.gdt.eclipse.designer.hosted.feature"/>
-            <iu id="org.eclipse.wb.core.feature"/>
-            <iu id="org.eclipse.wb.core.xml.feature"/>
-            <iu id="org.eclipse.wb.css.feature"/>
-         <icon
-               image32="images/google_32.png">
-         </icon>
-         <overview
-               url="https://developers.google.com/web-toolkit/tools/gwtdesigner/quick_start">
-         </overview>
-      </connectorDescriptor> -->
-
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.extras"
@@ -220,7 +178,7 @@
             license="EPL, Other (Free)"
             name="Spring IDE"
             provider="Spring IDE Developers"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.springframework.ide.eclipse.ajdt.feature"/>
             <iu id="org.springframework.ide.eclipse.aop.feature"/>
             <iu id="org.springframework.ide.eclipse.autowire.feature"/>
@@ -250,7 +208,7 @@
             name="Source Control Management"
             relevance="60">
          		<group id="org.jboss.tools.central.discovery.b.scm.atlassian" />
- 			<group id="org.jboss.tools.central.discovery.b.scm.git" /> 
+ 			<group id="org.jboss.tools.central.discovery.b.scm.git" />
  			<group id="org.jboss.tools.central.discovery.b.scm.svn" />
       </connectorCategory>
 
@@ -264,7 +222,7 @@
             license="EPL, Other (Free)"
             name="Atlassian Connector"
             provider="Atlassian"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="com.atlassian.connector.eclipse"/>
          <icon
                image32="images/atlassian_32.png">
@@ -283,7 +241,7 @@
             license="EPL (Free)"
             name="Eclipse EGit: Mylyn Support"
             provider="eclipse.org"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.eclipse.jgit"/>
             <iu id="org.eclipse.egit"/>
             <iu id="org.eclipse.egit.mylyn"/>
@@ -314,7 +272,7 @@
             license="Subclipse License (Free)"
             name="Subclipse + SVNKit"
             provider="tigris.org"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.tigris.subversion.subclipse"/>
             <iu id="org.tigris.subversion.clientadapter.svnkit.feature"/>
             <iu id="com.collabnet.subversion.merge.feature"/>
@@ -338,7 +296,7 @@
             license="Subclipse License (Free)"
             name="Subclipse + SVNKit: Mylyn Support"
             provider="tigris.org"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.tigris.subversion.subclipse"/>
             <iu id="org.tigris.subversion.clientadapter.svnkit.feature"/>
             <iu id="org.tigris.subversion.subclipse.mylyn"/>
@@ -375,7 +333,7 @@
 	<group id="org.jboss.tools.central.discovery.c.testing.local" />
  	<group id="org.jboss.tools.central.discovery.c.testing.remote" />
       </connectorCategory>
-      
+
       <!-- add CheckStyle plugin back into Central (JBIDE-14799, JBIDE-15128, JBIDE-15129) -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.c.testing"
@@ -386,7 +344,7 @@
             license="LGPL (Free)"
             name="Eclipse Checkstyle"
             provider="eclipse-cs Project"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="net.sf.eclipsecs"/>
             <iu id="com.github.sevntu.checkstyle.checks.feature"/>
          <icon
@@ -406,7 +364,7 @@
             license="LGPL (Free)"
             name="FindBugs"
             provider="FindBugs Project"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
 	    <!-- https://issues.jboss.org/browse/JBDS-2284 -->
 	    <iu id="edu.umd.cs.findbugs.plugin.eclipse"/>
          <icon
@@ -416,7 +374,7 @@
                url="http://findbugs.sourceforge.net/">
          </overview>
       </connectorDescriptor>
- 
+
       <!-- JBDS-2752 -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.c.testing"
@@ -427,7 +385,7 @@
             license="EPL (Free)"
             name="Hudson + Jenkins: Mylyn Support"
             provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
          <iu id="org.eclipse.mylyn.hudson"/>
          <icon
                image32="images/mylyn_32.png">
@@ -447,7 +405,7 @@
             license="EPL (Free)"
             name="Mylyn Issue Tracker Connectors"
             provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
          <iu id="org.jboss.tools.common.mylyn.feature"/>
          <iu id="com.atlassian.connector.eclipse.jira"/>
          <iu id="com.atlassian.connector.eclipse.monitor"/>
@@ -476,7 +434,7 @@
             license="PMD License (Free)"
             name="PMD"
             provider="PMD Developers"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
 	    <!-- https://issues.jboss.org/browse/JBIDE-12562 -->
        	    <iu id="net.sourceforge.pmd.eclipse"/>
          <icon
@@ -495,7 +453,7 @@
             license="ASL (Free)"
             name="TestNG"
             provider="Cedric Beust"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.testng.eclipse"/>
          <icon
                image32="images/testng_32.gif">
@@ -526,7 +484,7 @@
                url="http://zeroturnaround.com/software/jrebel/">
          </overview>
       </connectorDescriptor>
-      
+
       <!-- d. Maven -->
 
       <connectorCategory
@@ -535,8 +493,8 @@
             name="Maven"
             relevance="20">
             <!-- use groups to reorder items in a category; otherwise default to alpha order -->
-         <group id="org.jboss.tools.central.discovery.d.maven.core" /> 
-         <group id="org.jboss.tools.central.discovery.d.maven.configurators" /> 
+         <group id="org.jboss.tools.central.discovery.d.maven.core" />
+         <group id="org.jboss.tools.central.discovery.d.maven.configurators" />
          <group id="org.jboss.tools.central.discovery.d.maven.upstream" />
       </connectorCategory>
 
@@ -549,7 +507,7 @@
             license="EPL (Free)"
             name="JBoss Maven Integration"
             provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.maven.feature"/>
          <icon
                image32="images/jbosstools_icon32.png">
@@ -567,7 +525,7 @@
             license="EPL (Free)"
             name="JBoss Maven CDI Configurator"
             provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.maven.cdi.feature"/>
          <icon
                image32="images/jbosstools_icon32.png">
@@ -576,24 +534,6 @@
                url="http://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
-      <!-- JBIDE-16543 com.google.gdt.eclipse.suite.e43.feature does not install on Luna M5; remove connector entirely, as per @fbricon <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.d.maven"
-            groupId="org.jboss.tools.central.discovery.d.maven.configurators"
-            description="JBoss Maven GWT Configurator"
-            id="org.jboss.tools.maven.gwt.feature"
-            kind="task"
-            license="EPL (Free)"
-            name="JBoss Maven GWT Configurator"
-            provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
-            <iu id="org.jboss.tools.maven.gwt.feature"/>
-         <icon
-               image32="images/jbosstools_icon32.png">
-         </icon>
-         <overview
-               url="http://tools.jboss.org/">
-         </overview>
-      </connectorDescriptor> -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.configurators"
@@ -603,7 +543,7 @@
             license="EPL (Free)"
             name="JBoss Maven Hibernate Configurator"
             provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.maven.hibernate.feature"/>
          <icon
                image32="images/jbosstools_icon32.png">
@@ -621,7 +561,7 @@
             license="EPL (Free)"
             name="Maven JAX-RS Configurator"
             provider="eclipse.org"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.eclipse.m2e.wtp.jaxrs.feature"/>
          <icon
                image32="images/m2e_32.gif">
@@ -639,7 +579,7 @@
             license="EPL (Free)"
             name="Maven JSF Configurator"
             provider="eclipse.org"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.eclipse.m2e.wtp.jsf.feature"/>
          <icon
                image32="images/m2e_32.gif">
@@ -657,7 +597,7 @@
             license="EPL (Free)"
             name="JBoss Tools Maven Packaging Configurator"
             provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.maven.jbosspackaging.feature"/>
             <iu id="org.eclipse.m2e.feature"/>
             <iu id="org.eclipse.m2e.wtp.feature"/>
@@ -678,7 +618,7 @@
             license="EPL (Free)"
             name="JBoss Maven Portlet Configurator"
             provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.maven.portlet.feature"/>
          <icon
                image32="images/jbosstools_icon32.png">
@@ -696,7 +636,7 @@
             license="EPL (Free)"
             name="JBoss Maven Seam Configurator"
             provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.maven.seam.feature"/>
          <icon
                image32="images/jbosstools_icon32.png">
@@ -714,7 +654,7 @@
             license="EPL (Free)"
             name="Maven JPA Configurator"
             provider="eclipse.org"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.eclipse.m2e.wtp.jpa.feature"/>
          <icon
                image32="images/m2e_32.gif">
@@ -723,7 +663,7 @@
                url="http://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
-      
+
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.upstream"
@@ -733,7 +673,7 @@
             license="EPL (Free)"
             name="Maven Integration for Eclipse (m2e)"
             provider="eclipse.org"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.eclipse.m2e.feature"/>
          <icon
                image32="images/m2e_32.gif">
@@ -751,7 +691,7 @@
             license="EPL (Free)"
             name="Maven Integration for Eclipse JDT APT (m2e-apt)"
             provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.maven.apt.feature"/>
          <icon
                image32="images/m2e_32.gif">
@@ -769,7 +709,7 @@
             license="EPL (Free)"
             name="Maven Integration for EGit (m2e-egit)"
             provider="eclipse.org"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.sonatype.m2e.egit.feature"/>
          <icon
                image32="images/m2e_32.gif">
@@ -787,7 +727,7 @@
             license="EPL (Free)"
             name="Maven Integration for Web Tools (m2e-wtp)"
             provider="eclipse.org"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.eclipse.m2e.wtp.feature"/>
          <icon
                image32="images/m2e_32.gif">
@@ -805,7 +745,7 @@
             license="EPL (Free)"
             name="Maven Integration for WRO4J (m2e-wro4j)"
             provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/luna/central/core/}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.m2e.wro4j.feature"/>
          <icon
                image32="images/m2e_32.gif">
@@ -815,10 +755,10 @@
          </overview>
       </connectorDescriptor>
     </extension>
-	
+
     <extension point="org.jboss.tools.central.proxyWizard">
-      <proxyWizard 
-          id="html5.wizard" 
+      <proxyWizard
+          id="html5.wizard"
           description="%html5.wizard.description"
           label="HTML5 Project"
           priority="1"
@@ -826,8 +766,8 @@
           wizardId="org.jboss.tools.central.wizards.NewHtml5ProjectWizard"
           >
       </proxyWizard>
-      <proxyWizard 
-          id="javaee.wizard" 
+      <proxyWizard
+          id="javaee.wizard"
           description="%javaeeweb.wizard.description"
           label="Java EE Web Project"
           priority="5"
@@ -835,8 +775,8 @@
           wizardId="org.jboss.tools.central.wizards.NewJavaeeWarProjectWizard"
           >
       </proxyWizard>
-      <proxyWizard 
-          id="forge.wizard" 
+      <proxyWizard
+          id="forge.wizard"
           description="%forge.wizard.description"
           label="AngularJS Forge"
           priority="4"
@@ -846,8 +786,8 @@
           requiredComponentIds="forge-tools-feature"
           >
       </proxyWizard>
-      <proxyWizard 
-          id="openshift.wizard" 
+      <proxyWizard
+          id="openshift.wizard"
           description="%openshift.wizard.description"
           label="OpenShift Application"
           priority="2"
@@ -855,8 +795,8 @@
           wizardId="org.jboss.ide.eclipse.as.openshift.express.ui.wizard.createNewApplicationWizard"
           requiredComponentIds="org.jboss.tools.openshift.feature">
       </proxyWizard>
-      <proxyWizard 
-          id="hybrid.mobile.wizard" 
+      <proxyWizard
+          id="hybrid.mobile.wizard"
           description="%hybrid.mobile.wizard.description"
           label="Hybrid Mobile Project"
           priority="6"
@@ -865,7 +805,7 @@
           wizardId="org.eclipse.thym.ui.NewHybridProjectWizard">
       </proxyWizard>
       <proxyWizard
-          id="maven.wizard" 
+          id="maven.wizard"
           description="%maven.wizard.description"
           label="Maven Project"
           priority="5"
@@ -873,5 +813,5 @@
           wizardId="org.eclipse.m2e.core.wizards.Maven2ProjectWizard"
           requiredComponentIds="org.eclipse.m2e.feature">
       </proxyWizard>
-    </extension>	
+    </extension>
 </plugin>
