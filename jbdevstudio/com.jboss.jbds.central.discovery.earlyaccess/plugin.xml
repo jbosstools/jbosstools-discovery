@@ -27,7 +27,7 @@ but this is not guaranteed.</description>
             license="EPL (Free)"
             name="AngularJS for Web Tools"
             provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.earlyaccess.site.url:https://devstudio.redhat.com/earlyaccess/8.0-development/}">
+            siteUrl="${jboss.discovery.earlyaccess.site.url}">
             <iu id="angularjs-eclipse-feature"/>
             <iu id="tern-feature"/>
             <iu id="tern-jsdt-feature"/>
@@ -54,11 +54,11 @@ but this is not guaranteed.</description>
             license="EPL (Free)"
             name="JBoss Arquillian Tools"
             provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.earlyaccess.site.url:https://devstudio.redhat.com/earlyaccess/8.0-development/}">
+            siteUrl="${jboss.discovery.earlyaccess.site.url}">
             <iu id="org.jboss.tools.arquillian.feature"/>
          <icon image32="images/arquillian_32.png"/>
          <overview url="http://www.jboss.org/tools"/>
       </connectorDescriptor>
 
-     </extension>	
+    </extension>	
 </plugin>
