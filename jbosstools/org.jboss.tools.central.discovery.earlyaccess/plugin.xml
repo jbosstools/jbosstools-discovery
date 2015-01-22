@@ -44,21 +44,7 @@ but this is not guaranteed.</description>
          </overview>
       </connectorDescriptor>
 
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
-            certificationId="org.jboss.tools.discovery.certification.earlyaccess"
-            description="Create and run tests with Arquillian"
-            id="org.jboss.tools.arquillian"
-            kind="task"
-            license="EPL (Free)"
-            name="JBoss Arquillian Tools"
-            provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.earlyaccess.site.url}">
-            <iu id="org.jboss.tools.arquillian.feature"/>
-         <icon image32="images/arquillian_32.png"/>
-         <overview url="http://www.jboss.org/tools"/>
-      </connectorDescriptor>
-
-    </extension>	
+      <!-- JBIDE-19038: Arquillian is not EA in JBT, only in JBDS, so move connector to ../org.jboss.tools.central.discovery/plugin.xml and remove certificationId=earlyaccess
+      -->
+    </extension>
 </plugin>
