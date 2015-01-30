@@ -5,10 +5,10 @@
   <parent>
     <groupId>org.jboss.tools.targetplatforms</groupId>
     <artifactId>jbtcentral</artifactId>
-    <version>4.41.3.CR1-SNAPSHOT</version>
+    <version>4.42.0.Beta1-SNAPSHOT</version>
   </parent>
   <artifactId>jbtcentral-multiple</artifactId>
-  <version>4.41.3.CR1-SNAPSHOT</version>
+  <version>4.42.0.Beta1-SNAPSHOT</version>
   <name>JBoss Central Core Multiple (Composite) Target Platform</name>
   <packaging>pom</packaging>
   <properties>

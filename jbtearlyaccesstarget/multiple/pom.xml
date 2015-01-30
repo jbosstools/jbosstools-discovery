@@ -5,10 +5,10 @@
   <parent>
     <groupId>org.jboss.tools.targetplatforms</groupId>
     <artifactId>jbtearlyaccess</artifactId>
-    <version>4.41.3.CR1-SNAPSHOT</version>
+    <version>4.42.0.Beta1-SNAPSHOT</version>
   </parent>
   <artifactId>jbtearlyaccess-multiple</artifactId>
-  <version>4.41.3.CR1-SNAPSHOT</version>
+  <version>4.42.0.Beta1-SNAPSHOT</version>
   <name>JBoss Central Early Access Multiple (Composite) Target Platform</name>
   <packaging>pom</packaging>
   <properties>
