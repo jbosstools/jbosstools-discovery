@@ -12,10 +12,9 @@
     </location>
     -->
 
-    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/angularjs/0.7.0.201412021122"/>
-      <unit id="angularjs-eclipse-feature.feature.group" version="0.7.0.201412021122"/>
-    </location>
+    <!-- JBIDE-19045 move AngularJS to a stable URL like XulRunner, so no longer in target platform 
+      http://download.jboss.org/jbosstools/updates/stable/luna/core/angularjs/
+    -->
 
     <!-- TODO: update this with each milestone release -->
     <!-- JBoss Tools core requirements, including Arquillian + dependencies -->
