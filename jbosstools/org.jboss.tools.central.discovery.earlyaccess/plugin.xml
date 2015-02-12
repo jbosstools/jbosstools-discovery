@@ -44,6 +44,28 @@ but this is not guaranteed.</description>
          </overview>
       </connectorDescriptor>
 
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
+            description="Provides Tooling for Red Hat's OpenShift 2
+			 and 3."
+            id="org.jboss.tools.openshift.feature"
+            kind="task"
+            license="EPL (Free)"
+            name="JBoss OpenShift Tools"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.site.url}">
+            <iu id="org.jboss.tools.openshift.feature"/>
+            <iu id="org.jboss.tools.openshift.express.feature"/>
+            <iu id="org.jboss.tools.openshift.egit.integration.feature"/>
+         <icon
+               image32="images/openshift-32.png">
+         </icon>
+         <overview
+               url="http://tools.jboss.org/">
+         </overview>
+      </connectorDescriptor>
+
       <!-- JBIDE-19038: Arquillian is not EA in JBT, only in JBDS, so move connector to ../org.jboss.tools.central.discovery/plugin.xml and remove certificationId=earlyaccess
       -->
     </extension>
