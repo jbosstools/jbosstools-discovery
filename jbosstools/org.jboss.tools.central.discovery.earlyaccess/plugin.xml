@@ -47,6 +47,7 @@ but this is not guaranteed.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
+            certificationId="org.jboss.tools.discovery.certification.earlyaccess"
             description="Provides Tooling for Red Hat's OpenShift 2
 			 and 3."
             id="org.jboss.tools.openshift.feature"
