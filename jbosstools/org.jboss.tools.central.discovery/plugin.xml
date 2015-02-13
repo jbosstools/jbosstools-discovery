@@ -124,7 +124,6 @@
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.openshift.express.feature"/>
             <iu id="org.jboss.tools.openshift.egit.integration.feature"/>
-            <iu id="org.jboss.tools.openshift.feature"/>
          <icon
                image32="images/openshift-32.png">
          </icon>
