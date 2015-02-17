@@ -118,7 +118,6 @@ reasonable, reporting issues to these providers as required.</description>
             <iu id="org.jboss.tools.vpe.browsersim.feature"/>
             <iu id="org.jboss.tools.livereload.feature" />
             <iu id="org.jboss.tools.jst.angularjs.feature" />
-            <iu id="org.jboss.tools.feedhenry"/> 
          <icon image32="images/cordova_32.png"/>
          <overview url="http://tools.jboss.org/"/>
       </connectorDescriptor>
