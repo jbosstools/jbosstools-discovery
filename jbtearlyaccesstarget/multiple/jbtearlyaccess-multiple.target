@@ -13,8 +13,8 @@
     -->
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/angularjs/0.8.0.201501282321"/>
-      <unit id="angularjs-eclipse-feature.feature.group" version="0.8.0.201501282321"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/angularjs/0.9.0.201502172152/"/>
+      <unit id="angularjs-eclipse-feature.feature.group" version="0.9.0.201502172152"/>
     </location>
 
     <!-- TODO: update this with each milestone release -->
