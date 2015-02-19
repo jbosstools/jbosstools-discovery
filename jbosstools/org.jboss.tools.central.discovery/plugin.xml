@@ -79,9 +79,7 @@
             <iu id="org.jboss.tools.livereload.feature" />
             <iu id="org.jboss.tools.jst.jsdt.feature"/>
             <iu id="org.jboss.tools.jst.angularjs.feature" />
-	    <!-- JBIDE-19115 when Feedhenry feature is in 4.2.x, add the feature here 
-            <iu id="org.jboss.tools.feedhenry.feature"/> 
-	    -->
+            <iu id="org.jboss.tools.feedhenry"/> 
          <icon image32="images/cordova_32.png"/>
          <overview url="http://tools.jboss.org/"/>
       </connectorDescriptor>
