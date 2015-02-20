@@ -47,7 +47,7 @@ See https://github.com/jbosstools/jbosstools-devdoc/blob/master/building/target_
 
 === Build Discovery Sites
 
-See link:README.building.discovery.sites.adoc[]
+See link:README.discovery.sites.adoc[]
 
 
 === Get the code
