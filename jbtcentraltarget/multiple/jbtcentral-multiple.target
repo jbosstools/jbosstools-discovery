@@ -18,13 +18,13 @@
       <!-- TODO: this alternates between
 	* /static/releases/ when content is released
 	* /updates/staging/luna/ when content is not released yet -->
-      <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.2.2.Final-updatesite-core/"/>
-      <unit id="org.jboss.tools.vpe.cordovasim.feature.feature.group" version="3.6.1.Final-v20141209-0333-B71"/>
-      <unit id="org.jboss.tools.maven.jbosspackaging.feature.feature.group" version="1.6.1.Final-v20150109-2320-B116"/>
-      <unit id="org.jboss.tools.common.mylyn.feature.feature.group" version="3.6.1.Final-v20141209-0333-B84"/>
-      <unit id="org.jboss.tools.jst.angularjs.feature.feature.group" version="3.6.1.Final-v20141209-0353-B90"/>
+      <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.3.0.Alpha1-updatesite-core/"/>
+      <unit id="org.jboss.tools.vpe.cordovasim.feature.feature.group" version="3.7.0.Alpha1-v20150213-1740-B7"/>
+      <unit id="org.jboss.tools.maven.jbosspackaging.feature.feature.group" version="1.7.0.Alpha1-v20150213-0945-B3"/>
+      <unit id="org.jboss.tools.common.mylyn.feature.feature.group" version="3.7.0.Alpha1-v20150212-2256-B1"/>
+      <unit id="org.jboss.tools.jst.angularjs.feature.feature.group" version="3.7.0.Alpha1-v20150213-0215-B3"/>
       <!-- forge.ext is not in JBDS yet so must remain in Central for now -->
-      <unit id="org.jboss.tools.forge.ext.feature.feature.group" version="1.3.2.Final-v20150113-1315-B85"/>
+      <unit id="org.jboss.tools.forge.ext.feature.feature.group" version="2.0.0.Alpha1-v20150213-0358-B4"/>
     </location>
 
     <!-- mylyn + mylyn accessories (which are not in the JBT or JBDS target platform) -->
