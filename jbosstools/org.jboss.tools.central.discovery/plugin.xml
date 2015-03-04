@@ -74,8 +74,8 @@
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.aerogear.thym.feature"/>
-            <iu id="org.jboss.tools.vpe.cordovasim.feature"/>
-            <iu id="org.jboss.tools.vpe.browsersim.feature"/>
+            <iu id="org.jboss.tools.cordovasim.feature"/>
+            <iu id="org.jboss.tools.browsersim.feature"/>
             <iu id="org.jboss.tools.livereload.feature" />
             <iu id="org.jboss.tools.jst.jsdt.feature"/>
             <iu id="org.jboss.tools.jst.angularjs.feature" />
