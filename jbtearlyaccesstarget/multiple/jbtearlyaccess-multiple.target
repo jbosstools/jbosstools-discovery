@@ -23,24 +23,24 @@
       <!-- TODO: this alternates between
 	* /static/releases/ when content is released
 	* /updates/staging/luna/ when content is not released yet -->
-      <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.3.0.Alpha1-updatesite-core/"/>
-      <unit id="org.jboss.tools.arquillian.feature.feature.group" version="1.2.0.Alpha1-v20150213-1035-B3"/>
-      <unit id="org.jboss.ide.eclipse.as.feature.feature.group" version="3.1.0.Alpha1-v20150213-0312-B3"/>
-      <unit id="org.jboss.tools.common.core.feature.feature.group" version="3.7.0.Alpha1-v20150212-2256-B1"/>
-      <unit id="org.jboss.tools.common.feature.feature.group" version="3.7.0.Alpha1-v20150212-2256-B1"/>
-      <unit id="org.jboss.tools.common.jdt.feature.feature.group" version="3.7.0.Alpha1-v20150212-2256-B1"/>
-      <unit id="org.jboss.tools.foundation.feature.feature.group" version="1.2.0.Alpha1-v20150212-2256-B1"/>
-      <unit id="org.jboss.tools.jmx.feature.feature.group" version="1.7.0.Alpha1-v20150213-0312-B3"/>
-      <unit id="org.jboss.tools.usage.feature.feature.group" version="2.1.0.Alpha1-v20150212-2256-B1"/>
-      <unit id="org.jboss.tools.runtime.core.feature.feature.group" version="3.1.0.Alpha1-v20150212-2256-B1"/>
-      <unit id="org.jboss.ide.eclipse.archives.feature.feature.group" version="3.6.0.Alpha1-v20150213-0312-B3"/>
-      <unit id="org.jboss.tools.stacks.core.feature.feature.group" version="1.2.0.Alpha1-v20150212-2256-B1"/>
-      <unit id="org.jboss.tools.common.ui.feature.feature.group" version="3.7.0.Alpha1-v20150212-2256-B1"/>
-      <unit id="org.jboss.tools.common.mylyn.feature.feature.group" version="3.7.0.Alpha1-v20150212-2256-B1"/>
-      <unit id="org.jboss.tools.common.text.ext.feature.feature.group" version="3.7.0.Alpha1-v20150212-2256-B1"/>
-      <unit id="org.jboss.tools.common.verification.feature.feature.group" version="3.7.0.Alpha1-v20150212-2256-B1"/>
-      <unit id="org.jboss.tools.jst.jsdt.feature.feature.group" version="3.7.0.Alpha1-v20150213-0215-B3"/>
-      <unit id="org.jboss.tools.jst.angularjs.feature.feature.group" version="3.7.0.Alpha1-v20150213-0215-B3"/>
+      <repository location="http://download.jboss.org/jbosstools/builds/nightly/core/master/"/>
+      <unit id="org.jboss.tools.arquillian.feature.feature.group" version="1.2.0.Alpha1-v20150115-0457-B227"/>
+      <unit id="org.jboss.ide.eclipse.as.feature.feature.group" version="3.1.0.Alpha1-v20150219-1728-B693"/>
+      <unit id="org.jboss.tools.common.core.feature.feature.group" version="3.7.0.Alpha2-v20150212-2310-B619"/>
+      <unit id="org.jboss.tools.common.feature.feature.group" version="3.7.0.Alpha2-v20150212-2310-B619"/>
+      <unit id="org.jboss.tools.common.jdt.feature.feature.group" version="3.7.0.Alpha2-v20150212-2310-B619"/>
+      <unit id="org.jboss.tools.foundation.feature.feature.group" version="1.2.0.Alpha2-v20150212-2310-B619"/>
+      <unit id="org.jboss.tools.jmx.feature.feature.group" version="1.7.0.Alpha1-v20150219-1728-B693"/>
+      <unit id="org.jboss.tools.usage.feature.feature.group" version="2.1.0.Alpha2-v20150212-2310-B619"/>
+      <unit id="org.jboss.tools.runtime.core.feature.feature.group" version="3.1.0.Alpha2-v20150212-2310-B619"/>
+      <unit id="org.jboss.ide.eclipse.archives.feature.feature.group" version="3.6.0.Alpha1-v20150219-1728-B693"/>
+      <unit id="org.jboss.tools.stacks.core.feature.feature.group" version="1.2.0.Alpha2-v20150212-2310-B619"/>
+      <unit id="org.jboss.tools.common.ui.feature.feature.group" version="3.7.0.Alpha2-v20150212-2310-B619"/>
+      <unit id="org.jboss.tools.common.mylyn.feature.feature.group" version="3.7.0.Alpha2-v20150212-2310-B619"/>
+      <unit id="org.jboss.tools.common.text.ext.feature.feature.group" version="3.7.0.Alpha2-v20150212-2310-B619"/>
+      <unit id="org.jboss.tools.common.verification.feature.feature.group" version="3.7.0.Alpha2-v20150212-2310-B619"/>
+      <unit id="org.jboss.tools.jst.jsdt.feature.feature.group" version="3.7.0.Alpha2-v20150219-1957-B799"/>
+      <unit id="org.jboss.tools.jst.angularjs.feature.feature.group" version="3.7.0.Alpha2-v20150219-1957-B799"/>
     </location>
 
   </locations>
