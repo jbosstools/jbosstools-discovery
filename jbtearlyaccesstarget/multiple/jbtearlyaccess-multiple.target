@@ -4,6 +4,7 @@
     replace with 
       <unit id="\1.feature.group" version="\2"/>
   -->
+  <locations>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/angularjs/0.9.0.201502172152/"/>
