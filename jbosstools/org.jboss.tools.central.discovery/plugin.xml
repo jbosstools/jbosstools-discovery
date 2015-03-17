@@ -206,6 +206,22 @@
          <overview url="http://tools.jboss.org/"/>
       </connectorDescriptor>
 
+      <!-- JBDS 3363, JBIDE-19401 add Portlet connector -->
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
+            description="Tool support for Portlets"
+            id="org.jboss.tools.portlet.connector"
+            kind="task"
+            license="EPL, Other (Free)"
+            name="JBoss Portlet Tools"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.site.url}">
+            <iu id="org.jboss.tools.portlet.feature"/>
+         <icon image32="images/jbosstools_icon32.png">
+         <overview url="http://tools.jboss.org/"/>
+      </connectorDescriptor>
+
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.extras"

@@ -233,7 +233,7 @@ reasonable, reporting issues to these providers as required.</description>
          <overview url="http://tools.jboss.org/"/>
       </connectorDescriptor>
 
-      <!-- JBDS 3363 add Portlet connector -->
+      <!-- JBDS 3363, JBIDE-19401 add Portlet connector -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
