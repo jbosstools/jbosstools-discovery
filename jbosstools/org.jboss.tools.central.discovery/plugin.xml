@@ -6,6 +6,33 @@
 
       <!-- use connectorCategory relevance value to sort from largest (80) to smallest (20) -->
 
+      <connectorCategory
+            description="Patches"
+            id="org.jboss.tools.central.discovery.a.a.patches"
+            name="Patches"
+            relevance="90">
+         <group id="org.jboss.tools.central.discovery.a.a.patches" /> 
+      </connectorCategory>
+
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.a.patches"
+            groupId="org.jboss.tools.central.discovery.a.a.patches"
+            description="Fixes Eclipse freeze for some JavaScript files, see: bugs.eclipse.org/461160"
+            id="org.eclipse.wst.jsdt.feature.patch"
+            kind="task"
+            license="EPL, Other (Free)"
+            name="Web Tools 3.6.3 Patch Feature"
+            provider="eclipse.org"
+            siteUrl="${jboss.discovery.site.url}">
+         <iu id="org.eclipse.wst.jsdt.feature.patch"/>
+         <icon
+               image32="images/wtp_32.png">
+         </icon>
+         <overview
+               url="https://bugs.eclipse.org/bugs/show_bug.cgi?id=461160">
+         </overview>
+      </connectorDescriptor>
+
       <!-- a. Mobile Development -->
 
       <connectorCategory
