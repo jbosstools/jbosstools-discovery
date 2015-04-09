@@ -246,7 +246,7 @@ reasonable, reporting issues to these providers as required.</description>
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.portlet.feature"/>
-         <icon image32="images/jbosstools_icon32.png">
+         <icon image32="images/jbosstools_icon32.png"/>
          <overview url="http://tools.jboss.org/"/>
       </connectorDescriptor>
 
