@@ -73,6 +73,7 @@
             name="JBoss Hybrid Mobile Tools + CordovaSim"
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url}">
+            <iu id="org.jboss.tools.aerogear.easymport.feature"/>
             <iu id="org.jboss.tools.aerogear.thym.feature"/>
             <iu id="org.jboss.tools.cordovasim.feature"/>
             <iu id="org.jboss.tools.browsersim.feature"/>
