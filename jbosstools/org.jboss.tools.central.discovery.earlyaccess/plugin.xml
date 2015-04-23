@@ -21,7 +21,7 @@ but this is not guaranteed.</description>
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
             certificationId="org.jboss.tools.discovery.certification.earlyaccess"
-            description="AngularJS Tooling support providing content assist and navigation + Ionic framework support"
+            description="AngularJS Tooling provides content assist, navigation, and Ionic framework support"
             id="angularjs-eclipse-feature"
             kind="task"
             license="EPL (Free)"
