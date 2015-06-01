@@ -8,19 +8,19 @@
 
     <!-- mylyn + mylyn accessories (which are not in the JBT or JBDS target platform) -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/mars/201503291000-M6/"/>
-      <unit id="org.eclipse.egit.mylyn.feature.group" version="4.0.0.201503231230-m1"/>
-      <unit id="org.eclipse.mylyn.builds.feature.group" version="1.7.0.v20150113-2201"/>
-      <unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.7.0.v20150112-2323"/>
-      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="4.0.0.201503231230-m1"/>
-      <unit id="org.eclipse.mylyn.git.feature.group" version="1.7.0.v20150113-0039"/>
-      <unit id="org.eclipse.mylyn.hudson.feature.group" version="1.7.0.v20150113-2201"/>
-      <unit id="org.eclipse.mylyn.ide_feature.feature.group" version="3.15.0.v20150113-0039"/>
-      <unit id="org.eclipse.mylyn.java_feature.feature.group" version="3.15.0.v20150113-0039"/>
-      <unit id="org.eclipse.mylyn.pde_feature.feature.group" version="3.15.0.v20150113-0039"/>
-      <unit id="org.eclipse.mylyn.tasks.ide.feature.group" version="3.15.0.v20150113-0037"/>
-      <unit id="org.eclipse.mylyn.team_feature.feature.group" version="3.15.0.v20150113-0039"/>
-      <unit id="org.eclipse.mylyn.versions.feature.group" version="1.7.0.v20150113-0039"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/mars/201505291000-RC2/"/>
+      <unit id="org.eclipse.egit.mylyn.feature.group" version="4.0.0.201505260635-rc2"/>
+      <unit id="org.eclipse.mylyn.builds.feature.group" version="1.8.0.v20150420-2243"/>
+      <unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.8.0.v20150420-1908"/>
+      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="4.0.0.201505260635-rc2"/>
+      <unit id="org.eclipse.mylyn.git.feature.group" version="1.8.0.v20150420-2005"/>
+      <unit id="org.eclipse.mylyn.hudson.feature.group" version="1.8.0.v20150420-2243"/>
+      <unit id="org.eclipse.mylyn.ide_feature.feature.group" version="3.16.0.v20150505-2112"/>
+      <unit id="org.eclipse.mylyn.java_feature.feature.group" version="3.16.0.v20150421-1714"/>
+      <unit id="org.eclipse.mylyn.pde_feature.feature.group" version="3.16.0.v20150420-2241"/>
+      <unit id="org.eclipse.mylyn.tasks.ide.feature.group" version="3.16.0.v20150420-2004"/>
+      <unit id="org.eclipse.mylyn.team_feature.feature.group" version="3.16.0.v20150420-2241"/>
+      <unit id="org.eclipse.mylyn.versions.feature.group" version="1.8.0.v20150420-2005"/>
     </location>
     
     <!-- TODO: make sure these versions match up across JBT/JBDS/Central target platforms (JBIDE-17429) -->
@@ -32,14 +32,14 @@
 
     <!-- new to JBT 4.1.0 / JBDS 7 -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/atlassian/3.2.2.v20130909/"/> 
-      <unit id="com.atlassian.connector.commons.feature.group" version="3.2.2.v20130909"/>
-      <unit id="com.atlassian.connector.eclipse.bamboo.feature.group" version="3.2.2.v20130909"/>
-      <unit id="com.atlassian.connector.eclipse.commons.feature.group" version="3.2.2.v20130909"/>
-      <unit id="com.atlassian.connector.eclipse.directclickthrough.feature.group" version="3.2.2.v20130909"/>
-      <unit id="com.atlassian.connector.eclipse.jira.feature.group" version="3.2.2.v20130909"/>
-      <unit id="com.atlassian.connector.eclipse.monitor.feature.group" version="3.2.2.v20130909"/>
-      <unit id="com.atlassian.connector.eclipse.feature.group" version="3.2.2.v20130909"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/atlassian/3.2.5.v20150427/"/> 
+      <unit id="com.atlassian.connector.commons.feature.group" version="3.2.5.v20150427"/>
+      <unit id="com.atlassian.connector.eclipse.bamboo.feature.group" version="3.2.5.v20150427"/>
+      <unit id="com.atlassian.connector.eclipse.commons.feature.group" version="3.2.5.v20150427"/>
+      <unit id="com.atlassian.connector.eclipse.directclickthrough.feature.group" version="3.2.5.v20150427"/>
+      <unit id="com.atlassian.connector.eclipse.jira.feature.group" version="3.2.5.v20150427"/>
+      <unit id="com.atlassian.connector.eclipse.monitor.feature.group" version="3.2.5.v20150427"/>
+      <unit id="com.atlassian.connector.eclipse.feature.group" version="3.2.5.v20150427"/>
     </location>
     <!-- needed by Atlassian 3.2.2.v20130909; not yet in Luna (see https://bugs.eclipse.org/bugs/show_bug.cgi?id=430816) -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
@@ -85,13 +85,13 @@
 
     <!-- required for SpringIDE 3.6 -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/mars/201503291000-M6/"/>
-      <unit id="org.eclipse.osgi" version="3.10.100.v20150318-0312"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/mars/201505291000-RC2/"/>
+      <unit id="org.eclipse.osgi" version="3.10.100.v20150521-1310"/>
       <unit id="org.apache.batik.util" version="1.6.0.v201011041432"/>
       <unit id="org.apache.batik.util.gui" version="1.6.0.v201011041432"/>
       <unit id="org.eclipse.equinox.http.registry" version="1.1.300.v20130402-1529"/>
-      <unit id="org.eclipse.zest.feature.group" version="1.6.0.201502020307"/>
-      <unit id="org.eclipse.mylyn.java.ui" version="3.15.0.v20150113-0039"/>
+      <unit id="org.eclipse.zest.feature.group" version="1.6.0.201505250205"/>
+      <unit id="org.eclipse.mylyn.java.ui" version="3.16.0.v20150420-2241"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/ajdt/2.2.4.e44x-20140516-1000/"/> 
