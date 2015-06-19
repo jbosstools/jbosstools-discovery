@@ -156,8 +156,8 @@
     <!-- TODO TestNG is also part of JBDS TP and delivery. So if you need to updated TestNG here, you most likely want to also
         update it in JBDS TP as well -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/testng/6.8.6.20130914_0724/"/>
-      <unit id="org.testng.eclipse.feature.group" version="6.8.6.20130914_0724"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/testng/6.9.5.201506120235/"/>
+      <unit id="org.testng.eclipse.feature.group" version="6.9.5.201506120235"/>
     </location>
 
     <!-- unchanged since JBT 4.0.0 / JBDS 6 -->
