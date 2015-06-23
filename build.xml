@@ -79,8 +79,8 @@ $java.home = ${java.home}</echo>
 		</if>
 
 		<condition property="compositeName" 
-			value="JBoss Developer Studio Central - composite staging site" 
-			 else="JBoss Tools Central - composite staging site">
+			value="Red Hat JBoss Developer Studio - Core + Central Update Site" 
+			 else="JBoss Tools - Core + Central Update Site">
     	<equals arg1="${PREFIX}" arg2="devstudio"/>
   	</condition>
   	<condition property="compositeURLs" 
