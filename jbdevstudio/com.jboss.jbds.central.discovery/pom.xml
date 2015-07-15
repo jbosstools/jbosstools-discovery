@@ -38,8 +38,6 @@
                   <property name="TARGET_PLATFORM_VERSION" value="${TARGET_PLATFORM_VERSION}"/>
                   
                   <!-- pass in from Jenkins: -->
-                  <property name="UPDATE_SITE" value="http://www.qa.jboss.com/binaries/RHDS/updates/development/8.0.0.Beta2-updatesite-core/"/>
-                  <property name="UPDATE_SITE" value="http://download.jboss.org/jbosstools/updates/staging/jbosstools-4.2.0.Beta2-updatesite-core/"/>
                   <property name="UPDATE_SITE" value="${UPDATE_SITE}"/>
                   <property name="EXTRAS_SITE" value="${EXTRAS_SITE}"/>
                 </ant>
