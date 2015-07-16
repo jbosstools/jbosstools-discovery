@@ -115,7 +115,7 @@ $java.home = ${java.home}</echo>
 
 	<target name="generate.composite.xml.file">
 		<!-- fileType is either org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository or org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository -->
-		<property name="compositeName" value="JBoss Tools Central - composite staging site"/>
+		<property name="compositeName" value="JBoss Tools - Core + Central Update Site"/>
 		<property name="compositeURLs" value="http://1,http://2,http://3"/>
 		<property name="compositeType" value="org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository"/>
 		<property name="compositeClass" value="compositeArtifactRepository"/>

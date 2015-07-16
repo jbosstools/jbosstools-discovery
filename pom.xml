@@ -27,19 +27,4 @@
   </modules>
 
 </project>
-<!--
-
-Build like this:
-
-mvn clean install -f jbosstools/org.jboss.tools.central.discovery/pom.xml \
-  -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/trunk/ \
-  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/luna/
-
-or
-
-mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery/pom.xml \
--DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_trunk/all/ \
--DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/luna/
-
-For more examples and info, see README.*
--->
+<!-- To build, pass in -DUPDATE_SITE and -DEXTRAS_SITE; for examples see https://github.com/jbosstools/jbosstools-discovery/blob/master/README.discovery.sites.adoc -->

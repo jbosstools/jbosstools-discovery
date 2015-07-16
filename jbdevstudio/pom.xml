@@ -14,7 +14,4 @@
 		<module>com.jboss.jbds.central.discovery.earlyaccess</module>
 	</modules>
 </project>
-<!--
-mvn clean install -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_trunk/all/ \
--DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/kepler/
--->
+<!-- To build, pass in -DUPDATE_SITE and -DEXTRAS_SITE; for examples see https://github.com/jbosstools/jbosstools-discovery/blob/master/README.discovery.sites.adoc -->

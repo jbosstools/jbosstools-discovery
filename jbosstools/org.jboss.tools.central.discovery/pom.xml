@@ -37,7 +37,7 @@
                   <property name="BUILD_ALIAS" value="${BUILD_ALIAS}" />
                   <property name="TARGET_PLATFORM_VERSION" value="${TARGET_PLATFORM_VERSION}"/>
                   
-                  <!-- pass in from Jenkins: -->
+                  <!-- pass in from Jenkins; for examples see https://github.com/jbosstools/jbosstools-discovery/blob/master/README.discovery.sites.adoc -->
                   <property name="UPDATE_SITE" value="${UPDATE_SITE}"/>
                   <property name="EXTRAS_SITE" value="${EXTRAS_SITE}"/>
                 </ant>

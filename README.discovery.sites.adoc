@@ -14,8 +14,8 @@ In this example, build against master branch update site.
 [source,bash]
 ----
 mvn clean install -f jbosstools/org.jboss.tools.central.discovery/pom.xml \
-  -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/master/ \
-  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/luna/
+  -DUPDATE_SITE=http://download.jboss.org/jbosstools/mars/snapshots/updates/core/master/ \
+  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/mars/snapshots/updates/central/master/,http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/4.50.0.*/REPO/
 ----
 
 or
@@ -23,8 +23,8 @@ or
 [source,bash]
 ----
 mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery/pom.xml \
-  -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_master/all/repo/ \
-  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/luna/
+  -DUPDATE_SITE=https://devstudio.redhat.com/9.0/snapshots/updates/core/master/ \
+  -DEXTRAS_SITE=https://devstudio.redhat.com/9.0/snapshots/updates/central/master/,https://devstudio.redhat.com/targetplatforms/jbtcentraltarget/4.50.0.*/REPO/
 ----
 
 Repeat for Early Access sites (using 2 EXTRAS_SITE URLs so the resulting site can resolve both Core and Early Access content):
@@ -37,8 +37,8 @@ In this example, build against stable branch update site.
 [source,bash]
 ----
 mvn clean install -f jbosstools/org.jboss.tools.central.discovery.earlyaccess/pom.xml \
-  -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/4.3.mars/ \
-  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/luna/,http://download.jboss.org/jbosstools/targetplatforms/jbtearlyaccesstarget/luna/
+  -DUPDATE_SITE=http://download.jboss.org/jbosstools/mars/snapshots/updates/core/master/ \
+  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/mars/snapshots/updates/central/master/,http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/4.50.0.*/REPO/,http://download.jboss.org/jbosstools/mars/snapshots/updates/earlyaccess/master/,http://download.jboss.org/jbosstools/targetplatforms/jbtearlyaccesstarget/4.50.0.*/REPO/
 ----
 
 or
@@ -46,8 +46,8 @@ or
 [source,bash]
 ----
 mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery.earlyaccess/pom.xml \
-  -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_9.0.mars/all/repo/ \
-  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/luna/,http://download.jboss.org/jbosstools/targetplatforms/jbtearlyaccesstarget/luna/
+  -DUPDATE_SITE=https://devstudio.redhat.com/9.0/snapshots/updates/core/master/ \
+  -DEXTRAS_SITE=https://devstudio.redhat.com/9.0/snapshots/updates/central/master/,https://devstudio.redhat.com/targetplatforms/jbtcentraltarget/4.50.0.*/REPO/,https://devstudio.redhat.com/9.0/snapshots/updates/earlyaccess/master/,https://devstudio.redhat.com/targetplatforms/jbtearlyaccesstarget/4.50.0.*/REPO/
 ----
 
 ## Test a local site
@@ -82,8 +82,8 @@ done
 [source,bash]
 ----
 mvn clean install -f jbosstools/org.jboss.tools.central.discovery/pom.xml \
-  -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/4.3.mars/ \
-  -DEXTRAS_SITE=http://localhost:8080/jbtcentraltarget/multiple/target/jbtcentral-multiple.target.repo/
+  -DUPDATE_SITE=http://download.jboss.org/jbosstools/mars/snapshots/updates/core/master/ \
+  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/mars/snapshots/updates/central/master/,http://localhost:8080/jbtcentraltarget/multiple/target/jbtcentral-multiple.target.repo/
 ----
 
 or
@@ -91,8 +91,8 @@ or
 [source,bash]
 ----
 mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery/pom.xml \
-  -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_9.0.mars/all/repo/ \
-  -DEXTRAS_SITE=http://localhost:8080/jbtcentraltarget/multiple/target/jbtcentral-multiple.target.repo/
+  -DUPDATE_SITE=https://devstudio.redhat.com/9.0/snapshots/updates/core/master/ \
+  -DEXTRAS_SITE=https://devstudio.redhat.com/9.0/snapshots/updates/central/master/,http://localhost:8080/jbtcentraltarget/multiple/target/jbtcentral-multiple.target.repo/
 ----
 
 Repeat for Early Access plugin + site (using 2 EXTRAS_SITE URLs so the resulting site can resolve both Core and Early Access content):
@@ -100,8 +100,8 @@ Repeat for Early Access plugin + site (using 2 EXTRAS_SITE URLs so the resulting
 [source,bash]
 ----
 mvn clean install -f jbosstools/org.jboss.tools.central.discovery.earlyaccess/pom.xml \
-  -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/nightly/core/4.3.mars/ \
-  -DEXTRAS_SITE=http://localhost:8080/jbtcentraltarget/multiple/target/jbtcentral-multiple.target.repo/,http://localhost:8080/jbtearlyaccesstarget/multiple/target/jbtearlyaccess-multiple.target.repo/
+  -DUPDATE_SITE=http://download.jboss.org/jbosstools/mars/snapshots/updates/core/master/ \
+  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/mars/snapshots/updates/central/master/,http://download.jboss.org/jbosstools/mars/snapshots/updates/earlyaccess/master/,http://localhost:8080/jbtcentraltarget/multiple/target/jbtcentral-multiple.target.repo/,http://localhost:8080/jbtearlyaccesstarget/multiple/target/jbtearlyaccess-multiple.target.repo/
 ----
 
 or
@@ -109,8 +109,8 @@ or
 [source,bash]
 ----
 mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery.earlyaccess/pom.xml \
-  -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/devstudio.product_9.0.mars/all/repo/ \
-  -DEXTRAS_SITE=http://localhost:8080/jbtcentraltarget/multiple/target/jbtcentral-multiple.target.repo/,http://localhost:8080/jbtearlyaccesstarget/multiple/target/jbtearlyaccess-multiple.target.repo/
+  -DUPDATE_SITE=https://devstudio.redhat.com/9.0/snapshots/updates/core/master/ \
+  -DEXTRAS_SITE=https://devstudio.redhat.com/9.0/snapshots/updates/central/master/,https://devstudio.redhat.com/9.0/snapshots/updates/earlyaccess/master/,http://localhost:8080/jbtcentraltarget/multiple/target/jbtcentral-multiple.target.repo/,http://localhost:8080/jbtearlyaccesstarget/multiple/target/jbtearlyaccess-multiple.target.repo/
 ----
 
 3. Install Eclipse (eg., 4.4 Luna JEE bundle)
@@ -155,12 +155,12 @@ jbdevstudio -vmargs \
 [source,bash]
 ----
 ./eclipse -vmargs \
-  -Djboss.discovery.directory.url=http://download.jboss.org/jbosstools/discovery/nightly/earlyaccess/master/jbosstools-directory.xml \
-  -Djboss.discovery.site.url=http://download.jboss.org/jbosstools/discovery/nightly/earlyaccess/master/ \
-  -Djboss.discovery.earlyaccess.site.url=http://download.jboss.org/jbosstools/discovery/nightly/earlyaccess/master/
+  -Djboss.discovery.directory.url=http://download.jboss.org/jbosstools/mars/snapshots/updates/discovery.central/master/jbosstools-directory.xml \
+  -Djboss.discovery.site.url=http://download.jboss.org/jbosstools/mars/snapshots/updates/discovery.central/master/ \
+  -Djboss.discovery.earlyaccess.site.url=http://download.jboss.org/jbosstools/mars/snapshots/updates/discovery.earlyaccess/master/
 ----
 
-3. Install JBoss Community Central feature from http://download.jboss.org/jbosstools/discovery/nightly/earlyaccess/master/
+3. Install JBoss Community Central feature from http://download.jboss.org/jbosstools/mars/snapshots/updates/discovery.central/master/
 
 4. Restart. Review Central > Software/Update tab. For Early Access connectors, scroll to the bottom of the list of connectors and enable the Early Access Features checkbox. Choose connectors/feature groups to install.
 
@@ -169,31 +169,31 @@ jbdevstudio -vmargs \
 [source,bash]
 ----
 ./jbdevstudio -vmargs \
-  -Djboss.discovery.directory.url=http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/earlyaccess/master/devstudio-directory.xml \
-  -Djboss.discovery.site.url=http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/earlyaccess/master/ \
-  -Djboss.discovery.earlyaccess.site.url=http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/earlyaccess/master/
+  -Djboss.discovery.directory.url=https://devstudio.redhat.com/9.0/snapshots/updates/discovery.central/master/devstudio-directory.xml \
+  -Djboss.discovery.site.url=https://devstudio.redhat.com/9.0/snapshots/updates/discovery.central/master/ \
+  -Djboss.discovery.earlyaccess.site.url=https://devstudio.redhat.com/9.0/snapshots/updates/discovery.earlyaccess/master/
 ----
 
 Instead of the latest master build, you can also point Eclipse / JBDS at more stable Central sites:
 
 * The current released milestone URLs for JBT/JBDS are:
 
-** http://download.jboss.org/jbosstools/discovery/development/kepler/jbosstools-directory.xml
-** https://devstudio.redhat.com/updates/9.0-development/devstudio-directory.xml
+** http://download.jboss.org/jbosstools/mars/development/updates/discovery.central/4.3.0.*/jbosstools-directory.xml
+** https://devstudio.redhat.com/9.0/development/updates/discovery.central/9.0.0.*/devstudio-directory.xml
 
-* The stable branch (upcoming milestone) URL are:
+* The staging URLs are:
 
-** http://download.jboss.org/jbosstools/discovery/nightly/core/4.3.mars/
-** http://download.jboss.org/jbosstools/discovery/nightly/earlyaccess/4.3.mars/
+** http://download.jboss.org/jbosstools/mars/staging/updates/discovery.central/
+** http://download.jboss.org/jbosstools/mars/staging/updates/discovery.earlyaccess/
 
-** http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/core/4.3.mars/
-** http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/earlyaccess/4.3.mars/
+** https://devstudio.redhat.com/9.0/staging/updates/discovery.central/
+** https://devstudio.redhat.com/9.0/staging/updates/discovery.earlyaccess/
 
-* The unstable master URLs are:
+* The master branch URLs are:
 
-**  http://download.jboss.org/jbosstools/discovery/nightly/core/master/
-**  http://download.jboss.org/jbosstools/discovery/nightly/earlyaccess/master/
+**  http://download.jboss.org/jbosstools/mars/snapshots/updates/discovery.central/master/
+**  http://download.jboss.org/jbosstools/mars/snapshots/updates/discovery.earlyaccess/master/
 
-**  http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/core/master/
-**  http://www.qa.jboss.com/binaries/RHDS/discovery/nightly/earlyaccess/master/
+**  https://devstudio.redhat.com/9.0/snapshots/updates/discovery.central/master/
+**  https://devstudio.redhat.com/9.0/snapshots/updates/discovery.earlyaccess/master/
 
