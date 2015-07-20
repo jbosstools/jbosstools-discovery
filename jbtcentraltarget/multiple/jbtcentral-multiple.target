@@ -21,6 +21,7 @@
       <unit id="org.eclipse.mylyn.tasks.ide.feature.group" version="3.16.0.v20150525-2001"/>
       <unit id="org.eclipse.mylyn.team_feature.feature.group" version="3.16.0.v20150522-2252"/>
       <unit id="org.eclipse.mylyn.versions.feature.group" version="1.8.0.v20150525-1956"/>
+      <unit id="org.eclipse.mylyn.resources.ui" version="3.16.0.v20150522-2252"/>
     </location>
     
     <!-- m2e extensions (that are not already in core TP) -->
