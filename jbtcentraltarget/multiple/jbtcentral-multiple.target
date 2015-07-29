@@ -73,10 +73,9 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/eclipsecs/5.7.0.201402131929/"/>
-      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.10.0"/>
-      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.10.0"/>
-      <unit id="net.sf.eclipsecs.feature.group" version="5.7.0.201402131929"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/eclipsecs/6.5.0.201504121610/"/>
+      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.13.5"/>
+      <unit id="net.sf.eclipsecs.feature.group" version="6.5.0.201504121610"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
