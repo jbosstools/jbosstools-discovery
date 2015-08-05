@@ -137,6 +137,7 @@
       <unit id="org.json" version="1.0.0.v201011060100"/>
       <unit id="org.dadacoalition.yedit" version="1.0.18.201506232135-RELEASE-SIGNED"/>
       <unit id="org.yaml.snakeyaml" version="1.14.0.v201505061500"/>
+      <unit id="com.google.protobuf" version="2.4.0.v201105131100"/>
 
       <!-- Optional bundles included to avoid console warnings after installation -->
       <unit id="org.springsource.ide.eclipse.dashboard.ui" version="3.7.0.201506251212-RELEASE"/>
