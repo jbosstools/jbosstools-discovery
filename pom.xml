@@ -13,7 +13,7 @@
 
   <properties>
     <tycho.scmUrl>scm:git:https://github.com/jbosstools/jbosstools-discovery.git</tycho.scmUrl>
-    <targetPlatformUtilsVersion>0.22.1-SNAPSHOT</targetPlatformUtilsVersion>
+    <jbossTychoPluginsVersion>0.23.1-SNAPSHOT</jbossTychoPluginsVersion>
     <!-- inherit from parent pom -->
     <JBTCoreTPVersion>${TARGET_PLATFORM_VERSION_MAXIMUM}</JBTCoreTPVersion>
   </properties>

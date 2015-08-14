@@ -19,7 +19,7 @@
       <plugin>
         <groupId>org.jboss.tools.tycho-plugins</groupId>
         <artifactId>target-platform-utils</artifactId>
-        <version>${targetPlatformUtilsVersion}</version>
+        <version>${jbossTychoPluginsVersion}</version>
         <executions>
           <!-- Merge:
                1. jbosstools-multiple.target (JBoss Tools)
@@ -120,7 +120,7 @@
             <!-- Workaround for https://bugs.eclipse.org/bugs/show_bug.cgi?id=389052  -->
             <groupId>org.jboss.tools.tycho-plugins</groupId>
             <artifactId>target-platform-utils</artifactId>
-            <version>${targetPlatformUtilsVersion}</version>
+            <version>${jbossTychoPluginsVersion}</version>
             <executions>
               <execution>
                 <phase>package</phase>
