@@ -156,11 +156,6 @@
       <unit id="org.tmatesoft.svnkit.feature.group" version="1.8.4.r10218_v20140302_1242"/>
     </location>
 
-    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/buildship/1.0.2.v20150831-1514/"/>
-      <unit id="org.eclipse.buildship.feature.group" version="1.0.2.v20150831-1514"/>
-    </location>
-
     <!-- TODO TestNG is also part of JBDS TP and delivery. So if you need to updated TestNG here, you most likely want to also
         update it in JBDS TP as well -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
