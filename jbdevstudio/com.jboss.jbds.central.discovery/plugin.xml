@@ -140,14 +140,35 @@ reasonable, reporting issues to these providers as required.</description>
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
             certificationId="com.jboss.jbds.discovery.certification.supported"
-            description="Provides Tooling for Red Hat's OpenShift. Sign into your OpenShift account, create and deploy applications to the Cloud."
+            description="Provides Tooling for Red Hat's OpenShift v2. Sign into your OpenShift v2 account, create and deploy applications to the Cloud."
             id="org.jboss.tools.openshift.feature"
             kind="task"
             license="EPL (Free)"
-            name="JBoss OpenShift Tools"
+            name="JBoss OpenShift v2 Tools"
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.openshift.express.feature"/>
+            <iu id="org.jboss.tools.openshift.egit.integration.feature"/>
+         <icon
+               image32="images/openshift-32.png">
+         </icon>
+         <overview
+               url="http://tools.jboss.org/">
+         </overview>
+      </connectorDescriptor>
+
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
+            certificationId="com.jboss.jbds.discovery.certification.technologypreview"
+            description="Provides Tooling for Red Hat's OpenShift v3. Sign into your OpenShift v3 account, create and deploy applications to the Cloud."
+            id="org.jboss.tools.openshift.v3"
+            kind="task"
+            license="EPL (Free)"
+            name="JBoss OpenShift v3 Tools"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.site.url}">
+            <iu id="org.jboss.tools.openshift.feature"/>
             <iu id="org.jboss.tools.openshift.egit.integration.feature"/>
          <icon
                image32="images/openshift-32.png">
@@ -901,7 +922,7 @@ reasonable, reporting issues to these providers as required.</description>
           priority="2"
           iconPath="images/wizards/openshift-logo-white-icon.png"
           wizardId="org.jboss.ide.eclipse.as.openshift.express.ui.wizard.createNewApplicationWizard"
-          requiredComponentIds="org.jboss.tools.openshift.feature">
+          requiredComponentIds="org.jboss.tools.openshift.feature,org.jboss.tools.openshift.v3">
       </proxyWizard>
       <proxyWizard
           id="hybrid.mobile.wizard"
