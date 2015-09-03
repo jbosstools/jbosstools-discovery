@@ -2,7 +2,7 @@
 <?eclipse version="3.4"?>
 <plugin>
 	<extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
-      <certification id="com.jboss.jbds.discovery.certification.earlyaccess" name="Early Access" url="https://devstudio.redhat.com/updates/9.0/central/">
+      <certification id="com.jboss.jbds.discovery.certification.earlyaccess" name="Early Access" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
          <description>
 Tested by Red Hat. However, as these are experimental plug-ins, 
 it is possible that their content may change at any time and 

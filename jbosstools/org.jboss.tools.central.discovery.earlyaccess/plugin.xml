@@ -2,7 +2,7 @@
 <?eclipse version="3.4"?>
 <plugin>
 	<extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
-      <certification id="org.jboss.tools.discovery.certification.earlyaccess" name="Early Access" url="http://download.jboss.org/jbosstools/updates/stable/luna/central/">
+      <certification id="org.jboss.tools.discovery.certification.earlyaccess" name="Early Access" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
          <description>
 Tested by Red Hat. However, as these are experimental plug-ins, 
 it is possible that their content may change at any time and 

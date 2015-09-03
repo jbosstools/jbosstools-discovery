@@ -5,17 +5,17 @@
          point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
 
       <!-- JBDS-2379, JBDS-2278, JBDS-2361, JBIDE-10333 -->
-      <certification id="com.jboss.jbds.discovery.certification.supported" name="Supported" url="https://devstudio.redhat.com/updates/9.0-development/central/">
+      <certification id="com.jboss.jbds.discovery.certification.supported" name="Supported" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
          <description>
 Supported by Red Hat.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
-      <certification id="com.jboss.jbds.discovery.certification.tested" name="Tested" url="https://devstudio.redhat.com/updates/9.0-development/central/">
+      <certification id="com.jboss.jbds.discovery.certification.tested" name="Tested" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
          <description>
 Tested by Red Hat.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
-      <certification id="com.jboss.jbds.discovery.certification.external" name="External" url="https://devstudio.redhat.com/updates/9.0-development/central/">
+      <certification id="com.jboss.jbds.discovery.certification.external" name="External" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
          <description>
 Tested by Red Hat. However, as these plug-ins are hosted by third
 party providers, it is possible that content may change at any
@@ -24,14 +24,14 @@ these third party sites and execute appropriate tests as soon as
 reasonable, reporting issues to these providers as required.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
-      <certification id="com.jboss.jbds.discovery.certification.technologypreview" name="Technology Preview" url="https://devstudio.redhat.com/updates/9.0-development/central/">
+      <certification id="com.jboss.jbds.discovery.certification.technologypreview" name="Technology Preview" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
          <description>
 Tested by Red Hat, often with known issues. Technology previews
 may one day evolve to be considered Tested or Supported, but
 this is not guaranteed.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
-      <certification id="com.jboss.jbds.discovery.certification.experimental" name="Experimental" url="https://devstudio.redhat.com/updates/9.0-development/central/">
+      <certification id="com.jboss.jbds.discovery.certification.experimental" name="Experimental" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
          <description>
 Tested by Red Hat. However, as these are experimental plug-ins,
 it is possible that their content may change at any time and
