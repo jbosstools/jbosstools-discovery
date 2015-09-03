@@ -144,16 +144,16 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/subclipse/1.10.4_1.8.4.r10218_v20140302_1242/"/>
-      <unit id="com.collabnet.subversion.merge.feature.feature.group" version="4.0.2"/>
-      <unit id="net.java.dev.jna.feature.group" version="3.5.2"/>
-      <unit id="org.tigris.subversion.clientadapter.feature.feature.group" version="1.10.1"/>
-      <unit id="org.tigris.subversion.clientadapter.javahl.feature.feature.group" version="1.8.8"/>
-      <unit id="org.tigris.subversion.clientadapter.svnkit.feature.feature.group" version="1.8.3"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/subclipse/1.10.9_1.8.10.r10446_v20150526_1454/"/>
+      <unit id="com.collabnet.subversion.merge.feature.feature.group" version="4.1.0"/>
+      <unit id="net.java.dev.jna.feature.group" version="4.1.0.v20140626_1915"/>
+      <unit id="org.tigris.subversion.clientadapter.feature.feature.group" version="1.10.3"/>
+      <unit id="org.tigris.subversion.clientadapter.javahl.feature.feature.group" version="1.8.13"/>
+      <unit id="org.tigris.subversion.clientadapter.svnkit.feature.feature.group" version="1.8.9"/>
       <unit id="org.tigris.subversion.subclipse.graph.feature.feature.group" version="1.1.1"/>
       <unit id="org.tigris.subversion.subclipse.mylyn.feature.group" version="3.0.0"/>
-      <unit id="org.tigris.subversion.subclipse.feature.group" version="1.10.4"/>
-      <unit id="org.tmatesoft.svnkit.feature.group" version="1.8.4.r10218_v20140302_1242"/>
+      <unit id="org.tigris.subversion.subclipse.feature.group" version="1.10.9"/>
+      <unit id="org.tmatesoft.svnkit.feature.group" version="1.8.10.r10446_v20150526_1454"/>
     </location>
 
     <!-- TODO TestNG is also part of JBDS TP and delivery. So if you need to updated TestNG here, you most likely want to also
