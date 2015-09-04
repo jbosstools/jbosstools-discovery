@@ -116,11 +116,11 @@
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            description="Provides Tooling for Red Hat's OpenShift v2. Sign into your OpenShift v2 account, create and deploy applications to the Cloud."
+            description="Provides Tooling for Red Hat's OpenShift 2. Sign into your OpenShift 2 account, create and deploy applications to the Cloud."
             id="org.jboss.tools.openshift.feature"
             kind="task"
             license="EPL (Free)"
-            name="JBoss OpenShift v2 Tools"
+            name="JBoss OpenShift 2 Tools"
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.openshift.express.feature"/>
@@ -136,11 +136,11 @@
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            description="Provides Tooling for Red Hat's OpenShift v3. Sign into your OpenShift v3 account, create and deploy applications to the Cloud."
-            id="org.jboss.tools.openshift.v3"
+            description="Provides Tooling for Red Hat's OpenShift 3. Sign into your OpenShift 3 account, create and deploy applications to the Cloud."
+            id="org.jboss.tools.openshift3"
             kind="task"
             license="EPL (Free)"
-            name="JBoss OpenShift v3 Tools"
+            name="JBoss OpenShift 3 Tools"
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.openshift.feature"/>
@@ -866,7 +866,7 @@
           priority="2"
           iconPath="images/wizards/openshift-logo-white-icon.png"
           wizardId="org.jboss.ide.eclipse.as.openshift.express.ui.wizard.createNewApplicationWizard"
-          requiredComponentIds="org.jboss.tools.openshift.feature,org.jboss.tools.openshift.v3">
+          requiredComponentIds="org.jboss.tools.openshift.feature,org.jboss.tools.openshift3">
       </proxyWizard>
       <proxyWizard
           id="hybrid.mobile.wizard"
