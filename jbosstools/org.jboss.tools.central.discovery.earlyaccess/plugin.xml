@@ -2,15 +2,16 @@
 <?eclipse version="3.4"?>
 <plugin>
 	<extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
-      <certification id="org.jboss.tools.discovery.certification.earlyaccess" name="Early Access" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
-         <description>
-Tested by Red Hat. However, as these are experimental plug-ins, 
-it is possible that their content may change at any time and 
-without prior notice. Red Hat provides early access to this 
-content so that it can be evaluated + monitored, in order to 
-execute appropriate tests + report issues to plug-in providers
-as required. May evolve into Technology Preview content, 
-but this is not guaranteed.</description>
+      <certification id="org.jboss.tools.discovery.certification.experimental.earlyaccess" name="Experimental - Early Access" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
+         <description>Tested by Red Hat. However, as these are experimental plug-ins,
+it is possible that their content may change at any time and
+without prior notice. We will make an attempt to monitor these
+third party sites and execute appropriate tests as soon as
+reasonable, reporting issues to these providers as required.
+ 
+This content is provided via Early Access 
+so that it can be evaluated + monitored, in order to execute 
+appropriate tests + report issues to plug-in providers as required.</description>
          <icon image48="images/jbosstools_48.png"></icon>
       </certification>
 
@@ -20,7 +21,7 @@ but this is not guaranteed.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            certificationId="org.jboss.tools.discovery.certification.earlyaccess"
+            certificationId="org.jboss.tools.discovery.certification.experimental.earlyaccess"
             description="AngularJS Tooling provides content assist, navigation, and Ionic framework support"
             id="angularjs-eclipse-feature"
             kind="task"
