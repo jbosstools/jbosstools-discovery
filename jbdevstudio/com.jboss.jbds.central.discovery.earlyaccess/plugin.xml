@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?eclipse version="3.4"?>
 <plugin>
-	<extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
+   <extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
       <certification id="com.jboss.jbds.discovery.certification.experimental.earlyaccess" name="Experimental - Early Access" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
          <description>Tested by Red Hat. However, as these are experimental plug-ins,
 it is possible that their content may change at any time and
@@ -12,6 +12,20 @@ reasonable, reporting issues to these providers as required.
 This content is provided via Early Access 
 so that it can be evaluated + monitored, in order to execute 
 appropriate tests + report issues to plug-in providers as required.</description>
+         <icon image48="images/redhat_48.png"></icon>
+      </certification>
+      <certification id="com.jboss.jbds.discovery.certification.supported.earlyaccess" name="Supported - Early Access" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
+         <description>Supported by Red Hat.
+ 
+This content is provided via Early Access 
+so that it can be evaluated + monitored, in order to execute 
+appropriate tests + report issues to plug-in providers as required.</description>
+         <icon image48="images/redhat_48.png"></icon>
+      </certification>
+      <certification id="com.jboss.jbds.discovery.certification.supported.notavailable" name="Supported - Not Available" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
+         <description>Supported by Red Hat.
+ 
+This content is unavailable. Enable Early Access to see it.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
 

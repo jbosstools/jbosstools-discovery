@@ -14,6 +14,20 @@ so that it can be evaluated + monitored, in order to execute
 appropriate tests + report issues to plug-in providers as required.</description>
          <icon image48="images/jbosstools_48.png"></icon>
       </certification>
+      <certification id="org.jboss.tools.discovery.certification.supported.earlyaccess" name="Supported - Early Access" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
+         <description>Supported by Red Hat.
+ 
+This content is provided via Early Access 
+so that it can be evaluated + monitored, in order to execute 
+appropriate tests + report issues to plug-in providers as required.</description>
+         <icon image48="images/jbosstools_48.png"></icon>
+      </certification>
+      <certification id="org.jboss.tools.discovery.certification.supported.notavailable" name="Supported - Not Available" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
+         <description>Supported by Red Hat.
+ 
+This content is unavailable. Enable Early Access to see it.</description>
+         <icon image48="images/jbosstools_48.png"></icon>
+      </certification>
 
       <!-- a. Web Development -->
 

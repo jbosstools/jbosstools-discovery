@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?eclipse version="3.4"?>
 <plugin>
-	<extension
-         point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
+	<extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
 
       <!-- JBDS-2379, JBDS-2278, JBDS-2361, JBIDE-10333 -->
       <certification id="com.jboss.jbds.discovery.certification.supported" name="Supported" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
