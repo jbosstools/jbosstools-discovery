@@ -48,6 +48,13 @@ reasonable, reporting issues to these providers as required.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
 
+       <connectorCategory
+          description="JBoss Developer Studio Integration Stack Tools for use with individual JBoss projects (or products)."
+          id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
+          name="JBoss Developer Studio Integration Stack"
+          relevance="90">
+         <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
+       </connectorCategory>
        <!-- JBoss Fuse Development -->
        <connectorDescriptor
           categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"

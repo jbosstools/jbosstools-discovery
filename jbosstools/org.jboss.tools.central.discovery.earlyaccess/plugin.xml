@@ -23,6 +23,13 @@ appropriate tests + report issues to plug-in providers as required.</description
          <icon image48="images/jbosstools_48.png"></icon>
       </certification>
 
+       <connectorCategory
+          description="Early Access JBoss Integration Stack Tools for use with individual JBoss projects (or products)"
+          id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
+          name="JBoss Tools Integration Stack Early Access"
+          relevance="90">
+         <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
+       </connectorCategory>
        <!-- JBoss Fuse Development -->
        <connectorDescriptor
           categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"

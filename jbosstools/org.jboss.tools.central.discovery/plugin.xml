@@ -10,6 +10,13 @@ This content is unavailable. Enable Early Access to see it.</description>
          <icon image48="images/jbosstools_48.png"></icon>
       </certification>
 
+       <connectorCategory
+          description="JBoss Integration Stack Tools for use with individual JBoss projects (or products)"
+          id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
+          name="JBoss Tools Integration Stack"
+          relevance="90">
+         <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
+       </connectorCategory>
        <!-- JBoss Fuse Development -->
        <connectorDescriptor
           categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
