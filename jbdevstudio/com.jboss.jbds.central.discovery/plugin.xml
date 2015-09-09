@@ -9,6 +9,12 @@
 Supported by Red Hat.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
+      <certification id="com.jboss.jbds.discovery.certification.supported.notavailable" name="Supported - Not Available" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
+         <description>Supported by Red Hat.
+
+This content is unavailable. Enable Early Access to see it.</description>
+         <icon image48="images/redhat_48.png"></icon>
+      </certification>
       <certification id="com.jboss.jbds.discovery.certification.tested" name="Tested" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
          <description>
 Tested by Red Hat.</description>
@@ -41,6 +47,26 @@ third party sites and execute appropriate tests as soon as
 reasonable, reporting issues to these providers as required.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
+
+       <!-- JBoss Fuse Development -->
+       <connectorDescriptor
+          categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+          groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
+          certificationId="com.jboss.jbds.discovery.certification.supported.notavailable"
+          kind="task"
+          license="Free, EPL"
+          provider="JBoss by Red Hat"
+          siteUrl="${jboss.discovery.site.integration-stack.url}"
+          name="JBoss Fuse Development"
+          description="Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse."
+          id="jboss.integration-stack.bundle.fuse">
+         <icon
+            image32="images/jbds_icon32.png">
+         </icon>
+         <overview
+            url="http://tools.jboss.org/features/apachecamel.html">
+         </overview>
+       </connectorDescriptor>
 
       <!-- use connectorCategory relevance value to sort from largest (80) to smallest (20) -->
 

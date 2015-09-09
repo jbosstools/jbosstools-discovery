@@ -22,12 +22,31 @@ so that it can be evaluated + monitored, in order to execute
 appropriate tests + report issues to plug-in providers as required.</description>
          <icon image48="images/jbosstools_48.png"></icon>
       </certification>
-      <certification id="org.jboss.tools.discovery.certification.supported.notavailable" name="Supported - Not Available" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
-         <description>Supported by Red Hat.
- 
-This content is unavailable. Enable Early Access to see it.</description>
-         <icon image48="images/jbosstools_48.png"></icon>
-      </certification>
+
+       <!-- JBoss Fuse Development -->
+       <connectorDescriptor
+          categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
+          groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
+          certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
+          kind="task"
+          license="Free, EPL"
+          provider="JBoss by Red Hat"
+          siteUrl="${jboss.discovery.site.integration-stack.url}"
+          name="JBoss Fuse Development"
+          description="Tools related to integrating and developing software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse."
+          id="jboss.integration-stack.bundle.fuse">
+         <iu id="org.fusesource.ide.camel.editor.feature"/>
+         <iu id="org.fusesource.ide.core.feature"/>
+         <iu id="org.fusesource.ide.jmx.feature"/>
+         <iu id="org.fusesource.ide.server.extensions.feature"/>
+         <iu id="org.jboss.tools.fuse.transformation.feature"/>
+         <icon
+        image32="images/jbosstools_icon32.png">
+         </icon>
+         <overview
+       url="http://devstudio.redhat.com/">
+         </overview>
+       </connectorDescriptor>
 
       <!-- a. Web Development -->
 
@@ -51,15 +70,12 @@ This content is unavailable. Enable Early Access to see it.</description>
             <iu id="tern.eclipse.ide.server.nodejs.embed"/>
             <iu id="org.jboss.tools.jst.jsdt.feature" />
             <iu id="org.jboss.tools.jst.angularjs.feature" />
-         <icon
-               image32="images/angularjs_32.png">
-         </icon>
-         <overview
-               url="https://marketplace.eclipse.org/content/angularjs-eclipse">
-         </overview>
+         <icon image32="images/angularjs_32.png"></icon>
+         <overview url="https://marketplace.eclipse.org/content/angularjs-eclipse"></overview>
       </connectorDescriptor>
 
       <!-- JBIDE-19038: Arquillian is not EA in JBT, only in JBDS, so move connector to ../org.jboss.tools.central.discovery/plugin.xml and remove certificationId=earlyaccess
       -->
+
     </extension>
 </plugin>

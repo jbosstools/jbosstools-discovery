@@ -22,12 +22,6 @@ so that it can be evaluated + monitored, in order to execute
 appropriate tests + report issues to plug-in providers as required.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
-      <certification id="com.jboss.jbds.discovery.certification.supported.notavailable" name="Supported - Not Available" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
-         <description>Supported by Red Hat.
- 
-This content is unavailable. Enable Early Access to see it.</description>
-         <icon image48="images/redhat_48.png"></icon>
-      </certification>
 
       <!-- a. Web Development -->
 
@@ -51,12 +45,8 @@ This content is unavailable. Enable Early Access to see it.</description>
             <iu id="tern.eclipse.ide.server.nodejs.embed"/>
             <iu id="org.jboss.tools.jst.jsdt.feature" />
             <iu id="org.jboss.tools.jst.angularjs.feature" />
-         <icon
-               image32="images/angularjs_32.png">
-         </icon>
-         <overview
-               url="https://marketplace.eclipse.org/content/angularjs-eclipse">
-         </overview>
+         <icon image32="images/angularjs_32.png"></icon>
+         <overview url="https://marketplace.eclipse.org/content/angularjs-eclipse"></overview>
       </connectorDescriptor>
 
       <connectorDescriptor
@@ -74,6 +64,31 @@ This content is unavailable. Enable Early Access to see it.</description>
          <icon image32="images/arquillian_32.png"/>
          <overview url="http://www.jboss.org/tools"/>
       </connectorDescriptor>
+
+       <!-- JBoss Fuse Development -->
+       <connectorDescriptor
+          categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+          groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
+          certificationId="com.jboss.jbds.discovery.certification.supported.earlyaccess"
+          kind="task"
+          license="Free, EPL"
+          provider="JBoss by Red Hat"
+          siteUrl="${jboss.discovery.site.integration-stack.url}"
+          name="JBoss Fuse Development"
+          description="Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse."
+          id="jboss.integration-stack.bundle.fuse">
+         <iu id="org.fusesource.ide.camel.editor.feature"/>
+         <iu id="org.fusesource.ide.core.feature"/>
+         <iu id="org.fusesource.ide.jmx.feature"/>
+         <iu id="org.fusesource.ide.server.extensions.feature"/>
+         <iu id="org.jboss.tools.fuse.transformation.feature"/>
+         <icon
+            image32="images/jbds_icon32.png">
+         </icon>
+         <overview
+            url="http://tools.jboss.org/features/apachecamel.html">
+         </overview>
+       </connectorDescriptor>
 
     </extension>	
 </plugin>
