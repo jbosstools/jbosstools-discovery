@@ -9,10 +9,8 @@
 Supported by Red Hat.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
-      <certification id="com.jboss.jbds.discovery.certification.supported.notavailable" name="Supported - Not Available" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
-         <description>Supported by Red Hat.
-
-This content is unavailable. Enable Early Access to see it.</description>
+      <certification id="com.jboss.jbds.discovery.certification.notavailable" name="Not Available" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
+         <description>This feature set is currently unavailable for this version of Red Hat JBoss Developer Studio. Please see the connector's description for details on when/where it will be made available.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
       <certification id="com.jboss.jbds.discovery.certification.tested" name="Tested" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
@@ -59,13 +57,13 @@ reasonable, reporting issues to these providers as required.</description>
        <connectorDescriptor
           categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
           groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
-          certificationId="com.jboss.jbds.discovery.certification.supported.notavailable"
+          certificationId="com.jboss.jbds.discovery.certification.notavailable"
           kind="task"
           license="Free, EPL"
           provider="JBoss by Red Hat"
           siteUrl="${jboss.discovery.site.integration-stack.url}"
           name="JBoss Fuse Development"
-          description="Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse."
+          description="Available in Red Hat JBoss Developer Studio 8.x. Coming soon to 9.0 - stay tuned. Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse."
           id="jboss.integration-stack.bundle.fuse">
          <icon
             image32="images/jbds_icon32.png">
