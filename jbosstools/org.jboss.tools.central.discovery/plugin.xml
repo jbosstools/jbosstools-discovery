@@ -10,14 +10,14 @@
 
        <connectorCategory
           description="JBoss Integration Stack Tools for use with individual JBoss projects (or products)"
-          id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
+          id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
           name="JBoss Tools Integration Stack"
           relevance="90">
          <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
        </connectorCategory>
        <!-- JBoss Fuse Development -->
        <connectorDescriptor
-          categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
+          categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
           groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
           certificationId="org.jboss.tools.discovery.certification.notavailable"
           kind="task"

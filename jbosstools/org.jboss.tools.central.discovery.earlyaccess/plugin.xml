@@ -28,12 +28,12 @@ appropriate tests + report issues to plug-in providers as required.</description
           id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
           name="JBoss Tools Integration Stack Early Access"
           relevance="90">
-         <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
+         <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse" />
        </connectorCategory>
        <!-- JBoss Fuse Development -->
        <connectorDescriptor
           categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
-          groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
+          groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse"
           certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
           kind="task"
           license="Free, EPL"
