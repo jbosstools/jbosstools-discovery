@@ -10,19 +10,19 @@
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/mars/201509081000-SR1.RC3/"/>
       <unit id="org.eclipse.egit.mylyn.feature.group" version="4.0.1.201506240215-r"/>
-      <unit id="org.eclipse.mylyn.builds.feature.group" version="1.9.0.v20150721-2104"/>
+      <unit id="org.eclipse.mylyn.builds.feature.group" version="1.9.0.v20150908-1655"/>
       <unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.9.0.v20150625-2042"/>
       <unit id="org.eclipse.mylyn.context_feature.feature.group" version="3.17.0.v20150625-2044"/>
       <unit id="org.eclipse.mylyn.github.feature.feature.group" version="4.0.1.201506240215-r"/>
-      <unit id="org.eclipse.mylyn.git.feature.group" version="1.9.0.v20150625-2043"/>
-      <unit id="org.eclipse.mylyn.hudson.feature.group" version="1.9.0.v20150625-2044"/>
+      <unit id="org.eclipse.mylyn.git.feature.group" version="1.9.0.v20150908-1643"/>
+      <unit id="org.eclipse.mylyn.hudson.feature.group" version="1.9.0.v20150908-1655"/>
       <unit id="org.eclipse.mylyn.ide_feature.feature.group" version="3.17.0.v20150625-2044"/>
       <unit id="org.eclipse.mylyn.java_feature.feature.group" version="3.17.0.v20150828-2014"/>
       <unit id="org.eclipse.mylyn.pde_feature.feature.group" version="3.17.0.v20150625-2044"/>
       <unit id="org.eclipse.mylyn.resources.ui" version="3.17.0.v20150625-2044"/>
       <unit id="org.eclipse.mylyn.tasks.ide.feature.group" version="3.17.0.v20150828-1845"/>
       <unit id="org.eclipse.mylyn.team_feature.feature.group" version="3.17.0.v20150625-2044"/>
-      <unit id="org.eclipse.mylyn.versions.feature.group" version="1.9.0.v20150625-2043"/>
+      <unit id="org.eclipse.mylyn.versions.feature.group" version="1.9.0.v20150908-1643"/>
     </location>
     
     <!-- m2e extensions (that are not already in core TP) -->
@@ -86,10 +86,10 @@
     <!-- required for SpringIDE 3.7 -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/mars/201509081000-SR1.RC3/"/>
-      <unit id="org.eclipse.osgi" version="3.10.200.v20150820-1412"/>
+      <unit id="org.eclipse.osgi" version="3.10.101.v20150820-1432"/>
       <unit id="org.apache.batik.util" version="1.6.0.v201011041432"/>
       <unit id="org.apache.batik.util.gui" version="1.6.0.v201011041432"/>
-      <unit id="org.eclipse.equinox.http.registry" version="1.1.400.v20150715-1528"/>
+      <unit id="org.eclipse.equinox.http.registry" version="1.1.300.v20130402-1529"/>
       <unit id="org.eclipse.zest.feature.group" version="1.6.1.201508170204"/>
       <unit id="org.eclipse.mylyn.java.ui" version="3.17.0.v20150828-2014"/>
     </location>
