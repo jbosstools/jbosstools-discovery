@@ -9,7 +9,7 @@
 Supported by Red Hat.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
-      <certification id="com.jboss.jbds.discovery.certification.notavailable" name="Not Available" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
+      <certification id="com.jboss.jbds.discovery.certification.notavailable" name="Not Yet Available" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
          <description>This feature set is currently unavailable for this version of Red Hat JBoss Developer Studio. Please see the connector's description for details on when/where it will be made available.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
