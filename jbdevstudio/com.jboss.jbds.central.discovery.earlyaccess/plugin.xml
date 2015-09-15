@@ -25,15 +25,15 @@ appropriate tests + report issues to plug-in providers as required.</description
 
        <connectorCategory
           description="Early Access JBoss Developer Studio Integration Stack Tools for use with individual JBoss projects (or products)."
-          id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
+          id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
           name="JBoss Developer Studio Integration Stack Early Access"
           relevance="90">
-         <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
+         <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse" />
        </connectorCategory>
        <!-- JBoss Fuse Development -->
        <connectorDescriptor
-          categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
-          groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
+          categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
+          groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse"
           certificationId="com.jboss.jbds.discovery.certification.supported.earlyaccess"
           kind="task"
           license="Free, EPL"

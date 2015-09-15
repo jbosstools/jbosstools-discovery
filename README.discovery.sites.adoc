@@ -52,12 +52,13 @@ mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery.earlyaccess/po
 
 ## Test a local site
 
-0. Run a local web server, so you can access the directory.xml via an http:// URL. You have many options for this - recommended is https://raw.github.com/elonen/nanohttpd-original/master/NanoHTTPD.java[NanoHTTPD].
+0. Run a local web server, so you can access the directory.xml via an http:// URL. You have many options for this - recommended is https://raw.githubusercontent.com/elonen/nanohttpd/nanohttpd-for-java1.1/NanoHTTPD.java[NanoHTTPD].
 
 [source,bash]
 ----
 su
-cd /tmp; wget -nc c https://raw.github.com/elonen/nanohttpd-original/master/NanoHTTPD.java
+# this is the single-file version of nanohttpd that works w/ JDK 1.1 and higher
+cd /tmp; wget https://raw.githubusercontent.com/elonen/nanohttpd/nanohttpd-for-java1.1/NanoHTTPD.java
 # assuming sources checked out into /home/user/jbosstools-discovery/
 javac NanoHTTPD.java; java NanoHTTPD -d /home/user/jbosstools-discovery/ -p 8080
 ----
