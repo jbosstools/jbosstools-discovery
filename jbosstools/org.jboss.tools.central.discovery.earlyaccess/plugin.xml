@@ -23,38 +23,6 @@ appropriate tests + report issues to plug-in providers as required.</description
          <icon image48="images/jbosstools_48.png"></icon>
       </certification>
 
-       <connectorCategory
-          description="Early Access JBoss Integration Stack Tools for use with individual JBoss projects (or products)"
-          id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
-          name="JBoss Tools Integration Stack Early Access"
-          relevance="90">
-         <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse" />
-       </connectorCategory>
-       <!-- JBoss Fuse Development -->
-       <connectorDescriptor
-          categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
-          groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse"
-          certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
-          kind="task"
-          license="Free, EPL"
-          provider="JBoss by Red Hat"
-          siteUrl="${jboss.discovery.site.integration-stack.url}"
-          name="JBoss Fuse Development"
-          description="Tools related to integrating and developing software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse."
-          id="jboss.integration-stack.bundle.fuse">
-         <iu id="org.fusesource.ide.camel.editor.feature"/>
-         <iu id="org.fusesource.ide.core.feature"/>
-         <iu id="org.fusesource.ide.jmx.feature"/>
-         <iu id="org.fusesource.ide.server.extensions.feature"/>
-         <iu id="org.jboss.tools.fuse.transformation.feature"/>
-         <icon
-        image32="images/jbosstools_icon32.png">
-         </icon>
-         <overview
-       url="http://devstudio.redhat.com/">
-         </overview>
-       </connectorDescriptor>
-
       <!-- a. Web Development -->
 
       <!-- JBIDE-17278: new AngularJS connector -->
