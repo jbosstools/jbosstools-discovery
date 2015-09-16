@@ -8,33 +8,6 @@
          <icon image48="images/jbosstools_48.png"></icon>
       </certification>
 
-       <connectorCategory
-          description="JBoss Integration Stack Tools for use with individual JBoss projects (or products)"
-          id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
-          name="JBoss Tools Integration Stack"
-          relevance="90">
-         <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
-       </connectorCategory>
-       <!-- JBoss Fuse Development -->
-       <connectorDescriptor
-          categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
-          groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
-          certificationId="org.jboss.tools.discovery.certification.notavailable"
-          kind="task"
-          license="Free, EPL"
-          provider="JBoss by Red Hat"
-          siteUrl="${jboss.discovery.site.integration-stack.url}"
-          name="JBoss Fuse Development"
-          description="Available in JBoss Tools 4.2.x. Coming soon to 4.3 - stay tuned. Tools related to integrating and developing software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse."
-          id="jboss.integration-stack.bundle.fuse">
-         <icon
-        image32="images/jbosstools_icon32.png">
-         </icon>
-         <overview
-       url="http://devstudio.redhat.com/">
-         </overview>
-       </connectorDescriptor>
-
       <!-- use connectorCategory relevance value to sort from largest (80) to smallest (20) -->
 
       <!-- a. Mobile Development -->
