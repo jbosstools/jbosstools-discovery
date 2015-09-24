@@ -2,7 +2,7 @@
 <?eclipse version="3.4"?>
 <plugin>
 	<extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
-      <certification id="org.jboss.tools.discovery.certification.experimental.earlyaccess" name="Experimental - Early Access" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
+      <certification id="org.jboss.tools.discovery.certification.experimental.earlyaccess" name="Experimental - Early Access" url="https://devstudio.redhat.com/10.0/stable/updates/#central">
          <description>Tested by Red Hat. However, as these are experimental plug-ins,
 it is possible that their content may change at any time and
 without prior notice. We will make an attempt to monitor these
@@ -14,7 +14,7 @@ so that it can be evaluated + monitored, in order to execute
 appropriate tests + report issues to plug-in providers as required.</description>
          <icon image48="images/jbosstools_48.png"></icon>
       </certification>
-      <certification id="org.jboss.tools.discovery.certification.supported.earlyaccess" name="Supported - Early Access" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
+      <certification id="org.jboss.tools.discovery.certification.supported.earlyaccess" name="Supported - Early Access" url="https://devstudio.redhat.com/10.0/stable/updates/#central">
          <description>Supported by Red Hat.
  
 This content is provided via Early Access 
