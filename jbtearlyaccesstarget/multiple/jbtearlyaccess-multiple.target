@@ -7,8 +7,8 @@
   <locations>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/angularjs/0.10.0.201506182210/"/>
-      <unit id="angularjs-eclipse-feature.feature.group" version="0.10.0.201506182210"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/angularjs/1.0.0.201508312121/"/>
+      <unit id="angularjs-eclipse-feature.feature.group" version="1.0.0.201508312121"/>
     </location>
 
   </locations>
