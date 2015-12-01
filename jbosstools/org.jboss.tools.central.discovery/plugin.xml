@@ -256,7 +256,7 @@
             name="Spring IDE"
             provider="Spring IDE Developers"
             siteUrl="${jboss.discovery.site.url}">
-            <iu id="org.springframework.ide.eclipse.ajdt.feature"/>
+            <!-- JBIDE-21166 not currently compatible with Neon M3 <iu id="org.springframework.ide.eclipse.ajdt.feature"/> -->
             <iu id="org.springframework.ide.eclipse.aop.feature"/>
             <iu id="org.springframework.ide.eclipse.autowire.feature"/>
             <iu id="org.springframework.ide.eclipse.batch.feature"/>
