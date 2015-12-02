@@ -71,7 +71,7 @@ for d in jbtcentral jbtearlyaccess; do
   pushd ${d}target
     BASEDIR=`pwd`
     # Merge changes in new target file to actual target file
-    pushd multiple && mvn -U org.jboss.tools.tycho-plugins:target-platform-utils:0.23.1-SNAPSHOT:fix-versions -DtargetFile=${d}-multiple.target && rm -f ${d}-multiple.target ${d}-multiple.target_update_hints.txt && mv -f ${d}-multiple.target_fixedVersion.target ${d}-multiple.target && popd
+    pushd multiple && mvn -U org.jboss.tools.tycho-plugins:target-platform-utils:0.23.3-SNAPSHOT:fix-versions -DtargetFile=${d}-multiple.target && rm -f ${d}-multiple.target ${d}-multiple.target_update_hints.txt && mv -f ${d}-multiple.target_fixedVersion.target ${d}-multiple.target && popd
     # Resolve the new 'multiple' target platform and verify it is self-contained by building it
     mvn -U install -DtargetRepositoryUrl=file://${BASEDIR}/multiple/target/${d}-multiple.target.repo/
   popd
