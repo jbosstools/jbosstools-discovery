@@ -14,8 +14,9 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<tychoVersion>0.23.1</tychoVersion>
-		<tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
+		<!-- inherit from parent pom -->
+		<!-- <tychoVersion>0.23.1</tychoVersion>
+		<tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion> -->
 	</properties>
 
 	<build>
