@@ -13,11 +13,6 @@
 	<name>JBoss Central Early Access Target Platforms</name>
 	<packaging>pom</packaging>
 
-	<properties>
-		<tychoVersion>0.23.1</tychoVersion>
-		<tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
-	</properties>
-
 	<build>
 		<plugins>
 			<plugin>
