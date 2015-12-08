@@ -32,6 +32,8 @@
       <unit id="org.eclipse.equinox.http.registry" version="1.1.400.v20150715-1528"/>
       <unit id="org.eclipse.zest.feature.group" version="1.7.0.201511090303"/>
       <unit id="org.eclipse.mylyn.java.ui" version="3.18.0.v20151013-1847"/>
+      <unit id="org.eclipse.equinox.weaving.sdk.feature.group" version="1.1.100.v20150730-1648"/>
+      <unit id="org.eclipse.equinox.weaving.hook" version="1.1.200.v20150730-1648"/>
     </location>
     
     <!-- m2e extensions (that are not already in core TP) -->
@@ -93,53 +95,53 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/ajdt/2.2.4.e44x-20140516-1000/"/> 
-      <unit id="org.aspectj.feature.group" version="1.8.1.20140516080300"/>
-      <unit id="org.eclipse.ajdt.feature.group" version="2.2.4.e44x-20140516-1000"/>
-      <unit id="org.eclipse.contribution.weaving.feature.group" version="2.2.4.e44x-20140516-1000"/>
-      <unit id="org.eclipse.contribution.xref.feature.group" version="2.2.4.e44x-20140516-1000"/>
-    </location>
-    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.7.0.201506251244-RELEASE/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.7.3.201512072012-CI-B680/"/>
       <!-- Features to include in Central connector -->
-      <!-- JBIDE-21166 not currently compatible with Neon M3 <unit id="org.springframework.ide.eclipse.ajdt.feature.feature.group" version="3.7.0.201506251244-RELEASE"/> -->
-      <unit id="org.springframework.ide.eclipse.aop.feature.feature.group" version="3.7.0.201506251244-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.autowire.feature.feature.group" version="3.7.0.201506251244-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.batch.feature.feature.group" version="3.7.0.201506251244-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.data.feature.feature.group" version="3.7.0.201506251244-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.feature.feature.group" version="3.7.0.201506251244-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.integration.feature.feature.group" version="3.7.0.201506251244-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.maven.feature.feature.group" version="3.7.0.201506251244-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.mylyn.feature.feature.group" version="3.7.0.201506251244-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.osgi.feature.feature.group" version="3.7.0.201506251244-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.security.feature.feature.group" version="3.7.0.201506251244-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.webflow.feature.feature.group" version="3.7.0.201506251244-RELEASE"/>
-      <unit id="org.springsource.ide.eclipse.commons.feature.group" version="3.7.0.201506251212-RELEASE"/>
+      <!-- JBIDE-21166 CI build now compatible w/ Neon M3 -->
+      <!-- TODO: update to 3.7.3 release version -->
+      <unit id="org.springframework.ide.eclipse.ajdt.feature.feature.group" version="3.7.3.201512072012-CI-B680"/>
+      <!-- AJDT requirements -->
+      <unit id="org.aspectj.feature.group" version="1.8.7.20150910082200"/>
+      <unit id="org.eclipse.ajdt.feature.group" version="2.2.4.e45x-20151204-1000"/>
+      <unit id="org.eclipse.contribution.weaving.feature.group" version="2.2.4.e45x-20151204-1000"/>
+      <unit id="org.eclipse.contribution.xref.feature.group" version="2.2.4.e45x-20151204-1000"/>
+
+      <unit id="org.springframework.ide.eclipse.aop.feature.feature.group" version="3.7.3.201512072012-CI-B680"/>
+      <unit id="org.springframework.ide.eclipse.autowire.feature.feature.group" version="3.7.3.201512072012-CI-B680"/>
+      <unit id="org.springframework.ide.eclipse.batch.feature.feature.group" version="3.7.3.201512072012-CI-B680"/>
+      <unit id="org.springframework.ide.eclipse.data.feature.feature.group" version="3.7.3.201512072012-CI-B680"/>
+      <unit id="org.springframework.ide.eclipse.feature.feature.group" version="3.7.3.201512072012-CI-B680"/>
+      <unit id="org.springframework.ide.eclipse.integration.feature.feature.group" version="3.7.3.201512072012-CI-B680"/>
+      <unit id="org.springframework.ide.eclipse.maven.feature.feature.group" version="3.7.3.201512072012-CI-B680"/>
+      <unit id="org.springframework.ide.eclipse.mylyn.feature.feature.group" version="3.7.3.201512072012-CI-B680"/>
+      <unit id="org.springframework.ide.eclipse.osgi.feature.feature.group" version="3.7.3.201512072012-CI-B680"/>
+      <unit id="org.springframework.ide.eclipse.security.feature.feature.group" version="3.7.3.201512072012-CI-B680"/>
+      <unit id="org.springframework.ide.eclipse.webflow.feature.feature.group" version="3.7.3.201512072012-CI-B680"/>
+      <unit id="org.springsource.ide.eclipse.commons.feature.group" version="3.7.3.201512071915-CI-B137"/>
 
       <!-- Plugins to include to avoid console warnings after installation -->
-      <unit id="org.springframework.ide.eclipse.config.ui" version="3.7.0.201506251244-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.maven" version="3.7.0.201506251244-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.wizard" version="3.7.0.201506251244-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.config.ui" version="3.7.3.201512072012-CI-B680"/>
+      <unit id="org.springframework.ide.eclipse.maven" version="3.7.3.201512072012-CI-B680"/>
+      <unit id="org.springframework.ide.eclipse.wizard" version="3.7.3.201512072012-CI-B680"/>
 
       <!-- Required 3rd party plugins (on SpringIDE or Orbit site) not properly referenced by features -->
       <unit id="javax.jms" version="1.1.0.v201205091237"/>
+      <unit id="javax.validation" version="1.0.0.GA_v201205091237"/>
       <unit id="org.aopalliance" version="1.0.0.v201105210816"/>
       <unit id="org.apache.commons.codec" version="1.6.0.v201305230611"/>
       <unit id="org.apache.httpcomponents.httpclient" version="4.3.6.v201411290715"/>
       <unit id="org.apache.httpcomponents.httpcore" version="4.3.3.v201411290715"/>
-      <unit id="org.aspectj.runtime" version="1.8.6.20150608154200"/>
-      <unit id="org.aspectj.weaver" version="1.8.6.20150608154200"/>
+      <unit id="org.aspectj.runtime" version="1.8.7.20150910082200"/>
+      <unit id="org.aspectj.weaver" version="1.8.7.20150910082200"/>
       <unit id="org.codehaus.jackson.core" version="1.6.0.v20101005-0925"/>
       <unit id="org.codehaus.jackson.mapper" version="1.6.0.v20101005-0925"/>
-      <!-- <unit id="org.eclipse.contribution.visualiser" version="2.2.4.e43x-20140320-1000"/> -->
-      <unit id="org.eclipse.equinox.weaving.hook" version="1.1.100.weaving-hook-20140821"/>
       <unit id="org.json" version="1.0.0.v201011060100"/>
       <unit id="org.dadacoalition.yedit" version="1.0.18.201506232135-RELEASE-SIGNED"/>
       <unit id="org.yaml.snakeyaml" version="1.14.0.v201505061500"/>
       <unit id="com.google.protobuf" version="2.4.0.v201105131100"/>
 
       <!-- Optional bundles included to avoid console warnings after installation -->
-      <unit id="org.springsource.ide.eclipse.dashboard.ui" version="3.7.0.201506251212-RELEASE"/>
+      <unit id="org.springsource.ide.eclipse.dashboard.ui" version="3.7.3.201512071915-CI-B137"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
