@@ -147,16 +147,26 @@ $java.home = ${java.home}</echo>
 &lt;/repository&gt;</echo>
 	</target>
 
-	<!-- TODO: if generating for earlyaccess site, copy core plugin jar into EA site too -->
-
 	<target name="generate.directory.xml">
 		<echo level="verbose">project.build.directory = ${project.build.directory}</echo>
+		<!-- JBIDE-19702 if generating for earlyaccess site, copy both 
+			org.jboss.tools.central.discovery.earlyaccess-4.3.1-SNAPSHOT.jar and 
+			org.jboss.tools.central.discovery-4.3.1-SNAPSHOT.jar;
+		else just copy 
+			org.jboss.tools.central.discovery-4.3.1-SNAPSHOT.jar. 
+		DO NOT copy the EA jar into the Central site. 
+		Note the trailing dash in the pattern! -->
+		<condition property="discovery-jar-pattern" value="*central.discovery*/target/*.central.discovery*.jar" else="*central.discovery*/target/*.central.discovery-*.jar">
+			<matches pattern=".*earlyaccess.*" string="${project.build.directory}"/>
+		</condition>
+		<echo level="verbose">discovery-jar-pattern = ${discovery-jar-pattern}</echo>
+
 		<!-- get filename matching org.jboss.tools.central.discovery_1.2.0.Alpha1-v20111013-0511-B1234.jar, then generate replacement directory.xml file -->
 		<var name="central.discovery.jars.renamed" value=""/>
 		<for param="central.discovery.jar.file">
 			<path>
 				<fileset dir="${project.build.directory}/../../">
-					<include name="*central.discovery*/target/*.central.discovery*.jar" />
+					<include name="${discovery-jar-pattern}" />
 					<exclude name="*central.discovery*/target/*-sources.jar" />
 				</fileset>
 			</path>
