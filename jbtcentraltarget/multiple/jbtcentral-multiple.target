@@ -25,7 +25,7 @@
       <unit id="org.eclipse.mylyn.team_feature.feature.group" version="3.18.0.v20151120-2228"/>
       <unit id="org.eclipse.mylyn.versions.feature.group" version="1.10.0.v20151125-0025"/>
 
-      <!-- required for SpringIDE 3.7 -->
+      <!-- required for SpringIDE 3.7 (see below) -->
       <unit id="org.eclipse.osgi" version="3.10.200.v20151207-2221"/>
       <unit id="org.apache.batik.util" version="1.6.0.v201011041432"/>
       <unit id="org.apache.batik.util.gui" version="1.6.0.v201011041432"/>
@@ -94,6 +94,7 @@
       <unit id="net.sourceforge.pmd.eclipse.feature.group" version="4.0.7.v20150522-1709"/>
     </location>
 
+    <!-- required for SpringIDE 3.7 (see also above) -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.7.3.201512072012-CI-B680/"/>
       <!-- Features to include in Central connector -->
@@ -136,8 +137,9 @@
       <unit id="org.codehaus.jackson.core" version="1.6.0.v20101005-0925"/>
       <unit id="org.codehaus.jackson.mapper" version="1.6.0.v20101005-0925"/>
       <unit id="org.json" version="1.0.0.v201011060100"/>
+      <!-- JBIDE-21377 YAML Editor moved to JBT/JBDS TP 
       <unit id="org.dadacoalition.yedit" version="1.0.18.201506232135-RELEASE-SIGNED"/>
-      <unit id="org.yaml.snakeyaml" version="1.14.0.v201505061500"/>
+      <unit id="org.yaml.snakeyaml" version="1.14.0.v201505061500"/> -->
       <unit id="com.google.protobuf" version="2.4.0.v201105131100"/>
 
       <!-- Optional bundles included to avoid console warnings after installation -->
