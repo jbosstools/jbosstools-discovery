@@ -15,7 +15,7 @@ In this example, build against 4.3.mars branch update site.
 ----
 mvn clean install -f jbosstools/org.jboss.tools.central.discovery/pom.xml \
   -DUPDATE_SITE=http://download.jboss.org/jbosstools/mars/snapshots/updates/core/4.3.mars/ \
-  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/mars/snapshots/updates/central/4.3.mars/,http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/4.51.0.*/REPO/
+  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/mars/snapshots/updates/central/4.3.mars/,http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/4.52.0.*/REPO/
 ----
 
 or
@@ -24,7 +24,7 @@ or
 ----
 mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery/pom.xml \
   -DUPDATE_SITE=https://devstudio.redhat.com/9.0/snapshots/updates/core/4.3.mars/ \
-  -DEXTRAS_SITE=https://devstudio.redhat.com/9.0/snapshots/updates/central/4.3.mars/,https://devstudio.redhat.com/targetplatforms/jbtcentraltarget/4.51.0.*/REPO/
+  -DEXTRAS_SITE=https://devstudio.redhat.com/9.0/snapshots/updates/central/4.3.mars/,https://devstudio.redhat.com/targetplatforms/jbtcentraltarget/4.52.0.*/REPO/
 ----
 
 Repeat for Early Access sites (using 2 EXTRAS_SITE URLs so the resulting site can resolve both Core and Early Access content):
@@ -38,7 +38,7 @@ In this example, build against stable branch update site.
 ----
 mvn clean install -f jbosstools/org.jboss.tools.central.discovery.earlyaccess/pom.xml \
   -DUPDATE_SITE=http://download.jboss.org/jbosstools/mars/snapshots/updates/core/4.3.mars/ \
-  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/mars/snapshots/updates/central/4.3.mars/,http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/4.51.0.*/REPO/,http://download.jboss.org/jbosstools/mars/snapshots/updates/earlyaccess/4.3.mars/,http://download.jboss.org/jbosstools/targetplatforms/jbtearlyaccesstarget/4.51.0.*/REPO/
+  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/mars/snapshots/updates/central/4.3.mars/,http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/4.52.0.*/REPO/,http://download.jboss.org/jbosstools/mars/snapshots/updates/earlyaccess/4.3.mars/,http://download.jboss.org/jbosstools/targetplatforms/jbtearlyaccesstarget/4.52.0.Beta2-SNAPSHOT.0.*/REPO/
 ----
 
 or
@@ -47,7 +47,7 @@ or
 ----
 mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery.earlyaccess/pom.xml \
   -DUPDATE_SITE=https://devstudio.redhat.com/9.0/snapshots/updates/core/4.3.mars/ \
-  -DEXTRAS_SITE=https://devstudio.redhat.com/9.0/snapshots/updates/central/4.3.mars/,https://devstudio.redhat.com/targetplatforms/jbtcentraltarget/4.51.0.*/REPO/,https://devstudio.redhat.com/9.0/snapshots/updates/earlyaccess/4.3.mars/,https://devstudio.redhat.com/targetplatforms/jbtearlyaccesstarget/4.51.0.*/REPO/
+  -DEXTRAS_SITE=https://devstudio.redhat.com/9.0/snapshots/updates/central/4.3.mars/,https://devstudio.redhat.com/targetplatforms/jbtcentraltarget/4.52.0.*/REPO/,https://devstudio.redhat.com/9.0/snapshots/updates/earlyaccess/4.3.mars/,https://devstudio.redhat.com/targetplatforms/jbtearlyaccesstarget/4.52.0.*/REPO/
 ----
 
 ## Test a local site
