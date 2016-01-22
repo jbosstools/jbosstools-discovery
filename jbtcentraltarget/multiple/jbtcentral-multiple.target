@@ -10,7 +10,6 @@
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/mars/20160120-0945-2.RC1/"/> 
       
       <!-- mylyn + mylyn accessories (which are not in the JBT or JBDS target platform) -->
-      <unit id="org.eclipse.egit.mylyn.feature.group" version="4.0.3.201509231615-r"/>
       <unit id="org.eclipse.mylyn.builds.feature.group" version="1.10.0.v20151211-2137"/>
       <unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.10.0.v20151009-1724"/>
       <unit id="org.eclipse.mylyn.context_feature.feature.group" version="3.18.0.v20151014-2324"/>
@@ -34,6 +33,12 @@
       <unit id="org.eclipse.mylyn.java.ui" version="3.18.0.v20151013-1847"/>
     </location>
     
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/egit/v4.1.1.201511131810-r/"/>
+      <!-- mylyn + mylyn accessories (which are not in the JBT or JBDS target platform) -->
+      <unit id="org.eclipse.egit.mylyn.feature.group" version="4.1.1.201511131810-r"/>
+    </location>
+
     <!-- m2e extensions (that are not already in core TP) -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/1.1.0-2014-06-25_06-16-31-H26/"/>
