@@ -7,14 +7,14 @@
   <locations>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/neon/201512181000-M4/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/neon/201602051000-M5/"/>
 
       <!-- mylyn + mylyn accessories (which are not in the JBT or JBDS target platform) -->
-      <unit id="org.eclipse.egit.mylyn.feature.group" version="4.2.0.201512141825-rc1"/>
+      <unit id="org.eclipse.egit.mylyn.feature.group" version="4.2.0.201601211800-r"/>
       <unit id="org.eclipse.mylyn.builds.feature.group" version="1.10.0.v20151211-2137"/>
       <unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.10.0.v20151009-1724"/>
       <unit id="org.eclipse.mylyn.context_feature.feature.group" version="3.18.0.v20151014-2324"/>
-      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="4.2.0.201512141825-rc1"/>
+      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="4.2.0.201601211800-r"/>
       <unit id="org.eclipse.mylyn.git.feature.group" version="1.10.0.v20151009-2340"/>
       <unit id="org.eclipse.mylyn.hudson.feature.group" version="1.10.0.v20151013-2221"/>
       <unit id="org.eclipse.mylyn.ide_feature.feature.group" version="3.18.0.v20151013-1847"/>
@@ -26,13 +26,13 @@
       <unit id="org.eclipse.mylyn.versions.feature.group" version="1.10.0.v20151125-0025"/>
 
       <!-- required for SpringIDE 3.7 (see below) -->
-      <unit id="org.eclipse.osgi" version="3.10.200.v20151207-2221"/>
+      <unit id="org.eclipse.osgi" version="3.11.0.v20160121-2005"/>
       <unit id="org.apache.batik.util" version="1.6.0.v201011041432"/>
       <unit id="org.apache.batik.util.gui" version="1.6.0.v201011041432"/>
       <unit id="org.eclipse.equinox.http.registry" version="1.1.400.v20150715-1528"/>
-      <unit id="org.eclipse.zest.feature.group" version="1.7.0.201512140303"/>
+      <unit id="org.eclipse.zest.feature.group" version="1.7.0.201602010304"/>
       <unit id="org.eclipse.mylyn.java.ui" version="3.18.0.v20151013-1847"/>
-      <unit id="org.eclipse.equinox.weaving.sdk.feature.group" version="1.1.100.v20150730-1648"/>
+      <!-- not in M5 anymore <unit id="org.eclipse.equinox.weaving.sdk.feature.group" version="1.1.100.v20150730-1648"/> -->
       <unit id="org.eclipse.equinox.weaving.hook" version="1.1.200.v20150730-1648"/>
     </location>
     
