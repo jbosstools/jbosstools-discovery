@@ -96,8 +96,6 @@
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.7.3.201602250914-RELEASE/"/>
       <!-- Features to include in Central connector -->
-      <!-- JBIDE-21166 CI build now compatible w/ Neon M3 -->
-      <!-- TODO: update to 3.7.3 release version -->
       <unit id="org.springframework.ide.eclipse.ajdt.feature.feature.group" version="3.7.3.201602250914-RELEASE"/>
       <!-- AJDT requirements -->
       <unit id="org.aspectj.feature.group" version="1.8.9.201602092019"/>
