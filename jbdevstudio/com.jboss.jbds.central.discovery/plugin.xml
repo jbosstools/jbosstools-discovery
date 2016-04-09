@@ -594,7 +594,7 @@ reasonable, reporting issues to these providers as required.</description>
             license="Commercial"
             name="JRebel"
             provider="zeroturnaround.org"
-            siteUrl="http://update.zeroturnaround.com/update-site-jboss/">
+            siteUrl="http://update.zeroturnaround.com/update-site/">
             <iu id="org.zeroturnaround.eclipse.feature"/>
             <iu id="org.zeroturnaround.eclipse.wtp.feature"/>
             <iu id="org.zeroturnaround.eclipse.m2e.feature"/>
