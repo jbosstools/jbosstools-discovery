@@ -1,16 +1,16 @@
-== The JBoss Tools Central Discovery project
+== The Red Hat Central Discovery project
 
 === Summary
 
-The _JBoss Tools Central Discovery_ project provides a mechanism for building a plugin jar, directory.xml file, and a composite update site used by https://github.com/jbosstools/jbosstools-central[JBoss Central].
+The _Red Hat Central Discovery_ project provides a mechanism for building a plugin jar, directory.xml file, and a composite update site used by https://github.com/jbosstools/jbosstools-central[Red Hat Central].
 
 === Install
 
-To use a Discovery site, you need to first install JBoss Central, which is part of http://jboss.org/tools[JBoss Tools]. Central will then connect to a Discovery site via the default (or other) directory.xml file, which will link to the plugin jar, which will in turn list a catalogue of available updates, installable from a composite site.
+To use a Discovery site, you need to first install Red Hat Central, which is part of http://jboss.org/tools[JBoss Tools]. Central will then connect to a Discovery site via the default (or other) directory.xml file, which will link to the plugin jar, which will in turn list a catalogue of available updates, installable from a composite site.
 
 === Use
 
-Both the URL for the directory.xml and the URL used within the plugin (to which the directory.xml refers) can be overridden via the commandline when launching Eclipse (or JBoss Developer Studio). Via commandline (or inside your eclipse.ini / jbdevstudio.ini file), you can specify these arguments:
+Both the URL for the directory.xml and the URL used within the plugin (to which the directory.xml refers) can be overridden via the commandline when launching Eclipse (or Red Hat Developer Studio). Via commandline (or inside your eclipse.ini / jbdevstudio.ini file), you can specify these arguments:
 
 [source,bash]
 ----
@@ -54,6 +54,6 @@ See link:README.discovery.sites.adoc[]
 
 Need help cloning this repo? See link:README.contributing.adoc[Get the code].
 
-=== Want to contribute? 
+=== Want to contribute?
 
 See link:README.contributing.adoc[Contributing].

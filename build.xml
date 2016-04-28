@@ -79,7 +79,7 @@ $java.home = ${java.home}</echo>
 		</if>
 
 		<condition property="compositeName" 
-			value="Red Hat JBoss Developer Studio - Core + Central Update Site" 
+			value="Red Hat Developer Studio - Core + Central Update Site" 
 			 else="JBoss Tools - Core + Central Update Site">
     	<equals arg1="${PREFIX}" arg2="devstudio"/>
   	</condition>
