@@ -33,18 +33,18 @@ $ant.version = ${ant.version}
 $ant.home = ${ant.home}
 $ant.java.version = ${ant.java.version}
 $java.home = ${java.home}</echo>
-		<available file="${COMMON_TOOLS}/ant-contrib.jar" type="file" property="ant-contrib.jar.exists" />
-		<antcall target="get.ant-contrib" />
+		<!-- <available file="${COMMON_TOOLS}/ant-contrib.jar" type="file" property="ant-contrib.jar.exists" /> -->
+		<!-- <antcall target="get.ant-contrib" /> -->
 		<taskdef resource="net/sf/antcontrib/antlib.xml">
-			<classpath>
+		<!--	<classpath>
 				<pathelement location="${COMMON_TOOLS}/ant-contrib.jar" />
-			</classpath>
+			</classpath> -->
 		</taskdef>
 	</target>
 
 	<target name="basic.build" description="discovery plugin build extra processing steps" depends="init,generate.directory.xml,generate.composite.site,cleanup" />
 
-	<target name="get.ant-contrib" unless="ant-contrib.jar.exists">
+<!-- 	<target name="get.ant-contrib" unless="ant-contrib.jar.exists">
 		<property name="ANTCONTRIB_MIRROR" value="http://sourceforge.net/projects/ant-contrib/files/ant-contrib/ant-contrib-1.0b2" />
 		<get usetimestamp="true" dest="${COMMON_TOOLS}/ant-contrib-1.0b2-bin.zip" src="${ANTCONTRIB_MIRROR}/ant-contrib-1.0b2-bin.zip" />
 		<touch file="${COMMON_TOOLS}/ant-contrib-1.0b2-bin.zip" />
@@ -53,7 +53,7 @@ $java.home = ${java.home}</echo>
 		<copy file="${tmpdir}/ant-contrib-1.0b2-bin.zip_/ant-contrib/lib/ant-contrib.jar" tofile="${COMMON_TOOLS}/ant-contrib.jar" failonerror="true" />
 		<delete dir="${tmpdir}/ant-contrib-1.0b2-bin.zip_" includeemptydirs="true" quiet="true" />
 	</target>
-
+ -->
 	<target name="generate.composite.site">
 		<if>
 			<or>
