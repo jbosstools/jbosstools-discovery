@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.jboss.tools.targetplatforms</groupId>
     <artifactId>jbtcentral</artifactId>
-    <version>4.60.0.Alpha1-SNAPSHOT</version>
+    <version>4.60.0.Final-SNAPSHOT</version>
   </parent>
   <artifactId>jbtcentral-multiple</artifactId>
   <name>JBoss Central Core Multiple (Composite) Target Platform</name>
@@ -97,7 +97,7 @@
           <descriptors>
             <descriptor>${basedir}/../../publish-assembly.xml</descriptor>
           </descriptors>
-          <!-- JBIDE-19800 zip would be jbtcentral-multiple-4.60.0.Alpha1-SNAPSHOT.zip; want jbtcentraltarget-4.60.0.Alpha1-SNAPSHOT.zip -->
+          <!-- JBIDE-19800 zip would be jbtcentral-multiple-4.60.0.Final-SNAPSHOT.zip; want jbtcentraltarget-4.60.0.Final-SNAPSHOT.zip -->
           <finalName>${project.parent.artifactId}target-${project.version}</finalName>
         </configuration>
       </plugin>
