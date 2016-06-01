@@ -7,14 +7,14 @@
   <locations>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/neon/201605061000-M7/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/neon/201605271000-RC2/"/>
 
       <!-- mylyn + mylyn accessories (which are not in the JBT or JBDS target platform) -->
-      <unit id="org.eclipse.egit.mylyn.feature.group" version="4.4.0.201605041135-m1"/>
+      <unit id="org.eclipse.egit.mylyn.feature.group" version="4.4.0.201605250940-rc1"/>
       <unit id="org.eclipse.mylyn.builds.feature.group" version="1.11.0.v20160316-2103"/>
       <unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.11.0.v20160111-1919"/>
       <unit id="org.eclipse.mylyn.context_feature.feature.group" version="3.19.0.v20160316-2105"/>
-      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="4.4.0.201605041135-m1"/>
+      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="4.4.0.201605252217"/>
       <unit id="org.eclipse.mylyn.git.feature.group" version="1.11.0.v20160111-1940"/>
       <unit id="org.eclipse.mylyn.hudson.feature.group" version="1.11.0.v20160316-2103"/>
       <unit id="org.eclipse.mylyn.ide_feature.feature.group" version="3.19.0.v20160111-2059"/>
@@ -26,7 +26,7 @@
       <unit id="org.eclipse.mylyn.versions.feature.group" version="1.11.0.v20160111-1940"/>
 
       <!-- required for SpringIDE 3.7 (see below) -->
-      <unit id="org.eclipse.osgi" version="3.11.0.v20160427-2120"/>
+      <unit id="org.eclipse.osgi" version="3.11.0.v20160504-1419"/>
       <unit id="org.apache.batik.util" version="1.6.0.v201011041432"/>
       <unit id="org.apache.batik.util.gui" version="1.6.0.v201011041432"/>
       <unit id="org.eclipse.equinox.http.registry" version="1.1.400.v20150715-1528"/>
@@ -58,7 +58,7 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/S20160501200945/"/> 
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20160520211859/"/>
       <!-- Atlassian (com.atlassian.connector.*) dependencies -->
       <unit id="javax.xml.soap" version="1.3.0.v201105210645"/>
       <unit id="javax.activation" version="1.1.0.v201211130549"/>
