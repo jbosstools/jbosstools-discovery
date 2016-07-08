@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><?pde version="3.6"?><target includeMode="feature" name="jbtcentral-4.60.1.AM3-SNAPSHOT">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><?pde version="3.6"?><target includeMode="feature" name="jbtcentral-4.60.1.Final-SNAPSHOT">
   <!-- Pro tip: paste content from generated Apache directory index, then match
         \[ ] (.+)_(.+).jar.+
     replace with 
@@ -41,14 +41,14 @@
 
     <!-- new to JBT 4.1.0 / JBDS 7 -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/atlassian/3.2.5.v20150427/"/> 
-      <unit id="com.atlassian.connector.commons.feature.group" version="3.2.5.v20150427"/>
-      <unit id="com.atlassian.connector.eclipse.bamboo.feature.group" version="3.2.5.v20150427"/>
-      <unit id="com.atlassian.connector.eclipse.commons.feature.group" version="3.2.5.v20150427"/>
-      <unit id="com.atlassian.connector.eclipse.directclickthrough.feature.group" version="3.2.5.v20150427"/>
-      <unit id="com.atlassian.connector.eclipse.jira.feature.group" version="3.2.5.v20150427"/>
-      <unit id="com.atlassian.connector.eclipse.monitor.feature.group" version="3.2.5.v20150427"/>
-      <unit id="com.atlassian.connector.eclipse.feature.group" version="3.2.5.v20150427"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/atlassian/3.2.5.I20150617-0100/"/> 
+      <unit id="com.atlassian.connector.commons.feature.group" version="3.2.5.I20150617-0100"/>
+      <unit id="com.atlassian.connector.eclipse.bamboo.feature.group" version="3.2.5.I20150617-0100"/>
+      <unit id="com.atlassian.connector.eclipse.commons.feature.group" version="3.2.5.I20150617-0100"/>
+      <unit id="com.atlassian.connector.eclipse.directclickthrough.feature.group" version="3.2.5.I20150617-0100"/>
+      <!-- <unit id="com.atlassian.connector.eclipse.jira.feature.group" version="3.2.5.v20150427"/> already included in jbt/ds TPs -->
+      <unit id="com.atlassian.connector.eclipse.monitor.feature.group" version="3.2.5.I20150617-0100"/>
+      <unit id="com.atlassian.connector.eclipse.feature.group" version="3.2.5.I20150617-0100"/>
     </location>
     <!-- needed by Atlassian 3.2.2.v20130909; not yet in Luna (see https://bugs.eclipse.org/bugs/show_bug.cgi?id=430816) -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">

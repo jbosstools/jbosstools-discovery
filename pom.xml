@@ -1,27 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion> 
-  <parent>
-    <groupId>org.jboss.tools</groupId>
-    <artifactId>parent</artifactId>
-    <version>4.4.1.Alpha1-SNAPSHOT</version>
-  </parent>
-  <groupId>org.jboss.tools.central</groupId>
-  <artifactId>discovery</artifactId>
-  <version>4.4.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
+	<modelVersion>4.0.0</modelVersion> 
+	<parent>
+		<groupId>org.jboss.tools</groupId>
+		<artifactId>parent</artifactId>
+		<version>4.4.1.Alpha1-SNAPSHOT</version>
+	</parent>
+	<groupId>org.jboss.tools.central</groupId>
+	<artifactId>discovery</artifactId>
+	<version>4.4.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 
-  <properties>
-    <tycho.scmUrl>scm:git:https://github.com/jbosstools/jbosstools-discovery.git</tycho.scmUrl>
-  </properties>
+	<properties>
+		<tychoVersion>0.26.0</tychoVersion>
+		<tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
+		<jbossTychoPluginsVersion>0.26.0-SNAPSHOT</jbossTychoPluginsVersion>
+		<tycho.scmUrl>scm:git:https://github.com/jbosstools/jbosstools-discovery.git</tycho.scmUrl>
+	</properties>
 
-  <!-- this pom will only build the discovery plugins, not the target platforms. See README.adoc for building target platforms -->
-  <modules>
-    <module>jbosstools/org.jboss.tools.central.discovery</module>
-    <module>jbosstools/org.jboss.tools.central.discovery.earlyaccess</module>
-    <module>jbdevstudio/com.jboss.jbds.central.discovery</module>
-    <module>jbdevstudio/com.jboss.jbds.central.discovery.earlyaccess</module>
-  </modules>
+	<!-- this pom will only build the discovery plugins, not the target platforms. See README.adoc for building target platforms -->
+	<modules>
+		<module>jbosstools/org.jboss.tools.central.discovery</module>
+		<module>jbosstools/org.jboss.tools.central.discovery.earlyaccess</module>
+		<module>jbdevstudio/com.jboss.jbds.central.discovery</module>
+		<module>jbdevstudio/com.jboss.jbds.central.discovery.earlyaccess</module>
+	</modules>
 
 </project>
 <!-- To build, pass in -DUPDATE_SITE and -DEXTRAS_SITE; for examples see https://github.com/jbosstools/jbosstools-discovery/blob/master/README.discovery.sites.adoc -->
