@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>org.jboss.tools.targetplatforms</groupId>
 	<artifactId>jbtearlyaccess</artifactId>
-	<version>4.60.0.Final-SNAPSHOT</version>
+	<version>4.60.1.AM3-SNAPSHOT</version>
 	<name>JBoss Central Early Access Target Platforms</name>
 	<packaging>pom</packaging>
 

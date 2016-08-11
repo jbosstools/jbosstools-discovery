@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><?pde version="3.6"?><target includeMode="feature" name="jbtcentral-4.60.0.Final-SNAPSHOT">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><?pde version="3.6"?><target includeMode="feature" name="jbtcentral-4.60.1.AM3-SNAPSHOT">
   <!-- Pro tip: paste content from generated Apache directory index, then match
         \[ ] (.+)_(.+).jar.+
     replace with 
@@ -150,16 +150,16 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/subclipse/1.10.9_1.8.10.r10446_v20150526_1454/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/subclipse/1.10.13_1.8.12.r10533_v20160129_0158/"/>
       <unit id="com.collabnet.subversion.merge.feature.feature.group" version="4.1.0"/>
-      <unit id="net.java.dev.jna.feature.group" version="4.1.0.v20140626_1915"/>
+      <unit id="net.java.dev.jna.feature.group" version="4.1.0.v06022015_1911"/>
       <unit id="org.tigris.subversion.clientadapter.feature.feature.group" version="1.10.3"/>
-      <unit id="org.tigris.subversion.clientadapter.javahl.feature.feature.group" version="1.8.13"/>
+      <unit id="org.tigris.subversion.clientadapter.javahl.feature.feature.group" version="1.9.3"/>
       <unit id="org.tigris.subversion.clientadapter.svnkit.feature.feature.group" version="1.8.9"/>
       <unit id="org.tigris.subversion.subclipse.graph.feature.feature.group" version="1.1.1"/>
       <unit id="org.tigris.subversion.subclipse.mylyn.feature.group" version="3.0.0"/>
-      <unit id="org.tigris.subversion.subclipse.feature.group" version="1.10.9"/>
-      <unit id="org.tmatesoft.svnkit.feature.group" version="1.8.10.r10446_v20150526_1454"/>
+      <unit id="org.tigris.subversion.subclipse.feature.group" version="1.10.13"/>
+      <unit id="org.tmatesoft.svnkit.feature.group" version="1.8.12.r10533_v20160129_0158"/>
     </location>
 
     <!-- TODO TestNG is also part of JBDS TP and delivery. So if you need to updated TestNG here, you most likely want to also

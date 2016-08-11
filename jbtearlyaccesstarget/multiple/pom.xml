@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.jboss.tools.targetplatforms</groupId>
     <artifactId>jbtearlyaccess</artifactId>
-    <version>4.60.0.Final-SNAPSHOT</version>
+    <version>4.60.1.AM3-SNAPSHOT</version>
   </parent>
   <artifactId>jbtearlyaccess-multiple</artifactId>
   <name>JBoss Central Early Access Multiple (Composite) Target Platform</name>
@@ -99,7 +99,7 @@
           <descriptors>
             <descriptor>${basedir}/../../publish-assembly.xml</descriptor>
           </descriptors>
-          <!-- JBIDE-19800 zip would be jbtearlyaccess-multiple-4.60.0.Final-SNAPSHOT.zip; want jbtearlyaccesstarget-4.60.0.Final-SNAPSHOT.zip -->
+          <!-- JBIDE-19800 zip would be jbtearlyaccess-multiple-4.60.1.AM3-SNAPSHOT.zip; want jbtearlyaccesstarget-4.60.1.AM3-SNAPSHOT.zip -->
           <finalName>${project.parent.artifactId}target-${project.version}</finalName>
         </configuration>
       </plugin>
