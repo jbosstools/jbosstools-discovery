@@ -98,7 +98,7 @@
 					<descriptors>
 						<descriptor>${basedir}/../../publish-assembly.xml</descriptor>
 					</descriptors>
-					<!-- JBIDE-19800 zip would be jbtcentral-multiple-4.60.0.Final-SNAPSHOT.zip; want jbtcentraltarget-4.60.0.Final-SNAPSHOT.zip -->
+					<!-- JBIDE-19800 zip would be jbtcentral-multiple-4.XY.Z.Final-SNAPSHOT.zip; want jbtcentraltarget-4.XY.Z.Final-SNAPSHOT.zip -->
 					<finalName>${project.parent.artifactId}target-${project.version}</finalName>
 				</configuration>
 			</plugin>

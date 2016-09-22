@@ -7,9 +7,9 @@
   <locations>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/neon/201606082315-RC4/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/neon/201609281000/"/>
       <!-- mylyn + mylyn accessories (which are not in the JBT or JBDS target platform) -->
-      <unit id="org.eclipse.egit.mylyn.feature.group" version="4.4.0.201606070830-r"/>
+      <unit id="org.eclipse.egit.mylyn.feature.group" version="4.4.1.201607150455-r"/>
       <unit id="org.eclipse.mylyn.builds.feature.group" version="1.12.0.v20160421-2142"/>
       <unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.12.0.v20160421-1819"/>
       <unit id="org.eclipse.mylyn.context_feature.feature.group" version="3.20.0.v20160608-1905"/>
@@ -25,7 +25,7 @@
       <unit id="org.eclipse.mylyn.versions.feature.group" version="1.12.0.v20160421-1824"/>
 
       <!-- required for SpringIDE 3.7 (see below) -->
-      <unit id="org.eclipse.osgi" version="3.11.0.v20160603-1336"/>
+      <!-- <unit id="org.eclipse.osgi" version="3.11.1.v20160708-1632"/> -->
       <unit id="org.apache.batik.util" version="1.6.0.v201011041432"/>
       <unit id="org.apache.batik.util.gui" version="1.6.0.v201011041432"/>
       <unit id="org.eclipse.equinox.http.registry" version="1.1.400.v20150715-1528"/>
