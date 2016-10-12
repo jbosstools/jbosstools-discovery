@@ -25,7 +25,6 @@
       <unit id="org.eclipse.mylyn.versions.feature.group" version="1.12.0.v20160421-1824"/>
 
       <!-- required for SpringIDE 3.7 (see below) -->
-      <!-- <unit id="org.eclipse.osgi" version="3.11.1.v20160708-1632"/> -->
       <unit id="org.apache.batik.util" version="1.6.0.v201011041432"/>
       <unit id="org.apache.batik.util.gui" version="1.6.0.v201011041432"/>
       <unit id="org.eclipse.equinox.http.registry" version="1.1.400.v20150715-1528"/>
