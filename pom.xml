@@ -12,9 +12,9 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<tychoVersion>0.26.0</tychoVersion>
-		<tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
-		<jbossTychoPluginsVersion>0.26.0-SNAPSHOT</jbossTychoPluginsVersion>
+		<!-- <tychoVersion>0.26.0</tychoVersion> -->
+		<!-- <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion> -->
+		<!-- <jbossTychoPluginsVersion>0.26.1-SNAPSHOT</jbossTychoPluginsVersion> -->
 		<tycho.scmUrl>scm:git:https://github.com/jbosstools/jbosstools-discovery.git</tycho.scmUrl>
 	</properties>
 
