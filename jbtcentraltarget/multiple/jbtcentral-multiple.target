@@ -65,24 +65,10 @@
       <unit id="org.apache.commons.codec" version="1.6.0.v201305230611"/>
       <unit id="org.apache.commons.httpclient" version="3.1.0.v201012070820"/>
 
-      <!-- Orbit bundles needed for Eclipse Checkstyle (eclipse-cs) -->
-      <unit id="org.apache.lucene.highlighter" version="3.5.0.v20121015-1317"/>
-      <unit id="org.apache.lucene.core" version="3.5.0.v20120725-1805"/>
-      <unit id="org.apache.lucene.memory" version="3.5.0.v20120725-1805"/>
-      <unit id="org.apache.lucene.misc" version="3.5.0.v20120725-1805"/>
-      <unit id="org.apache.lucene.queries" version="3.5.0.v20120725-1805"/>
-      <unit id="org.apache.lucene.spellchecker" version="3.5.0.v20120725-1805"/>
-
       <!-- Orbit bundles needed for Mylyn/Bugzilla -->
       <unit id="org.apache.xmlrpc" version="3.0.0.v20100427-1100"/>
       <unit id="org.apache.ws.commons.util" version="1.0.1.v20100518-1140"/>
-    </location>
-    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20151118145958/"/> 
-      <!-- Required for CheckStyle, not in recent Orbit -->
-      <unit id="org.apache.lucene.snowball" version="2.9.1.v20100421-0704"/>
-    </location>
- 
+    </location> 
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/eclipsecs/6.5.0.201504121610/"/>
