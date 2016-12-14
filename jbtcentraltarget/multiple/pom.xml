@@ -37,7 +37,7 @@
 								<item>
 									<groupId>org.jboss.tools.targetplatforms</groupId>
 									<artifactId>jbosstools-multiple</artifactId>
-									<version>${TARGET_PLATFORM_VERSION_MAXIMUM}</version>
+									<version>${TARGET_PLATFORM_VERSION_MAX}</version>
 									<classifier>jbosstools-multiple</classifier>
 								</item>
 							</sourceTargetArtifacts>
