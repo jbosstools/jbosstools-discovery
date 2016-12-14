@@ -285,30 +285,9 @@
             id="org.jboss.tools.central.discovery.b.scm"
             name="Source Control Management"
             relevance="60">
-         		<group id="org.jboss.tools.central.discovery.b.scm.atlassian" />
  			<group id="org.jboss.tools.central.discovery.b.scm.git" />
  			<group id="org.jboss.tools.central.discovery.b.scm.svn" />
       </connectorCategory>
-
-      <!-- JBIDE-13670, JBIDE-13682, JBIDE-13712, JBIDE-13724 remove everything that depends on Atlassian feature -->
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.b.scm"
-            groupId="org.jboss.tools.central.discovery.b.scm.atlassian"
-            description="Atlassian Connector for Eclipse"
-            id="com.atlassian.connector.eclipse"
-            kind="task"
-            license="EPL, Other (Free)"
-            name="Atlassian Connector"
-            provider="Atlassian"
-            siteUrl="${jboss.discovery.site.url}">
-            <iu id="com.atlassian.connector.eclipse"/>
-         <icon
-               image32="images/atlassian_32.png">
-         </icon>
-         <overview
-               url="https://confluence.atlassian.com/display/IDEPLUGIN/Atlassian+Connector+for+Eclipse">
-         </overview>
-      </connectorDescriptor>
 
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.b.scm"
@@ -485,8 +464,6 @@
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url}">
          <iu id="org.jboss.tools.common.mylyn.feature"/>
-         <iu id="com.atlassian.connector.eclipse.jira"/>
-         <iu id="com.atlassian.connector.eclipse.monitor"/>
          <iu id="org.eclipse.mylyn_feature"/>
          <iu id="org.eclipse.mylyn.ide_feature"/>
          <iu id="org.eclipse.mylyn.commons"/>
