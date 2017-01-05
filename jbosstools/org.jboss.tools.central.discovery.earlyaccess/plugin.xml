@@ -52,7 +52,7 @@ appropriate tests + report issues to plug-in providers as required.</description
       <!-- Windup -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.e.migration"
-            certificationId="org.jboss.tools.discovery.certification.experimental.earlyaccess"
+            certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
             description="The Windup plug-ins simplify migrating Java applications."
             groupId="org.jboss.tools.central.discovery.e.migration.windup"
             id="org.jboss.tools.windup.feature"
@@ -60,7 +60,7 @@ appropriate tests + report issues to plug-in providers as required.</description
             license="EPL (Free)"
             name="Windup Migration Toolkit"
             provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.earlyaccess.site.url}">
+            siteUrl="http://download.jboss.org/jbosstools/neon/development/updates/windup/composite/">
          <overview
                url="http://windup.jboss.org/">
          </overview>

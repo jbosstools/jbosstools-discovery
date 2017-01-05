@@ -77,7 +77,7 @@ appropriate tests + report issues to plug-in providers as required.</description
             license="EPL (Free)"
             name="Windup Migration Toolkit"
             provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.earlyaccess.site.url}">
+            siteUrl="http://download.jboss.org/jbosstools/neon/development/updates/windup/composite/">
          <overview
                url="http://windup.jboss.org/">
          </overview>

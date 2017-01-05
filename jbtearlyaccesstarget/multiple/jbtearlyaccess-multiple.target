@@ -11,12 +11,6 @@
       <unit id="angularjs-eclipse-feature.feature.group" version="1.1.0.201511091212"/>
     </location>
 
-    <!-- Windup Migration -->
-    <location includeAllPlatforms="false" includeMode="slicer" includeSource="false" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/neon/development/updates/windup/composite/"/>
-      <unit id="org.jboss.tools.windup.feature.feature.group" version="3.1.0.Alpha"/>
-    </location>
-
   </locations>
   <targetJRE path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 </target>
