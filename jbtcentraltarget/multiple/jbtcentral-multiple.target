@@ -52,8 +52,8 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/pmd/4.0.7.v20150522-1709/"/>
-      <unit id="net.sourceforge.pmd.eclipse.feature.group" version="4.0.7.v20150522-1709"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/pmd/4.0.11.v20160626-1057/"/>
+      <unit id="net.sourceforge.pmd.eclipse.feature.group" version="4.0.11.v20160626-1057"/>
     </location>
 
     <!-- required for SpringIDE 3.7 (see also above) -->
