@@ -17,7 +17,6 @@
 		<!-- <jbossTychoPluginsVersion>0.26.1-SNAPSHOT</jbossTychoPluginsVersion> -->
 		<tycho.scmUrl>scm:git:https://github.com/jbosstools/jbosstools-discovery.git</tycho.scmUrl>
 	</properties>
-
 	<!-- this pom will only build the discovery plugins, not the target platforms. See README.adoc for building target platforms -->
 	<modules>
 		<module>jbosstools/org.jboss.tools.central.discovery</module>
