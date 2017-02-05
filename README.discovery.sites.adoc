@@ -15,7 +15,7 @@ In this example, build against master branch update site.
 ----
 mvn clean install -f jbosstools/org.jboss.tools.central.discovery/pom.xml \
   -DUPDATE_SITE=http://download.jboss.org/jbosstools/oxygen/snapshots/updates/core/master/ \
-  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/oxygen/snapshots/updates/central/master/,http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/4.62.0.*/REPO/
+  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/oxygen/snapshots/updates/central/master/,http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/4.70.0.*/REPO/
 ----
 
 or
@@ -24,7 +24,7 @@ or
 ----
 mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery/pom.xml \
   -DUPDATE_SITE=https://devstudio.redhat.com/11/snapshots/updates/core/master/ \
-  -DEXTRAS_SITE=https://devstudio.redhat.com/11/snapshots/updates/central/master/,https://devstudio.redhat.com/targetplatforms/jbtcentraltarget/4.62.0.*/REPO/
+  -DEXTRAS_SITE=https://devstudio.redhat.com/11/snapshots/updates/central/master/,https://devstudio.redhat.com/targetplatforms/jbtcentraltarget/4.70.0.*/REPO/
 ----
 
 Repeat for Early Access sites (using 2 EXTRAS_SITE URLs so the resulting site can resolve both Core and Early Access content):
@@ -38,7 +38,7 @@ In this example, build against stable branch update site.
 ----
 mvn clean install -f jbosstools/org.jboss.tools.central.discovery.earlyaccess/pom.xml \
   -DUPDATE_SITE=http://download.jboss.org/jbosstools/oxygen/snapshots/updates/core/master/ \
-  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/oxygen/snapshots/updates/central/master/,http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/4.62.0.*/REPO/,http://download.jboss.org/jbosstools/oxygen/snapshots/updates/earlyaccess/master/,http://download.jboss.org/jbosstools/targetplatforms/jbtearlyaccesstarget/4.62.0.*/REPO/
+  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/oxygen/snapshots/updates/central/master/,http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/4.70.0.*/REPO/,http://download.jboss.org/jbosstools/oxygen/snapshots/updates/earlyaccess/master/,http://download.jboss.org/jbosstools/targetplatforms/jbtearlyaccesstarget/4.70.0.*/REPO/
 ----
 
 or
@@ -47,7 +47,7 @@ or
 ----
 mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery.earlyaccess/pom.xml \
   -DUPDATE_SITE=https://devstudio.redhat.com/11/snapshots/updates/core/master/ \
-  -DEXTRAS_SITE=https://devstudio.redhat.com/11/snapshots/updates/central/master/,https://devstudio.redhat.com/targetplatforms/jbtcentraltarget/4.62.0.*/REPO/,https://devstudio.redhat.com/11/snapshots/updates/earlyaccess/master/,https://devstudio.redhat.com/targetplatforms/jbtearlyaccesstarget/4.62.0.*/REPO/
+  -DEXTRAS_SITE=https://devstudio.redhat.com/11/snapshots/updates/central/master/,https://devstudio.redhat.com/targetplatforms/jbtcentraltarget/4.70.0.*/REPO/,https://devstudio.redhat.com/11/snapshots/updates/earlyaccess/master/,https://devstudio.redhat.com/targetplatforms/jbtearlyaccesstarget/4.70.0.*/REPO/
 ----
 
 ## Test a local site
