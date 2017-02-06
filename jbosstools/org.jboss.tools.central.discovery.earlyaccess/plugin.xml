@@ -61,25 +61,10 @@ appropriate tests + report issues to plug-in providers as required.</description
             name="Windup Migration Toolkit"
             provider="JBoss by Red Hat"
             siteUrl="http://download.jboss.org/jbosstools/neon/development/updates/windup/composite/">
-         <overview
-               url="http://windup.jboss.org/">
-         </overview>
-         <iu
-               id="org.jboss.tools.windup.feature">
-         </iu>
-         <icon
-               image32="images/windup_icon_32.png"></icon>
+            <iu id="org.jboss.tools.windup.feature" />
+         <overview url="http://windup.jboss.org/"/>
+         <icon image32="images/windup_icon_32.png"/>
       </connectorDescriptor>
-
-    <connectorCategory
-            description="Plug-ins to support code migration."
-            id="org.jboss.tools.central.discovery.e.migration"
-            name="Code Migration"
-            relevance="70">
-         <group
-               id="org.jboss.tools.central.discovery.e.migration.windup">
-         </group>
-      </connectorCategory>
 
       <!-- JBIDE-19038: Arquillian is not EA in JBT, only in JBDS, so move connector to ../org.jboss.tools.central.discovery/plugin.xml and remove certificationId=earlyaccess
       -->

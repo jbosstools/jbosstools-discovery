@@ -865,6 +865,17 @@ reasonable, reporting issues to these providers as required.</description>
                url="https://github.com/jbosstools/m2e-wro4j">
          </overview>
       </connectorDescriptor>
+
+      <!-- e. Code Migration -->
+
+      <connectorCategory
+            description="Plug-ins to support code migration."
+            id="org.jboss.tools.central.discovery.e.migration"
+            name="Code Migration"
+            relevance="70">
+         <group id="org.jboss.tools.central.discovery.e.migration.windup"/>
+      </connectorCategory>
+
     </extension>
 
     <extension point="org.jboss.tools.central.proxyWizard">

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?eclipse version="3.4"?>
 <plugin>
-	<extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
+    <extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
 
       <certification id="org.jboss.tools.discovery.certification.notavailable" name="Not Yet Available" url="https://devstudio.redhat.com/10.0/stable/updates/#central">
          <description>This feature set is currently unavailable for this version of JBoss Tools. Please see the connector's description for details on when/where it will be made available.</description>
@@ -104,17 +104,17 @@
       <!-- JBIDE-19038: Arquillian is not EA in JBT, only in JBDS -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
-	    groupId="org.jboss.tools.central.discovery.a.web.core"
-	    description="Create and run tests with Arquillian"
-	    id="org.jboss.tools.arquillian"
-	    kind="task"
-	    license="EPL (Free)"
-	    name="JBoss Arquillian Tools"
-	    provider="JBoss by Red Hat"
-	    siteUrl="${jboss.discovery.earlyaccess.site.url}">
-	    <iu id="org.jboss.tools.arquillian.feature"/>
-	    <icon image32="images/arquillian_32.png"/>
-	    <overview url="http://www.jboss.org/tools"/>
+        groupId="org.jboss.tools.central.discovery.a.web.core"
+        description="Create and run tests with Arquillian"
+        id="org.jboss.tools.arquillian"
+        kind="task"
+        license="EPL (Free)"
+        name="JBoss Arquillian Tools"
+        provider="JBoss by Red Hat"
+        siteUrl="${jboss.discovery.earlyaccess.site.url}">
+        <iu id="org.jboss.tools.arquillian.feature"/>
+        <icon image32="images/arquillian_32.png"/>
+        <overview url="http://www.jboss.org/tools"/>
       </connectorDescriptor> 
 
       <connectorDescriptor
@@ -285,8 +285,8 @@
             id="org.jboss.tools.central.discovery.b.scm"
             name="Source Control Management"
             relevance="60">
- 			<group id="org.jboss.tools.central.discovery.b.scm.git" />
- 			<group id="org.jboss.tools.central.discovery.b.scm.svn" />
+             <group id="org.jboss.tools.central.discovery.b.scm.git" />
+             <group id="org.jboss.tools.central.discovery.b.scm.svn" />
       </connectorCategory>
 
       <connectorDescriptor
@@ -304,15 +304,15 @@
             <iu id="org.eclipse.egit.mylyn"/>
             <iu id="org.eclipse.mylyn.github.feature"/>
             <iu id="org.eclipse.mylyn.git" />
-	    <iu id="org.eclipse.mylyn_feature"/>
-	    <iu id="org.eclipse.mylyn.ide_feature"/>
-	    <iu id="org.eclipse.mylyn.commons"/>
-	    <iu id="org.eclipse.mylyn.context_feature"/>
-	    <iu id="org.eclipse.mylyn.bugzilla_feature"/>
-	    <iu id="org.eclipse.mylyn.java_feature"/>
-	    <iu id="org.eclipse.mylyn.pde_feature"/>
-	    <iu id="org.eclipse.mylyn.team_feature"/>
-	    <iu id="org.eclipse.mylyn.versions"/>
+        <iu id="org.eclipse.mylyn_feature"/>
+        <iu id="org.eclipse.mylyn.ide_feature"/>
+        <iu id="org.eclipse.mylyn.commons"/>
+        <iu id="org.eclipse.mylyn.context_feature"/>
+        <iu id="org.eclipse.mylyn.bugzilla_feature"/>
+        <iu id="org.eclipse.mylyn.java_feature"/>
+        <iu id="org.eclipse.mylyn.pde_feature"/>
+        <iu id="org.eclipse.mylyn.team_feature"/>
+        <iu id="org.eclipse.mylyn.versions"/>
          <icon
                image32="images/egit_32.png">
          </icon>
@@ -363,15 +363,15 @@
             <iu id="org.tigris.subversion.subclipse.graph.feature"/>
             <iu id="org.tmatesoft.svnkit"/>
 
-	    <iu id="org.eclipse.mylyn_feature"/>
-	    <iu id="org.eclipse.mylyn.ide_feature"/>
-	    <iu id="org.eclipse.mylyn.commons"/>
-	    <iu id="org.eclipse.mylyn.context_feature"/>
-	    <iu id="org.eclipse.mylyn.bugzilla_feature"/>
-	    <iu id="org.eclipse.mylyn.java_feature"/>
-	    <iu id="org.eclipse.mylyn.pde_feature"/>
-	    <iu id="org.eclipse.mylyn.team_feature"/>
-	    <iu id="org.eclipse.mylyn.versions"/>
+        <iu id="org.eclipse.mylyn_feature"/>
+        <iu id="org.eclipse.mylyn.ide_feature"/>
+        <iu id="org.eclipse.mylyn.commons"/>
+        <iu id="org.eclipse.mylyn.context_feature"/>
+        <iu id="org.eclipse.mylyn.bugzilla_feature"/>
+        <iu id="org.eclipse.mylyn.java_feature"/>
+        <iu id="org.eclipse.mylyn.pde_feature"/>
+        <iu id="org.eclipse.mylyn.team_feature"/>
+        <iu id="org.eclipse.mylyn.versions"/>
          <icon
                image32="images/subclipse_32.gif">
          </icon>
@@ -387,8 +387,8 @@
             id="org.jboss.tools.central.discovery.c.testing"
             name="Utilities"
             relevance="40">
-	<group id="org.jboss.tools.central.discovery.c.testing.local" />
- 	<group id="org.jboss.tools.central.discovery.c.testing.remote" />
+          <group id="org.jboss.tools.central.discovery.c.testing.local" />
+           <group id="org.jboss.tools.central.discovery.c.testing.remote" />
       </connectorCategory>
 
       <!-- add CheckStyle plugin back into Central (JBIDE-14799, JBIDE-15128, JBIDE-15129) -->
@@ -422,8 +422,8 @@
             name="FindBugs"
             provider="FindBugs Project"
             siteUrl="${jboss.discovery.site.url}">
-	    <!-- https://issues.jboss.org/browse/JBDS-2284 -->
-	    <iu id="edu.umd.cs.findbugs.plugin.eclipse"/>
+        <!-- https://issues.jboss.org/browse/JBDS-2284 -->
+        <iu id="edu.umd.cs.findbugs.plugin.eclipse"/>
          <icon
                image32="images/findbugs_32.png">
          </icon>
@@ -490,8 +490,8 @@
             name="PMD"
             provider="PMD Developers"
             siteUrl="${jboss.discovery.site.url}">
-	    <!-- https://issues.jboss.org/browse/JBIDE-12562 -->
-       	    <iu id="net.sourceforge.pmd.eclipse"/>
+        <!-- https://issues.jboss.org/browse/JBIDE-12562 -->
+               <iu id="net.sourceforge.pmd.eclipse"/>
          <icon
                image32="images/pmd_32.png">
          </icon>
@@ -499,7 +499,7 @@
                url="http://pmd.sourceforge.net/">
          </overview>
       </connectorDescriptor>
-	  <connectorDescriptor
+      <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.c.testing"
             groupId="org.jboss.tools.central.discovery.c.testing.local"
             description="Tool support for TestNG"
@@ -514,8 +514,8 @@
                image32="images/testng_32.gif">
          </icon>
          <overview
-         	   summary="TestNG plug-in for Eclipse"
-         	   screenshot="images/testng_screenshot.png"
+                summary="TestNG plug-in for Eclipse"
+                screenshot="images/testng_screenshot.png"
                url="http://testng.org/">
          </overview>
       </connectorDescriptor>
@@ -809,6 +809,17 @@
                url="https://github.com/jbosstools/m2e-wro4j">
          </overview>
       </connectorDescriptor>
+
+      <!-- e. Code Migration -->
+
+      <connectorCategory
+            description="Plug-ins to support code migration."
+            id="org.jboss.tools.central.discovery.e.migration"
+            name="Code Migration"
+            relevance="70">
+         <group id="org.jboss.tools.central.discovery.e.migration.windup"/>
+      </connectorCategory>
+
     </extension>
 
     <extension point="org.jboss.tools.central.proxyWizard">
