@@ -179,8 +179,8 @@ Instead of the latest master build, you can also point Eclipse / JBDS at more st
 
 * The current released milestone URLs for JBT/JBDS are:
 
-** http://download.jboss.org/jbosstools/neon/development/updates/discovery.central/4.4.3.*/jbosstools-directory.xml
-** https://devstudio.redhat.com/10.0/development/updates/discovery.central/10.3.0.*/devstudio-directory.xml
+** http://download.jboss.org/jbosstools/neon/development/updates/discovery.central/4.4.4.*/jbosstools-directory.xml
+** https://devstudio.redhat.com/10.0/development/updates/discovery.central/10.4.0.*/devstudio-directory.xml
 
 * The staging URLs are:
 
