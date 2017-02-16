@@ -14,7 +14,7 @@
 	<properties>
 		<!-- <tychoVersion>0.26.0</tychoVersion> -->
 		<!-- <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion> -->
-		<!-- <jbossTychoPluginsVersion>0.26.1-SNAPSHOT</jbossTychoPluginsVersion> -->
+		<!-- <jbossTychoPluginsVersion>0.26.1</jbossTychoPluginsVersion> -->
 		<tycho.scmUrl>scm:git:https://github.com/jbosstools/jbosstools-discovery.git</tycho.scmUrl>
 	</properties>
 	<!-- this pom will only build the discovery plugins, not the target platforms. See README.adoc for building target platforms -->
