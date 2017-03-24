@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><?pde version="3.6"?><target includeMode="feature" name="jbtcentral-4.62.0.Final-SNAPSHOT">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><?pde version="3.6"?><target includeMode="feature" name="jbtcentral-4.63.0.Final-SNAPSHOT">
   <!-- Pro tip: paste content from generated Apache directory index, then match
         \[ ] (.+)_(.+).jar.+
     replace with 
@@ -7,13 +7,13 @@
   <locations>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/neon/201612071000-RC4/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/neon/201703231000-Neon.3/"/>
       <!-- mylyn + mylyn accessories (which are not in the JBT or JBDS target platform) -->
-      <unit id="org.eclipse.egit.mylyn.feature.group" version="4.4.1.201607150455-r"/>
+      <unit id="org.eclipse.egit.mylyn.feature.group" version="4.6.1.201703071140-r"/>
       <unit id="org.eclipse.mylyn.builds.feature.group" version="1.13.0.v20160725-1817"/>
       <unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.13.0.v20160630-1702"/>
       <unit id="org.eclipse.mylyn.context_feature.feature.group" version="3.21.0.v20160815-2336"/>
-      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="4.4.0.201606070830-r"/>
+      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="4.6.0.201612231935-r"/>
       <unit id="org.eclipse.mylyn.git.feature.group" version="1.13.0.v20160630-2022"/>
       <unit id="org.eclipse.mylyn.hudson.feature.group" version="1.13.0.v20160806-1446"/>
       <unit id="org.eclipse.mylyn.ide_feature.feature.group" version="3.21.0.v20160912-1820"/>
@@ -125,8 +125,8 @@
     <!-- TODO TestNG is also part of JBDS TP and delivery. So if you need to updated TestNG here, you most likely want to also
         update it in JBDS TP as well -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/testng/6.9.5.201506120235/"/>
-      <unit id="org.testng.eclipse.feature.group" version="6.9.5.201506120235"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/testng/6.11.0.201703011520/"/>
+      <unit id="org.testng.eclipse.feature.group" version="6.11.0.201703011520"/>
     </location>
 
     <!-- unchanged since JBT 4.0.0 / JBDS 6 -->
