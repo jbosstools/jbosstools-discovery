@@ -11,16 +11,12 @@
       <!-- mylyn + mylyn accessories (which are not in the JBT or JBDS target platform) -->
       <unit id="org.eclipse.egit.mylyn.feature.group" version="4.6.1.201703071140-r"/>
       <unit id="org.eclipse.mylyn.builds.feature.group" version="1.13.0.v20160725-1817"/>
-      <unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.13.0.v20160630-1702"/>
-      <unit id="org.eclipse.mylyn.context_feature.feature.group" version="3.21.0.v20160815-2336"/>
       <unit id="org.eclipse.mylyn.github.feature.feature.group" version="4.6.0.201612231935-r"/>
       <unit id="org.eclipse.mylyn.git.feature.group" version="1.13.0.v20160630-2022"/>
       <unit id="org.eclipse.mylyn.hudson.feature.group" version="1.13.0.v20160806-1446"/>
-      <unit id="org.eclipse.mylyn.ide_feature.feature.group" version="3.21.0.v20160912-1820"/>
       <unit id="org.eclipse.mylyn.java_feature.feature.group" version="3.21.0.v20160701-1337"/>
       <unit id="org.eclipse.mylyn.pde_feature.feature.group" version="3.21.0.v20160701-1337"/>
       <unit id="org.eclipse.mylyn.resources.ui" version="3.21.0.v20160701-1337"/>
-      <unit id="org.eclipse.mylyn.tasks.ide.feature.group" version="3.21.0.v20160929-1805"/>
       <unit id="org.eclipse.mylyn.team_feature.feature.group" version="3.21.0.v20160701-1337"/>
       <unit id="org.eclipse.mylyn.versions.feature.group" version="1.13.0.v20160630-2022"/>
 
@@ -29,7 +25,6 @@
       <unit id="org.apache.batik.util.gui" version="1.6.0.v201011041432"/>
       <unit id="org.eclipse.equinox.http.registry" version="1.1.400.v20150715-1528"/>
       <unit id="org.eclipse.zest.feature.group" version="1.7.0.201606061308"/>
-      <unit id="org.eclipse.mylyn.java.ui" version="3.21.0.v20160701-1337"/>
     </location>
     
     <!-- m2e extensions (that are not already in core TP) -->
