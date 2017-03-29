@@ -11,7 +11,7 @@
       <!-- mylyn + mylyn accessories (which are not in the JBT or JBDS target platform) -->
       <unit id="org.eclipse.egit.mylyn.feature.group" version="4.6.1.201703071140-r"/>
       <unit id="org.eclipse.mylyn.builds.feature.group" version="1.13.0.v20160725-1817"/>
-      <unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.13.0.v20160725-1817"/>
+      <unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.13.0.v20160630-1702"/>
       <unit id="org.eclipse.mylyn.github.feature.feature.group" version="4.6.0.201612231935-r"/>
       <unit id="org.eclipse.mylyn.git.feature.group" version="1.13.0.v20160630-2022"/>
       <unit id="org.eclipse.mylyn.hudson.feature.group" version="1.13.0.v20160806-1446"/>
