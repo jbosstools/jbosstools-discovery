@@ -114,7 +114,7 @@ mvn clean install -f jbdevstudio/com.jboss.jbds.central.discovery.earlyaccess/po
   -DEXTRAS_SITE=https://devstudio.redhat.com/10.0/snapshots/updates/central/master/,https://devstudio.redhat.com/10.0/snapshots/updates/earlyaccess/master/,http://localhost:8080/jbtcentraltarget/multiple/target/jbtcentral-multiple.target.repo/,http://localhost:8080/jbtearlyaccesstarget/multiple/target/jbtearlyaccess-multiple.target.repo/
 ----
 
-3. Install Eclipse (eg., 4.4 Luna JEE bundle)
+3. Install Eclipse (eg., 4.6 Neon JEE bundle)
 
 4. Launch Eclipse (or JBDS):
 
@@ -149,7 +149,7 @@ jbdevstudio -vmargs \
 
 ## Test a site built w/ Jenkins
 
-1. Install Eclipse (eg., 4.4 Luna JEE bundle)
+1. Install Eclipse (eg., 4.6 Neon JEE bundle)
 
 2. Launch Eclipse:
 
