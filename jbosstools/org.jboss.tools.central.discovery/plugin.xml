@@ -825,7 +825,7 @@
             certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
             description="The RHAMT plug-ins simplify migrating Java applications."
             groupId="org.jboss.tools.central.discovery.e.migration.rhamt"
-            id="org.jboss.tools.rhamt.feature"
+            id="org.jboss.tools.windup.feature"
             kind="task"
             license="EPL (Free)"
             name="Red Hat Application Migration Toolkit"
