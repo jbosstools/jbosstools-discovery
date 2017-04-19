@@ -46,11 +46,6 @@
       <unit id="net.sf.eclipsecs.feature.group" version="6.5.0.201504121610"/>
     </location>
 
-    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/pmd/4.0.12.v20170331-0813/"/>
-      <unit id="net.sourceforge.pmd.eclipse.feature.group" version="4.0.12.v20170331-0813"/>
-    </location>
-
     <!-- required for SpringIDE 3.7 (see also above) -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.8.3.201612191259-RELEASE/"/>
