@@ -49,23 +49,6 @@ appropriate tests + report issues to plug-in providers as required.</description
          <overview url="https://marketplace.eclipse.org/content/angularjs-eclipse"></overview>
       </connectorDescriptor>
       
-      <!-- Windup -->
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.e.migration"
-            certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
-            description="The Windup plug-ins simplify migrating Java applications."
-            groupId="org.jboss.tools.central.discovery.e.migration.windup"
-            id="org.jboss.tools.windup.feature"
-            kind="task"
-            license="EPL (Free)"
-            name="Windup Migration Toolkit"
-            provider="JBoss by Red Hat"
-            siteUrl="http://download.jboss.org/jbosstools/neon/development/updates/windup/composite/">
-            <iu id="org.jboss.tools.windup.feature" />
-         <overview url="http://windup.jboss.org/"/>
-         <icon image32="images/windup_icon_32.png"/>
-      </connectorDescriptor>
-
       <!-- JBIDE-19038: Arquillian is not EA in JBT, only in JBDS, so move connector to ../org.jboss.tools.central.discovery/plugin.xml and remove certificationId=earlyaccess
       -->
 
