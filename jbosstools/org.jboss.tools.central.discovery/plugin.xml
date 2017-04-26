@@ -699,6 +699,24 @@
                url="http://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.d.maven"
+            groupId="org.jboss.tools.central.discovery.d.maven.configurators"
+            description="Tycho Project Configurators"
+            id="org.sonatype.tycho.m2e.feature"
+            kind="task"
+            license="EPL (Free)"
+            name="Tycho Project Configurators"
+            provider="eclipse.org"
+            siteUrl="${jboss.discovery.site.url}">
+            <iu id="org.sonatype.tycho.m2e.feature"/>
+         <icon
+               image32="images/m2e_32.gif">
+         </icon>
+         <overview
+               url="http://www.eclipse.org/m2e/">
+         </overview>
+      </connectorDescriptor>
 
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
