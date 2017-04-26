@@ -817,8 +817,24 @@
             id="org.jboss.tools.central.discovery.e.migration"
             name="Code Migration"
             relevance="70">
-         <group id="org.jboss.tools.central.discovery.e.migration.windup"/>
+         <group id="org.jboss.tools.central.discovery.e.migration.rhamt"/>
       </connectorCategory>
+
+      <!-- RHAMT -->
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.e.migration"
+            description="The RHAMT plug-ins simplify migrating Java applications."
+            groupId="org.jboss.tools.central.discovery.e.migration.rhamt"
+            id="org.jboss.tools.rhamt.feature"
+            kind="task"
+            license="EPL (Free)"
+            name="Red Hat Application Migration Toolkit"
+            provider="JBoss by Red Hat"
+            siteUrl="http://download.jboss.org/jbosstools/neon/stable/updates/rhamt/composite/">
+            <iu id="org.jboss.tools.rhamt.feature" />
+         <overview url="http://windup.jboss.org/"/>
+         <icon image32="images/rhamt_icon_32.png"/>
+      </connectorDescriptor>
 
     </extension>
 
