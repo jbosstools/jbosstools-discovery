@@ -846,10 +846,10 @@ Supported by Red Hat.</description>
       </connectorCategory>
 
       <!-- Windup -->
-      <connectorDescriptor
+<!--       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.e.migration"
             certificationId="org.jboss.tools.discovery.certification.supported"
-            description="The RHAMT (Windup) plug-ins simplify migrating Java applications."
+            description="The RHAMT plug-ins simplify migrating Java applications."
             groupId="org.jboss.tools.central.discovery.e.migration.windup"
             id="org.jboss.tools.windup.feature"
             kind="task"
@@ -860,7 +860,7 @@ Supported by Red Hat.</description>
             <iu id="org.jboss.tools.windup.feature" />
          <icon image32="images/rhamt_icon_32.png"/>
          <overview url="http://windup.jboss.org/"/>
-      </connectorDescriptor>
+      </connectorDescriptor> -->
 
     </extension>
 

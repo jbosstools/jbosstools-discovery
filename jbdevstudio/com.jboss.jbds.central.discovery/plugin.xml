@@ -898,7 +898,7 @@ reasonable, reporting issues to these providers as required.</description>
       </connectorCategory>
 
       <!-- Windup -->
-      <connectorDescriptor
+<!--       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.e.migration"
             certificationId="com.jboss.jbds.discovery.certification.supported"
             description="The RHAMT plug-ins simplify migrating Java applications."
@@ -912,7 +912,7 @@ reasonable, reporting issues to these providers as required.</description>
             <iu id="org.jboss.tools.windup.feature" />
          <icon image32="images/rhamt_icon_32.png"/>
          <overview url="http://windup.jboss.org/"/>
-      </connectorDescriptor>
+      </connectorDescriptor> -->
 
     </extension>
 

@@ -23,7 +23,6 @@ appropriate tests + report issues to plug-in providers as required.</description
          <icon image48="images/redhat_48.png"></icon>
       </certification>
 
-
       <!-- a. Web Development -->
 
       <!-- JBIDE-17278: new AngularJS connector -->
@@ -65,6 +64,22 @@ appropriate tests + report issues to plug-in providers as required.</description
          <icon image32="images/arquillian_32.png"/>
          <overview url="http://www.jboss.org/tools"/>
       </connectorDescriptor>
-      
+
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.e.migration"
+            certificationId="com.jboss.jbds.discovery.certification.supported.earlyaccess"
+            description="The RHAMT plug-ins simplify migrating Java applications."
+            groupId="org.jboss.tools.central.discovery.e.migration.windup"
+            id="org.jboss.tools.windup.feature"
+            kind="task"
+            license="EPL (Free)"
+            name="Red Hat Application Migration Toolkit"
+            provider="JBoss by Red Hat"
+            siteUrl="http://download.jboss.org/jbosstools/neon/development/updates/rhamt/composite/">
+            <iu id="org.jboss.tools.windup.feature" />
+         <icon image32="images/rhamt_icon_32.png"/>
+         <overview url="http://windup.jboss.org/"/>
+      </connectorDescriptor>
+
     </extension>	
 </plugin>
