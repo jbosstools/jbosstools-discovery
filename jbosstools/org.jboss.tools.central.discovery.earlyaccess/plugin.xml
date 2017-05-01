@@ -52,5 +52,21 @@ appropriate tests + report issues to plug-in providers as required.</description
       <!-- JBIDE-19038: Arquillian is not EA in JBT, only in JBDS, so move connector to ../org.jboss.tools.central.discovery/plugin.xml and remove certificationId=earlyaccess
       -->
 
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.e.migration"
+            certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
+            description="The RHAMT plug-ins simplify migrating Java applications."
+            groupId="org.jboss.tools.central.discovery.e.migration.windup"
+            id="org.jboss.tools.windup.feature"
+            kind="task"
+            license="EPL (Free)"
+            name="Red Hat Application Migration Toolkit"
+            provider="JBoss by Red Hat"
+            siteUrl="http://download.jboss.org/jbosstools/neon/development/updates/rhamt/composite/">
+            <iu id="org.jboss.tools.windup.feature" />
+         <icon image32="images/rhamt_icon_32.png"/>
+         <overview url="http://windup.jboss.org/"/>
+      </connectorDescriptor>
+
     </extension>
 </plugin>
