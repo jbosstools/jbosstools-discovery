@@ -23,8 +23,8 @@
 				<executions>
 					<!-- Merge:
 							 1. jbosstools-multiple.target (JBoss Tools)
-							 2. jbtcentral.target (JBT Central)
-							 =	jbtcentral-multiple.target
+							 2. jbtcentral-multiple.target (JBT Central)
+							 =	jbtcentral-multiple-full.target
 					-->
 					<execution>
 						<id>merge-jbtcentral</id>
