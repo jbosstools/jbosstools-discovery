@@ -20,9 +20,14 @@
     </location> 
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/eclipsecs/6.5.0.201504121610/"/>
-      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.13.5"/>
-      <unit id="net.sf.eclipsecs.feature.group" version="6.5.0.201504121610"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/eclipsecs/7.6.0.201703111252/"/>
+      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.24.0"/>
+      <unit id="net.sf.eclipsecs.feature.group" version="7.6.0.201703111252"/>
+    </location>
+
+    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/buildship/2.0.2.v20170420-0906/"/>
+      <unit id="org.eclipse.buildship.feature.group" version="2.0.2.v20170420-0906"/>
     </location>
 
     <!-- required for SpringIDE 3.7 (see also above) -->
