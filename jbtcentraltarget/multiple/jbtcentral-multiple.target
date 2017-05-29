@@ -64,9 +64,6 @@
       <unit id="org.codehaus.jackson.core" version="1.6.0.v20101005-0925"/>
       <unit id="org.codehaus.jackson.mapper" version="1.6.0.v20101005-0925"/>
       <unit id="org.json" version="1.0.0.v201011060100"/>
-      <!-- JBIDE-21377 YAML Editor moved to JBT/JBDS TP 
-      <unit id="org.dadacoalition.yedit" version="1.0.18.201506232135-RELEASE-SIGNED"/>
-      <unit id="org.yaml.snakeyaml" version="1.14.0.v201505061500"/> -->
       <unit id="com.google.protobuf" version="2.4.0.v201105131100"/>
 
       <!-- Optional bundles included to avoid console warnings after installation -->
@@ -87,13 +84,6 @@
       <unit id="org.tigris.subversion.subclipse.mylyn.feature.group" version="3.0.0"/>
       <unit id="org.tigris.subversion.subclipse.feature.group" version="1.10.13"/>
       <unit id="org.tmatesoft.svnkit.feature.group" version="1.8.12.r10533_v20160129_0158"/>
-    </location>
-
-    <!-- TODO TestNG is also part of JBDS TP and delivery. So if you need to updated TestNG here, you most likely want to also
-        update it in JBDS TP as well -->
-    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/testng/6.11.0.201703011520/"/>
-      <unit id="org.testng.eclipse.feature.group" version="6.11.0.201703011520"/>
     </location>
 
     <!-- unchanged since JBT 4.0.0 / JBDS 6 -->
