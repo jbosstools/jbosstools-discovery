@@ -25,15 +25,6 @@
       <unit id="net.sf.eclipsecs.feature.group" version="7.6.0.201703111252"/>
     </location>
 
-    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/buildship/2.0.2.v20170420-0906/"/>
-      <unit id="org.eclipse.buildship.feature.group" version="2.0.2.v20170420-0906"/>
-      <unit id="com.gradleware.tooling.model" version="0.19.0.v20170412105839"/>
-      <unit id="com.gradleware.tooling.client" version="0.19.0.v20170412105839"/>
-      <unit id="com.gradleware.tooling.utils" version="0.19.0.v20170412105839"/>
-      <unit id="org.gradle.toolingapi" version="3.5.0.v20170412105839"/>
-    </location>
-
     <!-- required for SpringIDE 3.7 (see also above) -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.8.3.201612191259-RELEASE/"/>
