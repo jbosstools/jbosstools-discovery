@@ -275,6 +275,25 @@ Supported by Red Hat.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.extras"
+            description="Buildship is a collection of Eclipse plug-ins that provide support for building software using Gradle"
+            id="org.eclipse.buildship"
+            kind="task"
+            license="EPL, Other (Free)"
+            name="Eclipse Buildship"
+            provider="eclipse.org"
+            siteUrl="${jboss.discovery.site.url}">
+            <iu id="org.eclipse.buildship"/>
+         <icon
+               image32="images/buildship_32.png">
+         </icon>
+         <overview
+               url="https://projects.eclipse.org/projects/tools.buildship">
+         </overview>
+      </connectorDescriptor>
+
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.extras"
             description="Tool support for the Spring Framework"
             id="org.springframework.ide.eclipse.feature"
             kind="task"
