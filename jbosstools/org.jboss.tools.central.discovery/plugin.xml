@@ -217,26 +217,6 @@ Supported by Red Hat.</description>
          </overview>
       </connectorDescriptor>
 
-      <!-- https://issues.jboss.org/browse/JBIDE-24240 wst.common_core patch feature to fix EBZ 511793 -->
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
-            description="WST Common Core (Patch for BZ 511793)"
-            id="org.eclipse.wst.common_core_EBZ511793.feature.patch"
-            kind="task"
-            license="EPL, Other (Free)"
-            name="WST Common Core (Patch for BZ 511793)"
-            provider="eclipse.org"
-            siteUrl="${jboss.discovery.site.url}">
-            <iu id="org.eclipse.wst.common_core_EBZ511793.feature.patch"/>
-         <icon
-               image32="images/wtp_32.png">
-         </icon>
-         <overview
-               url="http://eclipse.org/webtools/">
-         </overview>
-      </connectorDescriptor>
-
       <!-- JBIDE 18922 add Seam connector -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
