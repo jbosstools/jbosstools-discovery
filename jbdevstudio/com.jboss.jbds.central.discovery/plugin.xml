@@ -48,6 +48,41 @@ reasonable, reporting issues to these providers as required.</description>
 
       <!-- use connectorCategory relevance value to sort from largest (80) to smallest (20) -->
 
+      <!-- JBoss Fuse Development -->
+      <connectorCategory
+            description="Tools to create integration applications using Apache Camel / Component Library and deploy to JBoss Fuse or JBoss EAP"
+            id="org.jboss.tools.central.discovery.a.fuse"
+            name="JBoss Fuse Development"
+            relevance="85">
+         <group id="org.jboss.tools.central.discovery.a.fuse" />
+         <group id="org.jboss.tools.central.discovery.a.fuse.extras" />
+      </connectorCategory>
+
+      <!-- JBoss Fuse Development -->
+      <connectorDescriptor
+         categoryId="org.jboss.tools.central.discovery.a.fuse"
+         groupId="org.jboss.tools.central.discovery.a.fuse"
+         certificationId="com.jboss.jbds.discovery.certification.supported"
+         kind="task"
+         license="Free, EPL"
+         provider="JBoss by Red Hat"
+         siteUrl="${jboss.discovery.site.url}"
+         name="JBoss Fuse Development"
+         description="Tools to create integration applications using Apache Camel / Component Library and deploy to JBoss Fuse or JBoss EAP"
+         id="org.fusesource.ide">
+         <iu id="org.fusesource.ide.camel.editor.feature"/>
+         <iu id="org.fusesource.ide.core.feature"/>
+         <iu id="org.fusesource.ide.jmx.feature"/>
+         <iu id="org.fusesource.ide.server.extensions.feature"/>
+         <iu id="org.jboss.tools.fuse.transformation.feature"/>
+         <icon
+           image32="images/jbds_icon32.png">
+         </icon>
+         <overview
+           url="http://tools.jboss.org/features/apachecamel.html">
+         </overview>
+      </connectorDescriptor>
+
       <!-- a. Mobile Development -->
 
       <connectorCategory
@@ -915,6 +950,15 @@ reasonable, reporting issues to these providers as required.</description>
     </extension>
 
     <extension point="org.jboss.tools.central.proxyWizard">
+      <proxyWizard
+          id="fuse.integration.wizard"
+          description="%fuse.integration.wizard.description"
+          label="Fuse Integration Project"
+          priority="3"
+          iconPath="images/fuse_integration_wizard.png"
+          wizardId="org.fusesource.ide.branding.wizards.FuseProjectWizard"
+          requiredComponentIds="org.fusesource.ide">
+      </proxyWizard>
       <proxyWizard
           id="html5.wizard"
           description="%html5.wizard.description"
