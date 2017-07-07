@@ -53,7 +53,7 @@ appropriate tests + report issues to plug-in providers as required.</description
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
             certificationId="com.jboss.jbds.discovery.certification.experimental.earlyaccess"
-            description="Create and run tests with Arquillian"
+            description="Create and run tests with Arquillian (Deprecated)"
             id="org.jboss.tools.arquillian"
             kind="task"
             license="EPL (Free)"
