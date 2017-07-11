@@ -186,7 +186,7 @@ reasonable, reporting issues to these providers as required.</description>
             name="FreeMarker IDE"
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url}">
-        <iu id="org.jboss.tools.freemarker.feature"/>
+        <iu id="org.jboss.ide.eclipse.freemarker.feature"/>
         <icon image32="images/jbosstools_icon32.png"/>
         <overview url="http://www.jboss.org/tools"/>
       </connectorDescriptor> 
