@@ -271,11 +271,11 @@ Supported by Red Hat.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            description="Tool support for Seam"
+            description="Tool support for Seam (Deprecated)"
             id="org.jboss.tools.seam.connector"
             kind="task"
             license="EPL, Other (Free)"
-            name="JBoss Seam Tools"
+            name="JBoss Seam Tools (Deprecated)"
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.runtime.seam.detector.feature"/>
@@ -740,11 +740,11 @@ Supported by Red Hat.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.configurators"
-            description="JBoss Maven Seam Configurator"
+            description="JBoss Maven Seam Configurator (Deprecated)"
             id="org.jboss.tools.maven.seam.feature"
             kind="task"
             license="EPL (Free)"
-            name="JBoss Maven Seam Configurator"
+            name="JBoss Maven Seam Configurator (Deprecated)"
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.maven.seam.feature"/>
