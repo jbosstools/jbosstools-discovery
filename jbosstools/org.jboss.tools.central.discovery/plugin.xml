@@ -267,11 +267,11 @@ Supported by Red Hat.</description>
          </overview>
       </connectorDescriptor>
 
-      <!-- JBIDE 18922 add Seam connector -->
+      <!-- JBIDE 18922 add Seam 2 connector -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            description="Tool support for Seam (Deprecated)"
+            description="Tool support for Seam 2 (Deprecated)"
             id="org.jboss.tools.seam.connector"
             kind="task"
             license="EPL, Other (Free)"
@@ -282,6 +282,25 @@ Supported by Red Hat.</description>
             <iu id="org.jboss.tools.seam.feature"/>
             <iu id="org.jboss.tools.maven.seam.feature"/>
             <iu id="org.jboss.tools.project.examples.seam.feature"/>
+         <icon image32="images/seam_32.png"/>
+         <overview url="http://tools.jboss.org/"/>
+      </connectorDescriptor>
+      <!-- JBIDE 24379 add Seam 3 connector -->
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
+            description="Tool support for Seam 3 / CDI (Deprecated)"
+            id="org.jboss.tools.cdi.connector"
+            kind="task"
+            license="EPL, Other (Free)"
+            name="JBoss Seam Tools (Deprecated)"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.site.url}">
+            <iu id="org.jboss.tools.runtime.seam.detector.feature"/>
+            <iu id="org.jboss.tools.cdi.feature"/>
+            <iu id="org.jboss.tools.cdi.seam.feature"/>
+            <iu id="org.jboss.tools.cdi.deltaspike.feature"/>
+            <iu id="org.jboss.tools.maven.cdi.feature"/>
          <icon image32="images/seam_32.png"/>
          <overview url="http://tools.jboss.org/"/>
       </connectorDescriptor>
