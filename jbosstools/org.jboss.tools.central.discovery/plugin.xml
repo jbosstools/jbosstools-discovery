@@ -29,7 +29,7 @@ Supported by Red Hat.</description>
       <connectorDescriptor
          categoryId="org.jboss.tools.central.discovery.a.fuse"
          groupId="org.jboss.tools.central.discovery.a.fuse"
-         certificationId="com.jboss.jbds.discovery.certification.supported"
+         certificationId="org.jboss.tools.discovery.certification.supported"
          kind="task"
          license="Free, EPL"
          provider="JBoss by Red Hat"
