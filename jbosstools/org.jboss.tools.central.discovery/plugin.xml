@@ -289,14 +289,13 @@ Supported by Red Hat.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            description="Tool support for Seam 3 (Deprecated)"
+            description="Tooling for CDI components released as part of Seam 3 modules such as Solder and Config (Deprecated)"
             id="org.jboss.tools.cdi.seam.connector"
             kind="task"
             license="EPL, Other (Free)"
             name="JBoss Seam 3 Tools (Deprecated)"
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url}">
-            <iu id="org.jboss.tools.runtime.seam.detector.feature"/>
             <iu id="org.jboss.tools.cdi.seam.feature"/>
          <icon image32="images/seam_32.png"/>
          <overview url="http://tools.jboss.org/"/>
