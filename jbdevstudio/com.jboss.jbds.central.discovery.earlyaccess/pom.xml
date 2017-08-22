@@ -18,8 +18,8 @@
         <version>1.7</version>
         <executions>
           <execution>
-            <id>install</id>
-            <phase>install</phase>
+            <id>create-discovery-site</id>
+            <phase>package</phase>
             <configuration>
               <quiet>true</quiet>
               <target>
@@ -85,6 +85,23 @@
             <version>1.0b3</version>
           </dependency>
         </dependencies>
+      </plugin>
+      <plugin>
+      	<groupId>com.googlecode.maven-download-plugin</groupId>
+      	<artifactId>download-maven-plugin</artifactId>
+      	<executions>
+      		<execution>
+      			<id>get-earlyaccess.properties</id>
+      			<phase>package</phase>
+      			<goals>
+      				<goal>wget</goal>
+      			</goals>
+      			<configuration>
+      				<url>https://devstudio.redhat.com/9.0/snapshots/updates/earlyaccess.properties/${jbosstools_site_stream}/devstudio-earlyaccess.properties</url>
+      				<outputDirectory>${project.build.directory}/discovery-site/</outputDirectory>
+      			</configuration>
+      		</execution>
+      	</executions>
       </plugin>
     </plugins>
   </build>
