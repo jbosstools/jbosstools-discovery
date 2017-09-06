@@ -4,21 +4,21 @@
 	<extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
 
       <!-- JBDS-2379, JBDS-2278, JBDS-2361, JBIDE-10333 -->
-      <certification id="com.jboss.jbds.discovery.certification.supported" name="Supported" url="https://devstudio.redhat.com/11/stable/updates/#central">
+      <certification id="com.jboss.devstudio.discovery.certification.supported" name="Supported" url="https://devstudio.redhat.com/11/stable/updates/#central">
          <description>
 Supported by Red Hat.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
-      <certification id="com.jboss.jbds.discovery.certification.notavailable" name="Not Yet Available" url="https://devstudio.redhat.com/11/stable/updates/#central">
+      <certification id="com.jboss.devstudio.discovery.certification.notavailable" name="Not Yet Available" url="https://devstudio.redhat.com/11/stable/updates/#central">
          <description>This feature set is currently unavailable for this version of Red Hat Developer Studio. Please see the connector's description for details on when/where it will be made available.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
-      <certification id="com.jboss.jbds.discovery.certification.tested" name="Tested" url="https://devstudio.redhat.com/11/stable/updates/#central">
+      <certification id="com.jboss.devstudio.discovery.certification.tested" name="Tested" url="https://devstudio.redhat.com/11/stable/updates/#central">
          <description>
 Tested by Red Hat.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
-      <certification id="com.jboss.jbds.discovery.certification.tested.external" name="Tested - External" url="https://devstudio.redhat.com/11/stable/updates/#central">
+      <certification id="com.jboss.devstudio.discovery.certification.tested.external" name="Tested - External" url="https://devstudio.redhat.com/11/stable/updates/#central">
          <description>
 Tested by Red Hat. 
 
@@ -29,14 +29,14 @@ these third party sites and execute appropriate tests as soon as
 reasonable, reporting issues to these providers as required.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
-      <certification id="com.jboss.jbds.discovery.certification.technologypreview" name="Technology Preview" url="https://devstudio.redhat.com/11/stable/updates/#central">
+      <certification id="com.jboss.devstudio.discovery.certification.technologypreview" name="Technology Preview" url="https://devstudio.redhat.com/11/stable/updates/#central">
          <description>
 Tested by Red Hat, often with known issues. Technology previews
 may one day evolve to be considered Tested or Supported, but
 this is not guaranteed.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
-      <certification id="com.jboss.jbds.discovery.certification.experimental" name="Experimental" url="https://devstudio.redhat.com/11/stable/updates/#central">
+      <certification id="com.jboss.devstudio.discovery.certification.experimental" name="Experimental" url="https://devstudio.redhat.com/11/stable/updates/#central">
          <description>
 Tested by Red Hat. However, as these are experimental plug-ins,
 it is possible that their content may change at any time and
@@ -62,7 +62,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
          categoryId="org.jboss.tools.central.discovery.a.fuse"
          groupId="org.jboss.tools.central.discovery.a.fuse"
-         certificationId="com.jboss.jbds.discovery.certification.supported"
+         certificationId="com.jboss.devstudio.discovery.certification.supported"
          kind="task"
          license="Free, EPL"
          provider="JBoss by Red Hat"
@@ -76,7 +76,7 @@ reasonable, reporting issues to these providers as required.</description>
          <iu id="org.fusesource.ide.server.extensions.feature"/>
          <iu id="org.jboss.tools.fuse.transformation.feature"/>
          <icon
-           image32="images/jbds_icon32.png">
+           image32="images/devstudio_icon32.png">
          </icon>
          <overview
            url="http://tools.jboss.org/features/apachecamel.html">
@@ -98,7 +98,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            certificationId="com.jboss.jbds.discovery.certification.supported"
+            certificationId="com.jboss.devstudio.discovery.certification.supported"
             description="AngularJS Tooling provides content assist and Ionic framework support"
             id="angularjs-eclipse-feature"
             kind="task"
@@ -118,7 +118,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.mobile"
             groupId="org.jboss.tools.central.discovery.a.mobile.extras"
-            certificationId="com.jboss.jbds.discovery.certification.tested.external"
+            certificationId="com.jboss.devstudio.discovery.certification.tested.external"
             description="Android Development Tools, DDMS, Hierarchy Viewer, OpenGL Tracer, Traceview"
             id="com.android.ide.eclipse.adt"
             kind="task"
@@ -141,11 +141,11 @@ reasonable, reporting issues to these providers as required.</description>
          </overview>
       </connectorDescriptor>
 
-      <!-- JBDS-2733 Add to JBDS 7.1.0 (already in JBT 4.1.0-4.1.1) -->
+      <!-- JBDS-2733 Add to Devstudio 7.1.0 (already in JBT 4.1.0-4.1.1) -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.mobile"
             groupId="org.jboss.tools.central.discovery.a.mobile.extras2"
-            certificationId="com.jboss.jbds.discovery.certification.supported"
+            certificationId="com.jboss.devstudio.discovery.certification.supported"
             description="Create and test hybrid mobile applications with Apache Cordova for Android + iOS"
             id="org.jboss.tools.aerogear.hybrid"
             kind="task"
@@ -214,7 +214,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            certificationId="com.jboss.jbds.discovery.certification.supported"
+            certificationId="com.jboss.devstudio.discovery.certification.supported"
             description="Provides Tooling for Red Hat's OpenShift 3. Sign into your OpenShift 3 account, create and deploy applications to the Cloud."
             id="org.jboss.tools.openshift3"
             kind="task"
@@ -236,7 +236,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            certificationId="com.jboss.jbds.discovery.certification.supported"
+            certificationId="com.jboss.devstudio.discovery.certification.supported"
             description="Save html, css + javascript and see changes immediately in your browser"
             id="org.jboss.tools.livereload"
             kind="task"
@@ -252,7 +252,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            certificationId="com.jboss.jbds.discovery.certification.supported"
+            certificationId="com.jboss.devstudio.discovery.certification.supported"
             description="JBoss Forge Tools provides easy access and integration with JBoss Forge within Eclipse."
             id="forge-tools-feature"
             kind="task"
@@ -269,7 +269,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            certificationId="com.jboss.jbds.discovery.certification.tested"
+            certificationId="com.jboss.devstudio.discovery.certification.tested"
             description="JST Server Core, UI, Adapters, User Doc"
             id="org.eclipse.jst.server_core.feature"
             kind="task"
@@ -324,11 +324,11 @@ reasonable, reporting issues to these providers as required.</description>
          <overview url="http://tools.jboss.org/"/>
       </connectorDescriptor>
 
-      <!-- JBDS 3363, JBIDE-19401 add Portlet connector -->
+      <!-- JBDS-3363, JBIDE-19401 add Portlet connector -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            certificationId="com.jboss.jbds.discovery.certification.tested"
+            certificationId="com.jboss.devstudio.discovery.certification.tested"
             description="Tool support for Portlets"
             id="org.jboss.tools.portlet.connector"
             kind="task"
@@ -344,7 +344,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.extras"
-            certificationId="com.jboss.jbds.discovery.certification.tested"
+            certificationId="com.jboss.devstudio.discovery.certification.tested"
             description="Buildship is a collection of Eclipse plug-ins that provide support for building software using Gradle"
             id="org.eclipse.buildship"
             kind="task"
@@ -364,7 +364,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.extras"
-            certificationId="com.jboss.jbds.discovery.certification.tested"
+            certificationId="com.jboss.devstudio.discovery.certification.tested"
             description="Tool support for the Spring Framework"
             id="org.springframework.ide.eclipse.feature"
             kind="task"
@@ -407,7 +407,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.b.scm"
             groupId="org.jboss.tools.central.discovery.b.scm.git"
-            certificationId="com.jboss.jbds.discovery.certification.tested"
+            certificationId="com.jboss.devstudio.discovery.certification.tested"
             description="Mylyn support for Eclipse EGit and GitHub"
             id="org.eclipse.egit.mylyn"
             kind="task"
@@ -439,7 +439,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.b.scm"
             groupId="org.jboss.tools.central.discovery.b.scm.svn"
-            certificationId="com.jboss.jbds.discovery.certification.tested"
+            certificationId="com.jboss.devstudio.discovery.certification.tested"
             description="Eclipse Team Provider for the Subversion version control system, including SVNKit"
             id="org.tigris.subversion.subclipse"
             kind="task"
@@ -464,7 +464,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.b.scm"
             groupId="org.jboss.tools.central.discovery.b.scm.svn"
-            certificationId="com.jboss.jbds.discovery.certification.tested"
+            certificationId="com.jboss.devstudio.discovery.certification.tested"
             description="Mylyn support for the Subversion version control system, including SVNKit"
             id="org.tigris.subversion.subclipse.mylyn"
             kind="task"
@@ -513,7 +513,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.c.testing"
             groupId="org.jboss.tools.central.discovery.c.testing.local"
-            certificationId="com.jboss.jbds.discovery.certification.tested"
+            certificationId="com.jboss.devstudio.discovery.certification.tested"
             description="Tool support for Checkstyle"
             id="net.sf.eclipsecs"
             kind="task"
@@ -534,7 +534,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.c.testing"
             groupId="org.jboss.tools.central.discovery.c.testing.local"
-            certificationId="com.jboss.jbds.discovery.certification.tested"
+            certificationId="com.jboss.devstudio.discovery.certification.tested"
             description="Tool support for FindBugs"
             id="edu.umd.cs.findbugs.plugin.eclipse"
             kind="task"
@@ -556,7 +556,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.c.testing"
             groupId="org.jboss.tools.central.discovery.c.testing.local"
-            certificationId="com.jboss.jbds.discovery.certification.tested"
+            certificationId="com.jboss.devstudio.discovery.certification.tested"
             description="Mylyn support for Hudson + Jenkins servers"
             id="org.eclipse.mylyn.hudson"
             kind="task"
@@ -577,7 +577,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.c.testing"
             groupId="org.jboss.tools.central.discovery.c.testing.local"
-            certificationId="com.jboss.jbds.discovery.certification.supported"
+            certificationId="com.jboss.devstudio.discovery.certification.supported"
             description="Mylyn support for reporting JBoss JIRAs and Red Hat Bugzillas"
             id="org.jboss.tools.common.mylyn.feature"
             kind="task"
@@ -596,7 +596,7 @@ reasonable, reporting issues to these providers as required.</description>
          <iu id="org.eclipse.mylyn.team_feature"/>
          <iu id="org.eclipse.mylyn.versions"/>
          <icon
-               image32="images/jbds_icon32.png">
+               image32="images/devstudio_icon32.png">
          </icon>
          <overview
                url="http://tools.jboss.org/">
@@ -605,7 +605,7 @@ reasonable, reporting issues to these providers as required.</description>
 	  <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.c.testing"
             groupId="org.jboss.tools.central.discovery.c.testing.local"
-            certificationId="com.jboss.jbds.discovery.certification.tested"
+            certificationId="com.jboss.devstudio.discovery.certification.tested"
             description="Tool support for TestNG"
             id="org.testng.eclipse"
             kind="task"
@@ -626,7 +626,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.c.testing"
             groupId="org.jboss.tools.central.discovery.c.testing.remote"
-            certificationId="com.jboss.jbds.discovery.certification.tested.external"
+            certificationId="com.jboss.devstudio.discovery.certification.tested.external"
             description="Tool support for JRebel - requires JST Server"
             id="org.zeroturnaround.eclipse.feature"
             kind="task"
@@ -661,7 +661,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.core"
-            certificationId="com.jboss.jbds.discovery.certification.supported"
+            certificationId="com.jboss.devstudio.discovery.certification.supported"
             description="JBoss Maven Integration"
             id="org.jboss.tools.maven.feature"
             kind="task"
@@ -680,7 +680,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.configurators"
-            certificationId="com.jboss.jbds.discovery.certification.supported"
+            certificationId="com.jboss.devstudio.discovery.certification.supported"
             description="JBoss Maven CDI Configurator"
             id="org.jboss.tools.maven.cdi.feature"
             kind="task"
@@ -699,7 +699,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.configurators"
-            certificationId="com.jboss.jbds.discovery.certification.supported"
+            certificationId="com.jboss.devstudio.discovery.certification.supported"
             description="JBoss Maven Hibernate Configurator"
             id="org.jboss.tools.maven.hibernate.feature"
             kind="task"
@@ -718,7 +718,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.configurators"
-            certificationId="com.jboss.jbds.discovery.certification.supported"
+            certificationId="com.jboss.devstudio.discovery.certification.supported"
             description="Maven JAX-RS Configurator"
             id="org.jboss.tools.maven.jaxrs.feature"
             kind="task"
@@ -737,7 +737,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.configurators"
-            certificationId="com.jboss.jbds.discovery.certification.supported"
+            certificationId="com.jboss.devstudio.discovery.certification.supported"
             description="Maven JSF Configurator"
             id="org.jboss.tools.maven.jsf.feature"
             kind="task"
@@ -756,7 +756,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.configurators"
-            certificationId="com.jboss.jbds.discovery.certification.supported"
+            certificationId="com.jboss.devstudio.discovery.certification.supported"
             description="JBoss Tools Maven Packaging Configurator"
             id="org.jboss.tools.maven.jbosspackaging.feature"
             kind="task"
@@ -778,7 +778,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.configurators"
-            certificationId="com.jboss.jbds.discovery.certification.supported"
+            certificationId="com.jboss.devstudio.discovery.certification.supported"
             description="JBoss Maven Portlet Configurator"
             id="org.jboss.tools.maven.portlet.feature"
             kind="task"
@@ -815,7 +815,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.configurators"
-            certificationId="com.jboss.jbds.discovery.certification.supported"
+            certificationId="com.jboss.devstudio.discovery.certification.supported"
             description="Maven JPA Configurator"
             id="org.jboss.tools.maven.jpa.feature"
             kind="task"
@@ -834,7 +834,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.configurators"
-            certificationId="com.jboss.jbds.discovery.certification.supported"
+            certificationId="com.jboss.devstudio.discovery.certification.supported"
             description="Tycho Project Configurators"
             id="org.sonatype.tycho.m2e.feature"
             kind="task"
@@ -854,7 +854,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.upstream"
-            certificationId="com.jboss.jbds.discovery.certification.tested"
+            certificationId="com.jboss.devstudio.discovery.certification.tested"
             description="Maven Integration for Eclipse (m2e)"
             id="org.eclipse.m2e.feature"
             kind="task"
@@ -873,7 +873,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.upstream"
-            certificationId="com.jboss.jbds.discovery.certification.supported"
+            certificationId="com.jboss.devstudio.discovery.certification.supported"
             description="Maven Integration for Eclipse JDT APT (m2e-apt)"
             id="org.jboss.tools.maven.apt.feature"
             kind="task"
@@ -892,7 +892,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.upstream"
-            certificationId="com.jboss.jbds.discovery.certification.supported"
+            certificationId="com.jboss.devstudio.discovery.certification.supported"
             description="Maven Integration for EGit (m2e-egit)"
             id="m2e.egit.feature"
             kind="task"
@@ -911,7 +911,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.upstream"
-            certificationId="com.jboss.jbds.discovery.certification.supported"
+            certificationId="com.jboss.devstudio.discovery.certification.supported"
             description="Maven Integration for Web Tools (m2e-wtp)"
             id="org.maven.ide.eclipse.wtp.feature"
             kind="task"
@@ -930,7 +930,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.upstream"
-            certificationId="com.jboss.jbds.discovery.certification.supported"
+            certificationId="com.jboss.devstudio.discovery.certification.supported"
             description="m2e-wro4j is an m2e connector for wro4j-maven-plugin that helps you optimize your web resources on-the-fly, in Eclipse."
             id="m2e.wro4j.feature"
             kind="task"
@@ -960,7 +960,7 @@ reasonable, reporting issues to these providers as required.</description>
       <!-- Windup -->
 <!--       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.e.migration"
-            certificationId="com.jboss.jbds.discovery.certification.supported"
+            certificationId="com.jboss.devstudio.discovery.certification.supported"
             description="The RHAMT plug-ins simplify migrating Java applications."
             groupId="org.jboss.tools.central.discovery.e.migration.windup"
             id="org.jboss.tools.windup.feature"

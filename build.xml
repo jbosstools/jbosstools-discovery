@@ -14,8 +14,8 @@
 		<available file="${WORKSPACE}/results" />
 	</condition>
 
-	<condition property="COMMON_TOOLS" value="/home/hudson/static_build_env/jbds/tools" else="${java.io.tmpdir}">
-		<available file="/home/hudson/static_build_env/jbds" type="dir" />
+	<condition property="COMMON_TOOLS" value="/home/hudson/static_build_env/devstudio/tools" else="${java.io.tmpdir}">
+		<available file="/home/hudson/static_build_env/devstudio" type="dir" />
 	</condition>
 	<mkdir dir="${COMMON_TOOLS}" />
 
@@ -84,7 +84,7 @@ $java.home = ${java.home}</echo>
     	<equals arg1="${PREFIX}" arg2="devstudio"/>
   	</condition>
   	<condition property="compositeURLs" 
-  		value="https://devstudio.redhat.com/targetplatforms/jbdevstudiotarget/${TARGET_PLATFORM_VERSION}/REPO/,${UPDATE_SITE},${EXTRAS_SITE}"
+  		value="https://devstudio.redhat.com/targetplatforms/devstudiotarget/${TARGET_PLATFORM_VERSION}/REPO/,${UPDATE_SITE},${EXTRAS_SITE}"
   		else="http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/${TARGET_PLATFORM_VERSION}/REPO/,${UPDATE_SITE},${EXTRAS_SITE}">
     	<equals arg1="${PREFIX}" arg2="devstudio"/>
   	</condition>

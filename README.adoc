@@ -10,7 +10,7 @@ To use a Discovery site, you need to first install Red Hat Central, which is par
 
 === Use
 
-Both the URL for the directory.xml and the URL used within the plugin (to which the directory.xml refers) can be overridden via the commandline when launching Eclipse (or Red Hat Developer Studio). Via commandline (or inside your eclipse.ini / jbdevstudio.ini file), you can specify these arguments:
+Both the URL for the directory.xml and the URL used within the plugin (to which the directory.xml refers) can be overridden via the commandline when launching Eclipse (or Red Hat Developer Studio). Via commandline (or inside your eclipse.ini / devstudio.ini file), you can specify these arguments:
 
 [source,bash]
 ----
@@ -24,7 +24,7 @@ or
 
 [source,bash]
 ----
-./jbdevstudio -vmargs \
+./devstudio -vmargs \
   -Djboss.discovery.directory.url=https://devstudio.redhat.com/11/snapshots/updates/discovery.central/master/devstudio-directory.xml \
   -Djboss.discovery.site.url=https://devstudio.redhat.com/11/snapshots/updates/discovery.central/master/ \
   -Djboss.discovery.earlyaccess.site.url=https://devstudio.redhat.com/11/snapshots/updates/discovery.earlyaccess/master/

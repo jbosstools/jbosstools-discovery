@@ -2,7 +2,7 @@
 <?eclipse version="3.4"?>
 <plugin>
    <extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
-      <certification id="com.jboss.jbds.discovery.certification.experimental.earlyaccess" name="Experimental - Early Access" url="https://devstudio.redhat.com/11/stable/updates/#central">
+      <certification id="com.jboss.devstudio.discovery.certification.experimental.earlyaccess" name="Experimental - Early Access" url="https://devstudio.redhat.com/11/stable/updates/#central">
          <description>Tested by Red Hat. However, as these are experimental plug-ins,
 it is possible that their content may change at any time and
 without prior notice. We will make an attempt to monitor these
@@ -14,7 +14,7 @@ so that it can be evaluated + monitored, in order to execute
 appropriate tests + report issues to plug-in providers as required.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
-      <certification id="com.jboss.jbds.discovery.certification.supported.earlyaccess" name="Supported - Early Access" url="https://devstudio.redhat.com/11/stable/updates/#central">
+      <certification id="com.jboss.devstudio.discovery.certification.supported.earlyaccess" name="Supported - Early Access" url="https://devstudio.redhat.com/11/stable/updates/#central">
          <description>Supported by Red Hat.
  
 This content is provided via Early Access 
@@ -29,7 +29,7 @@ appropriate tests + report issues to plug-in providers as required.</description
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            certificationId="com.jboss.jbds.discovery.certification.experimental.earlyaccess"
+            certificationId="com.jboss.devstudio.discovery.certification.experimental.earlyaccess"
             description="AngularJS Tooling provides content assist, navigation, and Ionic framework support"
             id="angularjs-eclipse-feature"
             kind="task"
@@ -52,7 +52,7 @@ appropriate tests + report issues to plug-in providers as required.</description
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            certificationId="com.jboss.jbds.discovery.certification.experimental.earlyaccess"
+            certificationId="com.jboss.devstudio.discovery.certification.experimental.earlyaccess"
             description="Create and run tests with Arquillian (Deprecated)"
             id="org.jboss.tools.arquillian"
             kind="task"
@@ -67,7 +67,7 @@ appropriate tests + report issues to plug-in providers as required.</description
 
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.e.migration"
-            certificationId="com.jboss.jbds.discovery.certification.supported.earlyaccess"
+            certificationId="com.jboss.devstudio.discovery.certification.supported.earlyaccess"
             description="The RHAMT plug-ins simplify migrating Java applications."
             groupId="org.jboss.tools.central.discovery.e.migration.windup"
             id="org.jboss.tools.windup.feature"
