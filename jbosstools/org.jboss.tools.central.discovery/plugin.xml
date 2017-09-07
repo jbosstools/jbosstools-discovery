@@ -919,7 +919,7 @@ Supported by Red Hat.</description>
             license="EPL (Free)"
             name="Red Hat Application Migration Toolkit"
             provider="JBoss by Red Hat"
-            siteUrl="http://download.jboss.org/jbosstools/neon/stable/updates/rhamt/composite/">
+            siteUrl="http://download.jboss.org/jbosstools/oxygen/stable/updates/rhamt/composite/">
             <iu id="org.jboss.tools.windup.feature" />
          <icon image32="images/rhamt_icon_32.png"/>
          <overview url="http://windup.jboss.org/"/>
