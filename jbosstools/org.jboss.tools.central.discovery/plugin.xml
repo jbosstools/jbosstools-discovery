@@ -501,26 +501,6 @@ Supported by Red Hat.</description>
          </overview>
       </connectorDescriptor>
 
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.c.testing"
-            groupId="org.jboss.tools.central.discovery.c.testing.local"
-            description="Tool support for FindBugs"
-            id="edu.umd.cs.findbugs.plugin.eclipse"
-            kind="task"
-            license="LGPL (Free)"
-            name="FindBugs"
-            provider="FindBugs Project"
-            siteUrl="${jboss.discovery.site.url}">
-        <!-- https://issues.jboss.org/browse/JBDS-2284 -->
-        <iu id="edu.umd.cs.findbugs.plugin.eclipse"/>
-         <icon
-               image32="images/findbugs_32.png">
-         </icon>
-         <overview
-               url="http://findbugs.sourceforge.net/">
-         </overview>
-      </connectorDescriptor>
-
       <!-- JBDS-2752 -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.c.testing"
