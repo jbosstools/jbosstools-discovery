@@ -13,72 +13,61 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/S20170120205402/"/>
-      <!-- Orbit bundles needed for Mylyn/Bugzilla -->
-      <unit id="org.apache.xmlrpc" version="3.0.0.v20100427-1100"/>
-      <unit id="org.apache.ws.commons.util" version="1.0.1.v20100518-1140"/>
-    </location> 
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/eclipsecs/8.0.0.201707161819/"/>
+      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.24.2"/>
+      <unit id="net.sf.eclipsecs.feature.group" version="8.0.0.201707161819"/>
+    </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/eclipsecs/7.6.0.201703111252/"/>
-      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.24.0"/>
-      <unit id="net.sf.eclipsecs.feature.group" version="7.6.0.201703111252"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/sonarlint/3.2.0.201706271328/"/>
+      <unit id="org.sonarlint.eclipse.feature.feature.group" version="3.2.0.201706271328"/>
     </location>
 
     <!-- required for SpringIDE 3.7 (see also above) -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.8.3.201612191259-RELEASE/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.9.0.201707061730-RELEASE/"/>
       <!-- Features to include in Central connector -->
-      <unit id="org.springframework.ide.eclipse.aop.feature.feature.group" version="3.8.3.201612191259-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.autowire.feature.feature.group" version="3.8.3.201612191259-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.batch.feature.feature.group" version="3.8.3.201612191259-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.data.feature.feature.group" version="3.8.3.201612191259-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.feature.feature.group" version="3.8.3.201612191259-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.integration.feature.feature.group" version="3.8.3.201612191259-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.maven.feature.feature.group" version="3.8.3.201612191259-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.mylyn.feature.feature.group" version="3.8.3.201612191259-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.osgi.feature.feature.group" version="3.8.3.201612191259-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.security.feature.feature.group" version="3.8.3.201612191259-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.webflow.feature.feature.group" version="3.8.3.201612191259-RELEASE"/>
-      <unit id="org.springsource.ide.eclipse.commons.feature.group" version="3.8.3.201612190658-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.aop.feature.feature.group" version="3.9.0.201707061730-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.autowire.feature.feature.group" version="3.9.0.201707061730-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.batch.feature.feature.group" version="3.9.0.201707061730-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.data.feature.feature.group" version="3.9.0.201707061730-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.feature.feature.group" version="3.9.0.201707061730-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.integration.feature.feature.group" version="3.9.0.201707061730-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.maven.feature.feature.group" version="3.9.0.201707061730-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.mylyn.feature.feature.group" version="3.9.0.201707061730-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.osgi.feature.feature.group" version="3.9.0.201707061730-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.security.feature.feature.group" version="3.9.0.201707061730-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.webflow.feature.feature.group" version="3.9.0.201707061730-RELEASE"/>
+      <unit id="org.springsource.ide.eclipse.commons.feature.group" version="3.9.0.201707061630-RELEASE"/>
 
       <!-- Plugins to include to avoid console warnings after installation -->
-      <unit id="org.springframework.ide.eclipse.config.ui" version="3.8.3.201612191259-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.maven" version="3.8.3.201612191259-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.wizard" version="3.8.3.201612191259-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.config.ui" version="3.9.0.201707061730-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.maven" version="3.9.0.201707061730-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.wizard" version="3.9.0.201707061730-RELEASE"/>
+      <unit id="org.springsource.ide.eclipse.dashboard.ui" version="3.9.0.201707061630-RELEASE"/>
 
       <!-- Required 3rd party plugins (on SpringIDE or Orbit site) not properly referenced by features -->
       <unit id="javax.jms" version="1.1.0.v201205091237"/>
-      <unit id="javax.validation" version="1.0.0.GA_v201205091237"/>
-      <unit id="org.aopalliance" version="1.0.0.v201105210816"/>
       <unit id="org.apache.commons.codec" version="1.6.0.v201305230611"/>
-      <unit id="org.apache.httpcomponents.httpclient" version="4.3.6.v201511171540"/>
-      <unit id="org.apache.httpcomponents.httpcore" version="4.3.3.v201411290715"/>
-      <unit id="org.aspectj.runtime" version="1.8.10.201612122115"/>
-      <unit id="org.aspectj.weaver" version="1.8.10.201612122115"/>
-      <unit id="org.codehaus.jackson.core" version="1.6.0.v20101005-0925"/>
-      <unit id="org.codehaus.jackson.mapper" version="1.6.0.v20101005-0925"/>
-      <unit id="org.json" version="1.0.0.v201011060100"/>
-      <unit id="com.google.protobuf" version="2.4.0.v201105131100"/>
-
-      <!-- Optional bundles included to avoid console warnings after installation -->
-      <unit id="org.springsource.ide.eclipse.dashboard.ui" version="3.8.3.201612190658-RELEASE"/>
-
-      <unit id="org.eclipse.equinox.weaving.sdk.feature.group" version="1.2.0.201612122115"/>
-      <unit id="org.eclipse.equinox.weaving.hook" version="1.1.200.v20150730-1648"/>
+      <unit id="org.aspectj.runtime" version="1.8.10.201704242114"/>
+      <unit id="org.aspectj.weaver" version="1.8.10.201704242114"/>
+      <unit id="org.eclipse.equinox.weaving.sdk.feature.group" version="1.2.0.201704242114"/>
+      <unit id="org.eclipse.equinox.weaving.hook" version="1.2.0.v20160929-1449"/>
+      <!-- <unit id="org.codehaus.jackson.core" version="1.6.0.v20101005-0925"/> -->
+      <!-- <unit id="org.codehaus.jackson.mapper" version="1.6.0.v20101005-0925"/> -->
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/subclipse/1.10.13_1.8.12.r10533_v20160129_0158/"/>
-      <unit id="com.collabnet.subversion.merge.feature.feature.group" version="4.1.0"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/subclipse/4.2.3.201707071932__1.9.0.r10652/"/>
+      <unit id="com.collabnet.subversion.merge" version="4.2.0.1"/>
       <unit id="net.java.dev.jna.feature.group" version="4.1.0.v06022015_1911"/>
-      <unit id="org.tigris.subversion.clientadapter.feature.feature.group" version="1.10.3"/>
-      <unit id="org.tigris.subversion.clientadapter.javahl.feature.feature.group" version="1.9.3"/>
-      <unit id="org.tigris.subversion.clientadapter.svnkit.feature.feature.group" version="1.8.9"/>
-      <unit id="org.tigris.subversion.subclipse.graph.feature.feature.group" version="1.1.1"/>
-      <unit id="org.tigris.subversion.subclipse.mylyn.feature.group" version="3.0.0"/>
-      <unit id="org.tigris.subversion.subclipse.feature.group" version="1.10.13"/>
-      <unit id="org.tmatesoft.svnkit.feature.group" version="1.8.12.r10533_v20160129_0158"/>
+      <unit id="org.tigris.subversion.clientadapter" version="1.9.4.2"/>
+      <unit id="org.tigris.subversion.clientadapter.javahl.feature.feature.group" version="1.9.6.201707071926"/>
+      <unit id="org.tigris.subversion.clientadapter.svnkit.feature.feature.group" version="1.8.12.1"/>
+      <unit id="org.tigris.subversion.subclipse.graph.feature.feature.group" version="4.2.0.1"/>
+      <unit id="org.tigris.subversion.subclipse.mylyn.feature.feature.group" version="4.2.0.1"/>
+      <unit id="org.tigris.subversion.subclipse.feature.group" version="4.2.3.201707071932"/>
+      <unit id="org.tmatesoft.svnkit.feature.group" version="1.9.0.r10652"/>
     </location>
 
   </locations>
