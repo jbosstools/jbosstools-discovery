@@ -501,6 +501,25 @@ Supported by Red Hat.</description>
          </overview>
       </connectorDescriptor>
 
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.c.testing"
+            groupId="org.jboss.tools.central.discovery.c.testing.local"
+            description="SonarLint for Eclipse"
+            id="org.sonarlint.eclipse.feature"
+            kind="task"
+            license="LGPL (Free)"
+            name="SonarLint for Eclipse"
+            provider="SonarSource"
+            siteUrl="${jboss.discovery.site.url}">
+         <iu id="org.sonarlint.eclipse.feature"/>
+         <icon
+               image32="images/sonarlint-32x32.png">
+         </icon>
+         <overview
+               url="http://www.sonarlint.org/eclipse/">
+         </overview>
+      </connectorDescriptor>
+
       <!-- JBDS-2752 -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.c.testing"
