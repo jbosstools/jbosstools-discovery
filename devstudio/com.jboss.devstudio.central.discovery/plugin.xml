@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?eclipse version="3.4"?>
 <plugin>
-	<extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
+    <extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
 
-      <!-- JBDS-2379, JBDS-2278, JBDS-2361, JBIDE-10333 -->
       <certification id="com.jboss.devstudio.discovery.certification.supported" name="Supported" url="https://devstudio.redhat.com/11/stable/updates/#central">
          <description>
 Supported by Red Hat.</description>
@@ -141,7 +140,6 @@ reasonable, reporting issues to these providers as required.</description>
          </overview>
       </connectorDescriptor>
 
-      <!-- JBDS-2733 Add to Devstudio 7.1.0 (already in JBT 4.1.0-4.1.1) -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.mobile"
             groupId="org.jboss.tools.central.discovery.a.mobile.extras2"
@@ -175,6 +173,8 @@ reasonable, reporting issues to these providers as required.</description>
          <group id="org.jboss.tools.central.discovery.a.web.extras" />
          <group id="org.jboss.tools.central.discovery.a.web.extras2" />
       </connectorCategory>
+
+      <!-- JBIDE-19038: Arquillian is not in devstudio -->
 
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
@@ -400,8 +400,8 @@ reasonable, reporting issues to these providers as required.</description>
             id="org.jboss.tools.central.discovery.b.scm"
             name="Source Control Management"
             relevance="60">
- 			<group id="org.jboss.tools.central.discovery.b.scm.git" />
- 			<group id="org.jboss.tools.central.discovery.b.scm.svn" />
+             <group id="org.jboss.tools.central.discovery.b.scm.git" />
+             <group id="org.jboss.tools.central.discovery.b.scm.svn" />
       </connectorCategory>
 
       <connectorDescriptor
@@ -420,15 +420,15 @@ reasonable, reporting issues to these providers as required.</description>
             <iu id="org.eclipse.egit.mylyn"/>
             <iu id="org.eclipse.mylyn.github.feature"/>
             <iu id="org.eclipse.mylyn.git" />
-	    <iu id="org.eclipse.mylyn_feature"/>
-	    <iu id="org.eclipse.mylyn.ide_feature"/>
-	    <iu id="org.eclipse.mylyn.commons"/>
-	    <iu id="org.eclipse.mylyn.context_feature"/>
-	    <iu id="org.eclipse.mylyn.bugzilla_feature"/>
-	    <iu id="org.eclipse.mylyn.java_feature"/>
-	    <iu id="org.eclipse.mylyn.pde_feature"/>
-	    <iu id="org.eclipse.mylyn.team_feature"/>
-	    <iu id="org.eclipse.mylyn.versions"/>
+        <iu id="org.eclipse.mylyn_feature"/>
+        <iu id="org.eclipse.mylyn.ide_feature"/>
+        <iu id="org.eclipse.mylyn.commons"/>
+        <iu id="org.eclipse.mylyn.context_feature"/>
+        <iu id="org.eclipse.mylyn.bugzilla_feature"/>
+        <iu id="org.eclipse.mylyn.java_feature"/>
+        <iu id="org.eclipse.mylyn.pde_feature"/>
+        <iu id="org.eclipse.mylyn.team_feature"/>
+        <iu id="org.eclipse.mylyn.versions"/>
          <icon
                image32="images/egit_32.png">
          </icon>
@@ -471,25 +471,23 @@ reasonable, reporting issues to these providers as required.</description>
             license="Subclipse License (Free)"
             name="Subclipse + SVNKit: Mylyn Support"
             provider="tigris.org"
-	    siteUrl="${jboss.discovery.site.url}">
+            siteUrl="${jboss.discovery.site.url}">
             <iu id="org.tigris.subversion.subclipse"/>
             <iu id="org.tigris.subversion.clientadapter.svnkit.feature"/>
             <iu id="org.tigris.subversion.subclipse.mylyn.feature"/>
-            <iu id="com.collabnet.subversion.merge.feature"/>
             <iu id="net.java.dev.jna"/>
-            <iu id="org.tigris.subversion.clientadapter.feature"/>
             <iu id="org.tigris.subversion.subclipse.graph.feature"/>
             <iu id="org.tmatesoft.svnkit"/>
 
-	    <iu id="org.eclipse.mylyn_feature"/>
-	    <iu id="org.eclipse.mylyn.ide_feature"/>
-	    <iu id="org.eclipse.mylyn.commons"/>
-	    <iu id="org.eclipse.mylyn.context_feature"/>
-	    <iu id="org.eclipse.mylyn.bugzilla_feature"/>
-	    <iu id="org.eclipse.mylyn.java_feature"/>
-	    <iu id="org.eclipse.mylyn.pde_feature"/>
-	    <iu id="org.eclipse.mylyn.team_feature"/>
-	    <iu id="org.eclipse.mylyn.versions"/>
+        <iu id="org.eclipse.mylyn_feature"/>
+        <iu id="org.eclipse.mylyn.ide_feature"/>
+        <iu id="org.eclipse.mylyn.commons"/>
+        <iu id="org.eclipse.mylyn.context_feature"/>
+        <iu id="org.eclipse.mylyn.bugzilla_feature"/>
+        <iu id="org.eclipse.mylyn.java_feature"/>
+        <iu id="org.eclipse.mylyn.pde_feature"/>
+        <iu id="org.eclipse.mylyn.team_feature"/>
+        <iu id="org.eclipse.mylyn.versions"/>
          <icon
                image32="images/subclipse_32.gif">
          </icon>
@@ -505,8 +503,8 @@ reasonable, reporting issues to these providers as required.</description>
             id="org.jboss.tools.central.discovery.c.testing"
             name="Utilities"
             relevance="40">
-	<group id="org.jboss.tools.central.discovery.c.testing.local" />
- 	<group id="org.jboss.tools.central.discovery.c.testing.remote" />
+          <group id="org.jboss.tools.central.discovery.c.testing.local" />
+           <group id="org.jboss.tools.central.discovery.c.testing.remote" />
       </connectorCategory>
 
       <!-- add CheckStyle plugin back into Central (JBIDE-14799, JBIDE-15128, JBIDE-15129) -->
@@ -600,8 +598,8 @@ reasonable, reporting issues to these providers as required.</description>
          <overview
                url="http://tools.jboss.org/">
          </overview>
-     </connectorDescriptor>
-	  <connectorDescriptor
+      </connectorDescriptor>
+      <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.c.testing"
             groupId="org.jboss.tools.central.discovery.c.testing.local"
             certificationId="com.jboss.devstudio.discovery.certification.tested"
@@ -617,8 +615,8 @@ reasonable, reporting issues to these providers as required.</description>
                image32="images/testng_32.gif">
          </icon>
          <overview
-         	   summary="TestNG plug-in for Eclipse"
-         	   screenshot="images/testng_screenshot.png"
+                summary="TestNG plug-in for Eclipse"
+                screenshot="images/testng_screenshot.png"
                url="http://testng.org/">
          </overview>
       </connectorDescriptor>

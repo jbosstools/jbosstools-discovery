@@ -106,7 +106,6 @@ Supported by Red Hat.</description>
          </overview>
       </connectorDescriptor>
 
-      <!-- JBDS-2733 Add to JBDS 7.1.0 (already in JBT 4.1.0-4.1.1) -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.mobile"
             groupId="org.jboss.tools.central.discovery.a.mobile.extras2"
@@ -141,7 +140,7 @@ Supported by Red Hat.</description>
          <group id="org.jboss.tools.central.discovery.a.web.extras2" />
       </connectorCategory>
 
-      <!-- JBIDE-19038: Arquillian is not EA in JBT, only in JBDS -->
+      <!-- JBIDE-19038: Arquillian is not in devstudio -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
@@ -301,7 +300,7 @@ Supported by Red Hat.</description>
          <overview url="http://tools.jboss.org/"/>
       </connectorDescriptor>
 
-      <!-- JBDS 3363, JBIDE-19401 add Portlet connector -->
+      <!-- JBDS-3363, JBIDE-19401 add Portlet connector -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
@@ -313,7 +312,7 @@ Supported by Red Hat.</description>
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.portlet.feature"/>
-            <icon image32="images/jbosstools_icon32.png" />
+         <icon image32="images/jbosstools_icon32.png"/>
          <overview url="http://tools.jboss.org/"/>
       </connectorDescriptor>
 
@@ -500,7 +499,7 @@ Supported by Red Hat.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.c.testing"
             groupId="org.jboss.tools.central.discovery.c.testing.local"
-            description="SonarLint for Eclipse"
+            description="Tool support for SonarLint"
             id="org.sonarlint.eclipse.feature"
             kind="task"
             license="LGPL (Free)"
