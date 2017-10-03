@@ -421,9 +421,7 @@ Supported by Red Hat.</description>
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.tigris.subversion.subclipse"/>
             <iu id="org.tigris.subversion.clientadapter.svnkit.feature"/>
-            <iu id="com.collabnet.subversion.merge.feature"/>
             <iu id="net.java.dev.jna"/>
-            <iu id="org.tigris.subversion.clientadapter.feature"/>
             <iu id="org.tigris.subversion.subclipse.graph.feature"/>
             <iu id="org.tmatesoft.svnkit"/>
          <icon
@@ -445,10 +443,8 @@ Supported by Red Hat.</description>
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.tigris.subversion.subclipse"/>
             <iu id="org.tigris.subversion.clientadapter.svnkit.feature"/>
-            <iu id="org.tigris.subversion.subclipse.mylyn"/>
-            <iu id="com.collabnet.subversion.merge.feature"/>
+            <iu id="org.tigris.subversion.subclipse.mylyn.feature"/>
             <iu id="net.java.dev.jna"/>
-            <iu id="org.tigris.subversion.clientadapter.feature"/>
             <iu id="org.tigris.subversion.subclipse.graph.feature"/>
             <iu id="org.tmatesoft.svnkit"/>
 
