@@ -449,9 +449,7 @@ reasonable, reporting issues to these providers as required.</description>
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.tigris.subversion.subclipse"/>
             <iu id="org.tigris.subversion.clientadapter.svnkit.feature"/>
-            <iu id="com.collabnet.subversion.merge.feature"/>
             <iu id="net.java.dev.jna"/>
-            <iu id="org.tigris.subversion.clientadapter.feature"/>
             <iu id="org.tigris.subversion.subclipse.graph.feature"/>
             <iu id="org.tmatesoft.svnkit"/>
          <icon
