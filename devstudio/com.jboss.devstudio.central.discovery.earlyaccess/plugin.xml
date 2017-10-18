@@ -67,9 +67,9 @@ appropriate tests + report issues to plug-in providers as required.</description
 
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.e.migration"
+            groupId="org.jboss.tools.central.discovery.e.migration.windup"
             certificationId="com.jboss.devstudio.discovery.certification.supported.earlyaccess"
             description="The RHAMT plug-ins simplify migrating Java applications."
-            groupId="org.jboss.tools.central.discovery.e.migration.windup"
             id="org.jboss.tools.windup.feature"
             kind="task"
             license="EPL (Free)"
@@ -79,6 +79,23 @@ appropriate tests + report issues to plug-in providers as required.</description
             <iu id="org.jboss.tools.windup.feature" />
          <icon image32="images/rhamt_icon_32.png"/>
          <overview url="http://windup.jboss.org/"/>
+      </connectorDescriptor>
+
+      <!-- JBIDE-24897 fabric8 analytics -->
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
+            certificationId="com.jboss.devstudio.discovery.certification.supported.earlyaccess"
+            description="Fabric8 Analytics Language Server Integration helps to analyze the components of your application stack as you type."
+            id="com.redhat.fabric8analytics.lsp"
+            kind="task"
+            license="EPL (Free)"
+            name="Fabric8 Analytics Language Server Integration"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.earlyaccess.site.url}">
+            <iu id="com.redhat.fabric8analytics.lsp.eclipse.feature" />
+         <icon image32="images/devstudio_icon32.png"/>
+         <overview url="https://github.com/fabric8-analytics/fabric8-analytics-devstudio-plugin/"/>
       </connectorDescriptor>
 
     </extension>	
