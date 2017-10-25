@@ -68,7 +68,7 @@ appropriate tests + report issues to plug-in providers as required.</description
          <overview url="http://windup.jboss.org/"/>
       </connectorDescriptor>
 
-      <!-- JBIDE-24897 fabric8 analytics -->
+      <!-- JBIDE-24897 fabric8 analytics not ready yet
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
@@ -83,7 +83,7 @@ appropriate tests + report issues to plug-in providers as required.</description
             <iu id="com.redhat.fabric8analytics.lsp.eclipse.feature" />
          <icon image32="images/jbosstools_icon32.png"/>
          <overview url="https://github.com/fabric8-analytics/fabric8-analytics-devstudio-plugin/"/>
-      </connectorDescriptor>
+      </connectorDescriptor> -->
 
     </extension>
 </plugin>
