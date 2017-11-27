@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><?pde version="3.6"?><target includeMode="feature" name="jbtcentral-4.71.0.Final-SNAPSHOT">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><?pde version="3.6"?><target includeMode="feature" name="jbtcentral-4.72.0.AM2-SNAPSHOT">
   <!-- Pro tip: paste content from generated Apache directory index, then match
         \[ ] (.+)_(.+).jar.+
     replace with 
@@ -19,39 +19,39 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/sonarlint/3.2.0.201706271328/"/>
-      <unit id="org.sonarlint.eclipse.feature.feature.group" version="3.2.0.201706271328"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/sonarlint/3.3.0.201711211047/"/>
+      <unit id="org.sonarlint.eclipse.feature.feature.group" version="3.3.0.201711211047"/>
     </location>
 
     <!-- required for SpringIDE 3.7 (see also above) -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.9.0.201707061730-RELEASE/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.9.1.201710100539-RELEASE/"/>
       <!-- Features to include in Central connector -->
-      <unit id="org.springframework.ide.eclipse.aop.feature.feature.group" version="3.9.0.201707061730-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.autowire.feature.feature.group" version="3.9.0.201707061730-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.batch.feature.feature.group" version="3.9.0.201707061730-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.data.feature.feature.group" version="3.9.0.201707061730-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.feature.feature.group" version="3.9.0.201707061730-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.integration.feature.feature.group" version="3.9.0.201707061730-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.maven.feature.feature.group" version="3.9.0.201707061730-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.mylyn.feature.feature.group" version="3.9.0.201707061730-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.osgi.feature.feature.group" version="3.9.0.201707061730-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.security.feature.feature.group" version="3.9.0.201707061730-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.webflow.feature.feature.group" version="3.9.0.201707061730-RELEASE"/>
-      <unit id="org.springsource.ide.eclipse.commons.feature.group" version="3.9.0.201707061630-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.aop.feature.feature.group" version="3.9.1.201710100539-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.autowire.feature.feature.group" version="3.9.1.201710100539-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.batch.feature.feature.group" version="3.9.1.201710100539-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.data.feature.feature.group" version="3.9.1.201710100539-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.feature.feature.group" version="3.9.1.201710100539-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.integration.feature.feature.group" version="3.9.1.201710100539-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.maven.feature.feature.group" version="3.9.1.201710100539-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.mylyn.feature.feature.group" version="3.9.1.201710100539-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.osgi.feature.feature.group" version="3.9.1.201710100539-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.security.feature.feature.group" version="3.9.1.201710100539-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.webflow.feature.feature.group" version="3.9.1.201710100539-RELEASE"/>
+      <unit id="org.springsource.ide.eclipse.commons.feature.group" version="3.9.1.201710100503-RELEASE"/>
 
       <!-- Plugins to include to avoid console warnings after installation -->
-      <unit id="org.springframework.ide.eclipse.config.ui" version="3.9.0.201707061730-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.maven" version="3.9.0.201707061730-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.wizard" version="3.9.0.201707061730-RELEASE"/>
-      <unit id="org.springsource.ide.eclipse.dashboard.ui" version="3.9.0.201707061630-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.config.ui" version="3.9.1.201710100539-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.maven" version="3.9.1.201710100539-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.wizard" version="3.9.1.201710100539-RELEASE"/>
+      <unit id="org.springsource.ide.eclipse.dashboard.ui" version="3.9.1.201710100503-RELEASE"/>
 
       <!-- Required 3rd party plugins (on SpringIDE or Orbit site) not properly referenced by features -->
       <unit id="javax.jms" version="1.1.0.v201205091237"/>
       <unit id="org.apache.commons.codec" version="1.6.0.v201305230611"/>
-      <unit id="org.aspectj.runtime" version="1.8.10.201704242114"/>
-      <unit id="org.aspectj.weaver" version="1.8.10.201704242114"/>
-      <unit id="org.eclipse.equinox.weaving.sdk.feature.group" version="1.2.0.201704242114"/>
+      <unit id="org.aspectj.runtime" version="1.8.10.201710051806"/>
+      <unit id="org.aspectj.weaver" version="1.8.10.201710051806"/>
+      <unit id="org.eclipse.equinox.weaving.sdk.feature.group" version="1.2.0.201710051806"/>
       <unit id="org.eclipse.equinox.weaving.hook" version="1.2.0.v20160929-1449"/>
       <!-- <unit id="org.codehaus.jackson.core" version="1.6.0.v20101005-0925"/> -->
       <!-- <unit id="org.codehaus.jackson.mapper" version="1.6.0.v20101005-0925"/> -->
