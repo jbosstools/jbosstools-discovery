@@ -4,11 +4,11 @@
   <parent>
     <groupId>org.jboss.tools.central.discovery</groupId>
     <artifactId>jbosstools</artifactId>
-    <version>4.5.1-SNAPSHOT</version>
+    <version>4.5.2-SNAPSHOT</version>
   </parent>
   <groupId>org.jboss.tools.central.plugins</groupId>
   <artifactId>org.jboss.tools.central.discovery</artifactId> 
-  <version>4.5.1-SNAPSHOT</version>
+  <version>4.5.2-SNAPSHOT</version>
   <packaging>eclipse-plugin</packaging>
 <build>
     <plugins>

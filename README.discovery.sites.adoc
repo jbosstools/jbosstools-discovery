@@ -179,8 +179,8 @@ Instead of the latest master build, you can also point Eclipse / Devstudio at mo
 
 * The current released milestone URLs for JBT/Devstudio are:
 
-** http://download.jboss.org/jbosstools/oxygen/development/updates/discovery.central/4.5.1.*/jbosstools-directory.xml
-** https://devstudio.redhat.com/11/development/updates/discovery.central/11.1.0.*/devstudio-directory.xml
+** http://download.jboss.org/jbosstools/oxygen/development/updates/discovery.central/4.5.2.*/jbosstools-directory.xml
+** https://devstudio.redhat.com/11/development/updates/discovery.central/11.2.0.*/devstudio-directory.xml
 
 * The staging URLs are:
 
