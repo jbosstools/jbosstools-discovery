@@ -52,7 +52,8 @@ appropriate tests + report issues to plug-in providers as required.</description
       <!-- JBIDE-19038: Arquillian is not EA in JBT, only in JBDS, so move connector to ../org.jboss.tools.central.discovery/plugin.xml and remove certificationId=earlyaccess
       -->
 
-      <connectorDescriptor
+      <!-- RHAMT -->
+     <!--  <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.e.migration"
             groupId="org.jboss.tools.central.discovery.e.migration.windup"
             certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
@@ -66,7 +67,7 @@ appropriate tests + report issues to plug-in providers as required.</description
             <iu id="org.jboss.tools.windup.feature" />
          <icon image32="images/rhamt_icon_32.png"/>
          <overview url="http://windup.jboss.org/"/>
-      </connectorDescriptor>
+      </connectorDescriptor> -->
 
       <!-- JBIDE-24897 fabric8 analytics not ready yet
       <connectorDescriptor

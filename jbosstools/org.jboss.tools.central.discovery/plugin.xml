@@ -902,8 +902,8 @@ Supported by Red Hat.</description>
          <group id="org.jboss.tools.central.discovery.e.migration.windup"/>
       </connectorCategory>
 
-      <!-- Windup -->
-<!--       <connectorDescriptor
+      <!-- RHAMT -->
+      <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.e.migration"
             certificationId="org.jboss.tools.discovery.certification.supported"
             description="The RHAMT plug-ins simplify migrating Java applications."
@@ -913,11 +913,11 @@ Supported by Red Hat.</description>
             license="EPL (Free)"
             name="Red Hat Application Migration Toolkit"
             provider="JBoss by Red Hat"
-            siteUrl="http://download.jboss.org/jbosstools/oxygen/stable/updates/rhamt/composite/">
+            siteUrl="http://download.jboss.org/jbosstools/oxygen/stable/updates/rhamt/">
             <iu id="org.jboss.tools.windup.feature" />
          <icon image32="images/rhamt_icon_32.png"/>
          <overview url="http://windup.jboss.org/"/>
-      </connectorDescriptor> -->
+      </connectorDescriptor>
 
     </extension>
 
