@@ -194,26 +194,6 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            description="Provides Tooling for Red Hat's OpenShift 2 (Deprecated). New users should use OpenShift 3 Tools instead."
-            id="org.jboss.tools.openshift.feature"
-            kind="task"
-            license="EPL (Free)"
-            name="JBoss OpenShift 2 Tools (Deprecated)"
-            provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url}">
-            <iu id="org.jboss.tools.openshift.express.feature"/>
-            <iu id="org.jboss.tools.openshift.egit.integration.feature"/>
-         <icon
-               image32="images/openshift-32.png">
-         </icon>
-         <overview
-               url="http://tools.jboss.org/">
-         </overview>
-      </connectorDescriptor>
-
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
             certificationId="com.jboss.devstudio.discovery.certification.supported"
             description="Provides Tooling for Red Hat's OpenShift 3. Sign into your OpenShift 3 account, create and deploy applications to the Cloud."
             id="org.jboss.tools.openshift3"
