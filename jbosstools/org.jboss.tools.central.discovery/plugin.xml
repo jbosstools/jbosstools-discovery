@@ -747,6 +747,24 @@ Supported by Red Hat.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.configurators"
+            description="JBoss Maven Spring Boot Configurator"
+            id="org.jboss.tools.maven.springboot.feature"
+            kind="task"
+            license="EPL (Free)"
+            name="JBoss Maven Spring Boot Configurator"
+            provider="JBoss by Red Hat"
+            siteUrl="${jboss.discovery.site.url}">
+            <iu id="org.jboss.tools.maven.seam.feature"/>
+         <icon
+               image32="images/jbosstools_icon32.png">
+         </icon>
+         <overview
+               url="http://tools.jboss.org/">
+         </overview>
+      </connectorDescriptor>
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.d.maven"
+            groupId="org.jboss.tools.central.discovery.d.maven.configurators"
             description="Maven JPA Configurator"
             id="org.jboss.tools.maven.jpa.feature"
             kind="task"
