@@ -14,6 +14,16 @@ so that it can be evaluated + monitored, in order to execute
 appropriate tests + report issues to plug-in providers as required.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
+      <certification id="com.jboss.devstudio.discovery.certification.techpreview.earlyaccess" name="Technology Preview - Early Access" url="https://devstudio.redhat.com/11/stable/updates/#central">
+         <description>Tested by Red Hat. However, as these are Technology Preview
+plug-ins, it is possible that their content may change at 
+any time and without prior notice. 
+ 
+This content is provided via Early Access 
+so that it can be evaluated + monitored, in order to execute 
+appropriate tests + report issues as required.</description>
+         <icon image48="images/jbosstools_48.png"></icon>
+      </certification>
       <certification id="com.jboss.devstudio.discovery.certification.supported.earlyaccess" name="Supported - Early Access" url="https://devstudio.redhat.com/11/stable/updates/#central">
          <description>Supported by Red Hat.
  
@@ -86,7 +96,7 @@ appropriate tests + report issues to plug-in providers as required.</description
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            certificationId="com.jboss.devstudio.discovery.certification.supported.earlyaccess"
+            certificationId="com.jboss.devstudio.discovery.certification.techpreview.earlyaccess"
             description="Fabric8 Analytics Language Server Integration helps to analyze the components of your application stack as you type."
             id="com.redhat.fabric8analytics.lsp"
             kind="task"
