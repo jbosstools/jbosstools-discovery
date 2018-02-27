@@ -109,11 +109,11 @@ Supported by Red Hat.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.mobile"
             groupId="org.jboss.tools.central.discovery.a.mobile.extras2"
-            description="Create and test hybrid mobile applications with Apache Cordova for Android + iOS"
+            description="Create and test hybrid mobile applications with Apache Cordova for Android + iOS (Deprecated)"
             id="org.jboss.tools.aerogear.hybrid"
             kind="task"
             license="EPL (Free)"
-            name="JBoss Hybrid Mobile Tools + CordovaSim"
+            name="JBoss Hybrid Mobile Tools + CordovaSim (Deprecated)"
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.aerogear.easymport.feature"/>
@@ -164,11 +164,11 @@ Supported by Red Hat.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            description="Save html, css + javascript and see changes immediately in your browser"
+            description="Save html, css + javascript and see changes immediately in your browser (Deprecated)"
             id="org.jboss.tools.livereload"
             kind="task"
             license="EPL (Free)"
-            name="JBoss Tools LiveReload"
+            name="JBoss Tools LiveReload (Deprecated)"
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.livereload.feature"/>
@@ -253,11 +253,11 @@ Supported by Red Hat.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            description="Tool support for Portlets"
+            description="Tool support for Portlets (Deprecated)"
             id="org.jboss.tools.portlet.connector"
             kind="task"
             license="EPL, Other (Free)"
-            name="JBoss Portlet Tools"
+            name="JBoss Portlet Tools (Deprecated)"
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.portlet.feature"/>
@@ -680,11 +680,11 @@ Supported by Red Hat.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.configurators"
-            description="JBoss Maven Portlet Configurator"
+            description="JBoss Maven Portlet Configurator (Deprecated)"
             id="org.jboss.tools.maven.portlet.feature"
             kind="task"
             license="EPL (Free)"
-            name="JBoss Maven Portlet Configurator"
+            name="JBoss Maven Portlet Configurator (Deprecated)"
             provider="JBoss by Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.maven.portlet.feature"/>
