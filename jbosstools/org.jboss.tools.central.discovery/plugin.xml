@@ -140,37 +140,6 @@ Supported by Red Hat.</description>
          <group id="org.jboss.tools.central.discovery.a.web.extras2" />
       </connectorCategory>
 
-      <!-- JBIDE-19038: Arquillian is not in devstudio -->
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
-            description="Create and run tests with Arquillian (Deprecated)"
-            id="org.jboss.tools.arquillian"
-            kind="task"
-            license="EPL (Free)"
-            name="JBoss Arquillian Tools"
-            provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.earlyaccess.site.url}">
-            <iu id="org.jboss.tools.arquillian.feature"/>
-            <icon image32="images/arquillian_32.png"/>
-            <overview url="http://www.jboss.org/tools"/>
-      </connectorDescriptor> 
-
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
-            description="An editor for FreeMarker templates (Deprecated)"
-            id="org.jboss.ide.eclipse.freemarker.feature"
-            kind="task"
-            license="EPL (Free)"
-            name="FreeMarker IDE"
-            provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url}">
-        <iu id="org.jboss.ide.eclipse.freemarker.feature"/>
-        <icon image32="images/jbosstools_icon32.png"/>
-        <overview url="http://www.jboss.org/tools"/>
-      </connectorDescriptor> 
-
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
