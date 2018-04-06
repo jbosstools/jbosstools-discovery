@@ -937,15 +937,6 @@ Supported by Red Hat.</description>
           requiredComponentIds="org.jboss.tools.openshift.feature,org.jboss.tools.openshift3">
       </proxyWizard>
       <proxyWizard
-          id="hybrid.mobile.wizard"
-          description="%hybrid.mobile.wizard.description"
-          label="Hybrid Mobile Project"
-          priority="6"
-          iconPath="images/wizards/newcordovaprj_wiz.png"
-          requiredComponentIds="org.jboss.tools.aerogear.hybrid"
-          wizardId="org.eclipse.thym.ui.NewHybridProjectWizard">
-      </proxyWizard>
-      <proxyWizard
           id="maven.wizard"
           description="%maven.wizard.description"
           label="Maven Project"
