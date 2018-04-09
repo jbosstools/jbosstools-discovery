@@ -9,15 +9,9 @@
 	</parent>
 	<groupId>org.jboss.tools.targetplatforms</groupId>
 	<artifactId>jbtcentral</artifactId>
-	<version>4.72.0.Final-SNAPSHOT</version>
+	<version>4.73.0.Final-SNAPSHOT</version>
 	<name>JBoss Central Core Target Platforms</name>
 	<packaging>pom</packaging>
-
-	<properties>
-		<!-- inherit from parent pom -->
-		<!-- <tychoVersion>0.23.1</tychoVersion>
-		<tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion> -->
-	</properties>
 
 	<build>
 		<plugins>
