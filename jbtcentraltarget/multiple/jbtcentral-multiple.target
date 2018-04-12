@@ -34,6 +34,7 @@
       <unit id="org.springframework.ide.eclipse.feature.feature.group" version="3.9.3.201803200843-RELEASE"/>
       <unit id="org.springframework.ide.eclipse.beans.ui.live" version="3.9.3.201803200843-RELEASE"/>
       <unit id="org.springframework.ide.eclipse.beans.ui.livegraph" version="3.9.3.201803200843-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.boot" version="3.9.3.201803200843-RELEASE"/>
       <unit id="org.springframework.ide.eclipse.boot.wizard" version="3.9.3.201803200843-RELEASE"/>
       <unit id="org.springframework.ide.eclipse.integration.feature.feature.group" version="3.9.3.201803200843-RELEASE"/>
       <unit id="org.springframework.ide.eclipse.maven.feature.feature.group" version="3.9.3.201803200843-RELEASE"/>
