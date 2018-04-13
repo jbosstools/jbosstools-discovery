@@ -346,7 +346,6 @@ reasonable, reporting issues to these providers as required.</description>
             <iu id="org.springframework.ide.eclipse.osgi.feature"/>
             <iu id="org.springframework.ide.eclipse.security.feature"/>
             <iu id="org.springframework.ide.eclipse.webflow.feature"/>
-            <iu id="org.springsource.ide.eclipse.commons"/>
             <iu id="org.eclipse.mylyn.bugzilla_feature"/>
          <icon
                image32="images/springide_32.png">
