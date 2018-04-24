@@ -106,28 +106,6 @@ Supported by Red Hat.</description>
          </overview>
       </connectorDescriptor>
 
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.mobile"
-            groupId="org.jboss.tools.central.discovery.a.mobile.extras2"
-            description="Create and test hybrid mobile applications with Apache Cordova for Android + iOS (Deprecated)"
-            id="org.jboss.tools.aerogear.hybrid"
-            kind="task"
-            license="EPL (Free)"
-            name="JBoss Hybrid Mobile Tools + CordovaSim (Deprecated)"
-            provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url}">
-            <iu id="org.jboss.tools.aerogear.easymport.feature"/>
-            <iu id="org.jboss.tools.aerogear.thym.feature"/>
-            <iu id="org.jboss.tools.cordovasim.feature"/>
-            <iu id="org.jboss.tools.browsersim.feature"/>
-            <iu id="org.jboss.tools.livereload.feature" />
-            <iu id="org.jboss.tools.jst.jsdt.feature"/>
-            <iu id="org.jboss.tools.jst.angularjs.feature" />
-            <iu id="org.jboss.tools.feedhenry"/> 
-         <icon image32="images/cordova_32.png"/>
-         <overview url="http://tools.jboss.org/"/>
-      </connectorDescriptor>
-
       <!-- a. Web Development -->
 
       <connectorCategory
@@ -159,21 +137,6 @@ Supported by Red Hat.</description>
          <overview
                url="http://tools.jboss.org/">
          </overview>
-      </connectorDescriptor>
-
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
-            description="Save html, css + javascript and see changes immediately in your browser (Deprecated)"
-            id="org.jboss.tools.livereload"
-            kind="task"
-            license="EPL (Free)"
-            name="JBoss Tools LiveReload (Deprecated)"
-            provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url}">
-            <iu id="org.jboss.tools.livereload.feature"/>
-         <icon image32="images/jbosstools_icon32.png"/>
-         <overview url="http://tools.jboss.org/"/>
       </connectorDescriptor>
 
       <connectorDescriptor
@@ -213,56 +176,6 @@ Supported by Red Hat.</description>
          <overview
                url="http://eclipse.org/webtools/">
          </overview>
-      </connectorDescriptor>
-
-      <!-- JBIDE 18922 add Seam 2 connector -->
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
-            description="Tool support for Seam 2 (Deprecated)"
-            id="org.jboss.tools.seam.connector"
-            kind="task"
-            license="EPL, Other (Free)"
-            name="JBoss Seam 2 Tools (Deprecated)"
-            provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url}">
-            <iu id="org.jboss.tools.runtime.seam.detector.feature"/>
-            <iu id="org.jboss.tools.seam.feature"/>
-            <iu id="org.jboss.tools.maven.seam.feature"/>
-            <iu id="org.jboss.tools.project.examples.seam.feature"/>
-         <icon image32="images/seam_32.png"/>
-         <overview url="http://tools.jboss.org/"/>
-      </connectorDescriptor>
-      <!-- JBIDE 24379 add Seam 3 connector -->
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
-            description="Tooling for CDI components released as part of Seam 3 modules such as Solder and Config (Deprecated)"
-            id="org.jboss.tools.cdi.seam.connector"
-            kind="task"
-            license="EPL, Other (Free)"
-            name="JBoss Seam 3 Tools (Deprecated)"
-            provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url}">
-            <iu id="org.jboss.tools.cdi.seam.feature"/>
-         <icon image32="images/seam_32.png"/>
-         <overview url="http://tools.jboss.org/"/>
-      </connectorDescriptor>
-
-      <!-- JBDS-3363, JBIDE-19401 add Portlet connector -->
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
-            description="Tool support for Portlets (Deprecated)"
-            id="org.jboss.tools.portlet.connector"
-            kind="task"
-            license="EPL, Other (Free)"
-            name="JBoss Portlet Tools (Deprecated)"
-            provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url}">
-            <iu id="org.jboss.tools.portlet.feature"/>
-         <icon image32="images/jbosstools_icon32.png"/>
-         <overview url="http://tools.jboss.org/"/>
       </connectorDescriptor>
 
       <connectorDescriptor
@@ -669,42 +582,6 @@ Supported by Red Hat.</description>
             <iu id="org.eclipse.m2e.feature"/>
             <iu id="org.eclipse.m2e.wtp.feature"/>
             <iu id="org.jboss.ide.eclipse.as.feature"/>
-         <icon
-               image32="images/jbosstools_icon32.png">
-         </icon>
-         <overview
-               url="http://tools.jboss.org/">
-         </overview>
-      </connectorDescriptor>
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.d.maven"
-            groupId="org.jboss.tools.central.discovery.d.maven.configurators"
-            description="JBoss Maven Portlet Configurator (Deprecated)"
-            id="org.jboss.tools.maven.portlet.feature"
-            kind="task"
-            license="EPL (Free)"
-            name="JBoss Maven Portlet Configurator (Deprecated)"
-            provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url}">
-            <iu id="org.jboss.tools.maven.portlet.feature"/>
-         <icon
-               image32="images/jbosstools_icon32.png">
-         </icon>
-         <overview
-               url="http://tools.jboss.org/">
-         </overview>
-      </connectorDescriptor>
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.d.maven"
-            groupId="org.jboss.tools.central.discovery.d.maven.configurators"
-            description="JBoss Maven Seam Configurator (Deprecated)"
-            id="org.jboss.tools.maven.seam.feature"
-            kind="task"
-            license="EPL (Free)"
-            name="JBoss Maven Seam Configurator (Deprecated)"
-            provider="JBoss by Red Hat"
-            siteUrl="${jboss.discovery.site.url}">
-            <iu id="org.jboss.tools.maven.seam.feature"/>
          <icon
                image32="images/jbosstools_icon32.png">
          </icon>
