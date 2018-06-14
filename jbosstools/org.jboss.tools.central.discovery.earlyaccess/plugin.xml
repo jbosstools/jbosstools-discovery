@@ -45,7 +45,7 @@ appropriate tests + report issues to plug-in providers as required.</description
             kind="task"
             license="EPL (Free)"
             name="AngularJS for Web Tools"
-            provider="JBoss by Red Hat"
+            provider="Red Hat"
             siteUrl="${jboss.discovery.earlyaccess.site.url}">
             <iu id="angularjs-eclipse-feature"/>
             <iu id="tern-feature"/>
@@ -72,7 +72,7 @@ appropriate tests + report issues to plug-in providers as required.</description
             kind="task"
             license="EPL (Free)"
             name="Red Hat Application Migration Toolkit"
-            provider="JBoss by Red Hat"
+            provider="Red Hat"
             siteUrl="http://download.jboss.org/jbosstools/oxygen/development/updates/rhamt/">
             <iu id="org.jboss.tools.windup.feature" />
          <icon image32="images/rhamt_icon_32.png"/>
@@ -89,7 +89,7 @@ appropriate tests + report issues to plug-in providers as required.</description
             kind="task"
             license="EPL (Free)"
             name="Fabric8 Analytics Language Server Integration"
-            provider="JBoss by Red Hat"
+            provider="Red Hat"
             siteUrl="http://download.jboss.org/jbosstools/oxygen/development/updates/fabric8analytics/">
             <iu id="com.redhat.fabric8analytics.lsp.eclipse.feature" />
          <icon image32="images/jbosstools_icon32.png"/>
