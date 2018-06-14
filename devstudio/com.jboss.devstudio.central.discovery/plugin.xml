@@ -64,7 +64,7 @@ reasonable, reporting issues to these providers as required.</description>
          certificationId="com.jboss.devstudio.discovery.certification.supported"
          kind="task"
          license="Free, EPL"
-         provider="JBoss by Red Hat"
+         provider="Red Hat"
          siteUrl="${jboss.discovery.site.url}"
          name="JBoss Fuse Development"
          description="Tools to create integration applications using Apache Camel / Component Library and deploy to JBoss Fuse or JBoss EAP"
@@ -140,7 +140,7 @@ reasonable, reporting issues to these providers as required.</description>
             kind="task"
             license="EPL (Free)"
             name="AngularJS for Web Tools"
-            provider="JBoss by Red Hat"
+            provider="Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.jst.angularjs.feature"/>
          <icon
@@ -198,7 +198,7 @@ reasonable, reporting issues to these providers as required.</description>
             kind="task"
             license="EPL (Free)"
             name="JBoss OpenShift 3 Tools"
-            provider="JBoss by Red Hat"
+            provider="Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.openshift.feature"/>
             <iu id="org.jboss.tools.openshift.cdk.feature"/>
@@ -220,7 +220,7 @@ reasonable, reporting issues to these providers as required.</description>
             kind="task"
             license="EPL (Free)"
             name="JBoss Forge Tools"
-            provider="JBoss by Red Hat"
+            provider="Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.forge.feature"/>
             <iu id="org.jboss.tools.forge.m2e.feature"/>
@@ -261,7 +261,7 @@ reasonable, reporting issues to these providers as required.</description>
             kind="task"
             license="EPL (Free)"
             name="JBoss Tools LiveReload (Deprecated)"
-            provider="JBoss by Red Hat"
+            provider="Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.livereload.feature"/>
          <icon image32="images/jbosstools_icon32.png"/>
@@ -483,7 +483,7 @@ reasonable, reporting issues to these providers as required.</description>
             kind="task"
             license="EPL (Free)"
             name="Hudson + Jenkins: Mylyn Support"
-            provider="JBoss by Red Hat"
+            provider="Red Hat"
             siteUrl="${jboss.discovery.site.url}">
          <iu id="org.eclipse.mylyn.hudson"/>
          <icon
@@ -504,7 +504,7 @@ reasonable, reporting issues to these providers as required.</description>
             kind="task"
             license="EPL (Free)"
             name="Mylyn Issue Tracker Connectors"
-            provider="JBoss by Red Hat"
+            provider="Red Hat"
             siteUrl="${jboss.discovery.site.url}">
          <iu id="org.jboss.tools.common.mylyn.feature"/>
          <iu id="org.eclipse.mylyn_feature"/>
@@ -588,7 +588,7 @@ reasonable, reporting issues to these providers as required.</description>
             kind="task"
             license="EPL (Free)"
             name="JBoss Maven Integration"
-            provider="JBoss by Red Hat"
+            provider="Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.maven.feature"/>
          <icon
@@ -607,7 +607,7 @@ reasonable, reporting issues to these providers as required.</description>
             kind="task"
             license="EPL (Free)"
             name="JBoss Maven CDI Configurator"
-            provider="JBoss by Red Hat"
+            provider="Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.maven.cdi.feature"/>
          <icon
@@ -626,7 +626,7 @@ reasonable, reporting issues to these providers as required.</description>
             kind="task"
             license="EPL (Free)"
             name="JBoss Maven Hibernate Configurator"
-            provider="JBoss by Red Hat"
+            provider="Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.maven.hibernate.feature"/>
          <icon
@@ -683,7 +683,7 @@ reasonable, reporting issues to these providers as required.</description>
             kind="task"
             license="EPL (Free)"
             name="JBoss Tools Maven Packaging Configurator"
-            provider="JBoss by Red Hat"
+            provider="Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.maven.jbosspackaging.feature"/>
             <iu id="org.eclipse.m2e.feature"/>
@@ -705,7 +705,7 @@ reasonable, reporting issues to these providers as required.</description>
             kind="task"
             license="EPL (Free)"
             name="JBoss Maven Spring Boot Configurator"
-            provider="JBoss by Red Hat"
+            provider="Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.maven.seam.feature"/>
          <icon
@@ -782,7 +782,7 @@ reasonable, reporting issues to these providers as required.</description>
             kind="task"
             license="EPL (Free)"
             name="Maven Integration for Eclipse JDT APT (m2e-apt)"
-            provider="JBoss by Red Hat"
+            provider="Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.maven.apt.feature"/>
          <icon
@@ -839,7 +839,7 @@ reasonable, reporting issues to these providers as required.</description>
             kind="task"
             license="EPL (Free)"
             name="Maven Integration for WRO4J (m2e-wro4j)"
-            provider="JBoss by Red Hat"
+            provider="Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.m2e.wro4j.feature"/>
          <icon
@@ -870,7 +870,7 @@ reasonable, reporting issues to these providers as required.</description>
             kind="task"
             license="EPL (Free)"
             name="Red Hat Application Migration Toolkit"
-            provider="JBoss by Red Hat"
+            provider="Red Hat"
             siteUrl="http://download.jboss.org/jbosstools/oxygen/stable/updates/rhamt/">
             <iu id="org.jboss.tools.windup.feature" />
          <icon image32="images/rhamt_icon_32.png"/>
