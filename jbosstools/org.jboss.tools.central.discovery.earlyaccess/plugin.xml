@@ -63,21 +63,21 @@ appropriate tests + report issues to plug-in providers as required.</description
       -->
 
       <!-- RHAMT -->
-     <!--  <connectorDescriptor
+      <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.e.migration"
-            groupId="org.jboss.tools.central.discovery.e.migration.windup"
             certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
             description="The RHAMT plug-ins simplify migrating Java applications."
+            groupId="org.jboss.tools.central.discovery.e.migration.windup"
             id="org.jboss.tools.windup.feature"
             kind="task"
             license="EPL (Free)"
             name="Red Hat Application Migration Toolkit"
             provider="Red Hat"
-            siteUrl="http://download.jboss.org/jbosstools/oxygen/development/updates/rhamt/">
+            siteUrl="http://download.jboss.org/jbosstools/photon/development/updates/rhamt/">
             <iu id="org.jboss.tools.windup.feature" />
          <icon image32="images/rhamt_icon_32.png"/>
          <overview url="http://windup.jboss.org/"/>
-      </connectorDescriptor> -->
+      </connectorDescriptor>
 
       <!-- JBIDE-24897 fabric8 analytics -->
       <connectorDescriptor
