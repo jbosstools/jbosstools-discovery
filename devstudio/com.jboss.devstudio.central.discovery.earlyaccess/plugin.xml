@@ -60,7 +60,7 @@ appropriate tests + report issues to plug-in providers as required.</description
       </connectorDescriptor>
 
       <!-- RHAMT -->
-      <connectorDescriptor
+      <!-- <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.e.migration"
             certificationId="com.jboss.devstudio.discovery.certification.supported.earlyaccess"
             description="The RHAMT plug-ins simplify migrating Java applications."
@@ -74,7 +74,7 @@ appropriate tests + report issues to plug-in providers as required.</description
             <iu id="org.jboss.tools.windup.feature" />
          <icon image32="images/rhamt_icon_32.png"/>
          <overview url="http://windup.jboss.org/"/>
-      </connectorDescriptor>
+      </connectorDescriptor> -->
 
       <!-- JBIDE-24897 fabric8 analytics  -->
       <connectorDescriptor
