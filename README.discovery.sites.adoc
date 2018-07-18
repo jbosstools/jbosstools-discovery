@@ -15,7 +15,7 @@ In this example, build against master branch update site.
 ----
 mvn clean install -f jbosstools/org.jboss.tools.central.discovery/pom.xml -DBUILD_NUMBER=999 \
   -DUPDATE_SITE=http://download.jboss.org/jbosstools/oxygen/snapshots/updates/core/master/ \
-  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/oxygen/snapshots/updates/central/master/,http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/4.80.0.Final-SNAPSHOT/REPO/
+  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/oxygen/snapshots/updates/central/master/,http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/4.9.0.AM1-SNAPSHOT/REPO/
 ----
 
 or
@@ -24,7 +24,7 @@ or
 ----
 mvn clean install -f devstudio/com.jboss.devstudio.central.discovery/pom.xml -DBUILD_NUMBER=999 \
   -DUPDATE_SITE=https://devstudio.redhat.com/11/snapshots/updates/core/master/ \
-  -DEXTRAS_SITE=https://devstudio.redhat.com/11/snapshots/updates/central/master/,https://devstudio.redhat.com/targetplatforms/jbtcentraltarget/4.80.0.Final-SNAPSHOT/REPO/
+  -DEXTRAS_SITE=https://devstudio.redhat.com/11/snapshots/updates/central/master/,https://devstudio.redhat.com/targetplatforms/jbtcentraltarget/4.9.0.AM1-SNAPSHOT/REPO/
 ----
 
 Repeat for Early Access sites (using 2 EXTRAS_SITE URLs so the resulting site can resolve both Core and Early Access content):
@@ -33,7 +33,7 @@ Repeat for Early Access sites (using 2 EXTRAS_SITE URLs so the resulting site ca
 ====
 In this example, build against stable branch update site.
 
-Note that as of 4.6.0.AM1 / 12.0.0.AM1 the EA update sites are blank, so do not include them in the list of EXTRAS_SITE URLs.
+Note that as of 4.6 / 12.0 the EA update sites are blank, so do not include them in the list of EXTRAS_SITE URLs.
 
 * http://download.jboss.org/jbosstools/oxygen/snapshots/updates/earlyaccess/master/
 * https://devstudio.redhat.com/11/snapshots/updates/earlyaccess/master/
@@ -46,7 +46,7 @@ Should they be populated later, the can be re-added at that time.
 ----
 mvn clean install -f jbosstools/org.jboss.tools.central.discovery.earlyaccess/pom.xml -DBUILD_NUMBER=999 \
   -DUPDATE_SITE=http://download.jboss.org/jbosstools/oxygen/snapshots/updates/core/master/ \
-  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/oxygen/snapshots/updates/central/master/,http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/4.80.0.Final-SNAPSHOT/REPO/,http://download.jboss.org/jbosstools/targetplatforms/jbtearlyaccesstarget/4.80.0.Final-SNAPSHOT/REPO/
+  -DEXTRAS_SITE=http://download.jboss.org/jbosstools/oxygen/snapshots/updates/central/master/,http://download.jboss.org/jbosstools/targetplatforms/jbtcentraltarget/4.9.0.AM1-SNAPSHOT/REPO/,http://download.jboss.org/jbosstools/targetplatforms/jbtearlyaccesstarget/4.9.0.AM1-SNAPSHOT/REPO/
 ----
 
 or
@@ -55,7 +55,7 @@ or
 ----
 mvn clean install -f devstudio/com.jboss.devstudio.central.discovery.earlyaccess/pom.xml -DBUILD_NUMBER=999 \
   -DUPDATE_SITE=https://devstudio.redhat.com/11/snapshots/updates/core/master/ \
-  -DEXTRAS_SITE=https://devstudio.redhat.com/11/snapshots/updates/central/master/,https://devstudio.redhat.com/targetplatforms/jbtcentraltarget/4.80.0.Final-SNAPSHOT/REPO/,https://devstudio.redhat.com/targetplatforms/jbtearlyaccesstarget/4.80.0.Final-SNAPSHOT/REPO/
+  -DEXTRAS_SITE=https://devstudio.redhat.com/11/snapshots/updates/central/master/,https://devstudio.redhat.com/targetplatforms/jbtcentraltarget/4.9.0.AM1-SNAPSHOT/REPO/,https://devstudio.redhat.com/targetplatforms/jbtearlyaccesstarget/4.9.0.AM1-SNAPSHOT/REPO/
 ----
 
 ## Test a local site
@@ -106,7 +106,7 @@ mvn clean install -f devstudio/com.jboss.devstudio.central.discovery/pom.xml \
 
 Repeat for Early Access plugin + site (using 2 EXTRAS_SITE URLs so the resulting site can resolve both Core and Early Access content):
 
-Note that as of 4.6.0.AM1 / 12.0.0.AM1 the EA update sites are blank, so do not include them in the list of EXTRAS_SITE URLs.
+Note that as of 4.6 / 12.0 the EA update sites are blank, so do not include them in the list of EXTRAS_SITE URLs.
 
 * http://download.jboss.org/jbosstools/oxygen/snapshots/updates/earlyaccess/master/
 * https://devstudio.redhat.com/11/snapshots/updates/earlyaccess/master/
@@ -194,8 +194,8 @@ Instead of the latest master build, you can also point Eclipse / Devstudio at mo
 
 * The current released milestone URLs for JBT/Devstudio are:
 
-** http://download.jboss.org/jbosstools/oxygen/development/updates/discovery.central/4.6.0.*/jbosstools-directory.xml
-** https://devstudio.redhat.com/11/development/updates/discovery.central/12.0.0.*/devstudio-directory.xml
+** http://download.jboss.org/jbosstools/oxygen/development/updates/discovery.central/4.9.0.*/jbosstools-directory.xml
+** https://devstudio.redhat.com/11/development/updates/discovery.central/12.9.0.*/devstudio-directory.xml
 
 * The staging URLs are:
 
