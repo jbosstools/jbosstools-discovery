@@ -20,8 +20,8 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/sonarlint/3.3.0.201711211047/"/>
-      <unit id="org.sonarlint.eclipse.feature.feature.group" version="3.3.0.201711211047"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/sonarlint/3.6.0.201806071228/"/>
+      <unit id="org.sonarlint.eclipse.feature.feature.group" version="3.6.0.201806071228"/>
     </location>
 
     <!-- required for SpringIDE 3.7 (see also above) -->
