@@ -171,7 +171,26 @@ Supported by Red Hat.</description>
                image32="images/openshift-32.png">
          </icon>
          <overview
-               url="http://tools.jboss.org/">
+               url="http://tools.jboss.org/features/openshift.html">
+         </overview>
+      </connectorDescriptor>
+
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
+            description="Provides Tooling for Red Hat's Fabric 8 Launcher."
+            id="org.jboss.tools.common.launcher"
+            kind="task"
+            license="EPL (Free)"
+            name="Fabric8 Launcher Tools"
+            provider="Red Hat"
+            siteUrl="${jboss.discovery.site.url}">
+            <iu id="org.jboss.tools.common.launcher.feature"/>
+         <icon
+               image32="images/fabric8_32.png">
+         </icon>
+         <overview
+               url="https://developers.redhat.com/launch/">
          </overview>
       </connectorDescriptor>
 
@@ -862,6 +881,15 @@ Supported by Red Hat.</description>
           iconPath="images/wizards/openshift-logo-white-icon.png"
           wizardId="org.jboss.ide.eclipse.as.openshift.express.ui.wizard.createNewApplicationWizard"
           requiredComponentIds="org.jboss.tools.openshift.feature,org.jboss.tools.openshift3">
+      </proxyWizard>
+      <proxyWizard
+          id="launcher.wizard"
+          description="%launcher.wizard.description"
+          label="Launcher Application"
+          priority="2"
+          iconPath="images/wizards/fabric8_icon_16px.png"
+          wizardId="org.jboss.tools.common.launcher.ui.wizard.newProjectWizard"
+          requiredComponentIds="org.jboss.tools.common.launcher.feature">
       </proxyWizard>
       <proxyWizard
           id="maven.wizard"
