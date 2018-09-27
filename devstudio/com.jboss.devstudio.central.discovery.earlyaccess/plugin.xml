@@ -64,11 +64,11 @@ appropriate tests + report issues to plug-in providers as required.</description
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
             certificationId="com.jboss.devstudio.discovery.certification.techpreview.earlyaccess"
-            description="Fabric8 Analytics Language Server Integration helps to analyze the components of your application stack as you type."
+            description="fabric8 Analytics Language Server Integration helps to analyze the components of your application stack as you type."
             id="com.redhat.fabric8analytics.lsp"
             kind="task"
             license="EPL (Free)"
-            name="Fabric8 Analytics Language Server Integration"
+            name="fabric8 Analytics Language Server Integration"
             provider="Red Hat"
             siteUrl="http://download.jboss.org/jbosstools/oxygen/development/updates/fabric8analytics/">
             <iu id="com.redhat.fabric8analytics.lsp.eclipse.feature" />

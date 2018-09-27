@@ -157,7 +157,7 @@ Supported by Red Hat.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            description="Provides Tooling for Red Hat's OpenShift 3. Sign into your OpenShift 3 account, create and deploy applications to the Cloud."
+            description="Provides Tooling for Red Hat's OpenShift 3. Sign into your OpenShift 3 account, create and deploy applications to the Cloud"
             id="org.jboss.tools.openshift3"
             kind="task"
             license="EPL (Free)"
@@ -178,11 +178,12 @@ Supported by Red Hat.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            description="Provides Tooling for Red Hat's Fabric 8 Launcher."
+            certificationId="org.jboss.tools.discovery.certification.supported"
+            description="Provides Tooling for Red Hat's fabric8 Launcher"
             id="org.jboss.tools.common.launcher"
             kind="task"
             license="EPL (Free)"
-            name="Fabric8 Launcher Tools"
+            name="fabric8 Launcher Tools"
             provider="Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.common.launcher.feature"/>
@@ -197,7 +198,7 @@ Supported by Red Hat.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            description="JBoss Forge Tools provides easy access and integration with JBoss Forge within Eclipse."
+            description="JBoss Forge Tools provides easy access and integration with JBoss Forge within Eclipse"
             id="forge-tools-feature"
             kind="task"
             license="EPL (Free)"
