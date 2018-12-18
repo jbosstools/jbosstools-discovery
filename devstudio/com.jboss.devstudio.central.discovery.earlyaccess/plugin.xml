@@ -68,7 +68,7 @@ appropriate tests + report issues to plug-in providers as required.</description
             id="com.redhat.fabric8analytics.lsp"
             kind="task"
             license="EPL (Free)"
-            name="fabric8 Analytics Language Server Integration"
+            name="Dependency Analytics"
             provider="Red Hat"
             siteUrl="http://download.jboss.org/jbosstools/oxygen/development/updates/fabric8analytics/">
             <iu id="com.redhat.fabric8analytics.lsp.eclipse.feature" />
