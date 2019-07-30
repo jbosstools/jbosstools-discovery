@@ -44,6 +44,7 @@
       <unit id="org.springframework.ide.eclipse.osgi.feature.feature.group" version="3.9.9.201906180643-RELEASE"/>
       <unit id="org.springframework.ide.eclipse.security.feature.feature.group" version="3.9.9.201906180643-RELEASE"/>
       <unit id="org.springframework.ide.eclipse.webflow.feature.feature.group" version="3.9.9.201906180643-RELEASE"/>
+	  <unit id="org.springframework.ide.eclipse.xml.namespaces.feature.feature.group" version="3.9.9.201906180643-RELEASE"/> <!-- new as of 3.9.9 -->
       <!-- depends on mylyn (used to be contained in org.springsource.ide.eclipse.commons.feature but feature was removed as of 3.9.3) -->
       <unit id="io.projectreactor.reactor-core" version="3.1.9.201902271843-RELEASE"/>
       <unit id="org.reactivestreams.reactive-streams" version="1.0.2"/>
