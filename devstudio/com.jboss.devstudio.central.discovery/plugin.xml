@@ -193,11 +193,11 @@ reasonable, reporting issues to these providers as required.</description>
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
             certificationId="com.jboss.devstudio.discovery.certification.supported"
-            description="Provides Tooling for Red Hat's OpenShift 3. Sign into your OpenShift 3 account, create and deploy applications to the Cloud"
-            id="org.jboss.tools.openshift3"
+            description="Provides Tooling for Red Hat's OpenShift. Sign into your OpenShift account, create and deploy applications to the Cloud"
+            id="org.jboss.tools.openshift"
             kind="task"
             license="EPL (Free)"
-            name="JBoss OpenShift 3 Tools"
+            name="JBoss OpenShift Tools"
             provider="Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.openshift.feature"/>
@@ -945,7 +945,7 @@ reasonable, reporting issues to these providers as required.</description>
           priority="2"
           iconPath="images/wizards/openshift-logo-white-icon.png"
           wizardId="org.jboss.ide.eclipse.as.openshift.express.ui.wizard.createNewApplicationWizard"
-          requiredComponentIds="org.jboss.tools.openshift.feature,org.jboss.tools.openshift3">
+          requiredComponentIds="org.jboss.tools.openshift.feature,org.jboss.tools.openshift">
       </proxyWizard>
       <proxyWizard
           id="launcher.wizard"
