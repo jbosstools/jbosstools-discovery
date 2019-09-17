@@ -3,21 +3,21 @@
 <plugin>
     <extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
 
-      <certification id="com.jboss.devstudio.discovery.certification.supported" name="Supported" url="https://devstudio.redhat.com/11/stable/updates/#central">
+      <certification id="com.jboss.devstudio.discovery.certification.supported" name="Supported" url="https://devstudio.redhat.com/12/stable/updates/#central">
          <description>
 Supported by Red Hat.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
-      <certification id="com.jboss.devstudio.discovery.certification.notavailable" name="Not Yet Available" url="https://devstudio.redhat.com/11/stable/updates/#central">
+      <certification id="com.jboss.devstudio.discovery.certification.notavailable" name="Not Yet Available" url="https://devstudio.redhat.com/12/stable/updates/#central">
          <description>This feature set is currently unavailable for this version of Red Hat Developer Studio. Please see the connector's description for details on when/where it will be made available.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
-      <certification id="com.jboss.devstudio.discovery.certification.tested" name="Tested" url="https://devstudio.redhat.com/11/stable/updates/#central">
+      <certification id="com.jboss.devstudio.discovery.certification.tested" name="Tested" url="https://devstudio.redhat.com/12/stable/updates/#central">
          <description>
 Tested by Red Hat.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
-      <certification id="com.jboss.devstudio.discovery.certification.tested.external" name="Tested - External" url="https://devstudio.redhat.com/11/stable/updates/#central">
+      <certification id="com.jboss.devstudio.discovery.certification.tested.external" name="Tested - External" url="https://devstudio.redhat.com/12/stable/updates/#central">
          <description>
 Tested by Red Hat. 
 
@@ -28,14 +28,14 @@ these third party sites and execute appropriate tests as soon as
 reasonable, reporting issues to these providers as required.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
-      <certification id="com.jboss.devstudio.discovery.certification.technologypreview" name="Technology Preview" url="https://devstudio.redhat.com/11/stable/updates/#central">
+      <certification id="com.jboss.devstudio.discovery.certification.technologypreview" name="Technology Preview" url="https://devstudio.redhat.com/12/stable/updates/#central">
          <description>
 Tested by Red Hat, often with known issues. Technology previews
 may one day evolve to be considered Tested or Supported, but
 this is not guaranteed.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
-      <certification id="com.jboss.devstudio.discovery.certification.experimental" name="Experimental" url="https://devstudio.redhat.com/11/stable/updates/#central">
+      <certification id="com.jboss.devstudio.discovery.certification.experimental" name="Experimental" url="https://devstudio.redhat.com/12/stable/updates/#central">
          <description>
 Tested by Red Hat. However, as these are experimental plug-ins,
 it is possible that their content may change at any time and
