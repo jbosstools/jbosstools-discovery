@@ -71,7 +71,7 @@ Supported by Red Hat.</description>
             license="EPL, ASL, others (Free)"
             name="Nodeclipse for node.js"
             provider="Nodeclipse"
-            siteUrl="http://dl.bintray.com/nodeclipse/nodeclipse/1.0.2f/">
+            siteUrl="https://dl.bintray.com/nodeclipse/nodeclipse/1.0.2f/">
 
             <iu id="org.nodeclipse"/>
             <iu id="org.nodeclipse.enide.editors.jade.feature"/>
