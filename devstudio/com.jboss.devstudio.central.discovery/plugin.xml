@@ -104,7 +104,7 @@ reasonable, reporting issues to these providers as required.</description>
             license="EPL, ASL, others (Free)"
             name="Nodeclipse for node.js"
             provider="Nodeclipse"
-            siteUrl="https://nodeclipse.github.io/updates/">
+            siteUrl="https://dl.bintray.com/nodeclipse/nodeclipse/1.0.2f/">
 
             <iu id="org.nodeclipse"/>
             <iu id="org.nodeclipse.enide.editors.jade.feature"/>
