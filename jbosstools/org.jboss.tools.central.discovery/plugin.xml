@@ -101,11 +101,11 @@ Supported by Red Hat.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            description="AngularJS Tooling provides content assist and Ionic framework support"
+            description="AngularJS Tooling provides content assist and Ionic framework support (Deprecated)"
             id="angularjs-eclipse-feature"
             kind="task"
             license="EPL (Free)"
-            name="AngularJS for Web Tools"
+            name="AngularJS for Web Tools (Deprecated)"
             provider="Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.jst.angularjs.feature"/>
@@ -198,11 +198,11 @@ Supported by Red Hat.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            description="JBoss Forge Tools provides easy access and integration with JBoss Forge within Eclipse"
+            description="JBoss Forge Tools provides easy access and integration with JBoss Forge within Eclipse (Deprecated)"
             id="forge-tools-feature"
             kind="task"
             license="EPL (Free)"
-            name="JBoss Forge Tools"
+            name="JBoss Forge Tools (Deprecated)"
             provider="Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.forge.feature"/>
@@ -214,11 +214,11 @@ Supported by Red Hat.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            description="JST Server Core, UI, Adapters, User Doc"
+            description="JST Server Core, UI, Adapters, User Doc (Deprecated)"
             id="org.eclipse.jst.server_core.feature"
             kind="task"
             license="EPL, Other (Free)"
-            name="JST Server"
+            name="JST Server (Deprecated)"
             provider="eclipse.org"
             siteUrl="${jboss.discovery.site.url}">
             <!-- <iu id="org.eclipse.jst.server_adapters.ext.feature"/> -->
