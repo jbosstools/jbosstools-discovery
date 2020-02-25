@@ -44,6 +44,11 @@ third party sites and execute appropriate tests as soon as
 reasonable, reporting issues to these providers as required.</description>
          <icon image48="images/redhat_48.png"></icon>
       </certification>
+      <certification id="com.jboss.devstudio.discovery.certification.deprecated" name="Deprecated" url="https://devstudio.redhat.com/12/stable/updates/#central">
+         <description>
+Not supported anymore by Red Hat. Subject to future removal.</description>
+         <icon image48="images/redhat_48.png"></icon>
+      </certification>
 
       <!-- use connectorCategory relevance value to sort from largest (80) to smallest (20) -->
 
@@ -134,12 +139,12 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            certificationId="com.jboss.devstudio.discovery.certification.supported"
-            description="AngularJS Tooling provides content assist and Ionic framework support"
+            certificationId="com.jboss.devstudio.discovery.certification.deprecated"
+            description="AngularJS Tooling provides content assist and Ionic framework support (Deprecated)"
             id="angularjs-eclipse-feature"
             kind="task"
             license="EPL (Free)"
-            name="AngularJS for Web Tools"
+            name="AngularJS for Web Tools (Deprecated)"
             provider="Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.jst.angularjs.feature"/>
@@ -234,12 +239,12 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            certificationId="com.jboss.devstudio.discovery.certification.supported"
-            description="JBoss Forge Tools provides easy access and integration with JBoss Forge within Eclipse"
+            certificationId="com.jboss.devstudio.discovery.certification.deprecated"
+            description="JBoss Forge Tools provides easy access and integration with JBoss Forge within Eclipse (Deprecated)"
             id="forge-tools-feature"
             kind="task"
             license="EPL (Free)"
-            name="JBoss Forge Tools"
+            name="JBoss Forge Tools (Deprecated)"
             provider="Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.forge.feature"/>
@@ -251,12 +256,12 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            certificationId="com.jboss.devstudio.discovery.certification.tested"
-            description="JST Server Core, UI, Adapters, User Doc"
+            certificationId="com.jboss.devstudio.discovery.certification.deprecated"
+            description="JST Server Core, UI, Adapters, User Doc (Deprecated)"
             id="org.eclipse.jst.server_core.feature"
             kind="task"
             license="EPL, Other (Free)"
-            name="JST Server"
+            name="JST Server (Deprecated)"
             provider="eclipse.org"
             siteUrl="${jboss.discovery.site.url}">
             <!-- <iu id="org.eclipse.jst.server_adapters.ext.feature"/> -->
@@ -275,7 +280,7 @@ reasonable, reporting issues to these providers as required.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            certificationId="com.jboss.devstudio.discovery.certification.supported"
+            certificationId="com.jboss.devstudio.discovery.certification.deprecated"
             description="Save html, css + javascript and see changes immediately in your browser (Deprecated)"
             id="org.jboss.tools.livereload"
             kind="task"
