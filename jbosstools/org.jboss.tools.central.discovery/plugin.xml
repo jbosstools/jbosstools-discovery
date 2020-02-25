@@ -12,6 +12,11 @@ Supported by Red Hat.</description>
          <description>This feature set is currently unavailable for this version of JBoss Tools. Please see the connector's description for details on when/where it will be made available.</description>
          <icon image48="images/jbosstools_48.png"></icon>
       </certification>
+      <certification id="org.jboss.tools.discovery.certification.deprecated" name="Deprecated" url="https://devstudio.redhat.com/12/stable/updates/#central">
+         <description>
+Not supported anymore by Red Hat. Subject to future removal.</description>
+         <icon image48="images/jbosstools_48.png"></icon>
+      </certification>
 
       <!-- use connectorCategory relevance value to sort from largest (80) to smallest (20) -->
 
@@ -100,8 +105,9 @@ Supported by Red Hat.</description>
 
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
+            certificationId="org.jboss.tools.discovery.certification.deprecated"
             description="AngularJS Tooling provides content assist and Ionic framework support (Deprecated)"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
             id="angularjs-eclipse-feature"
             kind="task"
             license="EPL (Free)"
@@ -197,8 +203,9 @@ Supported by Red Hat.</description>
 
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
+            certificationId="org.jboss.tools.discovery.certification.deprecated"
             description="JBoss Forge Tools provides easy access and integration with JBoss Forge within Eclipse (Deprecated)"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
             id="forge-tools-feature"
             kind="task"
             license="EPL (Free)"
@@ -213,8 +220,9 @@ Supported by Red Hat.</description>
 
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
+            certificationId="org.jboss.tools.discovery.certification.deprecated"
             description="JST Server Core, UI, Adapters, User Doc (Deprecated)"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
             id="org.eclipse.jst.server_core.feature"
             kind="task"
             license="EPL, Other (Free)"
@@ -236,8 +244,9 @@ Supported by Red Hat.</description>
 
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
+            certificationId="org.jboss.tools.discovery.certification.deprecated"
             description="Save html, css + javascript and see changes immediately in your browser (Deprecated)"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
             id="org.jboss.tools.livereload"
             kind="task"
             license="EPL (Free)"
