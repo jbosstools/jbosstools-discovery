@@ -9,19 +9,19 @@
 
     <!-- m2e extensions (that are not already in core TP) -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/1.1.0-2014-06-25_06-16-31-H26/"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/1.1.0-2014-06-25_06-16-31-H26/"/>
       <unit id="org.jboss.tools.m2e.wro4j.feature.feature.group" version="1.1.0.201406251020"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/eclipsecs/8.7.0.201801131309/"/>
-      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.32.0"/>
-      <unit id="net.sf.eclipsecs.feature.group" version="8.7.0.201801131309"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/eclipsecs/8.32.0.202005120252/"/>
+      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.37.1"/>
+      <unit id="net.sf.eclipsecs.feature.group" version="8.32.0.202005120252"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/sonarlint/4.2.0.201909192007/"/>
-      <unit id="org.sonarlint.eclipse.feature.feature.group" version="4.2.0.201909192007"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/sonarlint/5.1.1.17774/"/>
+      <unit id="org.sonarlint.eclipse.feature.feature.group" version="5.1.1.17774"/>
     </location>
 
     <!-- required for SpringIDE (see also above) -->
@@ -74,15 +74,15 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/subclipse/4.2.4.201804261743__1.8.12.r10533_v20160129_0158/"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/subclipse/4.3.0.201901172050/"/>
       <unit id="com.collabnet.subversion.merge" version="4.2.0.1"/>
       <unit id="net.java.dev.jna.feature.group" version="4.1.0.v06022015_1911"/>
-      <unit id="org.tigris.subversion.clientadapter" version="1.9.7"/>
-      <unit id="org.tigris.subversion.clientadapter.javahl.feature.feature.group" version="1.9.7.201803201521"/>
-      <unit id="org.tigris.subversion.clientadapter.svnkit.feature.feature.group" version="1.8.12.1"/>
+      <unit id="org.tigris.subversion.clientadapter" version="1.10.0"/>
+      <unit id="org.tigris.subversion.clientadapter.javahl.feature.feature.group" version="1.14.0.202005041822"/>
+      <unit id="org.tigris.subversion.clientadapter.svnkit.feature.feature.group" version="1.8.12.3"/>
       <unit id="org.tigris.subversion.subclipse.graph.feature.feature.group" version="4.2.0.1"/>
       <unit id="org.tigris.subversion.subclipse.mylyn.feature.feature.group" version="4.2.0.1"/>
-      <unit id="org.tigris.subversion.subclipse.feature.group" version="4.2.4.201804261743"/>
+      <unit id="org.tigris.subversion.subclipse.feature.group" version="4.3.0.201901172050"/>
       <unit id="org.tmatesoft.svnkit.feature.group" version="1.8.12.r10533_v20160129_0158"/>
     </location>
 
