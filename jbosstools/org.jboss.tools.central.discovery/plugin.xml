@@ -125,8 +125,9 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
 
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.mobile"
-            groupId="org.jboss.tools.central.discovery.a.mobile.extras"
+            certificationId="com.jboss.devstudio.discovery.certification.deprecated"
             description="Android Development Tools, DDMS, Hierarchy Viewer, OpenGL Tracer, Traceview"
+            groupId="org.jboss.tools.central.discovery.a.mobile.extras"
             id="com.android.ide.eclipse.adt"
             kind="task"
             license="EPL, Other (Free)"
