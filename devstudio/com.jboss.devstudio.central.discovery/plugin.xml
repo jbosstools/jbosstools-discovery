@@ -160,11 +160,11 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
             categoryId="org.jboss.tools.central.discovery.a.mobile"
             groupId="org.jboss.tools.central.discovery.a.mobile.extras"
             certificationId="com.jboss.devstudio.discovery.certification.deprecated"
-            description="Android Development Tools, DDMS, Hierarchy Viewer, OpenGL Tracer, Traceview"
+            description="Android Development Tools, DDMS, Hierarchy Viewer, OpenGL Tracer, Traceview (Deprecated)"
             id="com.android.ide.eclipse.adt"
             kind="task"
             license="EPL, Other (Free)"
-            name="Android Development Tools"
+            name="Android Development Tools (Deprecated)"
             provider="Google, Inc."
             siteUrl="https://dl-ssl.google.com/android/eclipse/">
             <!-- https://issues.jboss.org/browse/JBIDE-12498, JBIDE-13167 -->
