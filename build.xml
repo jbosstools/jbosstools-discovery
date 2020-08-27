@@ -89,7 +89,7 @@ $java.home = ${java.home}</echo>
     	<equals arg1="${PREFIX}" arg2="devstudio"/>
   	</condition>
 
-		<script language="javascript">
+		<script language="javascript" classpath="${maven.plugin.classpath}">
 		<![CDATA[
 		  property = project.setProperty("now",Math.floor((new Date()).getTime()));
 		]]>
