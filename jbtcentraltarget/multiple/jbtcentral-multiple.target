@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><?pde version="3.6"?>
-<target includeMode="feature" name="jbtcentral-4.16.0.Final-SNAPSHOT">
+<target includeMode="feature" name="jbtcentral-4.17.0.AM1-SNAPSHOT">
   <!-- Pro tip: paste content from generated Apache directory index, then match
         \[ ] (.+)_(.+).jar.+
     replace with 
@@ -70,6 +70,8 @@
       <unit id="org.aspectj.weaver" version="1.9.6.202004271746"/>
       <unit id="org.eclipse.equinox.weaving.sdk.feature.group" version="1.2.0.202004271746"/>
       <unit id="org.eclipse.equinox.weaving.hook" version="1.2.200.v20180827-1235"/>
+
+      <unit id="org.dadacoalition.yedit" version="1.0.18.201602092025-RELEASE-SIGNED"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
