@@ -215,7 +215,27 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
                url="http://tools.jboss.org/features/openshift.html">
          </overview>
       </connectorDescriptor>
-
+	  
+      <connectorDescriptor
+            categoryId="org.jboss.tools.central.discovery.a.web"
+            groupId="org.jboss.tools.central.discovery.a.web.core"
+            certificationId="org.jboss.tools.discovery.certification.supported"
+            description="Provides Tooling for Quarkus"
+            id="org.jboss.tools.quarkus"
+            kind="task"
+            license="EPL (Free)"
+            name="Quarkus Tools"
+            provider="Red Hat"
+            siteUrl="${jboss.discovery.site.url}">
+            <iu id="org.jboss.tools.quarkus.feature"/>
+         <icon
+               image32="images/quarkus_icon_rgb_32px_default.png">
+         </icon>
+         <overview
+               url="https://tools.jboss.org/features/quarkus.html">
+         </overview>
+      </connectorDescriptor>
+	  
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
@@ -922,6 +942,15 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
           iconPath="images/wizards/openshift-logo-white-icon.png"
           wizardId="org.jboss.ide.eclipse.as.openshift.express.ui.wizard.createNewApplicationWizard"
           requiredComponentIds="org.jboss.tools.openshift.feature,org.jboss.tools.openshift">
+      </proxyWizard>
+      <proxyWizard
+          id="quarkus.wizard"
+          description="%quarkus.wizard.description"
+          label="Quarkus Project"
+          priority="2"
+          iconPath="images/quarkus_icon_rgb_16px_default.png"
+          wizardId="org.jboss.tools.quarkus.ui.wizard.createProject"
+          requiredComponentIds="org.jboss.tools.quarkus.feature">
       </proxyWizard>
       <proxyWizard
           id="launcher.wizard"

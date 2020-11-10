@@ -893,7 +893,6 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
           wizardId="org.jboss.tools.quarkus.ui.wizard.createProject"
           requiredComponentIds="org.jboss.tools.quarkus.feature">
       </proxyWizard>
-
       <proxyWizard
           id="launcher.wizard"
           description="%launcher.wizard.description"
