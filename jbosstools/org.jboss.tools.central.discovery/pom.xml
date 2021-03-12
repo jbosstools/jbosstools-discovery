@@ -4,18 +4,18 @@
   <parent>
     <groupId>org.jboss.tools.central.discovery</groupId>
     <artifactId>jbosstools</artifactId>
-    <version>4.18.0-SNAPSHOT</version>
+    <version>4.19.0-SNAPSHOT</version>
   </parent>
   <groupId>org.jboss.tools.central.plugins</groupId>
   <artifactId>org.jboss.tools.central.discovery</artifactId> 
-  <version>4.18.0-SNAPSHOT</version>
+  <version>4.19.0-SNAPSHOT</version>
   <packaging>eclipse-plugin</packaging>
 <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-antrun-plugin</artifactId>
-        <version>1.7</version>
+        <version>3.0.0</version>
         <executions>
           <execution>
             <id>install</id>
@@ -52,32 +52,22 @@
           <dependency>
             <groupId>commons-net</groupId>
             <artifactId>commons-net</artifactId>
-            <version>1.4.1</version>
+            <version>3.8.0</version>
           </dependency>
           <dependency>
             <groupId>org.apache.ant</groupId>
             <artifactId>ant</artifactId>
-            <version>1.7.1</version>
-          </dependency>
-          <dependency>
-            <groupId>org.apache.ant</groupId>
-            <artifactId>ant-nodeps</artifactId>
-            <version>1.7.1</version>
-          </dependency>
-          <dependency>
-            <groupId>org.apache.ant</groupId>
-            <artifactId>ant-trax</artifactId>
-            <version>1.7.1</version>
+            <version>${antVersion}</version>
           </dependency>
           <dependency>
             <groupId>org.apache.ant</groupId>
             <artifactId>ant-commons-net</artifactId>
-            <version>1.7.1</version>
+            <version>${antVersion}</version>
           </dependency>
           <dependency>
             <groupId>org.apache.ant</groupId>
             <artifactId>ant-apache-regexp</artifactId>
-            <version>1.7.1</version>
+            <version>${antVersion}</version>
           </dependency>
           <dependency>
             <groupId>ant-contrib</groupId>
