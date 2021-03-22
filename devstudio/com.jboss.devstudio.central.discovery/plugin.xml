@@ -219,7 +219,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            certificationId="org.jboss.tools.discovery.certification.supported"
+            certificationId="com.jboss.devstudio.discovery.certification.supported"
             description="Provides Tooling for Quarkus"
             id="org.jboss.tools.quarkus"
             kind="task"
