@@ -102,43 +102,6 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            certificationId="com.jboss.devstudio.discovery.certification.tested.external"
-            description="Tooling support for Node.js from Nodeclipse"
-            id="nodeclipse"
-            kind="task"
-            license="EPL, ASL, others (Free)"
-            name="Nodeclipse for node.js"
-            provider="Nodeclipse"
-            siteUrl="https://dl.bintray.com/nodeclipse/nodeclipse/1.0.2f/">
-
-            <iu id="org.nodeclipse"/>
-            <iu id="org.nodeclipse.enide.editors.jade.feature"/>
-            <iu id="org.nodeclipse.pluginslist.feature"/>
-
-            <iu id="com.eclipsesource.jshint.feature"/>
-            <iu id="de.bastiankrol.startexplorer.feature"/>
-            <iu id="gitaddon.feature"/>
-            <iu id="markdown.editor.feature"/>
-            <iu id="net.mihai-nita.ansicon"/>
-            <iu id="pm.eclipse.editbox.feature"/>
-
-            <iu id="org.chromium.debug"/>
-            <iu id="org.chromium.sdk"/>
-
-            <iu id="tern-feature"/>
-            <iu id="tern-jsdt-feature"/>
-            <iu id="tern-server-nodejs-feature"/>
-         <icon
-               image32="images/nodejs_32.png">
-         </icon>
-         <overview
-               url="http://tools.jboss.org/">
-         </overview>
-      </connectorDescriptor>
-
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
             certificationId="com.jboss.devstudio.discovery.certification.deprecated"
             description="AngularJS Tooling provides content assist and Ionic framework support (Deprecated)"
             id="angularjs-eclipse-feature"
