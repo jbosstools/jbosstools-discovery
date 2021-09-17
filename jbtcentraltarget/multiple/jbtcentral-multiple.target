@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><?pde version="3.6"?>
-<target includeMode="feature" name="jbtcentral-4.19.0.AM1-SNAPSHOT">
+<target includeMode="feature" name="jbtcentral-4.21.0.Final-SNAPSHOT">
   <!-- Pro tip: paste content from generated Apache directory index, then match
         \[ ] (.+)_(.+).jar.+
     replace with 
@@ -14,61 +14,65 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/eclipsecs/8.36.1.202101292258/"/>
-      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.38.0"/>
-      <unit id="net.sf.eclipsecs.feature.group" version="8.36.1.202101292258"/>
+      <repository location="https://checkstyle.org/eclipse-cs-update-site/releases/8.44.0.202108061901"/>
+      <unit id="net.sf.eclipsecs.feature.group" version="8.44.0.202108061901"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/sonarlint/5.7.0.28269/"/>
-      <unit id="org.sonarlint.eclipse.feature.feature.group" version="5.7.0.28269"/>
+      <repository location="https://sevntu-checkstyle.github.io/sevntu.checkstyle/update-site/"/>
+      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.40.0"/>
+    </location>
+
+    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <repository location="https://binaries.sonarsource.com/SonarLint-for-Eclipse/releases/6.1.0.36269/"/>
+      <unit id="org.sonarlint.eclipse.feature.feature.group" version="6.1.0.36269"/>
     </location>
 
     <!-- required for SpringIDE (see also above) -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/springide/3.9.15.202012140048-RELEASE/"/>
+      <repository location="https://download.springsource.com/release/TOOLS/update/3.9.18.RELEASE/e4.21/"/>
       <!-- Features to include in Central connector -->
-      <unit id="org.springframework.ide.eclipse.aop.feature.feature.group" version="3.9.15.202012140048-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.autowire.feature.feature.group" version="3.9.15.202012140048-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.batch.feature.feature.group" version="3.9.15.202012140048-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.data.feature.feature.group" version="3.9.15.202012140048-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.feature.feature.group" version="3.9.15.202012140048-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.beans.ui.live" version="4.9.0.202012132054"/>
-      <unit id="org.springframework.ide.eclipse.beans.ui.livegraph" version="3.9.15.202012140048-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.boot" version="4.9.0.202012132054"/>
-      <unit id="org.springframework.ide.eclipse.boot.wizard" version="4.9.0.202012132054"/>
-      <unit id="org.springframework.ide.eclipse.editor.support" version="4.9.0.202012131915"/>
-      <unit id="org.springframework.ide.eclipse.maven.pom" version="4.9.0.202012132054"/>
-      <unit id="org.springframework.ide.eclipse.integration.feature.feature.group" version="3.9.15.202012140048-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.maven.feature.feature.group" version="3.9.15.202012140048-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.mylyn.feature.feature.group" version="3.9.15.202012140048-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.osgi.feature.feature.group" version="3.9.15.202012140048-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.security.feature.feature.group" version="3.9.15.202012140048-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.webflow.feature.feature.group" version="3.9.15.202012140048-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.xml.namespaces.feature.feature.group" version="4.9.0.202012132054"/> <!-- new as of 3.9.9 -->
+      <unit id="org.springframework.ide.eclipse.aop.feature.feature.group" version="3.9.18.202109140629-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.autowire.feature.feature.group" version="3.9.18.202109140629-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.batch.feature.feature.group" version="3.9.18.202109140629-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.data.feature.feature.group" version="3.9.18.202109140629-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.feature.feature.group" version="3.9.18.202109140629-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.beans.ui.live" version="4.12.0.202109130635"/>
+      <unit id="org.springframework.ide.eclipse.beans.ui.livegraph" version="3.9.18.202109140629-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.boot" version="4.12.0.202109130635"/>
+      <unit id="org.springframework.ide.eclipse.boot.wizard" version="4.12.0.202109130635"/>
+      <unit id="org.springframework.ide.eclipse.editor.support" version="4.12.0.202109130547"/>
+      <unit id="org.springframework.ide.eclipse.maven.pom" version="4.12.0.202109130635"/>
+      <unit id="org.springframework.ide.eclipse.integration.feature.feature.group" version="3.9.18.202109140629-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.maven.feature.feature.group" version="3.9.18.202109140629-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.mylyn.feature.feature.group" version="3.9.18.202109140629-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.osgi.feature.feature.group" version="3.9.18.202109140629-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.security.feature.feature.group" version="3.9.18.202109140629-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.webflow.feature.feature.group" version="3.9.18.202109140629-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.xml.namespaces.feature.feature.group" version="4.12.0.202109130635"/> <!-- new as of 3.9.9 -->
 
       <!-- depends on mylyn (used to be contained in org.springsource.ide.eclipse.commons.feature but feature was removed as of 3.9.3) -->
       <unit id="io.projectreactor.reactor-core" version="3.3.1.202003091750-RELEASE"/>
       <unit id="org.reactivestreams.reactive-streams" version="1.0.3"/>
-      <unit id="org.springsource.ide.eclipse.commons.content.core" version="3.9.15.202012132153-RELEASE"/>
-      <unit id="org.springsource.ide.eclipse.commons.core" version="4.9.0.202012131915"/>
-      <unit id="org.springsource.ide.eclipse.commons.frameworks.core" version="4.9.0.202012131915"/>
-      <unit id="org.springsource.ide.eclipse.commons.frameworks.ui" version="4.9.0.202012131915"/>
-      <unit id="org.springsource.ide.eclipse.commons.jdk_tools" version="4.9.0.202012131915"/>
-      <unit id="org.springsource.ide.eclipse.commons.livexp" version="4.9.0.202012131915"/>
-      <unit id="org.springsource.ide.eclipse.commons.ui" version="4.9.0.202012131915"/>
+      <unit id="org.springsource.ide.eclipse.commons.content.core" version="3.9.18.202109131132-RELEASE"/>
+      <unit id="org.springsource.ide.eclipse.commons.core" version="4.12.0.202109130547"/>
+      <unit id="org.springsource.ide.eclipse.commons.frameworks.core" version="4.12.0.202109130547"/>
+      <unit id="org.springsource.ide.eclipse.commons.frameworks.ui" version="4.12.0.202109130547"/>
+      <unit id="org.springsource.ide.eclipse.commons.jdk_tools" version="4.12.0.202109130547"/>
+      <unit id="org.springsource.ide.eclipse.commons.livexp" version="4.12.0.202109130547"/>
+      <unit id="org.springsource.ide.eclipse.commons.ui" version="4.12.0.202109130547"/>
 
       <!-- Plugins to include to avoid console warnings after installation -->
-      <unit id="org.springframework.ide.eclipse.config.ui" version="3.9.15.202012140048-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.maven" version="3.9.15.202012140048-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.wizard" version="3.9.15.202012140048-RELEASE"/>
-      <unit id="org.springsource.ide.eclipse.dashboard.ui" version="3.9.15.202012132153-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.config.ui" version="3.9.18.202109140629-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.maven" version="3.9.18.202109140629-RELEASE"/>
+      <unit id="org.springframework.ide.eclipse.wizard" version="3.9.18.202109140629-RELEASE"/>
+      <unit id="org.springsource.ide.eclipse.dashboard.ui" version="3.9.18.202109131132-RELEASE"/>
 
       <!-- Required 3rd party plugins (on SpringIDE or Orbit site) not properly referenced by features -->
       <unit id="javax.jms" version="1.1.0.v201205091237"/>
-      <unit id="org.aspectj.runtime" version="1.9.6.202012111622"/>
-      <unit id="org.aspectj.weaver" version="1.9.6.202012111622"/>
-      <unit id="org.eclipse.equinox.weaving.sdk.feature.group" version="1.2.0.202012111622"/>
+      <unit id="org.aspectj.runtime" version="1.9.6.202103162301"/>
+      <unit id="org.aspectj.weaver" version="1.9.6.202103162301"/>
+      <unit id="org.eclipse.equinox.weaving.sdk.feature.group" version="1.2.0.202103162301"/>
       <unit id="org.eclipse.equinox.weaving.hook" version="1.2.200.v20180827-1235"/>
 
       <unit id="org.dadacoalition.yedit" version="1.0.18.201602092025-RELEASE-SIGNED"/>
