@@ -83,7 +83,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
            image32="images/devstudio_icon32.png">
          </icon>
          <overview
-           url="http://tools.jboss.org/features/apachecamel.html">
+           url="https://tools.jboss.org/features/apachecamel.html">
          </overview>
       </connectorDescriptor>
 
@@ -115,7 +115,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
                image32="images/angularjs_32.png">
          </icon>
          <overview
-               url="http://tools.jboss.org/">
+               url="https://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
 
@@ -175,7 +175,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
                image32="images/openshift-32.png">
          </icon>
          <overview
-               url="http://tools.jboss.org/features/openshift.html">
+               url="https://tools.jboss.org/features/openshift.html">
          </overview>
       </connectorDescriptor>
 	  
@@ -233,7 +233,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
             <iu id="org.jboss.tools.forge.feature"/>
             <iu id="org.jboss.tools.forge.m2e.feature"/>
          <icon image32="images/jbossforge_icon_32px.png"/>
-         <overview url="http://tools.jboss.org/features/forge.html"/>
+         <overview url="https://tools.jboss.org/features/forge.html"/>
       </connectorDescriptor>
 
       <connectorDescriptor
@@ -273,7 +273,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.livereload.feature"/>
          <icon image32="images/jbosstools_icon32.png"/>
-         <overview url="http://tools.jboss.org/"/>
+         <overview url="https://tools.jboss.org/"/>
       </connectorDescriptor>
 
       <connectorDescriptor
@@ -528,7 +528,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
                image32="images/devstudio_icon32.png">
          </icon>
          <overview
-               url="http://tools.jboss.org/">
+               url="https://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
       <connectorDescriptor
@@ -603,7 +603,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
                image32="images/jbosstools_icon32.png">
          </icon>
          <overview
-               url="http://tools.jboss.org/">
+               url="https://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
       <connectorDescriptor
@@ -622,7 +622,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
                image32="images/jbosstools_icon32.png">
          </icon>
          <overview
-               url="http://tools.jboss.org/">
+               url="https://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
       <connectorDescriptor
@@ -641,7 +641,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
                image32="images/jbosstools_icon32.png">
          </icon>
          <overview
-               url="http://tools.jboss.org/">
+               url="https://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
       <connectorDescriptor
@@ -660,7 +660,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
                image32="images/m2e_32.gif">
          </icon>
          <overview
-               url="http://tools.jboss.org/">
+               url="https://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
       <connectorDescriptor
@@ -679,7 +679,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
                image32="images/m2e_32.gif">
          </icon>
          <overview
-               url="http://tools.jboss.org/">
+               url="https://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
       <connectorDescriptor
@@ -701,7 +701,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
                image32="images/jbosstools_icon32.png">
          </icon>
          <overview
-               url="http://tools.jboss.org/">
+               url="https://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
       <connectorDescriptor
@@ -720,7 +720,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
                image32="images/jbosstools_icon32.png">
          </icon>
          <overview
-               url="http://tools.jboss.org/">
+               url="https://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
       <connectorDescriptor
@@ -739,7 +739,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
                image32="images/m2e_32.gif">
          </icon>
          <overview
-               url="http://tools.jboss.org/">
+               url="https://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
       <connectorDescriptor
@@ -879,10 +879,10 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
             license="EPL (Free)"
             name="Red Hat Application Migration Toolkit"
             provider="Red Hat"
-            siteUrl="http://download.jboss.org/jbosstools/photon/stable/updates/rhamt/">
+            siteUrl="https://download.jboss.org/jbosstools/photon/stable/updates/rhamt/">
             <iu id="org.jboss.tools.windup.feature" />
          <icon image32="images/rhamt_icon_32.png"/>
-         <overview url="http://windup.jboss.org/"/>
+         <overview url="https://windup.jboss.org/"/>
       </connectorDescriptor>
 
     </extension>

@@ -85,7 +85,7 @@ $java.home = ${java.home}</echo>
   	</condition>
   	<condition property="compositeURLs" 
   		value="https://devstudio.redhat.com/targetplatforms/devstudiotarget/${TARGET_PLATFORM_VERSION}/REPO/,${UPDATE_SITE},${EXTRAS_SITE}"
-  		else="http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/${TARGET_PLATFORM_VERSION}/REPO/,${UPDATE_SITE},${EXTRAS_SITE}">
+  		else="https://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/${TARGET_PLATFORM_VERSION}/REPO/,${UPDATE_SITE},${EXTRAS_SITE}">
     	<equals arg1="${PREFIX}" arg2="devstudio"/>
   	</condition>
 

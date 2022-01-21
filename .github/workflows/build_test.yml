@@ -61,7 +61,7 @@ jobs:
             echo "in function 404"
             COMP="$1"
             TPVERSION="$2"
-            DESTURL=http://download.jboss.org/jbosstools/targetplatforms/${COMP}/${TPVERSION}/REPO/
+            DESTURL=https://download.jboss.org/jbosstools/targetplatforms/${COMP}/${TPVERSION}/REPO/
             local CHECK404=$(curl -s -k -I ${DESTURL} | egrep '404')
             if [[ "${CHECK404}" ]]; then
               echo "WARNING [404]: No target platform found for version = ${TPVERSION} at ${DESTURL}"
