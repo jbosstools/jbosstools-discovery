@@ -8,7 +8,7 @@
 	</parent>
 	<groupId>org.jboss.tools.central</groupId>
 	<artifactId>discovery</artifactId>
-	<version>4.21.0-SNAPSHOT</version>
+	<version>4.21.3-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<properties>

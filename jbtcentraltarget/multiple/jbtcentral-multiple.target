@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><?pde version="3.6"?>
-<target includeMode="feature" name="jbtcentral-4.21.0.Final-SNAPSHOT">
+<target includeMode="feature" name="jbtcentral-4.21.3.Final-SNAPSHOT">
   <!-- Pro tip: paste content from generated Apache directory index, then match
         \[ ] (.+)_(.+).jar.+
     replace with 
@@ -20,7 +20,7 @@
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="https://sevntu-checkstyle.github.io/sevntu.checkstyle/update-site/"/>
-      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.40.0"/>
+      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.41.0"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
