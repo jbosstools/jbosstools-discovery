@@ -2,7 +2,7 @@ name: Build and Test
 
 on:
   pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:
   test:
@@ -85,12 +85,12 @@ jobs:
               fi
 
               if [[ ${CHECK404} == *"[404]"* ]]; then # fall back to parent pom value of latest published TP MAX
-                CHECK404=$(check404 $t "$(curl -s -k https://raw.githubusercontent.com/jbosstools/jbosstools-build/master/parent/pom.xml | \
+                CHECK404=$(check404 $t "$(curl -s -k https://raw.githubusercontent.com/jbosstools/jbosstools-build/main/parent/pom.xml | \
                   egrep "<TARGET_PLATFORM_VERSION_MAX>" | sed -e "s#.\+<TARGET_PLATFORM_VERSION_MAX>\(.\+\)</TARGET_PLATFORM_VERSION_MAX>.*#\1#")")
                 DESTURL=${CHECK404}
               fi
               if [[ ${CHECK404} == *"[404]"* ]]; then # fall back to parent pom value of latest published TP MIN
-                CHECK404=$(check404 $t "$(curl -s -k https://raw.githubusercontent.com/jbosstools/jbosstools-build/master/parent/pom.xml | \
+                CHECK404=$(check404 $t "$(curl -s -k https://raw.githubusercontent.com/jbosstools/jbosstools-build/main/parent/pom.xml | \
                   egrep "<TARGET_PLATFORM_VERSION_MIN>" | sed -e "s#.\+<TARGET_PLATFORM_VERSION_MIN>\(.\+\)</TARGET_PLATFORM_VERSION_MIN>.*#\1#")")
                 DESTURL=${CHECK404}
               fi
