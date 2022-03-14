@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><?pde version="3.6"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.6"?>
 <target includeMode="feature" name="jbtcentral-4.21.3.Final-SNAPSHOT">
   <!-- Pro tip: paste content from generated Apache directory index, then match
         \[ ] (.+)_(.+).jar.+
@@ -8,10 +9,6 @@
   <locations>
 
     <!-- m2e extensions (that are not already in core TP) -->
-    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/1.1.0-2014-06-25_06-16-31-H26/"/>
-      <unit id="org.jboss.tools.m2e.wro4j.feature.feature.group" version="1.1.0.201406251020"/>
-    </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="https://checkstyle.org/eclipse-cs-update-site/releases/8.44.0.202108061901"/>
