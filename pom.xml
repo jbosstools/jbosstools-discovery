@@ -21,7 +21,6 @@
 	<!-- this pom will only build the discovery plugins, not the target platforms. See README.adoc for building target platforms -->
 	<modules>
 		<module>jbosstools</module>
-		<!--<module>devstudio</module>-->
 	</modules>
 
 </project>
