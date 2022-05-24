@@ -279,11 +279,9 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
             <iu id="org.springframework.ide.eclipse.feature"/>
             <iu id="org.springframework.ide.eclipse.integration.feature"/>
             <iu id="org.springframework.ide.eclipse.maven.feature"/>
-            <iu id="org.springframework.ide.eclipse.mylyn.feature"/>
             <iu id="org.springframework.ide.eclipse.osgi.feature"/>
             <iu id="org.springframework.ide.eclipse.security.feature"/>
             <iu id="org.springframework.ide.eclipse.webflow.feature"/>
-            <iu id="org.eclipse.mylyn.bugzilla_feature"/>
          <icon
                image32="images/springide_32.png">
          </icon>
@@ -305,37 +303,6 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
 
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.b.scm"
-            groupId="org.jboss.tools.central.discovery.b.scm.git"
-            description="Mylyn support for Eclipse EGit and GitHub"
-            id="org.eclipse.egit.mylyn"
-            kind="task"
-            license="EPL (Free)"
-            name="Eclipse EGit: Mylyn Support"
-            provider="eclipse.org"
-            siteUrl="${jboss.discovery.site.url}">
-            <iu id="org.eclipse.jgit"/>
-            <iu id="org.eclipse.egit"/>
-            <iu id="org.eclipse.egit.mylyn"/>
-            <iu id="org.eclipse.mylyn.github.feature"/>
-            <iu id="org.eclipse.mylyn.git" />
-        <iu id="org.eclipse.mylyn_feature"/>
-        <iu id="org.eclipse.mylyn.ide_feature"/>
-        <iu id="org.eclipse.mylyn.commons"/>
-        <iu id="org.eclipse.mylyn.context_feature"/>
-        <iu id="org.eclipse.mylyn.bugzilla_feature"/>
-        <iu id="org.eclipse.mylyn.java_feature"/>
-        <iu id="org.eclipse.mylyn.pde_feature"/>
-        <iu id="org.eclipse.mylyn.team_feature"/>
-        <iu id="org.eclipse.mylyn.versions"/>
-         <icon
-               image32="images/egit_32.png">
-         </icon>
-         <overview
-               url="http://www.eclipse.org/egit/">
-         </overview>
-      </connectorDescriptor>
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.b.scm"
             groupId="org.jboss.tools.central.discovery.b.scm.svn"
             description="Eclipse Team Provider for the Subversion version control system, including SVNKit"
             id="org.tigris.subversion.subclipse"
@@ -349,39 +316,6 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
             <iu id="net.java.dev.jna"/>
             <iu id="org.tigris.subversion.subclipse.graph.feature"/>
             <iu id="org.tmatesoft.svnkit"/>
-         <icon
-               image32="images/subclipse_32.gif">
-         </icon>
-         <overview
-               url="http://subclipse.tigris.org/">
-         </overview>
-      </connectorDescriptor>
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.b.scm"
-            groupId="org.jboss.tools.central.discovery.b.scm.svn"
-            description="Mylyn support for the Subversion version control system, including SVNKit"
-            id="org.tigris.subversion.subclipse.mylyn"
-            kind="task"
-            license="Subclipse License (Free)"
-            name="Subclipse + SVNKit: Mylyn Support"
-            provider="tigris.org"
-            siteUrl="${jboss.discovery.site.url}">
-            <iu id="org.tigris.subversion.subclipse"/>
-            <iu id="org.tigris.subversion.clientadapter.svnkit.feature"/>
-            <iu id="org.tigris.subversion.subclipse.mylyn.feature"/>
-            <iu id="net.java.dev.jna"/>
-            <iu id="org.tigris.subversion.subclipse.graph.feature"/>
-            <iu id="org.tmatesoft.svnkit"/>
-
-        <iu id="org.eclipse.mylyn_feature"/>
-        <iu id="org.eclipse.mylyn.ide_feature"/>
-        <iu id="org.eclipse.mylyn.commons"/>
-        <iu id="org.eclipse.mylyn.context_feature"/>
-        <iu id="org.eclipse.mylyn.bugzilla_feature"/>
-        <iu id="org.eclipse.mylyn.java_feature"/>
-        <iu id="org.eclipse.mylyn.pde_feature"/>
-        <iu id="org.eclipse.mylyn.team_feature"/>
-        <iu id="org.eclipse.mylyn.versions"/>
          <icon
                image32="images/subclipse_32.gif">
          </icon>
@@ -442,53 +376,8 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
       </connectorDescriptor>
 
       <!-- JBDS-2752 -->
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.c.testing"
-            groupId="org.jboss.tools.central.discovery.c.testing.local"
-            description="Mylyn support for Hudson + Jenkins servers"
-            id="org.eclipse.mylyn.hudson"
-            kind="task"
-            license="EPL (Free)"
-            name="Hudson + Jenkins: Mylyn Support"
-            provider="Red Hat"
-            siteUrl="${jboss.discovery.site.url}">
-         <iu id="org.eclipse.mylyn.hudson"/>
-         <icon
-               image32="images/mylyn_32.png">
-         </icon>
-         <overview
-               url="http://eclipse.org/mylyn/">
-         </overview>
-      </connectorDescriptor>
 
       <!-- JBIDE-13670, JBIDE-13682, JBIDE-13712, JBIDE-13724 remove everything that depends on Atlassian feature -->
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.c.testing"
-            groupId="org.jboss.tools.central.discovery.c.testing.local"
-            description="Mylyn support for reporting JBoss JIRAs and Red Hat Bugzillas"
-            id="org.jboss.tools.common.mylyn.feature"
-            kind="task"
-            license="EPL (Free)"
-            name="Mylyn Issue Tracker Connectors"
-            provider="Red Hat"
-            siteUrl="${jboss.discovery.site.url}">
-         <iu id="org.jboss.tools.common.mylyn.feature"/>
-         <iu id="org.eclipse.mylyn_feature"/>
-         <iu id="org.eclipse.mylyn.ide_feature"/>
-         <iu id="org.eclipse.mylyn.commons"/>
-         <iu id="org.eclipse.mylyn.context_feature"/>
-         <iu id="org.eclipse.mylyn.bugzilla_feature"/>
-         <iu id="org.eclipse.mylyn.java_feature"/>
-         <iu id="org.eclipse.mylyn.pde_feature"/>
-         <iu id="org.eclipse.mylyn.team_feature"/>
-         <iu id="org.eclipse.mylyn.versions"/>
-         <icon
-               image32="images/jbosstools_icon32.png">
-         </icon>
-         <overview
-               url="https://tools.jboss.org/">
-         </overview>
-      </connectorDescriptor>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.c.testing"
             groupId="org.jboss.tools.central.discovery.c.testing.local"
