@@ -25,8 +25,16 @@
 
     <!-- required for SpringIDE (see also above) -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.springsource.com/release/TOOLS/update/3.9.18.RELEASE/e4.21/"/>
+      <repository location="https://dist.springsource.com/snapshot/TOOLS/sts4/nightly/e4.24"/>
       <!-- Features to include in Central connector -->
+      <unit id="org.springframework.boot.ide.main.feature.feature.group" version="4.15.0.202206141355"/>
+      <unit id="org.springframework.ide.eclipse.boot.dash.feature.feature.group" version="4.15.0.202206141355"/>
+      <unit id="org.springframework.ide.eclipse.xml.namespaces.feature.feature.group" version="4.15.0.202206141355"/>
+      <unit id="org.springframework.tooling.boot.ls.feature.feature.group" version="4.15.0.202206141314"/>
+      <unit id="org.springframework.tooling.bosh.ls.feature.feature.group" version="4.15.0.202206141314"/>
+      <unit id="org.springframework.tooling.cloudfoundry.manifest.ls.feature.feature.group" version="4.15.0.202206141314"/>
+      <unit id="org.springframework.tooling.concourse.ls.feature.feature.group" version="4.15.0.202206141314"/>
+
 <!--
       <unit id="org.springframework.ide.eclipse.aop.feature.feature.group" version="3.9.18.202109140629-RELEASE"/>
       <unit id="org.springframework.ide.eclipse.autowire.feature.feature.group" version="3.9.18.202109140629-RELEASE"/>
@@ -44,7 +52,6 @@
       <unit id="org.springframework.ide.eclipse.osgi.feature.feature.group" version="3.9.18.202109140629-RELEASE"/>
       <unit id="org.springframework.ide.eclipse.security.feature.feature.group" version="3.9.18.202109140629-RELEASE"/>
       <unit id="org.springframework.ide.eclipse.webflow.feature.feature.group" version="3.9.18.202109140629-RELEASE"/>
-      <unit id="org.springframework.ide.eclipse.xml.namespaces.feature.feature.group" version="4.12.0.202109130635"/>
 -->
 
       <!-- depends on mylyn (used to be contained in org.springsource.ide.eclipse.commons.feature but feature was removed as of 3.9.3) -->
