@@ -205,6 +205,15 @@ $java.home = ${java.home}</echo>
 			</sequential>
 		</for>
 		<echo level="verbose">Generate ${project.build.directory}/discovery-site/${PREFIX}-directory.xml pointing at discovery jar(s)</echo>
+		<!-- base URL--> <!-- Since 2.24.0, discovery now requires full url for location-->
+		<propertyregex property="baseURL"
+		              input="${UPDATE_SITE}"
+		              regexp="(.*)/updates"
+		              select="\1"
+		              casesensitive="false" />
+		<condition property="subPath" value="discovery.earlyaccess" else="discovery.central">
+			<matches pattern=".*earlyaccess.*" string="${project.build.directory}"/>
+		</condition>
 		<!-- header -->
 		<echo file="${project.build.directory}/discovery-site/${PREFIX}-directory.xml">&lt;?xml version='1.0' encoding='UTF-8'?>
 &lt;directory xmlns="http://www.eclipse.org/mylyn/discovery/directory/">
@@ -213,7 +222,7 @@ $java.home = ${java.home}</echo>
 		<for list="${central.discovery.jars.renamed}" delimiter=" " param="central.discovery.jar.renamed">
 			<sequential>
 				<echo level="verbose">Add discovery jar to directory.xml: @{central.discovery.jar.renamed}</echo>
-				<echo append="true" file="${project.build.directory}/discovery-site/${PREFIX}-directory.xml">&lt;entry url="plugins/@{central.discovery.jar.renamed}" permitCategories="true"/>
+				<echo append="true" file="${project.build.directory}/discovery-site/${PREFIX}-directory.xml">&lt;entry url="${baseURL}/updates/${subPath}/${versionWithRespin_jbt}/plugins/@{central.discovery.jar.renamed}" permitCategories="true"/>
 </echo>
 		</sequential>
 		</for>
