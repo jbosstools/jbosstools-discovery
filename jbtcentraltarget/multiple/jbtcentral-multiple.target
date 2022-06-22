@@ -25,12 +25,27 @@
 
     <!-- required for SpringIDE (see also above) -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.springsource.com/release/TOOLS/sts4/update/e4.24"/>
+      <repository location="https://download.springsource.com/release/TOOLS/sts4/update/4.15.1.RELEASE/e4.24/"/>
       <!-- Features to include in Central connector -->
       <unit id="org.springframework.boot.ide.main.feature.feature.group" version="4.15.1.202206171354"/>
       <unit id="org.springframework.ide.eclipse.boot.dash.feature.feature.group" version="4.15.1.202206171354"/>
       <unit id="org.springframework.ide.eclipse.xml.namespaces.feature.feature.group" version="4.15.1.202206171354"/>
       <unit id="org.springframework.tooling.boot.ls.feature.feature.group" version="4.15.1.202206171137"/>
+      
+      <!-- unique bundles -->
+      <unit id="org.springframework.tooling.ls.eclipse.commons" version="4.15.1.202206171137"/>
+      <unit id="org.springframework.tooling.ls.eclipse.gotosymbol" version="4.15.1.202206171137"/>
+      <unit id="org.springframework.tooling.jdt.ls.commons" version="4.15.1.202206171137"/>
+      <unit id="org.springframework.tooling.cloudfoundry.manifest.ls" version="1.36.0.202206171137"/>
+      <unit id="org.springsource.ide.eclipse.commons.ui" version="4.15.1.202206171137"/>
+      <unit id="org.springsource.ide.eclipse.commons.core" version="4.15.1.202206171137"/>
+      <unit id="org.springsource.ide.eclipse.commons.livexp" version="4.15.1.202206171137"/>
+      <unit id="org.springsource.ide.eclipse.commons.boot.ls" version="4.15.1.202206171137"/>
+      <unit id="org.springsource.ide.eclipse.commons.frameworks.core" version="4.15.1.202206171137"/>
+      <unit id="org.springsource.ide.eclipse.commons.frameworks.ui" version="4.15.1.202206171137"/>
+      <unit id="com.hierynomus.sshj" version="0.24.0"/>
+      <unit id="org.dadacoalition.yedit" version="1.0.18.201602092025-RELEASE-SIGNED"/> 
+      
 
     </location>
 

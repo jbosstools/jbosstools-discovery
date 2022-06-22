@@ -272,16 +272,10 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
             name="Spring IDE"
             provider="Spring IDE Developers"
             siteUrl="${jboss.discovery.site.url}">
-            <iu id="org.springframework.ide.eclipse.aop.feature"/>
-            <iu id="org.springframework.ide.eclipse.autowire.feature"/>
-            <iu id="org.springframework.ide.eclipse.batch.feature"/>
-            <iu id="org.springframework.ide.eclipse.data.feature"/>
-            <iu id="org.springframework.ide.eclipse.feature"/>
-            <iu id="org.springframework.ide.eclipse.integration.feature"/>
-            <iu id="org.springframework.ide.eclipse.maven.feature"/>
-            <iu id="org.springframework.ide.eclipse.osgi.feature"/>
-            <iu id="org.springframework.ide.eclipse.security.feature"/>
-            <iu id="org.springframework.ide.eclipse.webflow.feature"/>
+            <iu id="org.springframework.boot.ide.main.feature"/>
+            <iu id="org.springframework.ide.eclipse.xml.namespaces.feature"/>
+            <iu id="org.springframework.ide.eclipse.boot.dash.feature"/>
+            <iu id="org.springframework.tooling.boot.ls.feature"/>
          <icon
                image32="images/springide_32.png">
          </icon>
