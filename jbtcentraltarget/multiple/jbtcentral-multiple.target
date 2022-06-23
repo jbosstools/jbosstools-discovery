@@ -44,7 +44,8 @@
       <unit id="org.springsource.ide.eclipse.commons.frameworks.core" version="4.15.1.202206171137"/>
       <unit id="org.springsource.ide.eclipse.commons.frameworks.ui" version="4.15.1.202206171137"/>
       <unit id="com.hierynomus.sshj" version="0.24.0"/>
-      <unit id="org.dadacoalition.yedit" version="1.0.18.201602092025-RELEASE-SIGNED"/> 
+      <unit id="org.dadacoalition.yedit" version="1.0.18.201602092025-RELEASE-SIGNED"/>
+      <unit id="com.jcraft.jzlib" version="1.1.3.v20220502-1820"/>
       
 
     </location>
