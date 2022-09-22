@@ -573,24 +573,6 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
                url="https://tools.jboss.org/">
          </overview>
       </connectorDescriptor>
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.d.maven"
-            groupId="org.jboss.tools.central.discovery.d.maven.configurators"
-            description="Tycho Project Configurators"
-            id="org.sonatype.tycho.m2e.feature"
-            kind="task"
-            license="EPL (Free)"
-            name="Tycho Project Configurators"
-            provider="eclipse.org"
-            siteUrl="${jboss.discovery.site.url}">
-            <iu id="org.sonatype.tycho.m2e.feature"/>
-         <icon
-               image32="images/m2e_32.gif">
-         </icon>
-         <overview
-               url="http://www.eclipse.org/m2e/">
-         </overview>
-      </connectorDescriptor>
 
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
@@ -608,42 +590,6 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
          </icon>
          <overview
                url="http://www.eclipse.org/m2e/">
-         </overview>
-      </connectorDescriptor>
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.d.maven"
-            groupId="org.jboss.tools.central.discovery.d.maven.upstream"
-            description="Maven Integration for Eclipse JDT APT (m2e-apt)"
-            id="org.jboss.tools.maven.apt.feature"
-            kind="task"
-            license="EPL (Free)"
-            name="Maven Integration for Eclipse JDT APT (m2e-apt)"
-            provider="Red Hat"
-            siteUrl="${jboss.discovery.site.url}">
-            <iu id="org.jboss.tools.maven.apt.feature"/>
-         <icon
-               image32="images/m2e_32.gif">
-         </icon>
-         <overview
-               url="https://github.com/jbosstools/m2e-apt/">
-         </overview>
-      </connectorDescriptor>
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.d.maven"
-            groupId="org.jboss.tools.central.discovery.d.maven.upstream"
-            description="Maven Integration for EGit (m2e-egit)"
-            id="m2e.egit.feature"
-            kind="task"
-            license="EPL (Free)"
-            name="Maven Integration for EGit (m2e-egit)"
-            provider="eclipse.org"
-            siteUrl="${jboss.discovery.site.url}">
-            <iu id="org.sonatype.m2e.egit.feature"/>
-         <icon
-               image32="images/m2e_32.gif">
-         </icon>
-         <overview
-               url="http://wiki.eclipse.org/M2E/Extension_Development#org.sonatype.m2e.egit_and_org.sonatype.m2e.egit.tests">
          </overview>
       </connectorDescriptor>
       <connectorDescriptor
