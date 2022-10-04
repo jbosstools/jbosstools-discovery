@@ -8,6 +8,12 @@
   -->
   <locations>
 
+    <!-- m2e extensions (that are not already in core TP) -->
+    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <repository location="https://github.com/jbosstools/m2e-wro4j/releases/download/1.2.0/"/>
+      <unit id="org.jboss.tools.m2e.wro4j.feature.feature.group" version="1.2.0.202209071019"/>
+    </location>
+
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="https://checkstyle.org/eclipse-cs-update-site/releases/10.0.0.202205010451/"/>
       <unit id="net.sf.eclipsecs.feature.group" version="10.0.0.202205010451"/>
