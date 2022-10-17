@@ -619,7 +619,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
             license="EPL (Free)"
             name="Maven Integration for WRO4J (m2e-wro4j)"
             provider="Red Hat"
-            siteUrl="${jboss.discovery.site.url}">
+            siteUrl="https://github.com/jbosstools/m2e-wro4j/releases/download/latest/">
             <iu id="org.jboss.tools.m2e.wro4j.feature"/>
          <icon
                image32="images/m2e_32.gif">
