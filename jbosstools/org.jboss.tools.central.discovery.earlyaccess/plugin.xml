@@ -39,12 +39,12 @@ appropriate tests + report issues to plug-in providers as required.</description
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.core"
-            certificationId="org.jboss.tools.discovery.certification.experimental.earlyaccess"
-            description="AngularJS Tooling provides content assist, navigation, and Ionic framework support"
+            certificationId="org.jboss.tools.discovery.certification.deprecated"
+            description="AngularJS Tooling provides content assist, navigation, and Ionic framework support (Deprecated)"
             id="angularjs-eclipse-feature"
             kind="task"
             license="EPL (Free)"
-            name="AngularJS for Web Tools"
+            name="AngularJS for Web Tools (Deprecated)"
             provider="Red Hat"
             siteUrl="${jboss.discovery.earlyaccess.site.url}">
             <iu id="angularjs-eclipse-feature"/>
