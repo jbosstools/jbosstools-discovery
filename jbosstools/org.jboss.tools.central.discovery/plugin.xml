@@ -68,22 +68,28 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
       </connectorCategory>
 
       <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
+            categoryId="org.jboss.tools.central.discovery.a.mobile"
             certificationId="org.jboss.tools.discovery.certification.deprecated"
-            description="AngularJS Tooling provides content assist and Ionic framework support (Deprecated)"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
-            id="angularjs-eclipse-feature"
+            description="Android Development Tools, DDMS, Hierarchy Viewer, OpenGL Tracer, Traceview (Deprecated)"
+            groupId="org.jboss.tools.central.discovery.a.mobile.extras"
+            id="com.android.ide.eclipse.adt"
             kind="task"
-            license="EPL (Free)"
-            name="AngularJS for Web Tools (Deprecated)"
-            provider="Red Hat"
-            siteUrl="${jboss.discovery.site.url}">
-            <iu id="org.jboss.tools.jst.angularjs.feature"/>
+            license="EPL, Other (Free)"
+            name="Android Development Tools (Deprecated)"
+            provider="Google, Inc."
+            siteUrl="https://dl-ssl.google.com/android/eclipse/">
+            <!-- https://issues.jboss.org/browse/JBIDE-12498, JBIDE-13167 -->
+            <iu id="com.android.ide.eclipse.adt.feature"/>
+            <iu id="com.android.ide.eclipse.ddms.feature"/>
+            <iu id="com.android.ide.eclipse.hierarchyviewer.feature"/>
+            <iu id="com.android.ide.eclipse.gldebugger.feature"/>
+            <iu id="com.android.ide.eclipse.traceview.feature"/>
+            <!-- DO NOT INCLUDE com.android.ide.eclipse.ndk feature because it requires CDT -->
          <icon
-               image32="images/angularjs_32.png">
+               image32="images/android_32.png">
          </icon>
          <overview
-               url="https://tools.jboss.org/">
+               url="http://developer.android.com/tools/sdk/eclipse-adt.html">
          </overview>
       </connectorDescriptor>
 
