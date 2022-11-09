@@ -192,22 +192,6 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
 
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
-            certificationId="org.jboss.tools.discovery.certification.deprecated"
-            description="Save html, css + javascript and see changes immediately in your browser (Deprecated)"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
-            id="org.jboss.tools.livereload"
-            kind="task"
-            license="EPL (Free)"
-            name="JBoss Tools LiveReload (Deprecated)"
-            provider="Red Hat"
-            siteUrl="${jboss.discovery.site.url}">
-            <iu id="org.jboss.tools.livereload.feature"/>
-         <icon image32="images/jbosstools_icon32.png"/>
-         <overview url="https://tools.jboss.org/"/>
-      </connectorDescriptor>
-
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
             groupId="org.jboss.tools.central.discovery.a.web.extras"
             description="Buildship is a collection of Eclipse plug-ins that provide support for building software using Gradle"
             id="org.eclipse.buildship"
