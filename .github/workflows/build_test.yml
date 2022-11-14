@@ -70,7 +70,7 @@ jobs:
             fi
           }
 
-          for t in jbtcentraltarget jbtearlyaccesstarget; do
+          for t in jbtcentraltarget; do
             echo "iter $t"
             if [[ ${P2DIFFSKIP} == "false" ]]; then 
               # check if target platform site exists against which to run p2diff

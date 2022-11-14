@@ -67,26 +67,6 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
          <group id="org.jboss.tools.central.discovery.a.mobile.extras2" />
       </connectorCategory>
 
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
-            certificationId="org.jboss.tools.discovery.certification.deprecated"
-            description="AngularJS Tooling provides content assist and Ionic framework support (Deprecated)"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
-            id="angularjs-eclipse-feature"
-            kind="task"
-            license="EPL (Free)"
-            name="AngularJS for Web Tools (Deprecated)"
-            provider="Red Hat"
-            siteUrl="${jboss.discovery.site.url}">
-            <iu id="org.jboss.tools.jst.angularjs.feature"/>
-         <icon
-               image32="images/angularjs_32.png">
-         </icon>
-         <overview
-               url="https://tools.jboss.org/">
-         </overview>
-      </connectorDescriptor>
-
       <!-- a. Web Development -->
 
       <connectorCategory
@@ -163,23 +143,6 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
             certificationId="org.jboss.tools.discovery.certification.deprecated"
-            description="JBoss Forge Tools provides easy access and integration with JBoss Forge within Eclipse (Deprecated)"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
-            id="forge-tools-feature"
-            kind="task"
-            license="EPL (Free)"
-            name="JBoss Forge Tools (Deprecated)"
-            provider="Red Hat"
-            siteUrl="${jboss.discovery.site.url}">
-            <iu id="org.jboss.tools.forge.feature"/>
-            <iu id="org.jboss.tools.forge.m2e.feature"/>
-         <icon image32="images/jbossforge_icon_32px.png"/>
-         <overview url="https://tools.jboss.org/features/forge.html"/>
-      </connectorDescriptor>
-
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
-            certificationId="org.jboss.tools.discovery.certification.deprecated"
             description="JST Server Core, UI, Adapters, User Doc (Deprecated)"
             groupId="org.jboss.tools.central.discovery.a.web.core"
             id="org.eclipse.jst.server_core.feature"
@@ -199,22 +162,6 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
          <overview
                url="http://eclipse.org/webtools/">
          </overview>
-      </connectorDescriptor>
-
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
-            certificationId="org.jboss.tools.discovery.certification.deprecated"
-            description="Save html, css + javascript and see changes immediately in your browser (Deprecated)"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
-            id="org.jboss.tools.livereload"
-            kind="task"
-            license="EPL (Free)"
-            name="JBoss Tools LiveReload (Deprecated)"
-            provider="Red Hat"
-            siteUrl="${jboss.discovery.site.url}">
-            <iu id="org.jboss.tools.livereload.feature"/>
-         <icon image32="images/jbosstools_icon32.png"/>
-         <overview url="https://tools.jboss.org/"/>
       </connectorDescriptor>
 
       <connectorDescriptor

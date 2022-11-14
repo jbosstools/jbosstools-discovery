@@ -35,33 +35,6 @@ appropriate tests + report issues to plug-in providers as required.</description
 
       <!-- a. Web Development -->
 
-      <!-- JBIDE-17278: new AngularJS connector -->
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
-            certificationId="org.jboss.tools.discovery.certification.deprecated"
-            description="AngularJS Tooling provides content assist, navigation, and Ionic framework support (Deprecated)"
-            id="angularjs-eclipse-feature"
-            kind="task"
-            license="EPL (Free)"
-            name="AngularJS for Web Tools (Deprecated)"
-            provider="Red Hat"
-            siteUrl="${jboss.discovery.earlyaccess.site.url}">
-            <iu id="angularjs-eclipse-feature"/>
-            <iu id="tern-feature"/>
-            <iu id="tern-jsdt-feature"/>
-            <iu id="tern-server-nodejs-feature"/>
-            <iu id="tern.eclipse.ide.tools.feature"/>
-            <iu id="tern.eclipse.ide.server.nodejs.embed"/>
-            <iu id="org.jboss.tools.jst.jsdt.feature" />
-            <iu id="org.jboss.tools.jst.angularjs.feature" />
-         <icon image32="images/angularjs_32.png"></icon>
-         <overview url="https://marketplace.eclipse.org/content/angularjs-eclipse"></overview>
-      </connectorDescriptor>
-      
-      <!-- JBIDE-19038: Arquillian is not EA in JBT, only in JBDS, so move connector to ../org.jboss.tools.central.discovery/plugin.xml and remove certificationId=earlyaccess
-      -->
-
       <!-- JBIDE-24897 fabric8 analytics -->
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.a.web"
