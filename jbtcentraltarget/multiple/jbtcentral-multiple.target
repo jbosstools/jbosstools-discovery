@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde version="3.6"?>
-<target includeMode="feature" name="jbtcentral-4.26.0.AM1-SNAPSHOT">
+<target includeMode="feature" name="jbtcentral-4.26.0.Final-SNAPSHOT">
   <!-- Pro tip: paste content from generated Apache directory index, then match
         \[ ] (.+)_(.+).jar.+
     replace with 
@@ -15,18 +15,18 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://checkstyle.org/eclipse-cs-update-site/releases/10.0.0.202205010451/"/>
-      <unit id="net.sf.eclipsecs.feature.group" version="10.0.0.202205010451"/>
+      <repository location="https://checkstyle.org/eclipse-cs-update-site/releases/10.4.0.202211151918"/>
+      <unit id="net.sf.eclipsecs.feature.group" version="10.4.0.202211151918"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="https://sevntu-checkstyle.github.io/sevntu.checkstyle/update-site/"/>
-      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.42.0"/>
+      <unit id="com.github.sevntu.checkstyle.checks.feature.feature.group" version="1.44.0"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://binaries.sonarsource.com/SonarLint-for-Eclipse/releases/7.4.0.46482/"/>
-      <unit id="org.sonarlint.eclipse.feature.feature.group" version="7.4.0.46482"/>
+      <repository location="https://binaries.sonarsource.com/SonarLint-for-Eclipse/releases/7.5.0.54140/"/>
+      <unit id="org.sonarlint.eclipse.feature.feature.group" version="7.5.0.54140"/>
     </location>
 
     <!-- required for SpringIDE (see also above) -->
@@ -51,6 +51,7 @@
       <unit id="com.hierynomus.sshj" version="0.24.0"/>
       <unit id="org.dadacoalition.yedit" version="1.0.18.201602092025-RELEASE-SIGNED"/>
       <unit id="com.jcraft.jzlib" version="1.1.3.v20220502-1820"/>
+      <unit id="bcprov" version="1.72.0"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
