@@ -38,7 +38,7 @@ jobs:
 
     # Try to find and apply jbosstools cache
     - name: Cache local Maven repository for JBoss Tools components
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       with:
         path: ~/.m2/repository
         key: jbosstools-${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
@@ -47,6 +47,14 @@ jobs:
 
     # Build and compile using Maven
     - name: Build/Compile and run unit tests
+      uses: GabrielBB/xvfb-action@v1
+      with:
+        run: >
+          mvn clean verify -U -fae --settings build-ci/maven-settings.xml -DskipITests=true
+          -Dmaven.test.error.ignore=true -Dmaven.test.failure.ignore=true -ntp
+
+    # verify target platforms
+    - name: Verify target Platforms
       run: |
 
           export P2DIFFSKIP=true
@@ -107,5 +115,5 @@ jobs:
               MVNFLAGS="-Dp2diff.skip=true"
             fi
             MVN="mvn -U -e -fae -B -Dmaven.repo.local=${WORKSPACE}/.repository/ --no-transfer-progress"
-            ${MVN} --settings build-ci/maven-settings.xml install -Pmultiple2repo -f ${WORKSPACE}/$t/multiple/pom.xml ${MVNFLAGS} 
+            ${MVN} --settings build-ci/maven-settings.xml verify -Pmultiple2repo -f ${WORKSPACE}/$t/multiple/pom.xml ${MVNFLAGS} 
           done
