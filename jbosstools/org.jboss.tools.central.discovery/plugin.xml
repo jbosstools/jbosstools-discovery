@@ -192,7 +192,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
             license="EPL, Other (Free)"
             name="Spring IDE"
             provider="Spring IDE Developers"
-            siteUrl="${jboss.discovery.site.url}">
+            siteUrl="https://download.springsource.com/release/TOOLS/sts4/update/e4.27">
             <iu id="org.springframework.boot.ide.main.feature"/>
             <iu id="org.springframework.ide.eclipse.xml.namespaces.feature"/>
             <iu id="org.springframework.ide.eclipse.boot.dash.feature"/>
@@ -225,7 +225,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
             license="Subclipse License (Free)"
             name="Subclipse + SVNKit"
             provider="tigris.org"
-            siteUrl="${jboss.discovery.site.url}">
+            siteUrl="https://subclipse.github.io/updates/subclipse/4.3.x">
             <iu id="org.tigris.subversion.subclipse"/>
             <iu id="org.tigris.subversion.clientadapter.svnkit.feature"/>
             <iu id="net.java.dev.jna"/>
@@ -280,7 +280,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
             license="LGPL (Free)"
             name="SonarLint for Eclipse"
             provider="SonarSource"
-            siteUrl="${jboss.discovery.site.url}">
+            siteUrl="https://eclipse-uc.sonarlint.org/">
          <iu id="org.sonarlint.eclipse.feature"/>
          <icon
                image32="images/sonarlint-32x32.png">
@@ -302,7 +302,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
             license="ASL (Free)"
             name="TestNG"
             provider="Cedric Beust"
-            siteUrl="${jboss.discovery.site.url}">
+            siteUrl="https://testng.org/testng-eclipse-update-site">
             <iu id="org.testng.eclipse"/>
          <icon
                image32="images/testng_32.gif">
@@ -410,7 +410,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
             license="EPL (Free)"
             name="Maven JAX-RS Configurator"
             provider="eclipse.org"
-            siteUrl="${jboss.discovery.site.url}">
+            siteUrl="https://download.eclipse.org/technology/m2e/m2e-wtp/releases/latest/">
             <iu id="org.eclipse.m2e.wtp.jaxrs.feature"/>
          <icon
                image32="images/m2e_32.gif">
@@ -428,7 +428,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
             license="EPL (Free)"
             name="Maven JSF Configurator"
             provider="eclipse.org"
-            siteUrl="${jboss.discovery.site.url}">
+            siteUrl="https://download.eclipse.org/technology/m2e/m2e-wtp/releases/latest/">
             <iu id="org.eclipse.m2e.wtp.jsf.feature"/>
          <icon
                image32="images/m2e_32.gif">
@@ -461,11 +461,11 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
       <connectorDescriptor
             categoryId="org.jboss.tools.central.discovery.d.maven"
             groupId="org.jboss.tools.central.discovery.d.maven.configurators"
-            description="JBoss Maven Spring Boot Configurator"
+            description="JBoss Maven Spring Boot Configurator (Deprecated)"
             id="org.jboss.tools.maven.springboot.feature"
             kind="task"
             license="EPL (Free)"
-            name="JBoss Maven Spring Boot Configurator"
+            name="JBoss Maven Spring Boot Configurator (Deprecated)"
             provider="Red Hat"
             siteUrl="${jboss.discovery.site.url}">
             <iu id="org.jboss.tools.maven.seam.feature"/>
@@ -485,7 +485,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
             license="EPL (Free)"
             name="Maven JPA Configurator"
             provider="eclipse.org"
-            siteUrl="${jboss.discovery.site.url}">
+            siteUrl="https://download.eclipse.org/technology/m2e/m2e-wtp/releases/latest/">
             <iu id="org.eclipse.m2e.wtp.jpa.feature"/>
          <icon
                image32="images/m2e_32.gif">
@@ -504,7 +504,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
             license="EPL (Free)"
             name="Maven Integration for Eclipse (m2e)"
             provider="eclipse.org"
-            siteUrl="${jboss.discovery.site.url}">
+            siteUrl="https://download.eclipse.org/technology/m2e/releases/latest/">
             <iu id="org.eclipse.m2e.feature"/>
          <icon
                image32="images/m2e_32.gif">
@@ -522,7 +522,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
             license="EPL (Free)"
             name="Maven Integration for Web Tools (m2e-wtp)"
             provider="eclipse.org"
-            siteUrl="${jboss.discovery.site.url}">
+            siteUrl="https://download.eclipse.org/technology/m2e/m2e-wtp/releases/latest/">
             <iu id="org.eclipse.m2e.wtp.feature"/>
          <icon
                image32="images/m2e_32.gif">
