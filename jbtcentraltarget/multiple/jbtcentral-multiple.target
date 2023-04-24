@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde version="3.6"?>
-<target includeMode="feature" name="jbtcentral-4.27.0.Final-SNAPSHOT">
+<target includeMode="feature" name="jbtcentral-4.28.0.AM1-SNAPSHOT">
   <!-- Pro tip: paste content from generated Apache directory index, then match
         \[ ] (.+)_(.+).jar.+
     replace with 
