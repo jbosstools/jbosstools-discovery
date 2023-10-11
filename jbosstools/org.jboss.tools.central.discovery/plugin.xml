@@ -34,7 +34,7 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
       <connectorDescriptor
          categoryId="org.jboss.tools.central.discovery.a.fuse"
          groupId="org.jboss.tools.central.discovery.a.fuse"
-         certificationId="org.jboss.tools.discovery.certification.supported"
+         certificationId="org.jboss.tools.discovery.certification.deprecated"
          kind="task"
          license="Free, EPL"
          provider="Red Hat"
@@ -117,26 +117,6 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
          </icon>
          <overview
                url="https://tools.jboss.org/features/quarkus.html">
-         </overview>
-      </connectorDescriptor>
-
-      <connectorDescriptor
-            categoryId="org.jboss.tools.central.discovery.a.web"
-            groupId="org.jboss.tools.central.discovery.a.web.core"
-            certificationId="org.jboss.tools.discovery.certification.supported"
-            description="Provides Tooling for Red Hat's fabric8 Launcher"
-            id="org.jboss.tools.common.launcher"
-            kind="task"
-            license="EPL (Free)"
-            name="fabric8 Launcher Tools"
-            provider="Red Hat"
-            siteUrl="${jboss.discovery.site.url}">
-            <iu id="org.jboss.tools.common.launcher.feature"/>
-         <icon
-               image32="images/fabric8_32.png">
-         </icon>
-         <overview
-               url="https://developers.redhat.com/launch/">
          </overview>
       </connectorDescriptor>
 
@@ -606,15 +586,6 @@ Not supported anymore by Red Hat. Subject to future removal.</description>
           iconPath="images/quarkus_icon_rgb_16px_default.png"
           wizardId="org.jboss.tools.quarkus.ui.wizard.createProject"
           requiredComponentIds="org.jboss.tools.quarkus.feature">
-      </proxyWizard>
-      <proxyWizard
-          id="launcher.wizard"
-          description="%launcher.wizard.description"
-          label="Launcher Application"
-          priority="2"
-          iconPath="images/wizards/fabric8_icon_16px.png"
-          wizardId="org.jboss.tools.common.launcher.ui.wizard.newProjectWizard"
-          requiredComponentIds="org.jboss.tools.common.launcher.feature">
       </proxyWizard>
       <proxyWizard
           id="maven.wizard"
