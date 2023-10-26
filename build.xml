@@ -214,7 +214,7 @@ $java.home = ${java.home}</echo>
 		<condition property="subPath" value="discovery.earlyaccess" else="discovery.central">
 			<matches pattern=".*earlyaccess.*" string="${project.build.directory}"/>
 		</condition>
-		<condition property="stream" value="${stream_jbt}" else="${versionWithRespin_jbt}">
+		<condition property="stream" value="${stream_jbt}" else="${version_jbt}">
 			<matches pattern="snapshots" string="${buildType}"/>
 		</condition>
 		<!-- header -->
